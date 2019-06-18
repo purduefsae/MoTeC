@@ -2,11 +2,11 @@
 Software for Purdue Formula SAE's Modules
 
 software you'll need to access everything:
-m1 tune
-m1 build
-c125 dash manager
-pdm manager
-i2 standard (or pro if you have a license for that)
+-m1 tune
+-m1 build
+-c125 dash manager
+-pdm manager
+-i2 standard (or pro if you have a license for that)
 
 note: we've only gotten this to work on windows, so the rest of these directions will assume that you have a windows computer
 
