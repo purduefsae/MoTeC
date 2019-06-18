@@ -1,0 +1,59 @@
+local testmode = Test eq Test.Enabled;
+
+if (testmode)
+{
+	State = State.Test;
+}
+else
+{
+	when (State)
+	{
+		is (Enabled)
+		{
+			if ((Inlet.Manifold.Pressure < (Activate.Inlet Manifold Pressure Minimum - Activate.Inlet Manifold Pressure Hysteresis)) or
+				(Inlet.Manifold.Pressure > (Activate.Inlet Manifold Pressure Maximum + Activate.Inlet Manifold Pressure Hysteresis))
+			)
+			{
+				State = State.Disabled;
+			}
+		}
+		is (Disabled)
+		{
+			if ((Inlet.Manifold.Pressure > Activate.Inlet Manifold Pressure Minimum) and
+				(Inlet.Manifold.Pressure < Activate.Inlet Manifold Pressure Maximum)
+			)
+			{
+				State = State.Enabled;
+			}	
+		}
+		is (Test)
+		{
+			State = State.Disabled;
+		}
+	}
+}
+
+local dc = 0.0;
+
+when (State)
+{
+	is (Enabled)
+	{
+		dc = Duty Cycle;
+	}
+	is (Disabled)
+	{
+		dc = 0.0;
+	}
+	is (Test)
+	{
+		dc = Test.Duty Cycle;
+	}
+}
+
+if (Polarity eq Polarity.Inverting)
+{
+	dc = 1.0 - dc;
+}
+
+Output.Duty Cycle = dc;

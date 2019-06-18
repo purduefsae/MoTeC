@@ -1,0 +1,2121 @@
+1502.236 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1502.236 main:core_thread.cpp(346): kill
+1502.237 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+1502.239 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1502.240 main:core_thread.cpp(318): start
+1502.293 kern/elf.c(73): premalloc 2012a0 262144
+1502.294 main:ecu_thread.c(139): waiting for signal
+1502.294 main:fw_sections.cpp(253): map
+1502.294 main:fw_sections.cpp(257): pid 2
+1502.333 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1502.333 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1502.347 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1502.347 main:fw_fid.cpp(40): ERR ec_fw_FidCheckFailed=516 
+1502.347 main:fw_glue.cpp(33): Zeroing fdata
+1502.353 main:ecu_thread.c(117): got signal 30, continuing...
+1502.359 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+1502.359 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+1502.360 etpu/etpu_ign.c(743): tdc pitch 720.0
+1502.360 etpu/etpu_ign.c(743): tdc pitch 720.0
+1502.360 etpu/etpu_ign.c(743): tdc pitch 720.0
+1502.360 etpu/etpu_ign.c(743): tdc pitch 720.0
+1502.360 etpu/etpu_ign.c(427): min_delta 0
+1502.361 etpu/ppm.c(85): update period 39062
+1502.361 etpu/ppm.c(85): update period 39062
+1502.361 etpu/ppm.c(85): update period 39062
+1502.361 etpu/ppm.c(85): update period 39062
+1502.362 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+1502.362 main:core_thread.cpp(170): running
+1502.366 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1502.367 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1502.367 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+1502.367 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1502.367 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+1502.369 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1502.371 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1502.374 etpu/etpu_ign.c(613): pattern0
+1502.379 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1503.052 mdns:mdns.c(139): Updating service '24:2283'
+1503.068 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55689
+1503.078 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1503.239 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1503.246 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+1503.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1503.636 xcp_udp:../stream/execute.cpp(440): write_ecuname
+1503.738 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+1503.745 mdns:avahi_can.c(37): open 2
+1503.747 mdns:avahi_can.c(37): open 2
+1503.747 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1503.748 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1503.756 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5101
+1503.838 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1503.967 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1504.012 mdns:mdns.c(150): Adding service '24:2283'
+1504.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1504.173 mdns:mdns.c(150): Adding service '11:13341'
+1504.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1504.544 mdns:mdns.c(150): Adding service '22:2283'
+1504.546 mdns:mdns.c(150): Adding service '10:21082'
+1505.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1506.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1507.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1508.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1509.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1510.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1511.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1512.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1513.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1514.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1515.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1516.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1517.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1518.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1519.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1520.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1521.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1522.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1523.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1524.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1525.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1526.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1527.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1528.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1529.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1530.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1531.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1532.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1533.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1534.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1535.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1536.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1537.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1538.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1539.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1540.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1541.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1542.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1543.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1544.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1545.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1546.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1547.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1548.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1549.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1550.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1551.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1552.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1553.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1554.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1555.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1556.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1557.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1558.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1559.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1560.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1561.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1562.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1563.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1564.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1566.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1567.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1568.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1569.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1570.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1571.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1572.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1573.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1574.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1575.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1576.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1577.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1578.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1579.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1580.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1581.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1582.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1583.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1584.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1585.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1586.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1587.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1588.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1589.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1590.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1591.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1592.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1593.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1594.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1595.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1596.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1597.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1598.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1599.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1600.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1601.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1602.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1603.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1604.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1605.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1606.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1607.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1608.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1609.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1610.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1611.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1612.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1613.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1614.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1615.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1616.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1617.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1618.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1619.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1620.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1621.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1622.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1623.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1624.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1625.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1626.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1627.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1628.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1629.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1630.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1631.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1632.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1633.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1634.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1635.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1636.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1637.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1638.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1639.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1640.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1641.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1642.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1643.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1644.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1645.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1646.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1647.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1648.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1649.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1650.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1651.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1652.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1653.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1654.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1655.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1656.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1657.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1658.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1660.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1661.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1662.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1663.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1664.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1664.499 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5101
+1664.597 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1664.709 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1665.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1666.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1667.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1668.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1668.109 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1668.109 main:core_thread.cpp(346): kill
+1668.373 main:fw_sections.cpp(294): unmap
+1668.374 main:ecu_thread.c(125): got signal 15, exiting...
+1668.383 tpu.c(2065): free tpu memory
+1668.386 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+1668.389 main:core_thread.cpp(143): exited
+1668.391 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+1668.393 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1668.402 main:core_thread.cpp(318): start
+1668.454 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1668.459 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1668.460 kern/elf.c(73): premalloc 2012a0 262144
+1668.461 main:ecu_thread.c(139): waiting for signal
+1668.461 main:fw_sections.cpp(253): map
+1668.461 main:fw_sections.cpp(257): pid 2
+1668.465 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1668.479 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1668.479 main:ecu_thread.c(117): got signal 30, continuing...
+1668.485 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+1668.485 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+1668.486 etpu/etpu_ign.c(743): tdc pitch 720.0
+1668.486 etpu/etpu_ign.c(743): tdc pitch 720.0
+1668.486 etpu/etpu_ign.c(743): tdc pitch 720.0
+1668.486 etpu/etpu_ign.c(743): tdc pitch 720.0
+1668.486 etpu/etpu_ign.c(427): min_delta 0
+1668.487 etpu/ppm.c(85): update period 39062
+1668.487 etpu/ppm.c(85): update period 39062
+1668.487 etpu/ppm.c(85): update period 39062
+1668.487 etpu/ppm.c(85): update period 39062
+1668.488 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+1668.493 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1668.494 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1668.494 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+1668.494 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1668.494 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+1668.496 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1668.498 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1668.501 etpu/etpu_ign.c(613): pattern0
+1668.507 main:core_thread.cpp(170): running
+1668.649 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1669.424 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:64278
+1669.434 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1669.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1670.433 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+1670.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1671.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1672.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1673.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1674.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1675.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1676.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1677.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1678.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1679.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1680.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1681.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1682.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1683.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1684.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1685.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1686.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1687.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1688.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1689.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1690.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1691.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1692.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1693.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1694.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1695.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1696.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1697.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1698.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1699.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1700.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1701.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1702.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1703.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1704.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1705.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1706.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1707.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1708.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1709.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1710.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1711.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1713.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1714.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1715.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1716.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1717.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1718.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1719.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1720.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1721.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1722.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1723.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1724.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1725.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1726.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1727.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1728.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1729.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1730.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1731.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1732.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1733.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1734.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1735.069 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5101
+1735.167 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1735.273 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1735.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1736.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1737.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1738.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1739.192 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1739.192 main:core_thread.cpp(346): kill
+1739.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1739.373 main:fw_sections.cpp(294): unmap
+1739.374 main:ecu_thread.c(125): got signal 15, exiting...
+1739.384 tpu.c(2065): free tpu memory
+1739.387 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+1739.391 main:core_thread.cpp(143): exited
+1739.392 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+1739.395 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1739.403 main:core_thread.cpp(318): start
+1739.456 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1739.461 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1739.462 kern/elf.c(73): premalloc 2012a0 262144
+1739.463 main:ecu_thread.c(139): waiting for signal
+1739.463 main:fw_sections.cpp(253): map
+1739.463 main:fw_sections.cpp(257): pid 2
+1739.467 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1739.481 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1739.481 main:ecu_thread.c(117): got signal 30, continuing...
+1739.488 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+1739.488 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+1739.489 etpu/etpu_ign.c(743): tdc pitch 720.0
+1739.489 etpu/etpu_ign.c(743): tdc pitch 720.0
+1739.489 etpu/etpu_ign.c(743): tdc pitch 720.0
+1739.489 etpu/etpu_ign.c(743): tdc pitch 720.0
+1739.489 etpu/etpu_ign.c(427): min_delta 0
+1739.489 etpu/ppm.c(85): update period 39062
+1739.489 etpu/ppm.c(85): update period 39062
+1739.489 etpu/ppm.c(85): update period 39062
+1739.490 etpu/ppm.c(85): update period 39062
+1739.491 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+1739.491 main:core_thread.cpp(170): running
+1739.496 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1739.497 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1739.497 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+1739.498 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1739.498 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+1739.499 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1739.502 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1739.505 etpu/etpu_ign.c(613): pattern0
+1739.566 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1740.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1740.519 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:63233
+1740.529 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1741.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1741.537 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+1742.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1743.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1744.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1745.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1746.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1747.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1748.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1749.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1750.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1751.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1752.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1753.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1754.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1755.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1756.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1757.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1758.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1759.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1760.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1761.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1762.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1763.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1764.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1765.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1766.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1766.887 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5101
+1766.984 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1767.089 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1767.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1768.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1769.574 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1769.574 main:core_thread.cpp(346): kill
+1769.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1769.773 main:fw_sections.cpp(294): unmap
+1769.774 main:ecu_thread.c(125): got signal 15, exiting...
+1769.784 tpu.c(2065): free tpu memory
+1769.787 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+1769.791 main:core_thread.cpp(143): exited
+1769.792 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+1769.795 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1769.804 main:core_thread.cpp(318): start
+1769.857 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1769.862 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1769.863 kern/elf.c(73): premalloc 2012a0 262144
+1769.863 main:ecu_thread.c(139): waiting for signal
+1769.863 main:fw_sections.cpp(253): map
+1769.863 main:fw_sections.cpp(257): pid 2
+1769.868 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1769.881 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1769.882 main:ecu_thread.c(117): got signal 30, continuing...
+1769.888 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+1769.888 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+1769.889 etpu/etpu_ign.c(743): tdc pitch 720.0
+1769.889 etpu/etpu_ign.c(743): tdc pitch 720.0
+1769.889 etpu/etpu_ign.c(743): tdc pitch 720.0
+1769.889 etpu/etpu_ign.c(743): tdc pitch 720.0
+1769.889 etpu/etpu_ign.c(427): min_delta 0
+1769.890 etpu/ppm.c(85): update period 39062
+1769.890 etpu/ppm.c(85): update period 39062
+1769.890 etpu/ppm.c(85): update period 39062
+1769.890 etpu/ppm.c(85): update period 39062
+1769.892 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+1769.892 main:core_thread.cpp(170): running
+1769.897 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1769.898 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1769.898 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+1769.899 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1769.899 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+1769.900 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1769.903 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1769.906 etpu/etpu_ign.c(613): pattern0
+1769.994 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1770.469 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:63238
+1770.479 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1770.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1771.514 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+1771.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1772.193 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+1772.457 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+1772.697 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1772.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1772.937 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1773.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1774.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1775.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1776.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1778.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1779.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1780.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1781.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1782.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1783.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1784.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1785.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1786.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1787.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1788.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1789.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1790.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1791.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1792.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1793.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1794.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1795.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1796.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1797.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1798.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1799.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1800.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1801.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1802.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1803.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1804.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1805.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1806.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1807.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1808.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1809.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1810.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1811.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1812.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1813.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1814.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1815.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1816.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1817.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1818.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1818.769 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5101
+1818.868 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1818.973 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1819.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1820.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1821.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1822.309 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1822.309 main:core_thread.cpp(346): kill
+1822.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1822.573 main:fw_sections.cpp(294): unmap
+1822.574 main:ecu_thread.c(125): got signal 15, exiting...
+1822.584 tpu.c(2065): free tpu memory
+1822.588 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+1822.592 main:core_thread.cpp(143): exited
+1822.593 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+1822.595 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1822.604 main:core_thread.cpp(318): start
+1822.657 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1822.663 kern/elf.c(73): premalloc 2012a0 262144
+1822.663 main:ecu_thread.c(139): waiting for signal
+1822.663 main:fw_sections.cpp(253): map
+1822.663 main:fw_sections.cpp(257): pid 2
+1822.668 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1822.681 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1822.682 main:ecu_thread.c(117): got signal 30, continuing...
+1822.689 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+1822.689 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+1822.690 etpu/etpu_ign.c(743): tdc pitch 720.0
+1822.690 etpu/etpu_ign.c(743): tdc pitch 720.0
+1822.690 etpu/etpu_ign.c(743): tdc pitch 720.0
+1822.690 etpu/etpu_ign.c(743): tdc pitch 720.0
+1822.690 etpu/etpu_ign.c(427): min_delta 0
+1822.690 etpu/ppm.c(85): update period 39062
+1822.690 etpu/ppm.c(85): update period 39062
+1822.691 etpu/ppm.c(85): update period 39062
+1822.691 etpu/ppm.c(85): update period 39062
+1822.692 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+1822.692 main:core_thread.cpp(170): running
+1822.697 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1822.698 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1822.699 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+1822.699 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+1822.699 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+1822.700 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+1822.703 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1822.706 etpu/etpu_ign.c(613): pattern0
+1823.626 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59488
+1823.636 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1823.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1824.544 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+1824.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1825.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1826.527 eth0:mip_platform.c(27): link change
+1826.527 eth0:init.cpp(107): LC: 5461ms link Down
+1826.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1827.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1828.527 eth0:mip_platform.c(27): link change
+1828.527 eth0:init.cpp(107): LC: 7461ms link Up
+1828.748 xcp_udp:../xcp/eth.cpp(61): resync 0x18fc0 ctr 5523 expected 5516 len 4 of 4
+1828.748 xcp_udp:../xcp/xcp/stack.cpp(544): <- pid=0xFE, error_code=0x29 64
+1828.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1829.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1829.787 eth0:mip_platform.c(27): link change
+1829.787 eth0:init.cpp(107): LC: 8721ms link Down
+1830.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1831.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1832.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1833.749 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+1833.787 eth0:mip_platform.c(27): link change
+1833.787 eth0:init.cpp(107): LC: 12721ms link Up
+1833.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1834.252 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59488
+1834.749 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59488
+1834.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1835.249 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59488
+1835.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1836.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1837.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1838.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1839.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1840.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1840.957 eth0:mip_platform.c(27): link change
+1840.957 eth0:init.cpp(107): LC: 19891ms link Down
+1841.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1842.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1843.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1844.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1845.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1847.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Jul 24 2017)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2020): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.000 ad7490.c(372): done
+0.044 ../mpc555x/cfi.c(238): 2 banks, size 8000000
+0.044 eqadc.c(890): init intadc
+0.044 arch/ppc/e7/machdep.c(2268): ready: 44.964ms
+0.045 VFS: Mounting ramfs dev= dir=/
+0.045 VFS: Mounting devfs dev= dir=/dev
+0.046 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.094 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   496   10     6     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  496   16   10
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):        7968  512    22    15    15
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0051_e7
+0.137 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.138 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.140 main:calibration.cpp(88): Calibration loaded
+0.140 main:../logging/startup.cpp(29): logging_startup
+0.141 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.154 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.163 main:fw_sections.cpp(105): init
+0.206 main:core_thread.cpp(394): setup to run
+0.206 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 102 ms
+0.253 kern/elf.c(73): premalloc 2012a0 262144
+0.253 main:ecu_thread.c(139): waiting for signal
+0.253 main:fw_sections.cpp(253): map
+0.253 main:fw_sections.cpp(257): pid 2
+0.258 main:serial.cpp(48): Serial no. 3182
+0.258 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.272 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.272 main:ecu_thread.c(117): got signal 30, continuing...
+0.273 main:core_thread.cpp(170): running
+0.276 dac.c(201): init
+0.279 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+0.279 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+0.280 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.280 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.280 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.280 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.280 etpu/etpu_ign.c(427): min_delta 0
+0.281 etpu/ppm.c(85): update period 39062
+0.281 etpu/ppm.c(85): update period 39062
+0.281 etpu/ppm.c(85): update period 39062
+0.281 etpu/ppm.c(85): update period 39062
+0.283 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+0.287 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.288 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.288 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.289 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.289 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.290 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.292 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+0.295 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.844 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.844 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.846 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.848 mdns:avahi_can.c(37): open 2
+0.849 mdns:avahi_can.c(37): open 2
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.853 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.013 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.267 mdns:mdns.c(150): Adding service '10:21082'
+1.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1.519 mdns:mdns.c(150): Adding service '22:2283'
+2.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.786 mdns:mdns.c(150): Adding service '24:2283'
+4.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+5.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+6.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+7.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+8.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+9.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+10.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+11.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+12.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+13.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+14.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+15.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+16.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+17.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+18.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+19.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+20.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+21.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+22.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+23.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+24.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+25.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+26.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+27.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+28.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+29.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+30.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+31.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+32.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+33.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+34.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+35.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+36.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+37.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+38.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+39.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+40.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+41.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+42.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+43.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+44.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+45.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+46.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+47.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+48.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+49.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+50.277 eth0:mip_platform.c(27): link change
+50.277 eth0:init.cpp(107): LC: 15917ms link Up
+50.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+51.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+52.307 eth0:mip_platform.c(27): link change
+52.307 eth0:init.cpp(107): LC: 17947ms link Down
+52.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+53.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+54.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+55.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+56.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+57.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+58.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+59.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+60.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+61.307 eth0:mip_platform.c(27): link change
+61.307 eth0:init.cpp(107): LC: 26947ms link Up
+61.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+62.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+63.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+64.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+65.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+66.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+67.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+68.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+69.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+71.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+72.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+73.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+74.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+74.328 eth0:mip_platform.c(27): link change
+74.328 eth0:init.cpp(107): LC: 5608ms link Down
+75.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+75.328 eth0:mip_platform.c(27): link change
+75.328 eth0:init.cpp(107): LC: 6608ms link Up
+76.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+77.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+78.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+79.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+80.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+81.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+82.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+83.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+84.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+85.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+86.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+87.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+88.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+89.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+90.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+91.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+92.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+93.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+94.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+95.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+96.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+97.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+98.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+99.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+100.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+101.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+102.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+103.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+104.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+105.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+106.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+107.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+108.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+109.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+110.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+111.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+112.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+113.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+114.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+115.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+116.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+117.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+118.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+119.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+120.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+121.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+122.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+123.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+124.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+125.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+126.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+127.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+128.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+129.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+130.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+131.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+132.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+133.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+134.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+135.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+136.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+137.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+138.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+139.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+140.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+141.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+142.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+143.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+144.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+145.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+146.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+147.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+148.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+149.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+150.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+151.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+152.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+153.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+154.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+154.947 eth0:mip_platform.c(27): link change
+154.947 eth0:init.cpp(107): LC: 17508ms link Down
+155.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+156.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+156.947 eth0:mip_platform.c(27): link change
+156.947 eth0:init.cpp(107): LC: 19508ms link Up
+157.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+158.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+159.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+160.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+161.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+162.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+163.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+164.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+165.907 eth0:mip_platform.c(27): link change
+165.907 eth0:init.cpp(107): LC: 28468ms link Down
+165.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+166.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+167.907 eth0:mip_platform.c(27): link change
+167.907 eth0:init.cpp(107): LC: 30468ms link Up
+167.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+169.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+170.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+171.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+172.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+173.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+174.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+175.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+176.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+177.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+178.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+179.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+180.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+181.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+182.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+183.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+184.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+185.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+186.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+187.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+188.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+189.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+190.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+191.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+192.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+193.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+194.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+195.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+196.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+197.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+198.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+199.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+200.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+201.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+202.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+203.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+204.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+205.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+206.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+207.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+208.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+209.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+210.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+211.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+212.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+213.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+214.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+215.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+216.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+217.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+218.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+219.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+220.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+221.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+222.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+223.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+224.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+225.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+226.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+227.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+228.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+229.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+230.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+231.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+232.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+233.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+234.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+235.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+236.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+237.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+238.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+239.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+240.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+241.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+242.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+243.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+244.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+245.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+246.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+247.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+248.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+249.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+250.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+251.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+252.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+253.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+254.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+255.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+256.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+257.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+258.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+259.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+260.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+261.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+262.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+263.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+264.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+265.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+266.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+267.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+268.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+269.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+270.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+271.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+272.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+273.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+275.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+276.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+277.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+278.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+279.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+280.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+281.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+282.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+283.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+284.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+285.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+286.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+287.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+288.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+289.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+290.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+291.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+292.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+293.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+294.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+295.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+296.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+297.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+298.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+299.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+300.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+301.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+302.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+303.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+304.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+305.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+306.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+307.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+308.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+309.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+310.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+311.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+312.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+313.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+314.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+315.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+316.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+317.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+318.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+319.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+320.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+321.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+322.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+323.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+324.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+325.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+326.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+327.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+328.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+329.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+330.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+331.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+332.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+333.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+334.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+335.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+336.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+337.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+338.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+339.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Jul 24 2017)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2020): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.000 ad7490.c(372): done
+0.044 ../mpc555x/cfi.c(238): 2 banks, size 8000000
+0.044 eqadc.c(890): init intadc
+0.044 arch/ppc/e7/machdep.c(2268): ready: 44.965ms
+0.045 VFS: Mounting ramfs dev= dir=/
+0.045 VFS: Mounting devfs dev= dir=/dev
+0.046 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.094 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   496   10     6     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  496   16   10
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):        7969  512    22    15    15
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0051_e7
+0.138 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.141 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.155 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.164 main:fw_sections.cpp(105): init
+0.207 main:core_thread.cpp(394): setup to run
+0.207 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 102 ms
+0.254 kern/elf.c(73): premalloc 2012a0 262144
+0.254 main:ecu_thread.c(139): waiting for signal
+0.254 main:fw_sections.cpp(253): map
+0.254 main:fw_sections.cpp(257): pid 2
+0.259 main:serial.cpp(48): Serial no. 3182
+0.259 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.273 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.273 main:ecu_thread.c(117): got signal 30, continuing...
+0.274 main:core_thread.cpp(170): running
+0.277 dac.c(201): init
+0.280 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+0.280 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+0.281 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.281 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.281 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.281 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.281 etpu/etpu_ign.c(427): min_delta 0
+0.282 etpu/ppm.c(85): update period 39062
+0.282 etpu/ppm.c(85): update period 39062
+0.282 etpu/ppm.c(85): update period 39062
+0.282 etpu/ppm.c(85): update period 39062
+0.284 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+0.288 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.289 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.289 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.290 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.290 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.293 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+0.296 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.779 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.843 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.844 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.846 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.846 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.848 mdns:avahi_can.c(37): open 2
+0.849 mdns:avahi_can.c(37): open 2
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.853 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.013 mdns:mdns.c(150): Adding service '11:13341'
+1.016 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.267 mdns:mdns.c(150): Adding service '10:21082'
+1.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1.519 mdns:mdns.c(150): Adding service '22:2283'
+2.277 eth0:mip_platform.c(27): link change
+2.277 eth0:init.cpp(107): LC: 2277ms link Up
+2.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.776 mdns:mdns.c(150): Adding service '24:2283'
+4.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+5.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+6.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+7.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+8.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+9.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+10.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+11.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+12.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+13.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+14.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+15.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+16.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+17.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+18.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+19.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+20.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+21.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+22.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+23.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+24.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+25.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+26.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+27.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+28.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+29.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+30.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+31.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+32.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+33.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+34.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+35.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+36.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+37.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+38.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+39.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+40.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+41.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+42.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+43.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+44.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+45.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+46.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+47.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+48.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+49.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+50.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+51.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+52.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+53.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+54.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+55.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+56.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+57.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+58.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+59.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+60.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+61.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+63.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+64.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+65.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+66.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+67.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+68.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+69.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+70.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+71.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+72.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+73.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+74.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+75.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+76.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+77.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+78.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+79.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+80.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+81.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+82.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+83.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+84.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+85.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+86.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+87.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+88.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+89.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+90.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+91.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+92.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+93.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+94.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+95.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+96.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+97.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+98.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+99.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+100.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+101.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+102.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+103.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+104.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+105.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+106.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+107.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+108.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+109.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+110.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+111.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+112.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+113.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+114.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+115.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+116.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+117.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+118.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+119.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+120.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+121.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+122.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+123.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+124.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+125.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+126.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+127.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+128.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+129.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+130.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+131.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+132.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+133.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+134.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+135.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+136.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+137.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+138.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+139.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+140.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+141.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+142.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+143.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+144.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+145.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+146.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+147.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+148.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+149.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+150.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+151.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+152.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+153.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+154.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+155.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+156.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+157.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+158.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+159.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+160.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+161.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+163.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+164.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+165.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+166.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+167.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+168.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+169.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+170.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+171.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+172.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+173.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+174.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+175.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+176.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+177.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+178.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+179.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+180.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+181.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+182.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+183.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+184.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+185.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+186.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+187.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+188.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+189.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+190.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+191.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+192.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+193.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+194.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+195.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+196.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+197.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+198.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+199.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+200.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+201.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+202.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+203.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+204.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+205.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+206.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+207.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+208.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+209.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+210.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+211.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+212.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+213.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+214.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+215.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+216.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+217.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+218.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+219.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+220.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+221.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+222.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+223.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+224.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+225.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+226.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+227.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+228.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+229.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+230.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+231.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+232.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+233.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+234.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+235.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+236.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+237.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+238.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+239.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+240.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+241.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+242.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+243.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+244.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+245.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+246.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+247.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+248.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+249.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+251.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+252.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+253.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+254.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+255.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+256.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+257.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+258.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+259.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+260.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+261.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+262.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+263.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+264.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+265.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+266.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+267.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+268.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+269.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+270.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+271.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+272.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+273.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+274.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+275.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+276.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+277.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+278.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+279.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+280.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+281.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+282.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+283.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+284.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+285.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+286.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+287.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+288.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+289.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+290.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+291.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+292.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+293.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+294.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+295.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+296.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+297.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+298.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+299.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+300.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+301.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+302.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+303.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+304.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+305.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+306.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+307.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+308.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+309.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+310.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+311.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+312.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+313.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+314.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+315.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+316.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+317.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+318.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+319.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+320.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+321.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+322.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+323.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+324.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+325.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+326.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+327.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+328.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+329.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+330.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+331.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+332.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+333.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+334.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+335.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+336.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+337.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+338.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+339.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+340.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+341.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+342.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+343.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+345.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+346.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+347.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+347.817 eth0:mip_platform.c(27): link change
+347.817 eth0:init.cpp(107): LC: 4219ms link Down
+348.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+349.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+350.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+351.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+352.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+353.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+354.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+355.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+356.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+357.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+358.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+359.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+360.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+361.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+362.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+363.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+364.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+365.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+366.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+367.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+368.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+369.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+370.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+371.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+372.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+373.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+374.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+375.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+376.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+377.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+378.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+379.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+380.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+381.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+382.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+383.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+384.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+385.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+386.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+387.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+388.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+389.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+390.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+391.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+392.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+393.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+394.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+395.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+396.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+397.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+398.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+399.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+400.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+401.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+402.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+403.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+404.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+405.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Jul 24 2017)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2020): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.000 ad7490.c(372): done
+0.044 ../mpc555x/cfi.c(238): 2 banks, size 8000000
+0.044 eqadc.c(890): init intadc
+0.044 arch/ppc/e7/machdep.c(2268): ready: 44.964ms
+0.045 VFS: Mounting ramfs dev= dir=/
+0.045 VFS: Mounting devfs dev= dir=/dev
+0.046 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.094 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   496   10     6     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  496   16   10
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):        7970  512    22    15    15
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0051_e7
+0.137 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.137 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.139 main:calibration.cpp(88): Calibration loaded
+0.139 main:../logging/startup.cpp(29): logging_startup
+0.141 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.153 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.162 main:fw_sections.cpp(105): init
+0.205 main:core_thread.cpp(394): setup to run
+0.205 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 102 ms
+0.252 kern/elf.c(73): premalloc 2012a0 262144
+0.253 main:ecu_thread.c(139): waiting for signal
+0.253 main:fw_sections.cpp(253): map
+0.253 main:fw_sections.cpp(257): pid 2
+0.257 main:serial.cpp(48): Serial no. 3182
+0.258 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.271 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.272 main:ecu_thread.c(117): got signal 30, continuing...
+0.272 main:core_thread.cpp(170): running
+0.275 dac.c(201): init
+0.278 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+0.278 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+0.279 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.279 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.279 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.279 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.279 etpu/etpu_ign.c(427): min_delta 0
+0.280 etpu/ppm.c(85): update period 39062
+0.280 etpu/ppm.c(85): update period 39062
+0.280 etpu/ppm.c(85): update period 39062
+0.280 etpu/ppm.c(85): update period 39062
+0.282 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.287 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.287 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.288 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.288 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.289 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.291 main:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+0.294 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.852 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.013 mdns:mdns.c(150): Adding service '11:13341'
+1.016 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.268 mdns:mdns.c(150): Adding service '10:21082'
+1.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+1.523 mdns:mdns.c(150): Adding service '22:2283'
+2.269 eth0:mip_platform.c(27): link change
+2.269 eth0:init.cpp(107): LC: 2269ms link Up
+2.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+3.808 mdns:mdns.c(150): Adding service '24:2283'
+4.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+5.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+6.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+7.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+8.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+9.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+10.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+11.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+12.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+13.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+14.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+15.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+16.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+17.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+18.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+19.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+20.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+21.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+22.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+23.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+24.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+25.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+26.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+27.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+28.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+29.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+30.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+31.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+32.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+33.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+34.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+35.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+36.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+37.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+38.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+39.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+40.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+41.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+42.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+43.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+44.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+45.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+46.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+47.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+48.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+49.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+50.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+51.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+52.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+53.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+54.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+55.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+56.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+57.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+59.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+60.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+61.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+62.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+63.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+64.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+65.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+66.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+67.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+68.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+69.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+70.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+71.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+72.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+73.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+74.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+75.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+76.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+77.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+78.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+79.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+80.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+81.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+82.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+83.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+84.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+85.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+86.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+87.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+88.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+89.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+90.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+91.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+92.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+93.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+94.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+95.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+96.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+97.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+98.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+99.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+100.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+101.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+102.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+103.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+104.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+105.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+106.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+107.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+108.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+109.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+110.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+111.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+112.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+113.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+114.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+115.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+116.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+117.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+118.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+119.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+120.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+121.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+122.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+123.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+124.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+125.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+126.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+127.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+128.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+129.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+130.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+131.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+132.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+133.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+134.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+135.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+136.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+137.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+138.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+139.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+140.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+141.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+142.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+143.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+144.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+145.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+146.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+147.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+148.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+149.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+150.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+151.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+152.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+153.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+154.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+155.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+157.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+158.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+159.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+160.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+161.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+162.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+163.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+164.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+165.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+166.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+167.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+168.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+169.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+170.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+171.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+172.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+173.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+174.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+175.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+176.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+177.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+178.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+179.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+180.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+181.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+182.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+183.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+184.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+185.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+186.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+187.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+188.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+189.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+190.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+191.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+192.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+193.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+194.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+195.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+196.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+197.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+198.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+199.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+200.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+201.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+202.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+203.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+204.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+205.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+206.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+207.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+208.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+209.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+210.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+211.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+212.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+213.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+214.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+215.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+216.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+217.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+218.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+219.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+220.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+221.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+222.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+223.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+224.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+225.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+226.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+227.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+228.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+229.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+230.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+231.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+232.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+233.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+234.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+235.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+236.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+237.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+238.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+239.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+240.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+241.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+243.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+244.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+245.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+246.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+247.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+248.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+249.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+250.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+251.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+252.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+253.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+254.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+255.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+256.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+257.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+258.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+259.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+260.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+261.202 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+262.222 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+263.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+264.242 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+265.262 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+266.282 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+267.302 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+268.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+269.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+270.322 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+271.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+272.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+273.342 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+274.362 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+275.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+276.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+277.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+278.382 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+279.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+280.402 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+281.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+282.422 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+283.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+284.442 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+285.462 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+286.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+287.482 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+288.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+289.502 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+290.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+291.522 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+292.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+293.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+294.542 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+295.562 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+296.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+297.582 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+298.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+299.602 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+300.622 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+301.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+302.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+303.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+304.642 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+305.662 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+306.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+307.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+308.682 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+309.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+310.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+311.702 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+312.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+313.722 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+314.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+315.742 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+316.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+317.762 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+318.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+319.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+320.782 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+321.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+322.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+323.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+324.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+325.802 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+326.822 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+327.842 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+328.862 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+329.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+330.882 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+331.902 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+332.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+333.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+334.922 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+335.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+336.942 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+337.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+338.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+339.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+340.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+341.962 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+342.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+343.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+344.982 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+346.002 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+347.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+348.022 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+349.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+350.042 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+351.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+352.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+353.062 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+353.527 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:54113
+353.537 xcp_udp:../xcp/eth.cpp(184): XCP connected
+353.967 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+354.082 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+354.449 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+355.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+356.102 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+357.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+358.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+359.122 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+360.142 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+361.162 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+362.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+362.334 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+362.438 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+362.477 xcp_udp:../genio/stream_users.cpp(196): Size=844
+362.966 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+363.182 50Hz_Trigge:ecu_can_rx.c(77): CanComms.RxMessage: bad handle
+363.246 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+363.246 main:core_thread.cpp(346): kill
+363.573 main:fw_sections.cpp(294): unmap
+363.574 main:ecu_thread.c(125): got signal 15, exiting...
+363.583 tpu.c(2065): free tpu memory
+363.587 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+363.590 main:core_thread.cpp(143): exited
+363.728 mdns:mdns.c(139): Updating service '22:2283'
+363.728 mdns:mdns.c(139): Updating service '15:3182:1:4'
+365.754 xcp_udp:../stream/execute.cpp(245): write_loggingmetadata
+376.373 xcp_udp:../stream/execute.cpp(215): write_firmware
+376.374 xcp_udp:../stream/execute.cpp(143): new: GPR (M130) 01.11.0000
+376.376 xcp_udp:../stream/execute.cpp(151): old: GPR (M130) 01.10.0008
+376.394 main:core_thread.cpp(351): erase
+376.394 main:fw_sections.cpp(322): exit
+376.394 main:fw_sections.cpp(294): unmap
+376.395 fs/xipfs/xipfs_mount.c(67): creating file system at /int/usr
+377.651 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+377.651 ../mpc555x/h7f.c(929): (EINVAL)
+377.651 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+377.652 ../mpc555x/h7f.c(929): (EINVAL)
+378.349 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+378.353 xcp_udp:../stream/execute.cpp(198): sidFirmwareELF
+378.353 main:core_thread.cpp(363): write
+379.415 main:fw_sections.cpp(105): init
+379.459 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+381.681 main:core_thread.cpp(358): restore
+381.681 main:core_thread.cpp(249): ERR EBADF=9 
+381.681 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+381.681 main:core_thread.cpp(346): kill
+381.682 xcp_udp:core.cpp(52): firmware locked
+381.685 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+381.699 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+382.214 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:54118
+382.217 xcp_udp:../xcp/eth.cpp(184): XCP connected
+382.262 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+382.272 xcp_udp:../genio/stream_users.cpp(196): Size=844
+382.275 xcp_udp:../genio/stream_users.cpp(196): Size=0
+382.399 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+382.399 main:core_thread.cpp(346): kill
+382.416 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=3856
+383.344 xcp_udp:../stream/execute.cpp(306): write_managedusersbase
+383.584 main:core_thread.cpp(358): restore
+383.584 main:core_thread.cpp(249): ERR EBADF=9 
+383.584 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+383.584 main:core_thread.cpp(346): kill
+383.586 xcp_udp:core.cpp(52): firmware locked
+383.588 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+383.606 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+384.121 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:54119
+384.126 xcp_udp:../xcp/eth.cpp(184): XCP connected
+384.150 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+384.160 xcp_udp:../genio/stream_users.cpp(196): Size=844
+384.386 xcp_udp:../genio/stream_users.cpp(196): Size=3392
+384.520 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+384.520 main:core_thread.cpp(346): kill
+384.543 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=4132
+385.348 xcp_udp:../stream/execute.cpp(258): write_memory
+385.966 xcp_udp:../stream/execute.cpp(411): write_logsetuplistbase
+386.004 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=7916
+386.028 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=6880
+386.030 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=425888
+386.031 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 3 old_ids == new_ids
+386.038 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+386.087 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=10728
+386.114 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=9544
+386.116 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=425888
+386.117 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 3 old_ids == new_ids
+386.376 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+386.376 main:core_thread.cpp(346): kill
+386.377 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+386.379 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+386.384 main:core_thread.cpp(318): start

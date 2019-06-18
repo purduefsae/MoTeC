@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<Container Locale="English_Australia.1252" ID="UserConfiguration">
+  <StaticChannels ID="StaticChannels">
+    <StaticChannelsArray ID="InputADCArray">
+      <ChannelReference Value="PDM.Input ADC.Pin 1"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 2"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 3"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 4"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 5"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 6"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 7"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 8"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 9"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 10"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 11"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 12"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 13"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 14"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 15"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 16"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 17"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 18"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 19"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 20"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 21"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 22"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 23"/>
+      <ChannelReference Value="PDM.Input ADC.Pin 24"/>
+    </StaticChannelsArray>
+    <ChannelReference ID="BatVolts" Value="PDM.Battery Voltage"/>
+    <ChannelReference ID="Temperature" Value="PDM.Temperature"/>
+  </StaticChannels>
+  <InputPins ID="InputPins">
+    <InputPinsArray ID="Array">
+      <InputPin PinIndex="0">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input ADC.Pin 1"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508"/>
+          <SteppedValue ID="Constant2" Value="3.5615"/>
+          <SteppedValue ID="TimeOn" Value="0.2"/>
+          <SteppedValue ID="TimeOff" Value="0.2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="Indicators.LH.Switch"/>
+      </InputPin>
+      <InputPin PinIndex="1">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input ADC.Pin 2"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508"/>
+          <SteppedValue ID="Constant2" Value="3.5615"/>
+          <SteppedValue ID="TimeOn" Value="0.2"/>
+          <SteppedValue ID="TimeOff" Value="0.2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="Indicators.RH.Switch"/>
+      </InputPin>
+      <InputPin PinIndex="2">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input ADC.Pin 3"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508"/>
+          <SteppedValue ID="Constant2" Value="3.5615"/>
+          <SteppedValue ID="TimeOn" Value="0.2"/>
+          <SteppedValue ID="TimeOff" Value="0.2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="Indicators.Hazard.Switch"/>
+      </InputPin>
+    </InputPinsArray>
+  </InputPins>
+  <OutputPins ID="OutputPins">
+    <OutputPinsArray ID="Array">
+      <OutputPin PinIndex="8">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="Indicators.LH.Output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Indicators.Flash"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0"/>
+                  <SteppedValue ID="Constant2" Value="0"/>
+                  <SteppedValue ID="TimeOn" Value="0"/>
+                  <SteppedValue ID="TimeOff" Value="0"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Indicators.LH.Switch"/>
+                  <Operator ID="Operator" Value="9"/>
+                  <ChannelReference ID="RightInput" Value="Indicators.Hazard.Switch"/>
+                  <SteppedValue ID="Constant" Value="0"/>
+                  <SteppedValue ID="Constant2" Value="0"/>
+                  <SteppedValue ID="TimeOn" Value="0"/>
+                  <SteppedValue ID="TimeOff" Value="0"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="Indicators.LH.Output.Status.Active"/>
+        <ChannelReference ID="Current" Value="Indicators.LH.Output.Current"/>
+        <ChannelReference ID="Voltage" Value="Indicators.LH.Output.Voltage"/>
+        <ChannelReference ID="Status" Value="Indicators.LH.Output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="Indicators.LH.Output.Status.Over Current"/>
+        <ChannelReference ID="Error" Value="Indicators.LH.Output.Status.Error"/>
+        <SteppedValue ID="MaxCurrent" Value="5"/>
+        <SteppedValue ID="FilterConstant" Value="50"/>
+        <SteppedValue ID="RetryDelay" Value="1"/>
+        <SteppedValue ID="NumRetries" Value="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+      </OutputPin>
+      <OutputPin PinIndex="9">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="Indicators.RH.Output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Indicators.Flash"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0"/>
+                  <SteppedValue ID="Constant2" Value="0"/>
+                  <SteppedValue ID="TimeOn" Value="0"/>
+                  <SteppedValue ID="TimeOff" Value="0"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Indicators.RH.Switch"/>
+                  <Operator ID="Operator" Value="9"/>
+                  <ChannelReference ID="RightInput" Value="Indicators.Hazard.Switch"/>
+                  <SteppedValue ID="Constant" Value="0"/>
+                  <SteppedValue ID="Constant2" Value="0"/>
+                  <SteppedValue ID="TimeOn" Value="0"/>
+                  <SteppedValue ID="TimeOff" Value="0"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="Indicators.RH.Output.Status.Active"/>
+        <ChannelReference ID="Current" Value="Indicators.RH.Output.Current"/>
+        <ChannelReference ID="Voltage" Value="Indicators.RH.Output.Voltage"/>
+        <ChannelReference ID="Status" Value="Indicators.RH.Output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="Indicators.RH.Output.Status.Over Current"/>
+        <ChannelReference ID="Error" Value="Indicators.RH.Output.Status.Error"/>
+        <SteppedValue ID="MaxCurrent" Value="5"/>
+        <SteppedValue ID="FilterConstant" Value="50"/>
+        <SteppedValue ID="RetryDelay" Value="1"/>
+        <SteppedValue ID="NumRetries" Value="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+      </OutputPin>
+    </OutputPinsArray>
+  </OutputPins>
+  <Conditions ID="Conditions">
+    <ConditionsArray ID="Array">
+      <Condition>
+        <ChannelReference ID="Output" Value="Indicators.Flash.Enable"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="Indicators.LH.Switch"/>
+                <Operator ID="Operator" Value="0"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0"/>
+                <SteppedValue ID="Constant2" Value="0"/>
+                <SteppedValue ID="TimeOn" Value="0"/>
+                <SteppedValue ID="TimeOff" Value="0"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="Indicators.RH.Switch"/>
+                <Operator ID="Operator" Value="0"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0"/>
+                <SteppedValue ID="Constant2" Value="0"/>
+                <SteppedValue ID="TimeOn" Value="0"/>
+                <SteppedValue ID="TimeOff" Value="0"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="Indicators.Hazard.Switch"/>
+                <Operator ID="Operator" Value="0"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0"/>
+                <SteppedValue ID="Constant2" Value="0"/>
+                <SteppedValue ID="TimeOn" Value="0"/>
+                <SteppedValue ID="TimeOff" Value="0"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+      </Condition>
+      <Condition>
+        <ChannelReference ID="Output" Value="Indicators.Flash"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="Indicators.Flash.Enable"/>
+                <Operator ID="Operator" Value="13"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0"/>
+                <SteppedValue ID="Constant2" Value="0"/>
+                <SteppedValue ID="TimeOn" Value="0.5"/>
+                <SteppedValue ID="TimeOff" Value="0.5"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+      </Condition>
+    </ConditionsArray>
+  </Conditions>
+  <CANInputs ID="CANInputs">
+    <CANInputsArray ID="Array"/>
+    <SteppedValue ID="BaseAddress" Value="280"/>
+  </CANInputs>
+  <CANOutputs ID="CANOutputs">
+    <SteppedValue ID="BaseAddress" Value="1280"/>
+    <Bool ID="Enabled" Value="1"/>
+  </CANOutputs>
+</Container>

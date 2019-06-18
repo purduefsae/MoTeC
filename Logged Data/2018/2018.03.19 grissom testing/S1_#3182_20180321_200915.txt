@@ -1,0 +1,195 @@
+796.684 xcp_udp:../stream/execute.cpp(432): log_erase 0
+796.716 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=3896
+796.754 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=3896
+796.756 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=141816
+796.757 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Jul 24 2017)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 20000000
+0.000 arch/ppc/e7/machdep.c(2020): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.000 ad7490.c(372): done
+0.044 ../mpc555x/cfi.c(238): 2 banks, size 8000000
+0.044 eqadc.c(890): init intadc
+0.044 arch/ppc/e7/machdep.c(2268): ready: 44.965ms
+0.045 VFS: Mounting ramfs dev= dir=/
+0.045 VFS: Mounting devfs dev= dir=/dev
+0.046 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.094 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   496   10     6     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  496   16   10
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):        7866  512    22    13    15
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0051_e7
+0.137 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.138 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.140 main:calibration.cpp(88): Calibration loaded
+0.140 main:../logging/startup.cpp(29): logging_startup
+0.141 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.150 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.158 main:fw_sections.cpp(105): init
+0.201 main:core_thread.cpp(394): setup to run
+0.201 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 102 ms
+0.248 kern/elf.c(73): premalloc 2012a0 262144
+0.248 main:ecu_thread.c(139): waiting for signal
+0.248 main:fw_sections.cpp(253): map
+0.249 main:fw_sections.cpp(257): pid 2
+0.253 main:serial.cpp(48): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.277 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.278 main:ecu_thread.c(117): got signal 30, continuing...
+0.278 main:core_thread.cpp(170): running
+0.281 dac.c(201): init
+0.284 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+0.284 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+0.285 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.285 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.285 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.285 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.285 etpu/etpu_ign.c(427): min_delta 0
+0.285 etpu/ppm.c(85): update period 39062
+0.285 etpu/ppm.c(85): update period 39062
+0.286 etpu/ppm.c(85): update period 39062
+0.286 etpu/ppm.c(85): update period 39062
+0.287 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+0.290 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.291 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.291 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.292 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.292 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.293 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.298 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.786 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.844 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.846 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.846 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.846 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.848 mdns:avahi_can.c(37): open 2
+0.849 mdns:avahi_can.c(37): open 2
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.853 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+2.277 eth0:mip_platform.c(27): link change
+2.277 eth0:init.cpp(107): LC: 2277ms link Up
+3.734 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55934
+3.744 xcp_udp:../xcp/eth.cpp(184): XCP connected
+3.792 mdns:mdns.c(150): Adding service '24:2283'
+5.083 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+682.125 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+827.127 eth0:mip_platform.c(27): link change
+827.127 eth0:init.cpp(107): LC: 2493ms link Down
+1109.127 eth0:mip_platform.c(27): link change
+1109.127 eth0:init.cpp(107): LC: 9615ms link Up
+1123.563 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55044
+1123.572 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1123.717 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+1124.237 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+1124.474 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+1124.564 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+1124.608 xcp_udp:../genio/stream_users.cpp(196): Size=844
+1125.073 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+1125.417 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+1125.417 main:core_thread.cpp(346): kill
+1125.773 main:fw_sections.cpp(294): unmap
+1125.774 main:ecu_thread.c(125): got signal 15, exiting...
+1125.782 tpu.c(2065): free tpu memory
+1125.785 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+1125.788 main:core_thread.cpp(143): exited
+1125.820 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1131.032 xcp_udp:../stream/execute.cpp(245): write_loggingmetadata
+1141.486 xcp_udp:../stream/execute.cpp(215): write_firmware
+1141.487 xcp_udp:../stream/execute.cpp(143): new: GPR (M130) 01.10.0006
+1141.489 xcp_udp:../stream/execute.cpp(151): old: GPR (M130) 01.10.0005
+1141.507 main:core_thread.cpp(351): erase
+1141.507 main:fw_sections.cpp(322): exit
+1141.507 main:fw_sections.cpp(294): unmap
+1141.508 fs/xipfs/xipfs_mount.c(67): creating file system at /int/usr
+1142.754 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+1142.754 ../mpc555x/h7f.c(929): (EINVAL)
+1142.754 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+1142.755 ../mpc555x/h7f.c(929): (EINVAL)
+1143.450 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+1143.454 xcp_udp:../stream/execute.cpp(198): sidFirmwareELF
+1143.454 main:core_thread.cpp(363): write
+1144.513 main:fw_sections.cpp(105): init
+1144.557 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+1147.319 main:core_thread.cpp(358): restore
+1147.319 main:core_thread.cpp(249): ERR EBADF=9 
+1147.319 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1147.319 main:core_thread.cpp(346): kill
+1147.320 xcp_udp:core.cpp(52): firmware locked
+1147.323 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1147.337 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1147.844 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55045
+1147.846 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1147.893 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+1147.903 xcp_udp:../genio/stream_users.cpp(196): Size=844
+1147.906 xcp_udp:../genio/stream_users.cpp(196): Size=0
+1148.049 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+1148.049 main:core_thread.cpp(346): kill
+1148.067 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=3856
+1149.271 xcp_udp:../stream/execute.cpp(306): write_managedusersbase
+1149.515 main:core_thread.cpp(358): restore
+1149.515 main:core_thread.cpp(249): ERR EBADF=9 
+1149.515 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+1149.515 main:core_thread.cpp(346): kill
+1149.516 xcp_udp:core.cpp(52): firmware locked
+1149.519 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1149.536 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+1150.047 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55046
+1150.052 xcp_udp:../xcp/eth.cpp(184): XCP connected
+1150.104 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+1150.115 xcp_udp:../genio/stream_users.cpp(196): Size=844
+1150.334 xcp_udp:../genio/stream_users.cpp(196): Size=3400
+1150.518 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+1150.518 main:core_thread.cpp(346): kill
+1150.541 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=4132
+1151.438 xcp_udp:../stream/execute.cpp(258): write_memory
+1152.102 xcp_udp:../stream/execute.cpp(411): write_logsetuplistbase
+1152.147 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=5080
+1152.166 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4044
+1152.168 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=282032
+1152.168 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids
+1152.176 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+1152.233 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=7916
+1152.256 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=6732
+1152.257 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=282032
+1152.258 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids

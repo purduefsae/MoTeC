@@ -1,0 +1,24 @@
+171.368 xcp_udp:../stream/execute.cpp(432): log_erase 0
+171.393 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=3824
+171.437 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=3824
+171.438 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=141816
+171.439 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+428.967 eth0:mip_platform.c(27): link change
+428.967 eth0:init.cpp(107): LC: 16650ms link Down
+432.965 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+979.787 fpga.c(1175): PWRGOOD 0
+981.324 fpga.c(1175): PWRGOOD 1
+1030.164 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+1140.173 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1250.193 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1360.213 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1470.224 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1580.233 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1690.244 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1800.264 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1910.273 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2111.968 eth0:mip_platform.c(27): link change
+2111.968 eth0:init.cpp(107): LC: 16024ms link Up
+2113.183 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59495
+2113.193 xcp_udp:../xcp/eth.cpp(184): XCP connected
+2113.333 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628

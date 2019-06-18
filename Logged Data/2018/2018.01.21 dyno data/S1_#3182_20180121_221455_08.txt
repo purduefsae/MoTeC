@@ -1,0 +1,8 @@
+364.776 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+364.973 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+368.629 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+369.013 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+369.278 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+369.499 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+369.674 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+500.456 xcp_udp:../genio/stream_info.cpp(524): ctx 00010062 Size=4420

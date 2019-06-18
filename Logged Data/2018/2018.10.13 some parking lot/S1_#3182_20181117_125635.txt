@@ -1,0 +1,2131 @@
+221.418 xcp_udp:../genio/genio/file.cpp(35): open /fl/Lr0_5310 No such file or directory
+221.418 xcp_udp:../xcp/e7.cpp(148): ERR errno=2 
+221.569 xcp_udp:../stream/execute.cpp(432): log_erase 0
+221.618 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4284
+221.659 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4284
+221.666 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=138636
+221.667 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+243.867 eth0:mip_platform.c(27): link change
+243.867 eth0:init.cpp(107): LC: 3349ms link Down
+246.865 xcp_udp:../xcp/eth.cpp(142): XCP connection timeout
+247.867 eth0:mip_platform.c(27): link change
+247.867 eth0:init.cpp(107): LC: 7349ms link Up
+249.038 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:62568
+249.048 xcp_udp:../xcp/eth.cpp(195): XCP connected
+249.247 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+257.577 eth0:mip_platform.c(27): link change
+257.577 eth0:init.cpp(107): LC: 17059ms link Down
+261.566 xcp_udp:../xcp/eth.cpp(142): XCP connection timeout
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.071ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   497   10     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  497   15   10
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13595  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.140 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.152 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.159 main:fw_sections.cpp(105): init
+0.201 main:core_thread.cpp(394): setup to run
+0.201 main:core_thread.cpp(318): start
+0.245 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.245 fpga.c(897): FPGA version 0708, type 2 loaded in 105 ms
+0.247 kern/elf.c(73): premalloc 2012a0 262144
+0.248 main:ecu_thread.c(139): waiting for signal
+0.248 main:fw_sections.cpp(253): map
+0.248 main:fw_sections.cpp(257): pid 2
+0.252 main:serial.cpp(50): Serial no. 3182
+0.252 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.265 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.270 main:core_thread.cpp(170): running
+0.273 dac.c(201): init
+0.276 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.276 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(427): min_delta 0
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.279 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.283 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.292 etpu/etpu_ign.c(613): pattern0
+0.756 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.852 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+138.423 fpga.c(1175): PWRGOOD 0
+139.446 fpga.c(1175): PWRGOOD 1
+145.464 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.071ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   494   13     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  494   18   13
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13597  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.153 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.160 main:fw_sections.cpp(105): init
+0.203 main:core_thread.cpp(394): setup to run
+0.203 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 102 ms
+0.249 kern/elf.c(73): premalloc 2012a0 262144
+0.250 main:ecu_thread.c(139): waiting for signal
+0.250 main:fw_sections.cpp(253): map
+0.250 main:fw_sections.cpp(257): pid 2
+0.254 main:serial.cpp(50): Serial no. 3182
+0.254 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.267 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.270 main:core_thread.cpp(170): running
+0.273 dac.c(201): init
+0.276 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.276 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(427): min_delta 0
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.279 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.283 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.292 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.777 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.838 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.839 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.843 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.846 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+7.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+39.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+65.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+66.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+77.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+80.564 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+134.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+139.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+161.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+172.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+184.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+189.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+190.573 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.073ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   484   23     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  484   28   23
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13600  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.138 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.138 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.140 main:calibration.cpp(88): Calibration loaded
+0.140 main:../logging/startup.cpp(29): logging_startup
+0.143 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.152 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.158 main:fw_sections.cpp(105): init
+0.201 main:core_thread.cpp(394): setup to run
+0.201 main:core_thread.cpp(318): start
+0.242 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.242 fpga.c(897): FPGA version 0708, type 2 loaded in 99 ms
+0.247 kern/elf.c(73): premalloc 2012a0 262144
+0.247 main:ecu_thread.c(139): waiting for signal
+0.247 main:fw_sections.cpp(253): map
+0.247 main:fw_sections.cpp(257): pid 2
+0.251 main:serial.cpp(50): Serial no. 3182
+0.252 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.265 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.266 main:ecu_thread.c(117): got signal 30, continuing...
+0.266 main:core_thread.cpp(170): running
+0.269 dac.c(201): init
+0.272 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.272 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.272 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.272 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.272 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.273 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.273 etpu/etpu_ign.c(427): min_delta 0
+0.273 etpu/ppm.c(80): update period 39062
+0.273 etpu/ppm.c(80): update period 39062
+0.273 etpu/ppm.c(80): update period 39062
+0.273 etpu/ppm.c(80): update period 39062
+0.275 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.279 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.281 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.281 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.281 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.288 etpu/etpu_ign.c(613): pattern0
+0.753 fpga.c(1175): PWRGOOD 1
+0.773 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.833 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.834 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.834 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.836 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.838 mdns:avahi_can.c(37): open 2
+0.839 mdns:avahi_can.c(37): open 2
+0.839 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.844 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.013 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+41.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+52.434 fpga.c(1175): PWRGOOD 0
+52.946 fpga.c(1175): PWRGOOD 1
+58.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.076ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   480   27     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  480   32   27
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13601  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.143 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.152 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.159 main:fw_sections.cpp(105): init
+0.201 main:core_thread.cpp(394): setup to run
+0.201 main:core_thread.cpp(318): start
+0.239 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.239 fpga.c(897): FPGA version 0708, type 2 loaded in 96 ms
+0.248 kern/elf.c(73): premalloc 2012a0 262144
+0.248 main:ecu_thread.c(139): waiting for signal
+0.248 main:fw_sections.cpp(253): map
+0.248 main:fw_sections.cpp(257): pid 2
+0.252 main:serial.cpp(50): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.265 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.268 main:ecu_thread.c(117): got signal 30, continuing...
+0.269 main:core_thread.cpp(170): running
+0.272 dac.c(201): init
+0.275 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.275 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(427): min_delta 0
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.278 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.282 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 etpu/etpu_ign.c(613): pattern0
+0.752 fpga.c(1175): PWRGOOD 1
+0.776 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.837 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.838 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.839 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.839 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.845 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.847 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.076ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   480   27     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  480   32   27
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13602  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.140 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.144 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.153 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.160 main:fw_sections.cpp(105): init
+0.202 main:core_thread.cpp(394): setup to run
+0.202 main:core_thread.cpp(318): start
+0.242 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.242 fpga.c(897): FPGA version 0708, type 2 loaded in 98 ms
+0.248 kern/elf.c(73): premalloc 2012a0 262144
+0.249 main:ecu_thread.c(139): waiting for signal
+0.249 main:fw_sections.cpp(253): map
+0.249 main:fw_sections.cpp(257): pid 2
+0.253 main:serial.cpp(50): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.266 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.269 main:core_thread.cpp(170): running
+0.272 dac.c(201): init
+0.275 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.275 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(427): min_delta 0
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.278 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.282 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 etpu/etpu_ign.c(613): pattern0
+0.753 fpga.c(1175): PWRGOOD 1
+0.777 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.838 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.839 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.839 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.839 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.846 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.847 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 28000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.073ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   479   27     5     1    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  480   32   27
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13603  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.143 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.152 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.159 main:fw_sections.cpp(105): init
+0.201 main:core_thread.cpp(394): setup to run
+0.201 main:core_thread.cpp(318): start
+0.240 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.240 fpga.c(897): FPGA version 0708, type 2 loaded in 97 ms
+0.248 kern/elf.c(73): premalloc 2012a0 262144
+0.248 main:ecu_thread.c(139): waiting for signal
+0.248 main:fw_sections.cpp(253): map
+0.248 main:fw_sections.cpp(257): pid 2
+0.252 main:serial.cpp(50): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.265 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.268 main:ecu_thread.c(117): got signal 30, continuing...
+0.269 main:core_thread.cpp(170): running
+0.272 dac.c(201): init
+0.275 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.275 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(427): min_delta 0
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.278 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.282 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 etpu/etpu_ign.c(613): pattern0
+0.752 fpga.c(1175): PWRGOOD 1
+0.777 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.837 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.838 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.838 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.839 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.844 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.847 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.013 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.073ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   480   27     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  480   32   27
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13605  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.140 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.144 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.153 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.160 main:fw_sections.cpp(105): init
+0.202 main:core_thread.cpp(394): setup to run
+0.202 main:core_thread.cpp(318): start
+0.239 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.239 fpga.c(897): FPGA version 0708, type 2 loaded in 95 ms
+0.249 kern/elf.c(73): premalloc 2012a0 262144
+0.249 main:ecu_thread.c(139): waiting for signal
+0.249 main:fw_sections.cpp(253): map
+0.249 main:fw_sections.cpp(257): pid 2
+0.253 main:serial.cpp(50): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.266 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.270 main:core_thread.cpp(170): running
+0.272 dac.c(201): init
+0.275 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.275 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(427): min_delta 0
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.278 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.282 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 etpu/etpu_ign.c(613): pattern0
+0.752 fpga.c(1175): PWRGOOD 1
+0.777 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.838 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.839 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.843 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.846 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+69.564 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+296.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+297.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+336.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+359.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+361.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+363.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+366.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+370.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+373.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+377.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+380.873 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+381.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+385.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+388.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+389.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+392.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+395.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+398.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+403.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+405.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+409.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+412.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+413.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+415.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+418.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+419.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+421.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+425.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+430.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+436.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+437.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+440.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+442.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+445.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+450.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+453.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+456.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+458.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+463.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+468.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+472.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+474.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+475.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+478.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+479.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+482.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+486.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+487.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+489.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+490.884 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+492.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+495.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+497.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+502.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+503.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+505.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+509.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+510.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+512.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+514.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+516.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+517.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+518.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+520.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+521.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+527.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+533.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+535.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+538.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+539.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+545.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+547.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+551.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+553.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+556.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+562.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+564.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+566.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+568.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+574.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+580.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+583.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+585.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+593.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+596.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+598.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+600.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+600.893 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+603.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+609.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+614.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+618.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+622.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+625.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+627.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+629.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+634.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+638.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+640.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+642.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+647.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+649.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+651.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+654.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+655.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 20000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.073ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   452   55     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  452   60   55
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13610  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.138 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.138 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.140 main:calibration.cpp(88): Calibration loaded
+0.140 main:../logging/startup.cpp(29): logging_startup
+0.143 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.152 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.160 main:fw_sections.cpp(105): init
+0.202 main:core_thread.cpp(394): setup to run
+0.202 main:core_thread.cpp(318): start
+0.239 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.239 fpga.c(897): FPGA version 0708, type 2 loaded in 96 ms
+0.248 kern/elf.c(73): premalloc 2012a0 262144
+0.249 main:ecu_thread.c(139): waiting for signal
+0.249 main:fw_sections.cpp(253): map
+0.249 main:fw_sections.cpp(257): pid 2
+0.253 main:serial.cpp(50): Serial no. 3182
+0.253 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.266 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.270 main:ecu_thread.c(117): got signal 30, continuing...
+0.271 main:core_thread.cpp(170): running
+0.274 dac.c(201): init
+0.277 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.277 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.278 etpu/etpu_ign.c(427): min_delta 0
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.280 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.293 etpu/etpu_ign.c(613): pattern0
+0.752 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.844 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.849 mdns:avahi_can.c(37): open 2
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.853 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.010 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 20000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.071ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   452   55     5     0    0   0    0
+0.095 fs/sffs/sffs_mount.c(377): blks total free used file
+0.095 fs/sffs/sffs_mount.c(381):        512  452   60   55
+0.095 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.095 fs/sffs/sffs_mount.c(385):       13611  512    27    25    26
+0.095 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.096 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.098 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.099 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.100 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.143 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.153 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.160 main:fw_sections.cpp(105): init
+0.202 main:core_thread.cpp(394): setup to run
+0.202 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 100 ms
+0.249 kern/elf.c(73): premalloc 2012a0 262144
+0.249 main:ecu_thread.c(139): waiting for signal
+0.249 main:fw_sections.cpp(253): map
+0.249 main:fw_sections.cpp(257): pid 2
+0.253 main:serial.cpp(50): Serial no. 3182
+0.254 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.266 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.271 main:ecu_thread.c(117): got signal 30, continuing...
+0.271 main:core_thread.cpp(170): running
+0.274 dac.c(201): init
+0.277 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.277 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.278 etpu/etpu_ign.c(427): min_delta 0
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.280 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.293 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.777 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.838 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.839 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.839 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.843 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.846 mdns:avahi_can.c(37): open 2
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.849 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+477.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+480.993 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+484.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+486.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+492.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+508.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+514.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+565.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+588.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+591.017 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+651.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+655.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+657.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+665.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+668.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+683.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+696.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+701.033 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+727.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+805.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+806.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+950.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+958.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1000.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1063.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1082.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1085.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1086.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1088.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1107.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1109.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1111.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1112.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1115.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1126.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1142.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1149.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1151.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1159.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1161.944 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1175.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1182.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1189.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1193.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1196.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1202.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1207.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1217.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1224.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1230.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1234.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1236.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1251.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1258.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1263.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1270.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1271.964 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1274.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1285.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1290.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1292.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1298.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1313.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1319.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1322.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1326.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1329.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1338.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1343.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1360.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1366.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1371.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1374.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1375.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1381.973 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1385.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1394.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1512.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1676.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1678.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1686.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1698.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1700.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1705.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1707.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1709.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1718.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1728.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1731.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1734.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1741.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1753.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1756.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1770.284 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1775.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1778.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1789.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1791.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1794.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1804.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1806.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1810.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1823.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1831.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1834.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1838.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1841.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1848.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1855.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1858.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1862.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1867.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1870.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1872.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1876.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1880.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1880.293 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1884.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1901.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1902.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1905.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1910.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1911.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1916.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1929.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1938.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1940.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1943.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1945.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1947.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1949.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1951.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1960.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1963.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1965.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1968.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1970.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1973.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1977.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1986.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1988.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1990.313 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1996.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1998.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2001.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2010.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2015.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2376.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2378.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2380.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2386.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2387.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2390.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2402.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2405.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2411.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2413.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2415.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2418.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2421.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2423.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2430.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2433.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2440.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2443.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2445.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2449.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2452.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2453.424 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2459.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2460.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2468.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2471.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2478.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2481.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2484.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2491.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2498.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2501.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2505.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2506.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2508.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2522.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2528.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2536.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2542.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2544.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2545.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2553.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2559.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2563.433 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2569.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2572.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2575.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2577.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2581.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2587.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2591.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2594.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2601.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.076ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.095 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.095 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.095 fs/sffs/sffs_mount.c(360):  512   389  118     5     0    0   0    0
+0.096 fs/sffs/sffs_mount.c(377): blks total free used file
+0.096 fs/sffs/sffs_mount.c(381):        512  389  123  118
+0.096 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.096 fs/sffs/sffs_mount.c(385):       13623  512    27    25    26
+0.096 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.098 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.099 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.100 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.101 main:init 01.04.00.0059_e7
+0.140 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.145 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.154 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.161 main:fw_sections.cpp(105): init
+0.203 main:core_thread.cpp(394): setup to run
+0.203 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 98 ms
+0.250 kern/elf.c(73): premalloc 2012a0 262144
+0.250 main:ecu_thread.c(139): waiting for signal
+0.250 main:fw_sections.cpp(253): map
+0.250 main:fw_sections.cpp(257): pid 2
+0.254 main:serial.cpp(50): Serial no. 3182
+0.255 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.268 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.270 main:ecu_thread.c(117): got signal 30, continuing...
+0.271 main:core_thread.cpp(170): running
+0.274 dac.c(201): init
+0.277 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.277 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.278 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.278 etpu/etpu_ign.c(427): min_delta 0
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.278 etpu/ppm.c(80): update period 39062
+0.280 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.286 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.286 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.293 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.852 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+47.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+53.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+54.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+56.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+57.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+59.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+61.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+66.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+69.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+70.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+75.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+78.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+80.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+81.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+88.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+96.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+100.364 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11644 deltas=100
+102.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+109.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+113.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+115.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+121.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+124.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+127.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+134.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+139.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+141.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+144.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+147.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+152.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+155.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+166.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+171.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+172.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+175.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+178.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+184.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+189.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+192.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+194.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+195.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+197.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+207.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+209.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+210.373 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+214.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+221.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+223.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+225.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+229.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+235.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+239.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+240.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+246.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+251.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+253.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+256.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+259.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+264.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+265.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+270.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+271.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+276.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+286.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+290.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+296.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+299.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+302.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+307.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+310.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+318.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+319.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+320.384 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+321.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+326.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+328.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+330.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+332.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+333.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+338.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+341.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+344.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+348.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+350.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+352.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+359.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+364.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+370.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+373.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+385.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+393.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+551.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+636.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+642.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+647.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+658.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+664.693 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+664.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+668.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+680.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+682.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+685.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+688.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+701.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+704.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+707.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+712.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+713.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+720.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+724.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+726.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+728.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+736.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+739.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+741.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+745.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+749.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+752.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+757.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+764.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+768.504 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+771.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+774.724 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+775.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+778.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+780.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+783.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+788.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+791.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+799.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+802.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+809.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+810.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+811.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+815.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+816.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+820.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+825.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+827.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+828.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+831.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+834.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+835.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+836.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+841.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+842.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+844.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+847.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+848.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+852.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+854.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+857.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+859.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+860.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+862.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+865.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+871.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+873.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+877.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+879.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+882.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+883.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+884.733 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+885.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+893.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+896.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+902.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+905.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+908.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+914.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+925.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+927.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+934.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+935.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+936.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+940.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+941.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+944.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+946.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+949.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+951.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+953.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+957.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+959.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+961.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+965.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+968.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+969.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+971.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+976.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+977.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+979.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+985.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+987.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+989.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+993.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+994.764 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+996.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+997.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1000.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1071.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1074.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1080.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1354.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1356.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1359.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1360.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1368.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1371.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1375.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1377.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1380.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1382.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1385.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1389.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1393.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1395.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1400.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1402.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1405.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1408.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1410.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1413.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1416.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1418.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1419.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1423.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1424.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1429.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1437.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1439.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1440.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1443.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1445.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1448.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1450.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1452.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1453.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1454.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1455.673 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1457.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1461.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1463.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1466.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1468.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1470.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1586.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1591.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1641.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1650.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1657.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1663.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1666.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1668.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1671.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1673.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1675.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1676.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1681.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1687.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1689.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1691.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1694.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1696.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1699.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1702.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1703.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1704.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1706.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1709.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1711.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1713.084 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1713.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1717.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1720.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1721.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1724.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1730.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1732.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1735.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1739.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1743.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1753.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1754.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1759.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1761.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1764.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1769.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1772.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1774.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1776.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1781.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1783.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1785.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1789.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1791.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1793.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1796.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1799.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1800.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1803.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1805.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1807.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1808.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1810.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1812.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1813.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1815.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1818.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1821.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1823.093 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1827.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1829.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1831.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1833.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1837.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1839.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+1842.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2082.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2184.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2353.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2362.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2365.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2369.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2371.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2373.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2375.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2377.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2380.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2385.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2386.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2388.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2390.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2391.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2396.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2398.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2405.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2407.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2409.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2411.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2417.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2419.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2421.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2423.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2424.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2427.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2428.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2431.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2435.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2435.824 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2438.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2439.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2441.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2446.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2449.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2453.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2458.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2459.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2465.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2467.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2475.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2477.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2479.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2482.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2487.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2490.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2494.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2496.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2498.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2503.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2506.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2507.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2509.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2513.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2514.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2518.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2523.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2526.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2528.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2531.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2532.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2533.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2534.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2535.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2536.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2538.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2539.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2543.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2545.833 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2548.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2549.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2551.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2559.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2561.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2567.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2570.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2573.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2574.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2578.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2583.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2587.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2590.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2593.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2595.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2597.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2599.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2600.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2601.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2607.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2608.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2610.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2614.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2616.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2618.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2620.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2623.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2627.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2629.503 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2632.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2634.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2636.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2638.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2640.103 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2644.303 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2648.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2650.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2655.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2655.864 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2695.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2738.703 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2740.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+2742.903 etpu/etpu_pwm.c(160): (EINVAL)45@max freq
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.076ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.096 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.096 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.096 fs/sffs/sffs_mount.c(360):  512   314  193     5     0    0   0    0
+0.096 fs/sffs/sffs_mount.c(377): blks total free used file
+0.096 fs/sffs/sffs_mount.c(381):        512  314  198  193
+0.096 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.096 fs/sffs/sffs_mount.c(385):       13637  512    28    25    26
+0.096 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.098 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.099 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.100 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.101 main:init 01.04.00.0059_e7
+0.139 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.139 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.141 main:calibration.cpp(88): Calibration loaded
+0.141 main:../logging/startup.cpp(29): logging_startup
+0.144 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.154 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.162 main:fw_sections.cpp(105): init
+0.204 main:core_thread.cpp(394): setup to run
+0.204 main:core_thread.cpp(318): start
+0.241 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.241 fpga.c(897): FPGA version 0708, type 2 loaded in 97 ms
+0.250 kern/elf.c(73): premalloc 2012a0 262144
+0.251 main:ecu_thread.c(139): waiting for signal
+0.251 main:fw_sections.cpp(253): map
+0.251 main:fw_sections.cpp(257): pid 2
+0.255 main:serial.cpp(50): Serial no. 3182
+0.255 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.268 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.270 main:core_thread.cpp(170): running
+0.272 dac.c(201): init
+0.275 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.275 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.275 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(427): min_delta 0
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.276 etpu/ppm.c(80): update period 39062
+0.278 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.282 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.284 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.284 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.291 etpu/etpu_ign.c(613): pattern0
+0.752 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.852 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Apr 30 2018)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20007000 - 20100000     996K
+0.000  used=28K free=996K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2024): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.045 ad7490.c(372): done
+0.045 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.045 eqadc.c(890): init intadc
+0.046 arch/ppc/e7/machdep.c(2272): ready: 46.071ms
+0.046 VFS: Mounting ramfs dev= dir=/
+0.046 VFS: Mounting devfs dev= dir=/dev
+0.047 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.096 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.096 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.096 fs/sffs/sffs_mount.c(360):  512   314  193     5     0    0   0    0
+0.096 fs/sffs/sffs_mount.c(377): blks total free used file
+0.096 fs/sffs/sffs_mount.c(381):        512  314  198  193
+0.096 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.096 fs/sffs/sffs_mount.c(385):       13638  512    28    25    26
+0.096 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.097 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.098 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.099 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.100 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.101 main:init 01.04.00.0059_e7
+0.140 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.144 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.155 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.162 main:fw_sections.cpp(105): init
+0.204 main:core_thread.cpp(394): setup to run
+0.205 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 0708, type 2 loaded in 99 ms
+0.251 kern/elf.c(73): premalloc 2012a0 262144
+0.251 main:ecu_thread.c(139): waiting for signal
+0.251 main:fw_sections.cpp(253): map
+0.251 main:fw_sections.cpp(257): pid 2
+0.255 main:serial.cpp(50): Serial no. 3182
+0.256 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.269 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.269 main:ecu_thread.c(117): got signal 30, continuing...
+0.270 main:core_thread.cpp(170): running
+0.273 dac.c(201): init
+0.276 etpu/ref.c(2929): cycle_ticks 7200 tcr2_per_deg 10.000
+0.276 etpu/ref.c(2938): tooth_ratio min 0.40 max 1.99
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.276 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.277 etpu/etpu_ign.c(427): min_delta 0
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.277 etpu/ppm.c(80): update period 39062
+0.279 ../mpc555x/flexcan.c(642): flexcana kbaud: 1000
+0.283 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.285 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.285 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.292 etpu/etpu_ign.c(613): pattern0
+0.754 fpga.c(1175): PWRGOOD 1
+0.778 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.839 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.843 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.843 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.844 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.847 mdns:avahi_can.c(37): open 2
+0.848 mdns:avahi_can.c(37): open 2
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.852 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.014 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.266 mdns:mdns.c(150): Adding service '10:21082'
+1.518 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+19.287 eth0:mip_platform.c(27): link change
+19.287 eth0:init.cpp(107): LC: 19287ms link Up
+28.608 eth0:mip_platform.c(27): link change
+28.608 eth0:init.cpp(107): LC: 28608ms link Down
+35.608 eth0:mip_platform.c(27): link change
+35.608 eth0:init.cpp(107): LC: 1248ms link Up
+38.617 eth0:mip_platform.c(27): link change
+38.617 eth0:init.cpp(107): LC: 4257ms link Down
+40.617 eth0:mip_platform.c(27): link change
+40.617 eth0:init.cpp(107): LC: 6257ms link Up
+68.047 eth0:mip_platform.c(27): link change
+68.047 eth0:init.cpp(107): LC: 33687ms link Down
+70.047 eth0:mip_platform.c(27): link change
+70.047 eth0:init.cpp(107): LC: 1327ms link Up
+78.117 eth0:mip_platform.c(27): link change
+78.117 eth0:init.cpp(107): LC: 9397ms link Down
+85.117 eth0:mip_platform.c(27): link change
+85.117 eth0:init.cpp(107): LC: 16397ms link Up
+105.547 eth0:mip_platform.c(27): link change
+105.547 eth0:init.cpp(107): LC: 2468ms link Down
+106.548 eth0:mip_platform.c(27): link change
+106.548 eth0:init.cpp(107): LC: 3469ms link Up
+110.598 eth0:mip_platform.c(27): link change
+110.598 eth0:init.cpp(107): LC: 7519ms link Down
+116.598 eth0:mip_platform.c(27): link change
+116.598 eth0:init.cpp(107): LC: 13519ms link Up
+130.067 eth0:mip_platform.c(27): link change
+130.067 eth0:init.cpp(107): LC: 26988ms link Down
+132.067 eth0:mip_platform.c(27): link change
+132.067 eth0:init.cpp(107): LC: 28988ms link Up
+137.389 eth0:mip_platform.c(27): link change
+137.389 eth0:init.cpp(107): LC: 34310ms link Down
+139.389 eth0:mip_platform.c(27): link change
+139.389 eth0:init.cpp(107): LC: 1950ms link Up
+167.639 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:53954
+167.649 xcp_udp:../xcp/eth.cpp(195): XCP connected
+167.869 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+175.846 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+176.079 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+176.278 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+176.368 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+176.416 xcp_udp:../genio/stream_users.cpp(196): Size=844
+176.889 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+177.223 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+177.224 main:core_thread.cpp(346): kill
+177.564 main:fw_sections.cpp(294): unmap
+177.565 main:ecu_thread.c(125): got signal 15, exiting...
+177.574 tpu.c(2129): free tpu memory
+177.576 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 2
+177.576 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 3
+177.576 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 4
+177.576 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 5
+177.576 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 1
+177.577 ../mpc555x/flexcan.c(642): flexcana kbaud: 0
+177.582 main:core_thread.cpp(143): exited
+177.645 mdns:mdns.c(139): Updating service '11:13341'
+177.645 mdns:mdns.c(139): Updating service '22:2283'
+177.646 mdns:mdns.c(139): Updating service '15:3182:1:4'
+179.663 xcp_udp:../stream/execute.cpp(245): write_loggingmetadata
+189.435 xcp_udp:../stream/execute.cpp(215): write_firmware
+189.435 xcp_udp:../stream/execute.cpp(143): new: GPR (M130) 01.10.0008
+189.437 xcp_udp:../stream/execute.cpp(151): old: GPR (M130) 01.11.0048
+189.454 main:core_thread.cpp(351): erase
+189.454 main:fw_sections.cpp(322): exit
+189.454 main:fw_sections.cpp(294): unmap
+189.455 fs/xipfs/xipfs_mount.c(67): creating file system at /int/usr
+190.710 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+190.710 ../mpc555x/h7f.c(929): (EINVAL)
+190.710 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+190.711 ../mpc555x/h7f.c(929): (EINVAL)
+191.368 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+191.372 xcp_udp:../stream/execute.cpp(198): sidFirmwareELF
+191.372 main:core_thread.cpp(363): write
+192.430 main:fw_sections.cpp(105): init
+192.474 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+195.160 main:core_thread.cpp(358): restore
+195.160 main:core_thread.cpp(249): ERR EBADF=9 
+195.160 xcp_udp:../xcp/appl.cpp(211): appl_reboot
+195.160 main:core_thread.cpp(346): kill
+195.162 xcp_udp:core.cpp(52): firmware locked
+195.164 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+195.178 xcp_udp:../xcp/eth.cpp(143): XCP connection closed
+195.785 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:65298
+195.787 xcp_udp:../xcp/eth.cpp(195): XCP connected
+195.835 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+195.845 xcp_udp:../genio/stream_users.cpp(196): Size=844
+195.848 xcp_udp:../genio/stream_users.cpp(196): Size=0
+195.954 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+195.954 main:core_thread.cpp(346): kill
+195.973 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=3856
+197.001 xcp_udp:../stream/execute.cpp(306): write_managedusersbase
+197.236 main:core_thread.cpp(358): restore
+197.236 main:core_thread.cpp(249): ERR EBADF=9 
+197.236 xcp_udp:../xcp/appl.cpp(211): appl_reboot
+197.236 main:core_thread.cpp(346): kill
+197.237 xcp_udp:core.cpp(52): firmware locked
+197.240 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+197.257 xcp_udp:../xcp/eth.cpp(143): XCP connection closed
+197.770 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:65299
+197.775 xcp_udp:../xcp/eth.cpp(195): XCP connected
+197.788 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+197.798 xcp_udp:../genio/stream_users.cpp(196): Size=844
+198.007 xcp_udp:../genio/stream_users.cpp(196): Size=3392
+198.125 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+198.125 main:core_thread.cpp(346): kill
+198.146 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=4132
+198.964 xcp_udp:../stream/execute.cpp(258): write_memory
+199.651 xcp_udp:../stream/execute.cpp(411): write_logsetuplistbase
+199.697 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=5468
+199.716 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4432
+199.717 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=281240
+199.719 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids
+199.779 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+199.836 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=8620
+199.859 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=7436
+199.860 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=281240
+199.861 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids

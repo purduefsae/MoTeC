@@ -1,0 +1,13 @@
+local accelmess = CanComms.RxOpenStandard(0, 0x200, 0x0, true);
+
+if (Accel Input eq Accel Input.CAN) {
+	if (CanComms.RxMessage(accelmess)) {
+		Lateral = CanComms.GetInteger(accelmess, 0, 16);
+		Longitudinal = CanComms.GetInteger(accelmess, 16, 16);
+		Vertical = CanComms.GetInteger(accelmess, 32, 16);
+	}
+} else {
+	Lateral = Lat Accel Sensor;
+	Longitudinal = Long Accel Sensor;
+	Vertical = Vert Accel Sensor;
+}

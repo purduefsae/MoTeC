@@ -1,0 +1,26 @@
+if (Gear neq Gear.Maximum and Gear.AsInteger() >= 1)
+{
+	Up = Value.Lookup(Gear.Up);
+}
+else
+{
+	Up = Calculate.NAN();
+}
+
+if (Gear.Down.AsInteger() >= 1)
+{
+	Down = Value.Lookup(Gear.Down);
+}
+else
+{
+	Down = Calculate.NAN();
+}
+
+if (Gear neq Gear.Neutral)
+{
+	Overall = Gear.Input.Ratio * Value * Gear.Output.Ratio;
+}
+else
+{
+	Overall = Calculate.NAN();
+}

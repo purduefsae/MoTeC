@@ -1,0 +1,97 @@
+/*
+ * VCS gauge transmit: 10Hz update
+ */
+
+local h = CanComms.TxOpen(true);
+
+if (Root.VCS.CAN Bus neq Root.VCS.CAN Bus.Not in Use)
+{
+	CanComms.TxInitialise(h, 8);
+	static local VCSCompound = 0;
+	local ok = true;
+	local bus = Root.VCS.CAN Bus.AsInteger() - 1;
+
+	local vcsLogSystem = Library.VCS.Synchronise(bus, 0x021);
+
+	if (vcsLogSystem > 0)
+	{
+		// sync was sent so don't send a gauge message this time.
+	}
+	else if (VCSCompound eq 0)
+	{
+		/*
+		 * Convert to ADL style gear enumeration
+		 * PRND0123456789
+		 * where P is -4.
+		 */
+		local g = Gear.AsInteger();
+		if (g eq  0) { g = -2; }
+		if (g eq -1) { g = -3; }
+
+		CanComms.SetInteger        (h,  0,  8, VCSCompound);
+		CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Vehicle.Speed * 36.0 /* 0.1 kph */));
+		CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Engine.Speed / 36.0 /* 0.1Hz */));
+		CanComms.SetInteger        (h, 48,  8, g);
+		ok = CanComms.TxStandard(h, bus, 0x01F) and ok;
+
+		VCSCompound = 1;
+	}
+	else if (VCSCompound eq 1)
+	{
+		local BrakePressure = Calculate.Max(Brake.Pressure.Front.Sensor, Brake.Pressure.Rear.Sensor);
+
+		CanComms.SetInteger        (h,  0,  8, VCSCompound);
+		CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Throttle.Position * 1.0e3) /* 0.1% */);
+		CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(BrakePressure * 1.0e-3) /* 1 kpa */);
+		CanComms.SetInteger        (h, 48, 16, Convert.ToInteger(Steering.Angle * 1.0e1) /* 0.1deg */);
+		ok = CanComms.TxStandard(h, bus, 0x01F) and ok;
+
+		VCSCompound = 2;
+	}
+	
+//	else if (VCSCompound eq 2)
+//	{
+//		CanComms.SetInteger        (h,  0,  8, VCSCompound);
+//		CanComms.SetInteger        (h, 16, 16, Convert.ToInteger(Vehicle.Acceleration.Longitudinal * 1.019716e1) /* 0.01G */);
+//		CanComms.SetInteger        (h, 32, 16, Convert.ToInteger(Vehicle.Acceleration.qef * 1.019716e1) /* 0.01G */);
+//		CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Lap.Distance) /* m */);
+//		ok = CanComms.TxStandard(h, bus, 0x01F) and ok;
+
+//		VCSCompound = 3;
+//	}
+	
+	else if (VCSCompound eq 3)
+	{
+		CanComms.SetInteger        (h,  0,  8, VCSCompound);
+		CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Lap.Time.Running * 1.0e2) /* 0.01s */);
+		CanComms.SetInteger        (h, 32, 16, Lap.Number);
+		CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Lap.Time * 1.0e2) /* 0.01s */);
+		ok = CanComms.TxStandard(h, bus, 0x01F) and ok;
+
+		VCSCompound = 4;
+	}
+	else
+	{
+		CanComms.SetInteger(h,  0, 8, VCSCompound);
+		local time = Convert.ToUnsignedInteger(Calculate.Floor(Root.GPS.Time));
+		CanComms.SetUnsignedInteger(h, 16, 8, time / 3600); // hour
+		time %= 3600;
+		CanComms.SetUnsignedInteger(h, 24, 8, time / 60); // minute
+		time %= 60;
+		CanComms.SetUnsignedInteger(h, 32, 8, time); // second
+		local date = Root.GPS.Date;
+		CanComms.SetUnsignedInteger(h, 40, 8, date / 10000); // day
+		date %= 10000;
+		CanComms.SetUnsignedInteger(h, 48, 8, date / 100); // month
+		date %= 100;
+		CanComms.SetUnsignedInteger(h, 56, 8, date); // year
+		ok = CanComms.TxStandard(h, bus, 0x01F) and ok;
+
+		VCSCompound = 0;
+	}
+
+	/*
+	 * Shut up build
+	 */
+	ok = ok;
+}

@@ -1,0 +1,31 @@
+local et = System.ElapsedTime();
+local en = Idle.State.GetUnscheduled() eq Idle.State.Enabled; /* avoid Circular startup schedule */
+local sd = Library.Delay.Rising((Ramp Down >= Ramp Down.Limit) or en, Ramp Down.Delay);
+
+Compensation =
+	Engine.Post Start.Idle Aim Compensation +
+	(Air Conditioner.Clutch.State eq Air Conditioner.Clutch.State.On ? Air Conditioner.Idle Aim Compensation : 0.0);
+
+local normal = Main + Compensation;
+
+if (sd and en)
+{
+	Ramp Down = Calculate.Max(
+		Ramp Down - (Ramp Down.Rate * et),
+		0.0
+	);
+}
+else if (Idle.Mode eq Idle.Mode.Enabled)
+{
+	Ramp Down = Limit.Range(
+		Engine.Speed - normal,
+		Ramp Down,
+		Ramp Down.Limit
+	);
+}
+else
+{
+	Ramp Down = 0.0;
+}
+
+Value = normal + Ramp Down;

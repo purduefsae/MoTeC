@@ -1,0 +1,244 @@
+3735.870 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+3735.870 main:core_thread.cpp(346): kill
+3735.871 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+3735.874 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+3735.881 main:core_thread.cpp(318): start
+3735.931 kern/elf.c(73): premalloc 2012a0 262144
+3735.932 main:ecu_thread.c(139): waiting for signal
+3735.932 main:fw_sections.cpp(253): map
+3735.932 main:fw_sections.cpp(257): pid 2
+3735.974 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+3735.974 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+3735.988 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+3735.988 main:fw_fid.cpp(40): ERR ec_fw_FidCheckFailed=516 
+3735.988 main:fw_glue.cpp(33): Zeroing fdata
+3735.996 main:ecu_thread.c(117): got signal 30, continuing...
+3736.002 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+3736.002 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+3736.003 etpu/etpu_ign.c(743): tdc pitch 720.0
+3736.003 etpu/etpu_ign.c(743): tdc pitch 720.0
+3736.003 etpu/etpu_ign.c(743): tdc pitch 720.0
+3736.004 etpu/etpu_ign.c(743): tdc pitch 720.0
+3736.004 etpu/etpu_ign.c(427): min_delta 0
+3736.004 etpu/ppm.c(85): update period 39062
+3736.004 etpu/ppm.c(85): update period 39062
+3736.004 etpu/ppm.c(85): update period 39062
+3736.004 etpu/ppm.c(85): update period 39062
+3736.006 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+3736.006 main:core_thread.cpp(170): running
+3736.011 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+3736.012 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+3736.012 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+3736.012 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+3736.014 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+3736.019 etpu/etpu_ign.c(613): pattern0
+3736.083 mdns:mdns.c(139): Updating service '15:3182:1:4'
+3736.319 mdns:mdns.c(139): Updating service '24:2283'
+3736.556 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:61599
+3736.568 xcp_udp:../xcp/eth.cpp(184): XCP connected
+3736.728 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3736.732 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+3737.023 xcp_udp:../stream/execute.cpp(440): write_ecuname
+3737.086 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+3737.089 mdns:avahi_can.c(37): open 2
+3737.093 mdns:avahi_can.c(37): open 2
+3737.093 mdns:mdns.c(150): Adding service '15:3182:1:4'
+3737.094 mdns:mdns.c(150): Adding service '15:3182:1:4'
+3737.098 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+3737.187 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+3737.327 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3737.352 mdns:mdns.c(150): Adding service '11:13341'
+3737.354 mdns:mdns.c(150): Adding service '24:2283'
+3737.356 mdns:mdns.c(139): Updating service '15:3182:1:4'
+3737.789 mdns:mdns.c(150): Adding service '10:21082'
+3738.027 mdns:mdns.c(150): Adding service '22:2283'
+3817.748 eth0:mip_platform.c(27): link change
+3817.748 eth0:init.cpp(107): LC: 3817ms link Down
+3820.746 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+3825.748 eth0:mip_platform.c(27): link change
+3825.748 eth0:init.cpp(107): LC: 11817ms link Up
+3827.008 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:52900
+3827.019 xcp_udp:../xcp/eth.cpp(184): XCP connected
+3828.029 eth0:mip_platform.c(27): link change
+3828.029 eth0:init.cpp(107): LC: 14098ms link Down
+3832.024 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+3852.029 eth0:mip_platform.c(27): link change
+3852.029 eth0:init.cpp(107): LC: 3738ms link Up
+3857.858 eth0:mip_platform.c(27): link change
+3857.858 eth0:init.cpp(107): LC: 9567ms link Down
+3859.858 eth0:mip_platform.c(27): link change
+3859.858 eth0:init.cpp(107): LC: 11567ms link Up
+3863.497 eth0:mip_platform.c(27): link change
+3863.497 eth0:init.cpp(107): LC: 15206ms link Down
+3866.497 eth0:mip_platform.c(27): link change
+3866.497 eth0:init.cpp(107): LC: 18206ms link Up
+3883.584 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:65026
+3883.594 xcp_udp:../xcp/eth.cpp(184): XCP connected
+3883.738 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+3963.867 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+3963.966 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+3964.074 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3964.586 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+3964.856 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+3965.034 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+3965.187 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3965.356 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4054.828 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4054.928 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4055.035 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4055.553 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4055.914 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4056.138 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4056.289 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4056.457 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4075.528 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4075.628 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4075.735 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4076.227 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4076.494 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4076.668 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4076.848 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4077.017 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4108.697 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4108.947 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4109.213 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4109.397 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4109.553 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4143.587 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4143.849 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4144.114 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4144.299 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4144.464 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4172.228 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4172.328 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4172.436 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4172.947 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4173.227 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4173.387 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4173.628 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4173.798 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4213.779 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4213.879 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4213.992 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4214.438 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4214.677 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4214.854 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4215.053 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4215.233 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4254.028 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4254.127 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4254.234 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4254.639 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4254.952 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4255.128 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4255.357 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4255.537 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4282.248 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xCD00
+4282.347 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+4282.454 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4282.855 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4283.147 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4283.326 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4283.488 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4283.659 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+4685.147 eth0:mip_platform.c(27): link change
+4685.147 eth0:init.cpp(107): LC: 12222ms link Down
+4687.147 eth0:mip_platform.c(27): link change
+4687.147 eth0:init.cpp(107): LC: 14222ms link Up
+4687.313 xcp_udp:../xcp/eth.cpp(61): resync 0x18980 ctr 10513 expected 10512 len 1 of 1
+4687.313 xcp_udp:../xcp/xcp/stack.cpp(544): <- pid=0xFE, error_code=0x29 64
+4688.368 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4688.857 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4689.358 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4689.856 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4690.357 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4690.857 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4691.357 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4691.858 xcp_udp:XCP in use [fe80:0000:0000:0000:b808:ac28:1d6d:850b]
+4692.316 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+4692.357 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:55022
+4692.368 xcp_udp:../xcp/eth.cpp(184): XCP connected
+4692.736 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4887.886 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+4953.266 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:61435
+4953.276 xcp_udp:../xcp/eth.cpp(184): XCP connected
+4953.417 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+4953.639 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+4953.793 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5032
+4953.849 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+4953.892 xcp_udp:../genio/stream_users.cpp(196): Size=844
+4954.393 xcp_udp:../genio/stream_users.cpp(196): Size=3400
+4954.712 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+4954.712 main:core_thread.cpp(346): kill
+4954.973 main:fw_sections.cpp(294): unmap
+4954.974 main:ecu_thread.c(125): got signal 15, exiting...
+4954.985 tpu.c(2065): free tpu memory
+4954.987 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 0
+4954.987 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 1
+4954.987 canblock_rx:ecu_canblock_rx.c(64): 4 errno 9 msg_idx 2
+4954.989 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+4954.993 main:core_thread.cpp(143): exited
+4955.137 mdns:mdns.c(139): Updating service '22:2283'
+4955.137 mdns:mdns.c(139): Updating service '10:21082'
+4955.138 mdns:mdns.c(139): Updating service '15:3182:1:4'
+4956.936 xcp_udp:../stream/execute.cpp(245): write_loggingmetadata
+4967.578 xcp_udp:../stream/execute.cpp(215): write_firmware
+4967.579 xcp_udp:../stream/execute.cpp(143): new: GPR (M130) 01.11.0007
+4967.581 xcp_udp:../stream/execute.cpp(151): old: GPR (M130) 01.11.0006
+4967.602 main:core_thread.cpp(351): erase
+4967.602 main:fw_sections.cpp(322): exit
+4967.602 main:fw_sections.cpp(294): unmap
+4967.603 fs/xipfs/xipfs_mount.c(67): creating file system at /int/usr
+4968.850 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+4968.850 ../mpc555x/h7f.c(929): (EINVAL)
+4968.851 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+4968.851 ../mpc555x/h7f.c(929): (EINVAL)
+4969.549 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+4969.553 xcp_udp:../stream/execute.cpp(198): sidFirmwareELF
+4969.553 main:core_thread.cpp(363): write
+4970.615 main:fw_sections.cpp(105): init
+4970.659 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+4973.175 main:core_thread.cpp(358): restore
+4973.175 main:core_thread.cpp(249): ERR EBADF=9 
+4973.175 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+4973.175 main:core_thread.cpp(346): kill
+4973.176 xcp_udp:core.cpp(52): firmware locked
+4973.179 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+4973.195 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+4973.687 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:61440
+4973.690 xcp_udp:../xcp/eth.cpp(184): XCP connected
+4973.734 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+4973.743 xcp_udp:../genio/stream_users.cpp(196): Size=844
+4973.746 xcp_udp:../genio/stream_users.cpp(196): Size=0
+4973.939 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+4973.939 main:core_thread.cpp(346): kill
+4973.958 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=3856
+4974.936 xcp_udp:../stream/execute.cpp(306): write_managedusersbase
+4975.184 main:core_thread.cpp(358): restore
+4975.184 main:core_thread.cpp(249): ERR EBADF=9 
+4975.184 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+4975.184 main:core_thread.cpp(346): kill
+4975.186 xcp_udp:core.cpp(52): firmware locked
+4975.188 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+4975.209 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+4975.687 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:61441
+4975.693 xcp_udp:../xcp/eth.cpp(184): XCP connected
+4975.716 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=176
+4975.726 xcp_udp:../genio/stream_users.cpp(196): Size=844
+4975.939 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+4976.121 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+4976.121 main:core_thread.cpp(346): kill
+4976.146 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=4132
+4977.191 xcp_udp:../stream/execute.cpp(258): write_memory
+4977.854 xcp_udp:../stream/execute.cpp(411): write_logsetuplistbase
+4977.915 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=27504
+4977.964 xcp_udp:../logging/logging_stream.cpp(281): sys 0 too many setups for full deduplication
+4977.986 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=26468
+4977.987 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=1426772
+4977.991 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 10 old_ids == new_ids
+4977.997 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+4978.079 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=30292
+4978.127 xcp_udp:../logging/logging_stream.cpp(281): sys 0 too many setups for full deduplication
+4978.155 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=29108
+4978.156 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=1426772
+4978.160 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 10 old_ids == new_ids

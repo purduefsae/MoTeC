@@ -1,0 +1,169 @@
+364.776 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+364.973 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+368.629 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+369.013 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+369.278 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+369.499 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+369.674 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+500.456 xcp_udp:../genio/stream_info.cpp(524): ctx 00010062 Size=4420
+543.792 xcp_udp:../genio/genio/file.cpp(35): open /fl/Lr0_1206 No such file or directory
+543.793 xcp_udp:../xcp/e7.cpp(148): ERR errno=2 
+552.126 eth0:mip_platform.c(27): link change
+552.126 eth0:init.cpp(107): LC: 2370ms link Down
+556.125 xcp_udp:../xcp/eth.cpp(139): XCP connection timeout
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Jul 24 2017)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2020): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/console.c(284): tty dma irqno 29
+0.000 ../mpc555x/e7_edma.c(73): init
+0.000 ad7490.c(306): init
+0.000 ad7490.c(372): done
+0.044 ../mpc555x/cfi.c(238): 2 banks, size 8000000
+0.044 eqadc.c(890): init intadc
+0.044 arch/ppc/e7/machdep.c(2268): ready: 44.965ms
+0.045 VFS: Mounting ramfs dev= dir=/
+0.045 VFS: Mounting devfs dev= dir=/dev
+0.046 VFS: Mounting xipfs dev=/dev/h7f_bo dir=/boot
+0.083 kern/elf.c(73): premalloc 2002c0 262144
+0.083 init: Mounting file systems
+0.088 VFS: Mounting sffs dev=/dev/cfi0 dir=/fl
+0.098 fs/sffs/sffs_mount.c(330): SFFS Mount Report
+0.098 fs/sffs/sffs_mount.c(357): blks empty file chain erase init bad lost
+0.098 fs/sffs/sffs_mount.c(360):  512    16  489     7     0    0   0    0
+0.098 fs/sffs/sffs_mount.c(377): blks total free used file
+0.098 fs/sffs/sffs_mount.c(381):        512   16  496  489
+0.098 fs/sffs/sffs_mount.c(382): erase total  cnt   max   min   avg
+0.098 fs/sffs/sffs_mount.c(385):        5157  512    18     8    10
+0.098 VFS: Mounting xipfs dev=/dev/h7f_l0 dir=/int/loader0
+0.099 VFS: Mounting xipfs dev=/dev/h7f_e0 dir=/int/enable0
+0.100 VFS: Mounting xipfs dev=/dev/h7f_e1 dir=/int/enable1
+0.101 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+0.102 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+0.103 main:init 01.04.00.0051_e7
+0.140 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.140 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.142 main:calibration.cpp(88): Calibration loaded
+0.142 main:../logging/startup.cpp(29): logging_startup
+0.145 fpga.c(845): buf 801a0000 len 169216 loops 0
+0.159 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.168 main:fw_sections.cpp(105): init
+0.211 main:core_thread.cpp(394): setup to run
+0.211 main:core_thread.cpp(318): start
+0.245 fpga.c(871): buf 801c9eb0 len -2480 loops 42, sent 85848
+0.245 fpga.c(897): FPGA version 0708, type 2 loaded in 100 ms
+0.258 kern/elf.c(73): premalloc 2012a0 262144
+0.258 main:ecu_thread.c(139): waiting for signal
+0.259 main:fw_sections.cpp(253): map
+0.259 main:fw_sections.cpp(257): pid 2
+0.262 main:serial.cpp(48): Serial no. 3182
+0.263 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.276 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.279 main:ecu_thread.c(117): got signal 30, continuing...
+0.280 main:core_thread.cpp(170): running
+0.283 dac.c(201): init
+0.285 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+0.285 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+0.286 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.286 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.286 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.286 etpu/etpu_ign.c(743): tdc pitch 720.0
+0.286 etpu/etpu_ign.c(427): min_delta 0
+0.288 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+0.291 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.291 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+0.291 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+0.291 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+0.293 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+0.298 etpu/etpu_ign.c(613): pattern0
+0.756 fpga.c(1175): PWRGOOD 1
+0.787 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.838 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.839 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.839 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.839 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.844 mdns:avahi_can.c(37): open 2
+0.846 mdns:avahi_can.c(37): open 2
+0.847 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.848 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.008 mdns:mdns.c(150): Adding service '11:13341'
+1.013 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.264 mdns:mdns.c(150): Adding service '10:21082'
+1.517 mdns:mdns.c(150): Adding service '22:2283'
+2.266 eth0:mip_platform.c(27): link change
+2.266 eth0:init.cpp(107): LC: 2266ms link Up
+3.797 mdns:mdns.c(150): Adding service '24:2283'
+40.216 eth0:mip_platform.c(27): link change
+40.216 eth0:init.cpp(107): LC: 5856ms link Down
+49.216 eth0:mip_platform.c(27): link change
+49.216 eth0:init.cpp(107): LC: 14856ms link Up
+53.692 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:59981
+53.699 xcp_udp:../xcp/eth.cpp(184): XCP connected
+53.892 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+78.239 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4628
+78.378 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+78.628 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5020
+78.767 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=164
+78.798 xcp_udp:../genio/stream_users.cpp(196): Size=844
+79.254 xcp_udp:../genio/stream_users.cpp(196): Size=3392
+79.594 xcp_udp:../xcp/appl.cpp(189): appl_program_mode
+79.596 main:core_thread.cpp(346): kill
+79.763 main:fw_sections.cpp(294): unmap
+79.764 main:ecu_thread.c(125): got signal 15, exiting...
+79.772 tpu.c(2065): free tpu memory
+79.775 ../mpc555x/flexcan.c(643): flexcana kbaud: 0
+79.778 main:core_thread.cpp(143): exited
+79.785 mdns:mdns.c(139): Updating service '15:3182:1:4'
+82.583 xcp_udp:../xcp/appl.cpp(205): appl_reboot
+82.584 main:core_thread.cpp(346): kill
+82.585 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+82.587 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+82.593 main:core_thread.cpp(318): start
+82.648 xcp_udp:../xcp/eth.cpp(140): XCP connection closed
+82.652 kern/elf.c(73): premalloc 2012a0 262144
+82.653 main:ecu_thread.c(139): waiting for signal
+82.653 main:fw_sections.cpp(253): map
+82.653 main:fw_sections.cpp(257): pid 2
+82.656 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+82.670 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+82.673 main:ecu_thread.c(117): got signal 30, continuing...
+82.678 etpu/ref.c(2562): cycle_ticks 7200 tcr2_per_deg 10.000
+82.678 etpu/ref.c(2571): tooth_ratio min 0.40 max 1.99
+82.679 etpu/etpu_ign.c(743): tdc pitch 720.0
+82.679 etpu/etpu_ign.c(743): tdc pitch 720.0
+82.679 etpu/etpu_ign.c(743): tdc pitch 720.0
+82.679 etpu/etpu_ign.c(743): tdc pitch 720.0
+82.679 etpu/etpu_ign.c(427): min_delta 0
+82.680 ../mpc555x/flexcan.c(643): flexcana kbaud: 1000
+82.684 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+82.684 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -4 invalid
+82.684 main:ecu_can_rx.c(17): CanComms.RxStandard: bus -1 invalid
+82.684 main:ecu_can_rx.c(45): CanComms.RxExtended: bus -1 invalid
+82.685 main:ecu_can_rx.c(24): (/dev/flexcanb): No such file or directory
+82.691 etpu/etpu_ign.c(613): pattern0
+82.696 main:core_thread.cpp(170): running
+82.906 mdns:mdns.c(139): Updating service '15:3182:1:4'
+83.313 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:62713
+83.323 xcp_udp:../xcp/eth.cpp(184): XCP connected
+83.443 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+83.649 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304

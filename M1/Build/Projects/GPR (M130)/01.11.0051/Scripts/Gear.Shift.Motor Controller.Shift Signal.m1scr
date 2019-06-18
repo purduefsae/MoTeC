@@ -1,0 +1,136 @@
+// Frequncy: 	DC output if 0
+//				AC output @Frequency if >0
+// Duty Cycle:  if frequency is 0, 		outputs BAT_POS if >50%
+//										outputs BAT_NEG if <-50%
+//										OFF otherwise
+//				if frequency >0, 		acts as regular duty cycle
+
+// assuming that we are using the Spark Mini motor controller by Rev Robotics. duty cycle of the
+// motor output is determined by the length of a HIGH pulse width, eliminating the need for a second
+// line from the M130. (see the datasheet for the motor controller for more details
+
+when (Current State) {
+	is (Shift) {
+		if (Next Gear Estimate eq Gear.Estimate.AsInteger() or State Cycles eq 0) {
+			Motor Control Sig.Duty Cycle = Idle Duty Cycle - Return Delta Duty Cycle * Direction;
+			State Cycles = Num Return Cycles;
+			Current State = Current State.Return;			
+		} else {
+			State Cycles = State Cycles - 1;
+		}
+	}
+	is (Return) {
+		if (State Cycles eq 0) {
+			Direction = 0;
+			Motor Control Sig.Duty Cycle = Idle Duty Cycle;
+			Current State = Current State.Idle;
+		} else {
+			State Cycles = State Cycles - 1;
+		}
+	}
+	is (Idle) {
+		when (Gear.Lever) {
+			is (Up) {
+				if (Gear.Estimate neq Gear Enumeration.Sixth) {
+					Direction = 1;
+					Next Gear Estimate = Gear.Estimate.AsInteger() + 1;
+					Motor Control Sig.Duty Cycle = UpShift Duty Cycle;
+					State Cycles = Num Upshift Cycles;
+					Current State = Current State.Shift;
+				} else {
+					State Cycles = State Cycles - 1;
+				}
+			}
+			is (Down) {
+				if (Gear.Estimate neq Gear Enumeration.First) {
+					Direction  = -1;
+					Next Gear Estimate = Gear.Estimate.AsInteger() - 1;
+					Motor Control Sig.Duty Cycle = DnShift Duty Cycle;
+					State Cycles = Num Dnshift Cycles;
+					Current State = Current State.Shift;
+				} else {
+					State Cycles = State Cycles - 1;
+				}
+			}
+			is (Idle) {
+			}
+			is (Lockout) {
+			}
+			is (Not in Use) {
+			}
+		}
+	}
+	is (Preload Dn) {
+		// can't go here (for now)
+	}
+	is (Preload Up) {
+		// can't go here (for now)
+	}
+}
+
+// code with preloading
+// maybe try if have better control over motor
+/*
+if (Current State eq Motor Controller State.Shift) {
+	// monitor the output to motor controller from the pdm 
+	// set state to return State Cycles if successful shift
+	if (Gear.Estimate.AsInteger() eq Next Gear Estimate or PDM.Output 13.Current > Current Spike Limit) {
+		//Motor Control Sig.Duty Cycle = (usIdle / period) * 100.0;                                                                                                                                                                ..                
+		Current State = Motor Controller State.Return;
+	} else {
+	// output full forward or reverse (depends on shift direction)
+		//Motor Control Sig.Duty Cycle = ((usIdle + usToMAX * direction) / period) * 100.0;
+	}
+} else if (Current State eq Motor Controller State.Preload Up) {
+	// scale output to engine speed 
+	//Motor Control Sig.Duty Cycle = ((Engine.Speed - Preload Up Max Engine RPM) / (Preload Up Min Engine RPM - Preload Up Max Engine RPM)) * (Preload Up Max Duty Cycle - Preload Up Min Duty Cycle);
+	
+	// set state to idle if below preload min, set state to shift up if above preload max or upshift detect
+	if (Gear.Lever eq Gear Shift Request Enumeration.Up and Gear neq Gear Enumeration.Sixth) {
+		Direction = 1;
+		Current State = Motor Controller State.Shift;
+	} else if (Engine.Speed < Preload Up Max Engine RPM) {
+		Current State = Motor Controller State.Idle;
+	}
+} else if (Current State eq Motor Controller State.Preload Dn) {
+	// move arm to just below downshift
+	//Motor Control Sig.Duty Cycle = Preload Dn Duty Cycle;
+	
+	// set state to idle if not braking, set state to downshift if downshift detect
+	if (Gear.Lever eq Gear Shift Request Enumeration.Down and Gear neq Gear Enumeration.First) {
+		Direction = -1;
+		State Cycles = Num Upshift Cycles;
+		Current State = Motor Controller State.Shift;
+	} else if (Brake.Front Value < Brake.Light.Activation Pressure) {
+		Current State = Motor Controller State.Idle;
+	}
+} else if (Current State eq Motor Controller State.Return) {
+	// set output to the other direction than the way it shifted for a few cycles
+	//Motor Control Sig.Duty Cycle = ((usIdle - (Direction * usToMAX)) / period) * 100.0;
+	State Cycles = State Cycles - 1;
+	
+	// return to idle after done
+	if (State Cycles eq 0) {
+		Direction = 0;
+		Current State = Motor Controller State.Idle;
+	}
+} else {
+	// output an idle duty cycle
+	//Motor Control Sig.Duty Cycle = (usIdle / period) * 100.0;
+	
+	// look for other external inputs
+	// if shift detected, set direction and set state to shift
+	// set state to preload up if above preload min or preload down if braking 
+	if ((Gear.Lever eq Gear Shift Request Enumeration.Up and Gear neq Gear Enumeration.Sixth) or (Gear.Lever eq Gear Shift Request Enumeration.Down and Gear neq Gear Enumeration.First)) {
+		Direction = Gear.Lever.AsInteger();
+		Next Gear Estimate = Gear.Estimate.AsInteger() + Direction;
+		Current State = Motor Controller State.Shift;
+	} else if (Preload Setting eq Preload State.Preload ON) {
+		if (Engine.Speed > Preload Up Max Engine RPM) {
+			Current State = Motor Controller State.Preload Up;
+		} else if (Brake.Front Value >= Brake.Light.Activation Pressure) {
+			Current State = Motor Controller State.Preload Dn;
+		}
+	}
+}
+*/

@@ -1,0 +1,4 @@
+local off = Calculate.Hysteresis(Parent.Pressure, Deactivate.Threshold - Deactivate.Hysteresis, Deactivate.Threshold, 0.0);
+off = off or Calculate.IsNAN(Parent.Pressure.Sensor);
+
+Relay.SetState(not off);

@@ -1,0 +1,10 @@
+local brakes input = CanComms.RxOpenStandard(1, 0x80, 0x0, true);
+
+if (CanComms.RxMessage(0x80) eq true) {
+	Receiving Over Can = 1;
+} else {
+	Receiving Over CAN = 0;
+}
+
+Brake.Front Value = CanComms.GetUnsignedInteger(brakes input, 0, 16);
+Brake.Rear Value = CanComms.GetUnsignedInteger(brakes input, 16, 16);

@@ -1,0 +1,54 @@
+local active = false;
+
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	if (Knock.Cylinder $(n).IsActive())
+	{
+		if (Ignition.Cylinder $(n).Trim.Knock > Threshold.Trim)
+		{
+			active = true;
+		}
+		if (not Calculate.IsNAN(Ignition.Cylinder $(n).Knock.Level) and Ignition.Cylinder $(n).Knock.Level > Threshold.Level)
+		{
+			active = true;
+		}
+	}
+}
+
+local disabled = Engine.State neq Engine.State.Run;
+local edge = Change.To(active eq true and disabled eq false);
+local clear = Change.To(Mode eq Mode.Disabled);
+local inactive = Delay.Rising(not active, 1.0);
+
+when (Mode)
+{
+	is (Enabled)
+	{
+		if (disabled)
+		{
+			Value = Value.Disabled;
+		}
+		else if (active)
+		{
+			Value = Value.Active;
+			if (edge)
+			{
+				Count += 1;
+				System.Preserve();
+			}
+		}
+		else if (inactive)
+		{
+			Value = Value.OK;
+		}
+	}
+	is (Disabled)
+	{
+		Value = Value.Disabled;
+		if (clear)
+		{
+			Count = 0;
+			System.Preserve();
+		}
+	}
+}

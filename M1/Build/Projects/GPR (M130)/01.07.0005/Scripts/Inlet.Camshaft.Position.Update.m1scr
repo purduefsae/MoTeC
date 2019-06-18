@@ -1,0 +1,4 @@
+local off = Calculate.Hysteresis(Engine.Speed, Threshold.High - Hysteresis, Threshold.High, 0.0);
+local on  = Calculate.Hysteresis(Engine.Speed, Threshold.Low - Hysteresis, Threshold.Low, 0.0);
+
+Actuator.SetState(on and not off);

@@ -1,0 +1,3 @@
+/* Needs its own function to avoid circular dependendies and initialisation problems */
+
+Correction.Delta = Coolant.Temperature - Inlet.Air.Temperature.SensorValue();

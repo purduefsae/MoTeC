@@ -1,0 +1,58 @@
+Slip = (Engine.Speed > 0.0 and not Calculate.IsNAN(Gear.Input.Shaft Speed))
+	? (Engine.Speed - Gear.Input.Shaft Speed) / Engine.Speed
+	: Calculate.NAN();
+
+
+/* State determination */
+
+local disengaged = false;
+local sensorOK = false;
+
+if (Pressure.Sensor.Diagnostic.AsInteger() >= Pressure.Sensor.Diagnostic.OK.AsInteger())
+{
+	sensorOK = true;
+	if (Pressure.Sensor > Pressure.Threshold)
+	{
+		disengaged = true;
+	}
+}
+
+if (Position.Sensor.Diagnostic.AsInteger() >= Position.Sensor.Diagnostic.OK.AsInteger())
+{
+	sensorOK = true;
+	if (Position.Sensor > Position.Threshold)
+	{
+		disengaged = true;
+	}
+}
+
+if (This.Switch.Diagnostic.AsInteger() >= This.Switch.Diagnostic.OK.AsInteger())
+{
+	sensorOK = true;
+	if (This.Switch eq This.Switch.On)
+	{
+		disengaged = true;
+	}
+}
+
+local nosensor = ((Pressure.Sensor.Diagnostic eq Pressure.Sensor.Diagnostic.Not in Use)
+					and (Position.Sensor.Diagnostic eq Position.Sensor.Diagnostic.Not in Use)
+					and (not This.Switch.IsActive()));
+					
+if (nosensor)
+{
+	State = State.Unknown;
+}
+else if (disengaged)
+{
+	State = State.Disengaged;
+}
+else if (sensorOK)	// at least one sensor is OK and reading 'Engaged'
+{
+	State = State.Engaged;
+}
+else
+{
+	State = State.Sensor Fault;
+}
+

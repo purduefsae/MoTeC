@@ -1,0 +1,6 @@
+
+Lateral = 10 * IMU.Linear Z;
+
+Longitudinal = -10.0 * (IMU.Linear X * Calculate.FastCos(IMU.Module Lean Angle) + IMU.Linear Y * Calculate.FastCos(90 - IMU.Module Lean Angle));
+
+Vertical = -10.0 * IMU.Linear X * Calculate.FastCos(90 - IMU.Module Lean Angle) + IMU.Linear Y * Calculate.FastCos(IMU.Module Lean Angle);

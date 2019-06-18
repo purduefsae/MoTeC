@@ -1,0 +1,37 @@
+
+if (This eq This.Fuel Primary)
+{
+	if (Parent.Cylinder >= Engine.Cylinders)
+	{
+		This = This.Disabled;
+		Parent.Cylinder = 1;
+	}
+	else
+	{
+		Parent.Cylinder = Parent.Cylinder + 1;
+	}
+}
+else if (This eq This.Fuel Secondary)
+{
+	if (Parent.Cylinder >= Engine.Cylinders)
+	{
+		This = This.Disabled;
+		Parent.Cylinder = 1;
+	}
+	else
+	{
+		Parent.Cylinder = Parent.Cylinder + 1;
+	}
+}
+else if (This eq This.Ignition)
+{
+	if (Parent.Cylinder >= Engine.Cylinders)
+	{
+		This = This.Disabled;
+		Parent.Cylinder = 1;
+	}
+	else
+	{
+		Parent.Cylinder = Parent.Cylinder + 1;
+	}
+}

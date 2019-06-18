@@ -1,0 +1,41 @@
+/*
+ * Trim
+ */
+Trim =
+	Trim.Overall *
+	((Launch.State eq Launch.State.Enabled) ? Launch.Fuel Volume Trim : 1.0) *
+	((Anti Lag.State eq Anti Lag.State.Enabled) ? Anti Lag.Fuel Volume Trim : 1.0) *
+	(Auxiliary.Output 1.Output.IsActive() ? Auxiliary.Output 1.Fuel Volume Trim : 1.0) *
+	Auxiliary.Time.Fuel Volume Trim;
+
+/*
+ * Nitrous
+ */
+local nitrousComp = ((Nitrous.Stage 1.Time > 0.0) ? Nitrous.Stage 1.Fuel Volume Compensation : 0.0) + 
+					((Nitrous.Stage 2.Time > 0.0) ? Nitrous.Stage 2.Fuel Volume Compensation : 0.0);
+
+/*
+ * Volume
+ */
+local cf = 1 / (Fuel.Stoichiometric Ratio * Fuel.Mixture Aim * Fuel.Density);
+
+local b1 = Engine.Load * cf;
+local b2 = Engine.Load * cf;
+
+/*
+ * Apply closed loop trim
+ */
+Bank 1 = (b1 * Fuel.Closed Loop.Control.Bank 1.Trim * Trim) * Compensation + nitrousComp;
+Bank 2 = (b2 * Fuel.Closed Loop.Control.Bank 2.Trim * Trim) * Compensation + nitrousComp;
+
+Value = Calculate.Average(Bank 1, Bank 2);
+
+/*
+ * Set volumes
+ */
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	Cylinder $(n).Fuel Volume = Engine.Cylinder $(n).Bank eq 1
+		? Bank 1
+		: Bank 2;
+}

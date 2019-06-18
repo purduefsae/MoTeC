@@ -1,0 +1,25 @@
+if ((Vehicle.Speed >= Activate.Vehicle Speed)
+	and (Gear.AsInteger() >= 1)
+	and (Driver.Traction Switch eq Driver.Traction Switch.On)
+	and Mode eq Mode.Enabled
+	and (Gear.Type eq Gear.Type.Sequential or Clutch.State eq Clutch.State.Engaged)
+)
+{
+	State = State.Enabled;
+	Aim.Slip = Vehicle.Speed * Aim;
+	Aim.Speed = Vehicle.Speed + Aim.Slip;
+
+	Engine Speed Limit = Aim.Speed / Vehicle.DriveCircumference() * 360.0 * Vehicle.DriveRatio();
+	Engine Speed Limit.Ignition Range = Engine Speed Limit * Range;
+	Engine Speed Limit.Fuel Range = Engine Speed Limit * Range;
+}
+else
+{
+	State = State.Disabled;
+	Aim.Slip = Calculate.NAN();
+	Aim.Speed = Calculate.NAN();
+
+	Engine Speed Limit = Calculate.NAN();
+	Engine Speed Limit.Ignition Range = Calculate.NAN();
+	Engine Speed Limit.Fuel Range = Calculate.NAN();
+}

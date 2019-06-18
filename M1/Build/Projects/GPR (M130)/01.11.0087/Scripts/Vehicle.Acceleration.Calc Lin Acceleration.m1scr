@@ -1,0 +1,12 @@
+
+Lateral = IMU.Linear Z;
+
+Longitudinal = -1 * IMU.Linear X * Calculate.FastCos(IMU.Module Lean Angle) + IMU.Linear Y * Calculate.FastSin(IMU.Module Lean Angle);
+
+Vertical = -1 * IMU.Linear X * Calculate.FastSin(IMU.Module Lean Angle) - IMU.Linear Y * Calculate.FastCos(IMU.Module Lean Angle);
+
+Pitch = IMU.Rotational Z;
+
+Roll = -1 * IMU.Rotational X * Calculate.FastCos(IMU.Module Lean Angle) + IMU.Rotational Y * Calculate.FastSin(IMU.Module Lean Angle);
+
+Yaw = -1 * IMU.Rotational X * Calculate.FastSin(IMU.Module Lean Angle) - IMU.Rotational Y * Calculate.FastCos(IMU.Module Lean Angle);   

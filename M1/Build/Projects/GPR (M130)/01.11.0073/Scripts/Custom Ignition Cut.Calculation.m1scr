@@ -1,0 +1,10 @@
+if (Cut Time.Remaining() <= 0.0) {
+	if (Gear.lever eq Gear.Lever.Up and Gear neq Gear.Neutral and Gear neq Gear.Sixth) {
+		Cut Time.Start(Cut Length);
+		Cut State = Cut State.OFF;
+	} else {
+		Cut State = Cut State.On;
+	}
+} else {
+	Cut State = Cut State;
+}

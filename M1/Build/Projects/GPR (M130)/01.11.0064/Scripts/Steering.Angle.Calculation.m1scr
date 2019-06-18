@@ -1,0 +1,7 @@
+if (Sensor Location eq Sensor Location.CAN) {
+  	Wheel Angle = Voltage To Displacement * Wheel Scale;
+	FR Tire Angle = Pot Voltage * FR Tire Scale + FR Toe Angle;
+} else {
+	Wheel Angle = Sensor;
+	FR Tire Angle = Wheel Angle * FR Tire Scale / Wheel Scale;
+}

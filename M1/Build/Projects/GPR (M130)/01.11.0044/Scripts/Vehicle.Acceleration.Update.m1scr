@@ -1,0 +1,28 @@
+local lataccel = CanComms.RxOpenStandard(0, 0x0d0, 0x0, true);
+local longaccel = CanComms.RxOpenStandard(0, 0x0e0, 0x0, true);
+local vertaccel = CanComms.RxOpenStandard(0, 0x0f0, 0x0, true);
+
+if (Accel Input eq Accel Input.CAN) {
+	if (CanComms.RxMessage(lataccel)) {
+		total message length += CanComms.GetLength(lataccel);
+		Lateral = CanComms.GetInteger(lataccel, 0, 32) / 10;
+	} else {
+		Lateral = 0.0;
+	}
+	
+	if (CanComms.RxMessage(longaccel)) {
+		Longitudinal = CanComms.GetInteger(longaccel, 0, 32) / 10;
+	} else {
+		Longitudinal = 0.0;
+	}
+	
+	if (CanComms.RxMessage(vertaccel)) {
+		Vertical = CanComms.GetInteger(vertaccel, 0, 32) / 10;
+	} else {
+		Vertical = 0.0;
+	}
+} else {
+	Lateral = Lat Accel Sensor;
+	Longitudinal = Long Accel Sensor;
+	Vertical = Vert Accel Sensor;
+}

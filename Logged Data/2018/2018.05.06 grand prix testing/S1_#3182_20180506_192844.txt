@@ -1,0 +1,24 @@
+355.048 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4072
+355.086 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4072
+355.088 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139128
+355.088 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+364.167 eth0:mip_platform.c(27): link change
+364.167 eth0:init.cpp(107): LC: 20569ms link Down
+368.165 xcp_udp:../xcp/eth.cpp(142): XCP connection timeout
+485.169 eth0:mip_platform.c(27): link change
+485.169 eth0:init.cpp(107): LC: 4132ms link Up
+487.539 eth0:mip_platform.c(27): link change
+487.539 eth0:init.cpp(107): LC: 6502ms link Down
+488.539 eth0:mip_platform.c(27): link change
+488.539 eth0:init.cpp(107): LC: 7502ms link Up
+493.649 eth0:mip_platform.c(27): link change
+493.649 eth0:init.cpp(107): LC: 12612ms link Down
+495.649 eth0:mip_platform.c(27): link change
+495.649 eth0:init.cpp(107): LC: 14612ms link Up
+506.023 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:56737
+506.033 xcp_udp:../xcp/eth.cpp(195): XCP connected
+506.172 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640
+514.287 xcp_udp:../xcp/eth.cpp(143): XCP connection closed
+515.023 xcp_udp:XCP connect [fe80:0000:0000:0000:b808:ac28:1d6d:850b]:63995
+515.032 xcp_udp:../xcp/eth.cpp(195): XCP connected
+515.169 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4640

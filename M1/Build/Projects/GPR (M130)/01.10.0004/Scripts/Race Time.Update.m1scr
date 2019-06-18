@@ -1,0 +1,50 @@
+local et = System.ElapsedTime();
+local stopped = Engine.State neq Engine.State.Run;
+local start = false;
+local clear = Driver.Race Time Reset Switch eq Driver.Race Time Reset Switch.On;
+
+/* avoid startup dependendency on complex systems that will be disabled / 0 on start */
+local launchen = Launch.State.GetUnscheduled() eq Launch.State.Enabled;
+local vehicleSpeedUnscheduled = Vehicle.Speed.GetUnscheduled();
+
+local launchWasDisabled = Change.From(launchen);
+
+/*
+ * when 'Mode' is 'Enabled'
+ */
+local atp = Activate.Throttle Position <= 0.0 or Throttle.Position > Activate.Throttle Position;
+local avs = Activate.Vehicle Speed <= 0.0 or vehicleSpeedUnscheduled > Activate.Vehicle Speed;
+local aen = Activate.Throttle Position > 0.0 or Activate.Vehicle Speed > 0.0;
+local act = Delay.Rising(atp and avs and aen, Activate.Delay);
+
+local rtp = This.Reset.Throttle Position <= 0.0 or Throttle.Position < This.Reset.Throttle Position;
+local rvs = This.Reset.Vehicle Speed <= 0.0 or vehicleSpeedUnscheduled < This.Reset.Vehicle Speed;
+local ren = This.Reset.Throttle Position > 0.0 or This.Reset.Vehicle Speed > 0.0;
+local res = Delay.Rising(rtp and rvs and ren, Reset.Delay);
+
+when (Mode)
+{
+	is (Not in Use)
+	{
+		clear = true;
+	}
+	is (Enabled)
+	{
+		start = act;
+		clear = clear or res;
+	}
+	is (Launch)
+	{
+		start = launchWasDisabled;
+		clear = clear or launchen;
+	}
+}
+
+if (stopped or clear)
+{
+	Value = 0.0;
+}
+else if (start or (Value > 0.0))
+{
+	Value += et;
+}

@@ -1,0 +1,1772 @@
+<?xml version="1.0"?>
+<Container Locale="English_Australia.1252" DefaultLocale="C" ID="UserConfiguration">
+  <SteppedValue ID="SerialNumber" Value="11109" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+  <StaticChannels ID="StaticChannels">
+    <StaticChannelsArray ID="InputADCArray">
+      <ChannelReference Name="Input Voltages.Pin 1" Value="PDM.Input Voltages.Pin 1"/>
+      <ChannelReference Name="Input Voltages.Pin 2" Value="PDM.Input Voltages.Pin 2"/>
+      <ChannelReference Name="Input Voltages.Pin 3" Value="PDM.Input Voltages.Pin 3"/>
+      <ChannelReference Name="Input Voltages.Pin 4" Value="PDM.Input Voltages.Pin 4"/>
+      <ChannelReference Name="Input Voltages.Pin 5" Value="PDM.Input Voltages.Pin 5"/>
+      <ChannelReference Name="Input Voltages.Pin 6" Value="PDM.Input Voltages.Pin 6"/>
+      <ChannelReference Name="Input Voltages.Pin 7" Value="PDM.Input Voltages.Pin 7"/>
+      <ChannelReference Name="Input Voltages.Pin 8" Value="PDM.Input Voltages.Pin 8"/>
+      <ChannelReference Name="Input Voltages.Pin 9" Value="PDM.Input Voltages.Pin 9"/>
+      <ChannelReference Name="Input Voltages.Pin 10" Value="PDM.Input Voltages.Pin 10"/>
+      <ChannelReference Name="Input Voltages.Pin 11" Value="PDM.Input Voltages.Pin 11"/>
+      <ChannelReference Name="Input Voltages.Pin 12" Value="PDM.Input Voltages.Pin 12"/>
+      <ChannelReference Name="Input Voltages.Pin 13" Value="PDM.Input Voltages.Pin 13"/>
+      <ChannelReference Name="Input Voltages.Pin 14" Value="PDM.Input Voltages.Pin 14"/>
+      <ChannelReference Name="Input Voltages.Pin 15" Value="PDM.Input Voltages.Pin 15"/>
+      <ChannelReference Name="Input Voltages.Pin 16" Value="PDM.Input Voltages.Pin 16"/>
+      <ChannelReference Name="Input Voltages.Pin 17" Value="PDM.Input Voltages.Pin 17"/>
+      <ChannelReference Name="Input Voltages.Pin 18" Value="PDM.Input Voltages.Pin 18"/>
+      <ChannelReference Name="Input Voltages.Pin 19" Value="PDM.Input Voltages.Pin 19"/>
+      <ChannelReference Name="Input Voltages.Pin 20" Value="PDM.Input Voltages.Pin 20"/>
+      <ChannelReference Name="Input Voltages.Pin 21" Value="PDM.Input Voltages.Pin 21"/>
+      <ChannelReference Name="Input Voltages.Pin 22" Value="PDM.Input Voltages.Pin 22"/>
+      <ChannelReference Name="Input Voltages.Pin 23" Value="PDM.Input Voltages.Pin 23"/>
+    </StaticChannelsArray>
+    <StaticChannelsArray ID="CANInputArray">
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 0" Value="PDM.CAN Inputs.Message 0.Byte 0"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 1" Value="PDM.CAN Inputs.Message 0.Byte 1"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 2" Value="PDM.CAN Inputs.Message 0.Byte 2"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 3" Value="PDM.CAN Inputs.Message 0.Byte 3"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 4" Value="PDM.CAN Inputs.Message 0.Byte 4"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 5" Value="PDM.CAN Inputs.Message 0.Byte 5"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 6" Value="PDM.CAN Inputs.Message 0.Byte 6"/>
+      <ChannelReference Name="CAN Inputs.Message 0.Byte 7" Value="PDM.CAN Inputs.Message 0.Byte 7"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 0" Value="PDM.CAN Inputs.Message 1.Byte 0"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 1" Value="PDM.CAN Inputs.Message 1.Byte 1"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 2" Value="PDM.CAN Inputs.Message 1.Byte 2"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 3" Value="PDM.CAN Inputs.Message 1.Byte 3"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 4" Value="PDM.CAN Inputs.Message 1.Byte 4"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 5" Value="PDM.CAN Inputs.Message 1.Byte 5"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 6" Value="PDM.CAN Inputs.Message 1.Byte 6"/>
+      <ChannelReference Name="CAN Inputs.Message 1.Byte 7" Value="PDM.CAN Inputs.Message 1.Byte 7"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 0" Value="PDM.CAN Inputs.Message 2.Byte 0"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 1" Value="PDM.CAN Inputs.Message 2.Byte 1"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 2" Value="PDM.CAN Inputs.Message 2.Byte 2"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 3" Value="PDM.CAN Inputs.Message 2.Byte 3"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 4" Value="PDM.CAN Inputs.Message 2.Byte 4"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 5" Value="PDM.CAN Inputs.Message 2.Byte 5"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 6" Value="PDM.CAN Inputs.Message 2.Byte 6"/>
+      <ChannelReference Name="CAN Inputs.Message 2.Byte 7" Value="PDM.CAN Inputs.Message 2.Byte 7"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 0" Value="PDM.CAN Inputs.Message 3.Byte 0"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 1" Value="PDM.CAN Inputs.Message 3.Byte 1"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 2" Value="PDM.CAN Inputs.Message 3.Byte 2"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 3" Value="PDM.CAN Inputs.Message 3.Byte 3"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 4" Value="PDM.CAN Inputs.Message 3.Byte 4"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 5" Value="PDM.CAN Inputs.Message 3.Byte 5"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 6" Value="PDM.CAN Inputs.Message 3.Byte 6"/>
+      <ChannelReference Name="CAN Inputs.Message 3.Byte 7" Value="PDM.CAN Inputs.Message 3.Byte 7"/>
+    </StaticChannelsArray>
+    <ChannelReference ID="9V5" Value="PDM.Internal 9V5"/>
+    <ChannelReference ID="BatVolts" Value="PDM.Battery Voltage"/>
+    <ChannelReference ID="Temperature" Value="PDM.Temperature"/>
+    <ChannelReference ID="True" Value="PDM.Constants.True"/>
+    <ChannelReference ID="False" Value="PDM.Constants.False"/>
+    <ChannelReference ID="TotalCurrent" Value="PDM.Total Current"/>
+    <ChannelReference ID="GlobalError" Value="PDM.Global Error"/>
+    <ChannelReference ID="CanTimeout" Value="PDM.CAN Timeout"/>
+    <ChannelReference ID="CanTimeoutMessage0" Value="PDM.CAN Timeout.Message 0"/>
+    <ChannelReference ID="CanTimeoutMessage1" Value="PDM.CAN Timeout.Message 1"/>
+    <ChannelReference ID="CanTimeoutMessage2" Value="PDM.CAN Timeout.Message 2"/>
+    <ChannelReference ID="CanTimeoutMessage3" Value="PDM.CAN Timeout.Message 3"/>
+  </StaticChannels>
+  <InputPins ID="InputPins">
+    <InputPinsArray ID="Array">
+      <InputPin PinIndex="0">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 1"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="wipers.switch"/>
+        <ChannelReference ID="Voltage" Value="wipers.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="1">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 2"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="wipers.park"/>
+        <ChannelReference ID="Voltage" Value="wipers.park.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="2">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 3"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="start.button"/>
+        <ChannelReference ID="Voltage" Value="start.button.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="3">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 4"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="ignition.switch"/>
+        <ChannelReference ID="Voltage" Value="ignition.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="4">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 5"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="Master.retry.switch"/>
+        <ChannelReference ID="Voltage" Value="Master.retry.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="5">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 6"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="indicators.left.switch"/>
+        <ChannelReference ID="Voltage" Value="indicators.left.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="6">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 7"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="indicators.right.switch"/>
+        <ChannelReference ID="Voltage" Value="indicators.right.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="7">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 8"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="lights.switch"/>
+        <ChannelReference ID="Voltage" Value="lights.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="9">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 10"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="fuelpump.lift.override.switch"/>
+        <ChannelReference ID="Voltage" Value="fuelpump.lift.override.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="10">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 11"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="fuelpump.override.switch"/>
+        <ChannelReference ID="Voltage" Value="fuelpump.override.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="11">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 12"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="blowerfan&amp;PLM.switch"/>
+        <ChannelReference ID="Voltage" Value="blowerfan&amp;PLM.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="8">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 9"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="gearbox.pump.switch"/>
+        <ChannelReference ID="Voltage" Value="gearbox.pump.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="14">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 15"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="intercooler.spray.switch.off"/>
+        <ChannelReference ID="Voltage" Value="intercooler.spray.switch.off.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="15">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 16"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="Master.switch"/>
+        <ChannelReference ID="Voltage" Value="Master.switch.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="12">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 13"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="intercooler.spray.switch.on"/>
+        <ChannelReference ID="Voltage" Value="intercooler.spray.switch.on.Voltage"/>
+      </InputPin>
+      <InputPin PinIndex="13">
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 14"/>
+          <Operator ID="Operator" Value="14"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="4.15508" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="Constant2" Value="3.5615" StepSize="0.197861" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+          <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <ChannelReference ID="Output" Value="gearbox.cut.disable"/>
+        <ChannelReference ID="Voltage" Value="gearbox.cut.disable.Voltage"/>
+      </InputPin>
+    </InputPinsArray>
+  </InputPins>
+  <OutputPins ID="OutputPins">
+    <OutputPinsArray ID="Array">
+      <OutputPin PinIndex="8">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="wipers.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="wipers.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="wipers.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="wipers.output.Current"/>
+        <ChannelReference ID="Voltage" Value="wipers.output.Voltage"/>
+        <ChannelReference ID="Load" Value="wipers.output.Load"/>
+        <ChannelReference ID="Status" Value="wipers.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="wipers.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="wipers.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="wipers.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="10" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="1"/>
+        <Text ID="Comment">
+<![CDATA[switch controlled, no park at present]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="0">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="start.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="start.button"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="start.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="start.output.Current"/>
+        <ChannelReference ID="Voltage" Value="start.output.Voltage"/>
+        <ChannelReference ID="Load" Value="start.output.Load"/>
+        <ChannelReference ID="Status" Value="start.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="start.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="start.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="start.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="20" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="1"/>
+        <Text ID="Comment">
+<![CDATA[Starter output controlled by starter button]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="1">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="ignition.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="ignition.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="ignition.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="ignition.output.Current"/>
+        <ChannelReference ID="Voltage" Value="ignition.output.Voltage"/>
+        <ChannelReference ID="Load" Value="ignition.output.Load"/>
+        <ChannelReference ID="Status" Value="ignition.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="ignition.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="ignition.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="ignition.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="20" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="1"/>
+        <Text ID="Comment">
+<![CDATA[power to coils only.]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="2">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="ECU.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="ECU.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="ECU.output.Current"/>
+        <ChannelReference ID="Voltage" Value="ECU.output.Voltage"/>
+        <ChannelReference ID="Load" Value="ECU.output.Load"/>
+        <ChannelReference ID="Status" Value="ECU.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="ECU.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="ECU.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="ECU.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="15" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="1"/>
+        <Text ID="Comment">
+<![CDATA[power to ECU and injectors.]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="3">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="lights.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="lights.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="lights.flash.CANinput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0.02" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="3" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="lights.flash.pulse"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="lights.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="lights.output.Current"/>
+        <ChannelReference ID="Voltage" Value="lights.output.Voltage"/>
+        <ChannelReference ID="Load" Value="lights.output.Load"/>
+        <ChannelReference ID="Status" Value="lights.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="lights.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="lights.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="lights.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="20" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="3" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[headlights and high beams. Goes through a toggle to divert to either hi or lo.
+
+The lights will flash either hi or lo (depending on toggle position) for 5 seconds when the steering wheel mounted button is pressed.]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="10">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="fuelpump.lift.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="fuelpump.lift.override.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="fuelpump.CANinput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="fuelpump.lift.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="fuelpump.lift.output.Current"/>
+        <ChannelReference ID="Voltage" Value="fuelpump.lift.output.Voltage"/>
+        <ChannelReference ID="Load" Value="fuelpump.lift.output.Load"/>
+        <ChannelReference ID="Status" Value="fuelpump.lift.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="fuelpump.lift.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="fuelpump.lift.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="fuelpump.lift.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="2" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[lift pump output]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="11">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="indicators.left.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="indicators.left.flash"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="indicators.left.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="indicators.left.output.Current"/>
+        <ChannelReference ID="Voltage" Value="indicators.left.output.Voltage"/>
+        <ChannelReference ID="Load" Value="indicators.left.output.Load"/>
+        <ChannelReference ID="Status" Value="indicators.left.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="indicators.left.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="indicators.left.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="indicators.left.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[left indicator]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="12">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="indicators.right.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="indicators.right.flash"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="indicators.right.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="indicators.right.output.Current"/>
+        <ChannelReference ID="Voltage" Value="indicators.right.output.Voltage"/>
+        <ChannelReference ID="Load" Value="indicators.right.output.Load"/>
+        <ChannelReference ID="Status" Value="indicators.right.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="indicators.right.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="indicators.right.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="indicators.right.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[actual right indicator output]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="4">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="fuelpump.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="fuelpump.CANinput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="fuelpump.override.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="fuelpump.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="fuelpump.output.Current"/>
+        <ChannelReference ID="Voltage" Value="fuelpump.output.Voltage"/>
+        <ChannelReference ID="Load" Value="fuelpump.output.Load"/>
+        <ChannelReference ID="Status" Value="fuelpump.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="fuelpump.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="fuelpump.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="fuelpump.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="20" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="1"/>
+        <Text ID="Comment">
+<![CDATA[output for hi pressure pump, and the 2 lift pressure pumps]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="5">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="blowerfan&amp;PLM.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="blowerfan&amp;PLM.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Engine.Running"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="blowerfan&amp;PLM.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="blowerfan&amp;PLM.output.Current"/>
+        <ChannelReference ID="Voltage" Value="blowerfan&amp;PLM.output.Voltage"/>
+        <ChannelReference ID="Load" Value="blowerfan&amp;PLM.output.Load"/>
+        <ChannelReference ID="Status" Value="blowerfan&amp;PLM.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="blowerfan&amp;PLM.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="blowerfan&amp;PLM.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="blowerfan&amp;PLM.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="15" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="3" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[PDM and fan power. Powered when engine runs, or by a console switch]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="13">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="lights.brakes.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="lights.brakes.CANinput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="lights.brakes.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="lights.brakes.output.Current"/>
+        <ChannelReference ID="Voltage" Value="lights.brakes.output.Voltage"/>
+        <ChannelReference ID="Load" Value="lights.brakes.output.Load"/>
+        <ChannelReference ID="Status" Value="lights.brakes.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="lights.brakes.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="lights.brakes.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="lights.brakes.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[ADL controlled brake lights]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="14">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="lights.taillights"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="lights.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="lights.taillights.Status.Active"/>
+        <ChannelReference ID="Current" Value="lights.taillights.Current"/>
+        <ChannelReference ID="Voltage" Value="lights.taillights.Voltage"/>
+        <ChannelReference ID="Load" Value="lights.taillights.Load"/>
+        <ChannelReference ID="Status" Value="lights.taillights.Status"/>
+        <ChannelReference ID="OverCurrent" Value="lights.taillights.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="lights.taillights.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="lights.taillights.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[tail lights controlled by switch]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="6">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="gearbox.pump.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="gearbox.pump.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="gearbox.pump.caninput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="gearbox.pump.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="gearbox.pump.output.Current"/>
+        <ChannelReference ID="Voltage" Value="gearbox.pump.output.Voltage"/>
+        <ChannelReference ID="Load" Value="gearbox.pump.output.Load"/>
+        <ChannelReference ID="Status" Value="gearbox.pump.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="gearbox.pump.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="gearbox.pump.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="gearbox.pump.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="15" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="3" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[input switch controlled gearbox pump.]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="7">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="intercooler.spray.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="intercooler.spray.CANinput"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="intercooler.spray.switch.off"/>
+                  <Operator ID="Operator" Value="1"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="intercooler.spray.switch.on"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="intercooler.spray.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="intercooler.spray.output.Current"/>
+        <ChannelReference ID="Voltage" Value="intercooler.spray.output.Voltage"/>
+        <ChannelReference ID="Load" Value="intercooler.spray.output.Load"/>
+        <ChannelReference ID="Status" Value="intercooler.spray.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="intercooler.spray.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="intercooler.spray.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="intercooler.spray.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="25" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="3" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[Dash controlled intercooler sprayers.]]>
+        </Text>
+      </OutputPin>
+      <OutputPin PinIndex="9">
+        <Polarity ID="Polarity" Value="0"/>
+        <ChannelReference ID="Input" Value=""/>
+        <Condition ID="Output">
+          <ChannelReference ID="Output" Value="auxillary.output"/>
+          <ConditionArray ID="Array">
+            <OperationGroup>
+              <OperationGroupArray ID="Array">
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="PDM.Battery Voltage"/>
+                  <Operator ID="Operator" Value="3"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="7.53728" StepSize="0.121569" Units="V" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+                <Operation>
+                  <ChannelReference ID="Output" Value=""/>
+                  <ChannelReference ID="LeftInput" Value="Master.switch"/>
+                  <Operator ID="Operator" Value="0"/>
+                  <ChannelReference ID="RightInput" Value=""/>
+                  <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                  <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                  <Polarity ID="Polarity" Value="0"/>
+                  <Bool ID="InvertOutput" Value="0"/>
+                  <Edge ID="Edge" Value="0"/>
+                </Operation>
+              </OperationGroupArray>
+              <Operator ID="Operator" Value="8"/>
+            </OperationGroup>
+          </ConditionArray>
+          <Operator ID="Operator" Value="9"/>
+          <Text ID="Comment"/>
+        </Condition>
+        <ChannelReference ID="Active" Value="auxillary.output.Status.Active"/>
+        <ChannelReference ID="Current" Value="auxillary.output.Current"/>
+        <ChannelReference ID="Voltage" Value="auxillary.output.Voltage"/>
+        <ChannelReference ID="Load" Value="auxillary.output.Load"/>
+        <ChannelReference ID="Status" Value="auxillary.output.Status"/>
+        <ChannelReference ID="OverCurrent" Value="auxillary.output.Status.Over Current"/>
+        <ChannelReference ID="Fault" Value="auxillary.output.Status.Fault"/>
+        <ChannelReference ID="RetriesDone" Value="auxillary.output.Status.Retries Done"/>
+        <SteppedValue ID="MaxCurrent" Value="5" StepSize="1" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="RetryDelay" Value="1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+        <SteppedValue ID="NumRetries" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Bool ID="AlwaysRetry" Value="0"/>
+        <Text ID="Comment">
+<![CDATA[runs radio, VCS, SLM, SDL3]]>
+        </Text>
+      </OutputPin>
+    </OutputPinsArray>
+    <ChannelReference ID="MasterRetry" Value="Master.retry.switch"/>
+  </OutputPins>
+  <Conditions ID="Conditions">
+    <ConditionsArray ID="Array">
+      <Condition>
+        <ChannelReference ID="Output" Value="wipers.park.condition"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="wipers.switch"/>
+                <Operator ID="Operator" Value="1"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+                <Edge ID="Edge" Value="0"/>
+              </Operation>
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="wipers.park"/>
+                <Operator ID="Operator" Value="0"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+                <Edge ID="Edge" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+        <Text ID="Comment"/>
+      </Condition>
+      <Condition>
+        <ChannelReference ID="Output" Value="indicators.left.flash"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="indicators.left.switch"/>
+                <Operator ID="Operator" Value="13"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="TimeOn" Value="0.5" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <SteppedValue ID="TimeOff" Value="0.5" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+                <Edge ID="Edge" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+        <Text ID="Comment"/>
+      </Condition>
+      <Condition>
+        <ChannelReference ID="Output" Value="indicators.right.flash"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="indicators.right.switch"/>
+                <Operator ID="Operator" Value="13"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="TimeOn" Value="0.5" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <SteppedValue ID="TimeOff" Value="0.5" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+                <Edge ID="Edge" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+        <Text ID="Comment"/>
+      </Condition>
+      <Condition>
+        <ChannelReference ID="Output" Value="lights.flash.pulse"/>
+        <ConditionArray ID="Array">
+          <OperationGroup>
+            <OperationGroupArray ID="Array">
+              <Operation>
+                <ChannelReference ID="Output" Value=""/>
+                <ChannelReference ID="LeftInput" Value="PDM.Battery Voltage"/>
+                <Operator ID="Operator" Value="13"/>
+                <ChannelReference ID="RightInput" Value=""/>
+                <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+                <SteppedValue ID="TimeOn" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <SteppedValue ID="TimeOff" Value="0.1" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+                <Polarity ID="Polarity" Value="0"/>
+                <Bool ID="InvertOutput" Value="0"/>
+                <Edge ID="Edge" Value="0"/>
+              </Operation>
+            </OperationGroupArray>
+            <Operator ID="Operator" Value="8"/>
+          </OperationGroup>
+        </ConditionArray>
+        <Operator ID="Operator" Value="9"/>
+        <Text ID="Comment">
+<![CDATA[This is the flashing output that will be used to flash the headlights with the steering wheel mounted button.]]>
+        </Text>
+      </Condition>
+    </ConditionsArray>
+  </Conditions>
+  <CANInputs ID="CANInputs">
+    <CANInputsArray ID="Array">
+      <CANInput>
+        <ChannelReference ID="Output" Value="fuelpump.CANinput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="pitspeed.input"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="2" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="lights.brakes.CANinput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="4" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="intercooler.spray.CANinput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="8" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="Engine.Running"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="16" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="lights.flash.CANinput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="64" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="1"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="PDM.Master.reset.CANinput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="32" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="1"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+      <CANInput>
+        <ChannelReference ID="Output" Value="gearbox.pump.caninput"/>
+        <SteppedValue ID="Offset" Value="1" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <SteppedValue ID="Mask" Value="128" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+        <Operation ID="Operation">
+          <ChannelReference ID="Output" Value=""/>
+          <ChannelReference ID="LeftInput" Value=""/>
+          <Operator ID="Operator" Value="17"/>
+          <ChannelReference ID="RightInput" Value=""/>
+          <SteppedValue ID="Constant" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="Constant2" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+          <SteppedValue ID="TimeOn" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <SteppedValue ID="TimeOff" Value="0" StepSize="0.02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+          <Polarity ID="Polarity" Value="0"/>
+          <Bool ID="InvertOutput" Value="0"/>
+          <Edge ID="Edge" Value="0"/>
+        </Operation>
+        <DataSize ID="DataSize" Value="0"/>
+        <Bool ID="Timeout" Value="0"/>
+        <SteppedValue ID="TimeoutValue" Value="0" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      </CANInput>
+    </CANInputsArray>
+    <SteppedValue ID="BaseAddress" Value="280" StepSize="1" Units="" ReservedBits="3" DecimalPlaces="0"/>
+    <SteppedValue ID="Message 0 Timeout" Value="1" StepSize="0.1" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+    <SteppedValue ID="Message 1 Timeout" Value="1" StepSize="0.1" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+    <SteppedValue ID="Message 2 Timeout" Value="1" StepSize="0.1" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+    <SteppedValue ID="Message 3 Timeout" Value="1" StepSize="0.1" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  </CANInputs>
+  <CANOutputs ID="CANOutputs">
+    <StandardMessages ID="StandardMessages">
+      <SteppedValue ID="BaseAddress" Value="1280" StepSize="1" Units="" ReservedBits="7" DecimalPlaces="0"/>
+      <Bool ID="InputState" Value="1"/>
+      <Bool ID="OutputCurrent" Value="1"/>
+      <Bool ID="OutputLoad" Value="1"/>
+      <Bool ID="OutputVoltage" Value="1"/>
+      <Bool ID="OutputState" Value="1"/>
+      <Bool ID="InputVoltage" Value="1"/>
+    </StandardMessages>
+    <CANMessage ID="Message0">
+      <SteppedValue ID="Address" Value="1312" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      <ChannelReference ID="Channel0" Value=""/>
+      <ChannelReference ID="Channel1" Value=""/>
+      <ChannelReference ID="Channel2" Value=""/>
+      <ChannelReference ID="Channel3" Value=""/>
+      <ChannelReference ID="Channel4" Value=""/>
+      <ChannelReference ID="Channel5" Value=""/>
+      <ChannelReference ID="Channel6" Value=""/>
+      <ChannelReference ID="Channel7" Value=""/>
+    </CANMessage>
+    <CANMessage ID="Message1">
+      <SteppedValue ID="Address" Value="1313" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      <ChannelReference ID="Channel0" Value=""/>
+      <ChannelReference ID="Channel1" Value=""/>
+      <ChannelReference ID="Channel2" Value=""/>
+      <ChannelReference ID="Channel3" Value=""/>
+      <ChannelReference ID="Channel4" Value=""/>
+      <ChannelReference ID="Channel5" Value=""/>
+      <ChannelReference ID="Channel6" Value=""/>
+      <ChannelReference ID="Channel7" Value=""/>
+    </CANMessage>
+    <CANMessage ID="Message2">
+      <SteppedValue ID="Address" Value="1314" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      <ChannelReference ID="Channel0" Value=""/>
+      <ChannelReference ID="Channel1" Value=""/>
+      <ChannelReference ID="Channel2" Value=""/>
+      <ChannelReference ID="Channel3" Value=""/>
+      <ChannelReference ID="Channel4" Value=""/>
+      <ChannelReference ID="Channel5" Value=""/>
+      <ChannelReference ID="Channel6" Value=""/>
+      <ChannelReference ID="Channel7" Value=""/>
+    </CANMessage>
+    <CANMessage ID="Message3">
+      <SteppedValue ID="Address" Value="1315" StepSize="1" Units="" ReservedBits="0" DecimalPlaces="0"/>
+      <ChannelReference ID="Channel0" Value=""/>
+      <ChannelReference ID="Channel1" Value=""/>
+      <ChannelReference ID="Channel2" Value=""/>
+      <ChannelReference ID="Channel3" Value=""/>
+      <ChannelReference ID="Channel4" Value=""/>
+      <ChannelReference ID="Channel5" Value=""/>
+      <ChannelReference ID="Channel6" Value=""/>
+      <ChannelReference ID="Channel7" Value=""/>
+    </CANMessage>
+  </CANOutputs>
+  <PDMType ID="PDMType" Value="0"/>
+  <Text ID="Comment">
+<![CDATA[convert to PDM 15]]>
+  </Text>
+  <Text ID="ConfigName">
+<![CDATA[Sample PDM15]]>
+  </Text>
+</Container>

@@ -1,0 +1,32 @@
+static local time = 0.0;
+local pumpState = true;
+local et = System.ElapsedTime();
+local pressureState = Calculate.Hysteresis(Brake.Vacuum.Pressure, Threshold - Hysteresis, Threshold, 0.0);
+
+if (Calculate.IsNAN(Brake.Vacuum.Pressure))
+{
+	if (time <= 0.0)
+	{
+		if (pumpState and (Fault.Off Time > 0.0 or Fault.On Time <= 0.0))
+		{
+			pumpState = false;
+			time = Fault.Off Time;
+		}
+		else if (Fault.On Time > 0.0)
+		{
+			pumpState = true;
+			time = Fault.On Time;
+		}
+	}
+	else
+	{
+		time -= et;
+		// current pump state is kept because of the initialisation of pumpstate
+	}
+}
+else
+{
+	pumpState = pressureState;
+}
+
+Relay.SetState(pumpState);

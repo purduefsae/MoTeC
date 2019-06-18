@@ -1,0 +1,4 @@
+/*
+ * Stall time is unknown on first power up
+ */
+This.Stall Time = Calculate.NAN();

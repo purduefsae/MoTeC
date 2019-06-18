@@ -1,0 +1,4 @@
+local hyst = Calculate.Hysteresis(Engine.Load.Normalised, Threshold - Hysteresis, Threshold, 0.0);
+Value = hyst
+	? Value.Enabled
+	: Value.Disabled;

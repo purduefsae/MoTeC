@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Container Locale="English_Australia.1252" DefaultLocale="C" ID="UserConfiguration" Version="2">
+ <SteppedValue ID="SerialNumber" Value="1.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+ <StaticChannels ID="StaticChannels">
+  <StaticChannelsArray ID="InputADCArray"/>
+  <StaticChannelsArray ID="CANInputArray"/>
+ </StaticChannels>
+ <InputPins ID="InputPins">
+  <InputPinsArray ID="Array">
+   <InputPin PinIndex="0">
+    <Operation ID="Operation">
+     <ChannelReference ID="Output" Value=""/>
+     <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 1"/>
+     <Operator ID="Operator" Value="14"/>
+     <ChannelReference ID="RightInput" Value=""/>
+     <SteppedValue ID="Constant" Value="4.15508100000000000e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant2" Value="3.56149800000000030e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="TimeOn" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <SteppedValue ID="TimeOff" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <Polarity ID="Polarity" Value="0"/>
+     <Bool ID="InvertOutput" Value="0"/>
+     <Edge ID="Edge" Value="0"/>
+     <Edge ID="Edge2" Value="0"/>
+     <Bool ID="ByteSwap" Value="0"/>
+     <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <ChannelReference ID="Override" Value=""/>
+     <ChannelReference ID="Override2" Value=""/>
+     <Bool ID="WrapAround" Value="1"/>
+     <Bool ID="WrapAround2" Value="1"/>
+    </Operation>
+    <ChannelReference ID="Output" Value="wiper.switch.on"/>
+    <ChannelReference ID="Voltage" Value="wiper.switch.on.Voltage"/>
+   </InputPin>
+   <InputPin PinIndex="1">
+    <Operation ID="Operation">
+     <ChannelReference ID="Output" Value=""/>
+     <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 2"/>
+     <Operator ID="Operator" Value="14"/>
+     <ChannelReference ID="RightInput" Value=""/>
+     <SteppedValue ID="Constant" Value="4.15508100000000000e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant2" Value="3.56149800000000030e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="TimeOn" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <SteppedValue ID="TimeOff" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <Polarity ID="Polarity" Value="0"/>
+     <Bool ID="InvertOutput" Value="0"/>
+     <Edge ID="Edge" Value="0"/>
+     <Edge ID="Edge2" Value="0"/>
+     <Bool ID="ByteSwap" Value="0"/>
+     <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <ChannelReference ID="Override" Value=""/>
+     <ChannelReference ID="Override2" Value=""/>
+     <Bool ID="WrapAround" Value="1"/>
+     <Bool ID="WrapAround2" Value="1"/>
+    </Operation>
+    <ChannelReference ID="Output" Value="wiper.switch.fast"/>
+    <ChannelReference ID="Voltage" Value="wiper.switch.fast.Voltage"/>
+   </InputPin>
+   <InputPin PinIndex="2">
+    <Operation ID="Operation">
+     <ChannelReference ID="Output" Value=""/>
+     <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 3"/>
+     <Operator ID="Operator" Value="14"/>
+     <ChannelReference ID="RightInput" Value=""/>
+     <SteppedValue ID="Constant" Value="4.15508100000000000e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant2" Value="3.56149800000000030e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="TimeOn" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <SteppedValue ID="TimeOff" Value="1.00000000000000010e-001" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <Polarity ID="Polarity" Value="0"/>
+     <Bool ID="InvertOutput" Value="0"/>
+     <Edge ID="Edge" Value="0"/>
+     <Edge ID="Edge2" Value="0"/>
+     <Bool ID="ByteSwap" Value="0"/>
+     <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <ChannelReference ID="Override" Value=""/>
+     <ChannelReference ID="Override2" Value=""/>
+     <Bool ID="WrapAround" Value="1"/>
+     <Bool ID="WrapAround2" Value="1"/>
+    </Operation>
+    <ChannelReference ID="Output" Value="wiper.switch.intermittent"/>
+    <ChannelReference ID="Voltage" Value="wiper.switch.intermittent.Voltage"/>
+   </InputPin>
+   <InputPin PinIndex="3">
+    <Operation ID="Operation">
+     <ChannelReference ID="Output" Value=""/>
+     <ChannelReference ID="LeftInput" Value="PDM.Input Voltages.Pin 4"/>
+     <Operator ID="Operator" Value="14"/>
+     <ChannelReference ID="RightInput" Value=""/>
+     <SteppedValue ID="Constant" Value="4.15508100000000000e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant2" Value="3.56149800000000030e+000" StepSize="1.97861000000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.97860900000000010e-001" Units="V" ReservedBits="0" DecimalPlaces="1"/>
+     <SteppedValue ID="TimeOn" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <SteppedValue ID="TimeOff" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+     <Polarity ID="Polarity" Value="1"/>
+     <Bool ID="InvertOutput" Value="0"/>
+     <Edge ID="Edge" Value="0"/>
+     <Edge ID="Edge2" Value="0"/>
+     <Bool ID="ByteSwap" Value="0"/>
+     <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+     <ChannelReference ID="Override" Value=""/>
+     <ChannelReference ID="Override2" Value=""/>
+     <Bool ID="WrapAround" Value="1"/>
+     <Bool ID="WrapAround2" Value="1"/>
+    </Operation>
+    <ChannelReference ID="Output" Value="wiper.parked"/>
+    <ChannelReference ID="Voltage" Value="wiper.parked.Voltage"/>
+   </InputPin>
+  </InputPinsArray>
+ </InputPins>
+ <OutputPins ID="OutputPins">
+  <OutputPinsArray ID="Array">
+   <OutputPin PinIndex="8">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value=""/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="wiper.out.loSpeed"/>
+     <ConditionArray ID="Array">
+      <OperationGroup>
+       <OperationGroupArray ID="Array">
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="wiper.switch.on"/>
+         <Operator ID="Operator" Value="0"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+       </OperationGroupArray>
+       <Operator ID="Operator" Value="8"/>
+      </OperationGroup>
+      <OperationGroup>
+       <OperationGroupArray ID="Array">
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="wiper.switch.intermittent"/>
+         <Operator ID="Operator" Value="13"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="1.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="3.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+       </OperationGroupArray>
+       <Operator ID="Operator" Value="8"/>
+      </OperationGroup>
+      <OperationGroup>
+       <OperationGroupArray ID="Array">
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="wiper.parked"/>
+         <Operator ID="Operator" Value="1"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+       </OperationGroupArray>
+       <Operator ID="Operator" Value="8"/>
+      </OperationGroup>
+     </ConditionArray>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="wiper.out.loSpeed.Status.Active"/>
+    <ChannelReference ID="Current" Value="wiper.out.loSpeed.Current"/>
+    <ChannelReference ID="Voltage" Value="wiper.out.loSpeed.Voltage"/>
+    <ChannelReference ID="Load" Value="wiper.out.loSpeed.Load"/>
+    <ChannelReference ID="Status" Value="wiper.out.loSpeed.Status"/>
+    <ChannelReference ID="OverCurrent" Value="wiper.out.loSpeed.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="wiper.out.loSpeed.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="wiper.out.loSpeed.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="5.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="1.00000000000000000e+001" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+   <OutputPin PinIndex="9">
+    <Polarity ID="Polarity" Value="0"/>
+    <ChannelReference ID="Input" Value=""/>
+    <Condition ID="Output">
+     <ChannelReference ID="Output" Value="wiper.out.hiSpeed"/>
+     <ConditionArray ID="Array">
+      <OperationGroup>
+       <OperationGroupArray ID="Array">
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="wiper.switch.on"/>
+         <Operator ID="Operator" Value="0"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+        <Operation>
+         <ChannelReference ID="Output" Value=""/>
+         <ChannelReference ID="LeftInput" Value="wiper.switch.fast"/>
+         <Operator ID="Operator" Value="0"/>
+         <ChannelReference ID="RightInput" Value=""/>
+         <SteppedValue ID="Constant" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant2" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant3" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="Constant4" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <SteppedValue ID="TimeOn" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <SteppedValue ID="TimeOff" Value="0.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+         <Polarity ID="Polarity" Value="0"/>
+         <Bool ID="InvertOutput" Value="0"/>
+         <Edge ID="Edge" Value="0"/>
+         <Edge ID="Edge2" Value="0"/>
+         <Bool ID="ByteSwap" Value="0"/>
+         <SteppedValue ID="DivideMask" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+         <ChannelReference ID="Override" Value=""/>
+         <ChannelReference ID="Override2" Value=""/>
+         <Bool ID="WrapAround" Value="1"/>
+         <Bool ID="WrapAround2" Value="1"/>
+        </Operation>
+       </OperationGroupArray>
+       <Operator ID="Operator" Value="8"/>
+      </OperationGroup>
+     </ConditionArray>
+     <Operator ID="Operator" Value="9"/>
+     <Text ID="Comment"/>
+    </Condition>
+    <ChannelReference ID="Active" Value="wiper.out.hiSpeed.Status.Active"/>
+    <ChannelReference ID="Current" Value="wiper.out.hiSpeed.Current"/>
+    <ChannelReference ID="Voltage" Value="wiper.out.hiSpeed.Voltage"/>
+    <ChannelReference ID="Load" Value="wiper.out.hiSpeed.Load"/>
+    <ChannelReference ID="Status" Value="wiper.out.hiSpeed.Status"/>
+    <ChannelReference ID="OverCurrent" Value="wiper.out.hiSpeed.Status.Over Current"/>
+    <ChannelReference ID="Fault" Value="wiper.out.hiSpeed.Status.Fault"/>
+    <ChannelReference ID="RetriesDone" Value="wiper.out.hiSpeed.Status.Retries Done"/>
+    <SteppedValue ID="MaxCurrent" Value="5.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="A" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+000" StepSize="2.00000000000000000e-002" Units="s" ReservedBits="0" DecimalPlaces="2"/>
+    <SteppedValue ID="NumRetries" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="AlwaysRetry" Value="0"/>
+    <Text ID="Comment"/>
+    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <Bool ID="MasterShutdown" Value="0"/>
+    <Bool ID="StayAlive" Value="0"/>
+   </OutputPin>
+  </OutputPinsArray>
+  <ChannelReference ID="MasterRetry" Value=""/>
+  <ChannelReference ID="MasterShutdown" Value=""/>
+ </OutputPins>
+ <Conditions ID="Conditions">
+  <ConditionsArray ID="Array"/>
+ </Conditions>
+ <CANInputs ID="CANInputs">
+  <CANInputsArray ID="Array"/>
+  <CANId ID="Message 0 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.80000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 1 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.81000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 2 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.82000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 3 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.83000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 4 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.84000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 5 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.85000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <CANId ID="Message 6 Id">
+   <CANIdType ID="Type" Value="0"/>
+   <SteppedValue ID="ID" Value="2.86000000000000000e+002" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+  </CANId>
+  <SteppedValue ID="Message 0 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 1 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 2 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 3 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 4 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 5 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+  <SteppedValue ID="Message 6 Timeout" Value="1.00000000000000000e+000" StepSize="1.00000000000000010e-001" Units="s" ReservedBits="0" DecimalPlaces="1"/>
+ </CANInputs>
+ <CANOutputs ID="CANOutputs">
+  <StandardMessages ID="StandardMessages">
+   <SteppedValue ID="BaseAddress" Value="1.28000000000000000e+003" StepSize="1.00000000000000000e+000" Units="" ReservedBits="7" DecimalPlaces="0"/>
+   <Bool ID="InputState" Value="1"/>
+   <Bool ID="OutputCurrent" Value="1"/>
+   <Bool ID="OutputLoad" Value="1"/>
+   <Bool ID="OutputVoltage" Value="1"/>
+   <Bool ID="OutputState" Value="1"/>
+   <Bool ID="InputVoltage" Value="1"/>
+  </StandardMessages>
+  <CANMessage ID="Message0">
+   <CANId ID="Message Id">
+    <CANIdType ID="Type" Value="1"/>
+    <SteppedValue ID="ID" Value="1.31200000000000000e+003" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+   </CANId>
+   <ChannelReference ID="Channel0" Value=""/>
+   <ChannelReference ID="Channel1" Value=""/>
+   <ChannelReference ID="Channel2" Value=""/>
+   <ChannelReference ID="Channel3" Value=""/>
+   <ChannelReference ID="Channel4" Value=""/>
+   <ChannelReference ID="Channel5" Value=""/>
+   <ChannelReference ID="Channel6" Value=""/>
+   <ChannelReference ID="Channel7" Value=""/>
+  </CANMessage>
+  <CANMessage ID="Message1">
+   <CANId ID="Message Id">
+    <CANIdType ID="Type" Value="1"/>
+    <SteppedValue ID="ID" Value="1.31300000000000000e+003" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+   </CANId>
+   <ChannelReference ID="Channel0" Value=""/>
+   <ChannelReference ID="Channel1" Value=""/>
+   <ChannelReference ID="Channel2" Value=""/>
+   <ChannelReference ID="Channel3" Value=""/>
+   <ChannelReference ID="Channel4" Value=""/>
+   <ChannelReference ID="Channel5" Value=""/>
+   <ChannelReference ID="Channel6" Value=""/>
+   <ChannelReference ID="Channel7" Value=""/>
+  </CANMessage>
+  <CANMessage ID="Message2">
+   <CANId ID="Message Id">
+    <CANIdType ID="Type" Value="1"/>
+    <SteppedValue ID="ID" Value="1.31400000000000000e+003" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+   </CANId>
+   <ChannelReference ID="Channel0" Value=""/>
+   <ChannelReference ID="Channel1" Value=""/>
+   <ChannelReference ID="Channel2" Value=""/>
+   <ChannelReference ID="Channel3" Value=""/>
+   <ChannelReference ID="Channel4" Value=""/>
+   <ChannelReference ID="Channel5" Value=""/>
+   <ChannelReference ID="Channel6" Value=""/>
+   <ChannelReference ID="Channel7" Value=""/>
+  </CANMessage>
+  <CANMessage ID="Message3">
+   <CANId ID="Message Id">
+    <CANIdType ID="Type" Value="1"/>
+    <SteppedValue ID="ID" Value="1.31500000000000000e+003" StepSize="1.00000000000000000e+000" Units="" ReservedBits="3758096384" DecimalPlaces="0"/>
+   </CANId>
+   <ChannelReference ID="Channel0" Value=""/>
+   <ChannelReference ID="Channel1" Value=""/>
+   <ChannelReference ID="Channel2" Value=""/>
+   <ChannelReference ID="Channel3" Value=""/>
+   <ChannelReference ID="Channel4" Value=""/>
+   <ChannelReference ID="Channel5" Value=""/>
+   <ChannelReference ID="Channel6" Value=""/>
+   <ChannelReference ID="Channel7" Value=""/>
+  </CANMessage>
+ </CANOutputs>
+ <Keypads ID="Keypads">
+  <KeypadsArray ID="Array">
+   <Keypad Index="1">
+    <Bool ID="Enabled" Value="0"/>
+    <Text ID="KeypadName">
+<![CDATA[Keypad 1]]>
+    </Text>
+    <KeypadType ID="KeypadType" Value="0"/>
+    <SteppedValue ID="NodeID" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="ButtonsAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="LEDsAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="BrightnessAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <LEDBrightness ID="Brightness">
+     <SteppedValue ID="Brightness" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Backlight" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+    </LEDBrightness>
+    <ChannelReference ID="AlternateChannel" Value=""/>
+    <LEDBrightness ID="AlternateBrightness">
+     <SteppedValue ID="Brightness" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Backlight" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+    </LEDBrightness>
+    <KeypadArray ID="Array"/>
+   </Keypad>
+   <Keypad Index="2">
+    <Bool ID="Enabled" Value="0"/>
+    <Text ID="KeypadName">
+<![CDATA[Keypad 2]]>
+    </Text>
+    <KeypadType ID="KeypadType" Value="0"/>
+    <SteppedValue ID="NodeID" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="ButtonsAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="LEDsAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <SteppedValue ID="BrightnessAddress" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="" ReservedBits="0" DecimalPlaces="0"/>
+    <LEDBrightness ID="Brightness">
+     <SteppedValue ID="Brightness" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Backlight" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+    </LEDBrightness>
+    <ChannelReference ID="AlternateChannel" Value=""/>
+    <LEDBrightness ID="AlternateBrightness">
+     <SteppedValue ID="Brightness" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+     <SteppedValue ID="Backlight" Value="0.00000000000000000e+000" StepSize="1.00000000000000000e+000" Units="%" ReservedBits="0" DecimalPlaces="0"/>
+    </LEDBrightness>
+    <KeypadArray ID="Array"/>
+   </Keypad>
+  </KeypadsArray>
+ </Keypads>
+ <PDMType ID="PDMType" Value="3"/>
+ <Text ID="Comment"/>
+ <Text ID="ConfigName">
+<![CDATA[PDM V2 Wiper Example]]>
+ </Text>
+</Container>
