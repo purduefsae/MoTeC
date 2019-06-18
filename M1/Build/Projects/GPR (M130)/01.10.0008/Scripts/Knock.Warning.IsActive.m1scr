@@ -1,1 +1,0 @@
-out = Value.AsInteger() < 0;

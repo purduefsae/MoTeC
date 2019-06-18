@@ -1,1 +1,0 @@
-out = Vehicle.Speed.Limit.Pit / Vehicle.DriveCircumference() * 360.0 * Vehicle.DriveRatio();

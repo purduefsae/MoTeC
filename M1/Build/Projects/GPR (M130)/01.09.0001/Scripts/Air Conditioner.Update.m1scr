@@ -1,4 +1,0 @@
-local enab = Library.Delay.Rising(Enable eq Enable.Enabled, This.Delay);
-local req = Request eq Request.On;
-
-This.Clutch.SetState(enab and req);

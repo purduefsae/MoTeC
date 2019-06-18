@@ -1,7 +1,0 @@
-local enabled = true;
-local override = false;
-This.Warning.Update(
-	Engine.Speed,
-	override,
-	enabled
-);

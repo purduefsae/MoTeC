@@ -1,6 +1,0 @@
-Value = Overall
-		+ Engine.Load.Average.Ignition Timing Trim
-		+ ((Race Time.Mode neq Race Time.Mode.Not in Use) ? Race Time.Ignition Timing Trim : 0.0)
-		+ Gear.Ignition Timing Trim
-		+ (Auxiliary.Output 1.Output.IsActive() ? Auxiliary.Output 1.Ignition Timing Trim : 0.0)
-		+ Auxiliary.Time.Ignition Timing Trim;

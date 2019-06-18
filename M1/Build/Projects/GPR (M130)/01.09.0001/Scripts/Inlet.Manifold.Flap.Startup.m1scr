@@ -1,5 +1,0 @@
-
-if (Actuator.Output.IsActive())
-{
-	Diagnostic = Diagnostic.Inactive;
-}

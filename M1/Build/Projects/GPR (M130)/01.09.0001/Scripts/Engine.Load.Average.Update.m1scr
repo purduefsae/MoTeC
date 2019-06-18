@@ -1,5 +1,0 @@
-
-Value = Filter.FirstOrder(
-	Engine.State eq Engine.State.Run ? Parent.Normalised.GetUnscheduled() : 0.0,
-	Time Constant
-);

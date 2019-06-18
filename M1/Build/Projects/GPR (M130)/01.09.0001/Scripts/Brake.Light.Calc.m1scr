@@ -1,8 +1,0 @@
-if(brake.Pressure.Front >= Activation Pressure)
-{
-Brake light Pin.Duty Cycle = -100.0;
-Status = Brake light Status.on;
-}else{
-Brake light Pin.Duty Cycle = 0.0;
-Status = Brake light Status.Off;
-}

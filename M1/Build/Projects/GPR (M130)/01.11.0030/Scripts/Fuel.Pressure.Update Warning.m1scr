@@ -1,6 +1,0 @@
-local override = false;
-This.Warning.Update(
-	Fuel.Pressure.Sensor,
-	override,
-	Sensor.Diagnostic eq Sensor.Diagnostic.OK and Engine.State eq Engine.State.Run
-);

@@ -1,4 +1,0 @@
-if (not (Sensor.Main.Voltage.IsActive() or Sensor.Tracking.Voltage.IsActive()))
-{
-	Value = Value.Default;
-}

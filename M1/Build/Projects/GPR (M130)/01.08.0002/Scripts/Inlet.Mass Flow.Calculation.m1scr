@@ -1,1 +1,0 @@
-Value = (Engine.Load * Engine.Speed * Engine.Cylinders) / Engine.Speed.Reference.Cycle Duration;

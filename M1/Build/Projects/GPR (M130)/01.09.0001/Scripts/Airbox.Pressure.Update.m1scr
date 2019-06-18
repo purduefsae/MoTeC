@@ -1,8 +1,0 @@
-if (Calculate.IsNAN(Sensor))
-{
-	Value = Ambient.Pressure + Estimate Offset;
-}
-else
-{
-	Value = Sensor;
-}

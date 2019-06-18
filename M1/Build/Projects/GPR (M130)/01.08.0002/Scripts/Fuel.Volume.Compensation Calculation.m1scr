@@ -1,4 +1,0 @@
-Compensation = 
-	Coolant.Temperature.Fuel Volume Compensation *
-	(not Calculate.IsNAN(Engine.Crank.Fuel Volume Compensation) ? Engine.Crank.Fuel Volume Compensation : 1.0) *
-	((Engine.State eq Engine.State.Run) ? Engine.Post Start.Fuel Volume Compensation : 1.0);

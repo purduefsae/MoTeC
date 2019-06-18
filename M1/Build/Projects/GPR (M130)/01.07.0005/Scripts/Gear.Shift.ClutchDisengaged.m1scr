@@ -1,2 +1,0 @@
-Out = Clutch.State eq Clutch.State.Disengaged
-	or ((Clutch.State eq Clutch.State.Unknown or Clutch.State eq Clutch.State.Sensor Fault) and Gear.Estimate eq Gear.Estimate.Neutral);

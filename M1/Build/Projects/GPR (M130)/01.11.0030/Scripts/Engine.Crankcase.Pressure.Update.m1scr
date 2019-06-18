@@ -1,7 +1,0 @@
-Value = Sensor;
-local override = false;
-This.Warning.Update(
-	Sensor,
-	override,
-	Sensor.Diagnostic eq Sensor.Diagnostic.OK and Engine.State eq Engine.State.Run
-);

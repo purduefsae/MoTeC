@@ -1,9 +1,0 @@
-Uptime = Library.System.Ticks() * Library.System.TickPeriod();
-CPU Usage = 1.0 - Library.System.CpuIdle();
-
-local active = Delay.Falling(Engine.State eq Engine.State.Run or 
-							 Engine.State eq Engine.State.Crank or 
-							 System.XcpConnected() or 
-							 Coolant.Pump.After Run.State eq Coolant.Pump.After Run.State.Enabled,
-							 5.0);
-Power Relay.SetState(active);

@@ -1,1 +1,0 @@
-Value = Inlet.Mass Flow * (1 + 1 / (Fuel.Mixture Aim * Fuel.Stoichiometric Ratio));

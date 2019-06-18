@@ -1,4 +1,0 @@
-local over = Calculate.Hysteresis(Ambient.Pressure + Boost.Pressure - Inlet.Manifold.Pressure, Threshold - Hysteresis, Threshold, 0.0);
-local enable = Library.Delay.Falling(over and not Calculate.IsNAN(Boost.Pressure), This.Delay);
-
-Actuator.SetState(enable);
