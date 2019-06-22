@@ -5,10 +5,6 @@
 //										OFF otherwise
 //				if frequency >0, 		acts as regular duty cycle
 
-// assuming that we are using the Spark Mini motor controller by Rev Robotics. duty cycle of the
-// motor output is determined by the length of a HIGH pulse width, eliminating the need for a second
-// line from the M130. (see the datasheet for the motor controller for more details
-
 when (Current State) {
 	is (Idle) {
 		when (Gear.Lever) {
@@ -33,13 +29,13 @@ when (Current State) {
 				}
 			}
 			is (Idle) {
-				if (Engine.Speed > Preload Up Activation) {
+				if (Engine.Speed > Preload Up Activation and Gear.Value.AsInteger() >= Gear.Value.Second.AsInteger()) {
 					Shifter Pos.Frequency = 10000;
 					Shifter Pos.Duty Cycle = Preload Up Duty Cycle;
 					Shifter Neg.Frequency = 0;
 					Shifter Neg.Duty Cycle = -100;
 					Current State = Current State.Preload Up;
-				} else if (Brake.Front Value > Preload Dn Activation) {
+				} else if (Brake.Front Value > Preload Dn Activation and Gear.Value.AsInteger() > Gear.Value.Second.AsInteger()) {
 					Shifter Pos.Frequency = 0;
 					Shifter Pos.Duty Cycle = -100;
 					Shifter Neg.Frequency = 10000;

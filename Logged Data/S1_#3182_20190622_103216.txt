@@ -1,0 +1,57 @@
+1124.778 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=17928
+1124.826 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4400
+1124.828 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=696820
+1125.128 xcp_udp:../logging/metadata.cpp(313): logging_metadata_consolidate end size=138388
+1472.787 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+1472.888 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1472.994 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1497.208 eth0:mip_platform.c(27): link change
+1497.208 eth0:init.cpp(107): LC: 19739ms link Down
+1500.212 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+1646.393 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+1721.209 eth0:mip_platform.c(27): link change
+1721.209 eth0:init.cpp(107): LC: 3222ms link Up
+1722.374 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:51533
+1722.384 xcp_udp:../xcp/eth.cpp(197): XCP connected
+1723.487 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+1826.326 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+1826.427 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1826.534 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1865.938 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+1866.038 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1866.149 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1965.938 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+1966.039 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1966.149 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1968.798 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+1969.327 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+1969.516 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5028
+1969.756 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1970.093 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1982.408 eth0:mip_platform.c(27): link change
+1982.408 eth0:init.cpp(107): LC: 23903ms link Down
+1985.412 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+2033.833 fpga.c(1164): PWRGOOD 0
+2034.344 fpga.c(1164): PWRGOOD 1
+2096.464 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2206.473 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2282.409 eth0:mip_platform.c(27): link change
+2282.409 eth0:init.cpp(107): LC: 14666ms link Up
+2283.663 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:51464
+2283.673 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2284.815 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+2409.737 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+2409.838 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+2409.947 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2416.458 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x5501
+2416.558 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+2416.674 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2458.086 eth0:mip_platform.c(27): link change
+2458.086 eth0:init.cpp(107): LC: 18544ms link Down
+2462.085 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+2603.664 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2702.089 eth0:mip_platform.c(27): link change
+2702.089 eth0:init.cpp(107): LC: 22029ms link Up
+2703.183 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:49289
+2703.192 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2703.475 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

@@ -1,0 +1,43 @@
+/* Only accept detected gears if they are within valid range */
+
+// use this commented out code if we have a gear position sensor (currently we have a gear estimation sensor, looks at the output shaft)
+/*if (Position.Diagnostic eq Position.Diagnostic.OK
+	and Position.AsInteger() <= Maximum.AsInteger()
+	and Position.AsInteger() >= Minimum.AsInteger()
+)
+{
+	Value = Ratio.Position;
+	Source = Source.Sensor;
+}
+else */
+if (Estimate.State.AsInteger() >= Estimate.State.OK.AsInteger()
+	and Estimate.AsInteger() <= Maximum.AsInteger()
+	and Estimate.AsInteger() >= Minimum.AsInteger()
+)
+{
+	Value = Estimate;
+	Source = Source.Estimate;
+}
+else
+{
+	Value = Value.Default;
+	Source = Source.Default;
+}
+
+if (Value.AsInteger() > Minimum.AsInteger())
+{
+	Down.Set(Value.AsInteger() - 1);
+}
+else
+{
+	Down = Value;
+}
+
+if (Value neq Value.Default and Value neq Maximum)
+{
+	Up.Set(Value.AsInteger() + 1);
+}
+else
+{
+	Up = Value;
+}

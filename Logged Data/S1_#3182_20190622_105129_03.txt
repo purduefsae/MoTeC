@@ -1,0 +1,80 @@
+3237.799 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+3238.292 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3348.187 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+3348.266 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+3348.449 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5028
+3348.556 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=172
+3348.614 xcp_udp:../genio/stream_users.cpp(196): Size=844
+3349.074 xcp_udp:../genio/stream_users.cpp(196): Size=3392
+3349.349 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+3349.349 main:core_thread.cpp(346): kill
+3349.583 main:fw_sections.cpp(294): unmap
+3349.584 main:ecu_thread.c(125): got signal 15, exiting...
+3349.595 tpu.c(2276): free tpu memory
+3349.598 ../mpc555x/flexcan.c(642): flexcana kbaud: 0
+3349.604 main:core_thread.cpp(143): exited
+3349.828 mdns:mdns.c(139): Updating service '15:3182:1:4'
+3352.216 xcp_udp:../stream/execute.cpp(245): write_loggingmetadata
+3361.087 xcp_udp:../stream/execute.cpp(215): write_firmware
+3361.087 xcp_udp:../stream/execute.cpp(143): new: GPR (M130) 01.13.0004
+3361.089 xcp_udp:../stream/execute.cpp(151): old: GPR (M130) 01.13.0003
+3361.107 main:core_thread.cpp(351): erase
+3361.107 main:fw_sections.cpp(322): exit
+3361.107 main:fw_sections.cpp(294): unmap
+3361.109 fs/xipfs/xipfs_mount.c(67): creating file system at /int/usr
+3362.341 VFS: Mounting xipfs dev=/dev/h7f_us dir=/int/usr
+3362.341 ../mpc555x/h7f.c(929): (EINVAL)
+3362.341 VFS: Mounting xipfs dev=/dev/h7f_fp dir=/int/fpga
+3362.342 ../mpc555x/h7f.c(929): (EINVAL)
+3363.001 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+3363.005 xcp_udp:../stream/execute.cpp(198): sidFirmwareELF
+3363.005 main:core_thread.cpp(363): write
+3364.066 main:fw_sections.cpp(105): init
+3364.110 xcp_udp:../stream/execute.cpp(190): sidFirmwareEntities
+3366.536 main:core_thread.cpp(358): restore
+3366.536 main:core_thread.cpp(249): ERR EBADF=9 
+3366.536 xcp_udp:../xcp/appl.cpp(211): appl_reboot
+3366.536 main:core_thread.cpp(346): kill
+3366.537 xcp_udp:core.cpp(52): firmware locked
+3366.540 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+3366.555 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+3367.584 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:51668
+3367.586 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3367.603 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=172
+3367.613 xcp_udp:../genio/stream_users.cpp(196): Size=844
+3367.616 xcp_udp:../genio/stream_users.cpp(196): Size=0
+3367.723 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+3367.724 main:core_thread.cpp(346): kill
+3367.741 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=3856
+3368.781 xcp_udp:../stream/execute.cpp(306): write_managedusersbase
+3369.018 main:core_thread.cpp(358): restore
+3369.018 main:core_thread.cpp(249): ERR EBADF=9 
+3369.018 xcp_udp:../xcp/appl.cpp(211): appl_reboot
+3369.018 main:core_thread.cpp(346): kill
+3369.019 xcp_udp:core.cpp(52): firmware locked
+3369.022 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+3369.040 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+3369.583 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:51669
+3369.588 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3369.593 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=172
+3369.602 xcp_udp:../genio/stream_users.cpp(196): Size=844
+3369.809 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+3369.929 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+3369.930 main:core_thread.cpp(346): kill
+3369.951 xcp_udp:../genio/stream_info.cpp(524): ctx 00000068 Size=4132
+3370.664 xcp_udp:../stream/execute.cpp(258): write_memory
+3371.295 xcp_udp:../stream/execute.cpp(411): write_logsetuplistbase
+3371.344 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=12520
+3371.378 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=11484
+3371.381 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=278108
+3371.381 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids
+3371.393 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+3371.457 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=16000
+3371.494 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=14816
+3371.495 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=278108
+3371.496 xcp_udp:../logging/metadata.cpp(269): skip consolidate: 2 old_ids == new_ids
+3371.759 xcp_udp:../xcp/appl.cpp(211): appl_reboot
+3371.759 main:core_thread.cpp(346): kill
+3371.760 xcp_udp:core.cpp(41): *** cmd 1 pending 0 ***
+3371.763 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+3371.770 main:core_thread.cpp(318): start
