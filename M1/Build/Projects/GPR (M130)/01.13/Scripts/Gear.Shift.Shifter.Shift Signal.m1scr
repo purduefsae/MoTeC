@@ -41,7 +41,7 @@ when (Current State) {
 					Current State = Current State.Preload Up;
 				} else if (Brake.Front Value > Preload Dn Activation) {
 					Shifter Pos.Frequency = 0;
-					Shifter Pos.Duty Cycle = 0;
+					Shifter Pos.Duty Cycle = -100;
 					Shifter Neg.Frequency = 10000;
 					Shifter Neg.Duty Cycle = Preload Dn Duty Cycle;
 					Current State = Current State.Preload Dn;
@@ -58,7 +58,7 @@ when (Current State) {
 			Shifter Pos.Duty Cycle = UpShift Duty Cycle;
 			Shifter Neg.Frequency = 0;
 			Shifter Neg.Duty Cycle = -100;
-			State Cycles = Num Upshift Cycles;
+			State Cycles = Num Preload Cycles;
 			Current State = Current State.Shift Up;
 		} else if (Engine.Speed < Preload Up Activation) {
 			Shifter Pos.Frequency = 0;
@@ -71,7 +71,7 @@ when (Current State) {
 			Shifter Pos.Duty Cycle = -100;
 			Shifter Neg.Frequency = 10000;
 			Shifter Neg.Duty Cycle = DnShift Duty Cycle;
-			State Cycles = Num Upshift Cycles + Num Neg Preload Comp;
+			State Cycles = Num Preload Cycles + Num Neg Preload Comp;
 			Current State = Current State.Shift Up;
 		}
 	}
@@ -87,14 +87,14 @@ when (Current State) {
 			Shifter Pos.Duty Cycle = -100;
 			Shifter Neg.Frequency = 10000;
 			Shifter Neg.Duty Cycle = DnShift Duty Cycle;
-			State Cycles = Num Upshift Cycles;
+			State Cycles = Num Preload Cycles;
 			Current State = Current State.Shift Up;
 		} else  if (Gear.Lever eq Gear.Lever.Up) {
 			Shifter Pos.Frequency = 10000;
 			Shifter Pos.Duty Cycle = UpShift Duty Cycle;
 			Shifter Neg.Frequency = 0;
 			Shifter Neg.Duty Cycle = -100;
-			State Cycles = Num Upshift Cycles + Num Neg Preload Comp;
+			State Cycles = Num Preload Cycles + Num Neg Preload Comp;
 			Current State = Current State.Shift Up;
 		}
 	}
