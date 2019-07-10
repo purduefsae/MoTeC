@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Columns Locale="English_United States.1252" DefaultLocale="C">
+ <Column Keyword="VehicleID" Flags="1"/>
+ <Column Keyword="Serial" Flags="1"/>
+ <Column Keyword="Comment" Flags="1"/>
+ <Column Keyword="Firmware" Flags="1"/>
+ <Column Keyword="FirmwareVersionName" Flags="1"/>
+ <Column Keyword="FirmwareVersion" Flags="1"/>
+ <Column Keyword="Product" Flags="1"/>
+ <Column Keyword="Modified" Flags="3"/>
+ <Column Keyword="Imported" Flags="1"/>
+</Columns>
