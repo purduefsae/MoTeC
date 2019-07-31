@@ -671,32 +671,6 @@ Powers the injector coils]]>
     <Bool ID="MasterShutdown" Value="0"/>
     <Bool ID="StayAlive" Value="0"/>
    </OutputPin>
-   <OutputPin PinIndex="12">
-    <Polarity ID="Polarity" Value="0"/>
-    <ChannelReference ID="Input" Value="PDM.Constants.True"/>
-    <Condition ID="Output">
-     <ChannelReference ID="Output" Value="Shifter Power"/>
-     <ConditionArray ID="Array"/>
-     <Operator ID="Operator" Value="9"/>
-     <Text ID="Comment"/>
-    </Condition>
-    <ChannelReference ID="Active" Value="Shifter Power.Status.Active"/>
-    <ChannelReference ID="Current" Value="Shifter Power.Current"/>
-    <ChannelReference ID="Voltage" Value="Shifter Power.Voltage"/>
-    <ChannelReference ID="Load" Value="Shifter Power.Load"/>
-    <ChannelReference ID="Status" Value="Shifter Power.Status"/>
-    <ChannelReference ID="OverCurrent" Value="Shifter Power.Status.Over Current"/>
-    <ChannelReference ID="Fault" Value="Shifter Power.Status.Fault"/>
-    <ChannelReference ID="RetriesDone" Value="Shifter Power.Status.Retries Done"/>
-    <SteppedValue ID="MaxCurrent" Value="8.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="A" ReservedBits="0" DecimalPlaces="0"/>
-    <SteppedValue ID="RetryDelay" Value="1.00000000000000000e+00" StepSize="2.00000000000000004e-02" Units="s" ReservedBits="0" DecimalPlaces="2"/>
-    <SteppedValue ID="NumRetries" Value="1.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="AlwaysRetry" Value="0"/>
-    <Text ID="Comment"/>
-    <SteppedValue ID="LinkedOutput" Value="0.00000000000000000e+00" StepSize="1.00000000000000000e+00" Units="" ReservedBits="0" DecimalPlaces="0"/>
-    <Bool ID="MasterShutdown" Value="1"/>
-    <Bool ID="StayAlive" Value="0"/>
-   </OutputPin>
    <OutputPin PinIndex="14">
     <Polarity ID="Polarity" Value="0"/>
     <ChannelReference ID="Input" Value="ECU Power"/>
