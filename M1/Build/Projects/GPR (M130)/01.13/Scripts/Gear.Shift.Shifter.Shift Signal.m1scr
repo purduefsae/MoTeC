@@ -11,6 +11,7 @@ when (Current State) {
 			is (Up) {
 				if (Gear.Estimate neq Gear Enumeration.Sixth) {
 					Shifter Pos.Frequency = 10000;
+					
 					Shifter Pos.Duty Cycle = UpShift Duty Cycle;
 					Shifter Neg.Frequency = 0;
 					Shifter Neg.Duty Cycle = -100;
@@ -43,7 +44,7 @@ when (Current State) {
 					Current State = Current State.Preload Dn;
 				}
 			}
-			is(Lockout or Not in Use) {
+			is(Lockout or Not in Use or Hold) {
 			
 			}
 		}
@@ -68,7 +69,7 @@ when (Current State) {
 			Shifter Neg.Frequency = 10000;
 			Shifter Neg.Duty Cycle = DnShift Duty Cycle;
 			State Cycles = Num Preload Cycles + Num Neg Preload Comp;
-			Current State = Current State.Shift Up;
+			Current State = Current State.Shift Dn;
 		}
 	}
 	is (Preload Dn) {
@@ -84,7 +85,7 @@ when (Current State) {
 			Shifter Neg.Frequency = 10000;
 			Shifter Neg.Duty Cycle = DnShift Duty Cycle;
 			State Cycles = Num Preload Cycles;
-			Current State = Current State.Shift Up;
+			Current State = Current State.Shift Dn;
 		} else  if (Gear.Lever eq Gear.Lever.Up) {
 			Shifter Pos.Frequency = 10000;
 			Shifter Pos.Duty Cycle = UpShift Duty Cycle;

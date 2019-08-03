@@ -69,9 +69,13 @@ if (Value neq Value.Not in Use)
 				}
 				is (Up)
 				{
-					if (paddleup)
+					if (not(paddleup))
 					{
 						Value = Value.Idle;
+					}
+					else
+					{
+						Value = Value.Hold;
 					}
 				}
 				is (Down)
@@ -80,8 +84,19 @@ if (Value neq Value.Not in Use)
 					{
 						Value = Value.Idle;
 					}
+					else
+					{
+						Value = Value.Hold;
+					}
 				}
 				is (Lockout)	// 
+				{
+					if (not(paddleup or paddledown))
+					{
+						Value = Value.Idle;
+					}
+				}
+				is (Hold)
 				{
 					if (not(paddleup or paddledown))
 					{

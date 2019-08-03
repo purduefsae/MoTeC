@@ -8,11 +8,11 @@
   <DockWindow Id="Messages" Visible="0" IsDocked="1" IsPinned="1" DockOffset="0.25" DockSide="0" DockIndex="0" Height="160" Width="220"/>
   <DockWindow Id="Alarms" Visible="0" IsDocked="0" Position="1064,382,1496,698"/>
   <DockWindow Id="DevMessages" Visible="0" IsDocked="1" IsPinned="1" DockOffset="0.5" DockSide="0" DockIndex="0" Height="160" Width="220"/>
-  <DockWindow Id="Layouts" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="0" Height="110" Width="220"/>
+  <DockWindow Id="QuickLaunch" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="0" Height="150" Width="320"/>
+  <DockWindow Id="Layouts" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="1" Height="110" Width="220"/>
   <DockWindow Id="PkgHelp" Visible="0" IsDocked="0" Position="200,200,840,680"/>
   <DockWindow Id="Channels" Visible="0" IsDocked="1" IsPinned="1" DockOffset="0.5" DockSide="3" DockIndex="0" Height="160" Width="220"/>
   <DockWindow Id="Support" Visible="0" IsDocked="0" Position="980,340,1580,740"/>
-  <DockWindow Id="QuickLaunch" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="1" Height="150" Width="320"/>
  </DockWindows>
  <Workbooks Version="100" Name="My Workbooks" Active="Workbook">
   <Workbook Name="Workbook" XRef="Workbooks\Workbook.mtcwkb"/>
@@ -30,7 +30,9 @@
   <TableOpSite Enabled="1" Style="1" Float="1" Opacity="75"/>
   <Graph Lighting="1" ShowChannelLegend="1" ShowAxis="1"/>
  </TableSettings>
- <Packages/>
+ <Packages>
+  <Package Path="C:\Users\66 North\Documents\MoTeC\M1\Packages\905E38EB-92A1-4021-816F-F5EF241CCD40.m1pkg"/>
+ </Packages>
  <LogRetrieveSettings>
   <LogSystem Index="0" Retrieve="1" Erase="0"/>
   <LogSystem Index="1" Retrieve="1" Erase="0"/>

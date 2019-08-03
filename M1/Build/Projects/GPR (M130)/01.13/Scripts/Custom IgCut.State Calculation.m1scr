@@ -7,8 +7,8 @@ when (Gear.Shift.Shifter.Current State) {
 			is (Down) {
 				Cut Time = Neg Preload Cut;
 			}
-			is (Idle or Lockout or Not in Use) {
-			
+			is (Idle or Lockout or Not in Use or Hold) {
+				Cut Time = Regular Cut;
 			}
 		}
 	}
@@ -20,7 +20,7 @@ when (Gear.Shift.Shifter.Current State) {
 			is (Up) {
 				Cut Time = Neg Preload Cut;
 			}
-			is (Idle or Lockout or Not in Use) {
+			is (Idle or Lockout or Not in Use or Hold) {
 				Cut Time = Regular Cut;
 			}
 		}
