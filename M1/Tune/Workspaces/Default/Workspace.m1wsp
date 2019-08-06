@@ -12,7 +12,7 @@
   <DockWindow Id="Layouts" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="1" Height="110" Width="220"/>
   <DockWindow Id="PkgHelp" Visible="0" IsDocked="0" Position="250,56,1244,774"/>
   <DockWindow Id="Channels" Visible="0" IsDocked="1" IsPinned="1" DockOffset="0.5" DockSide="3" DockIndex="0" Height="160" Width="220"/>
-  <DockWindow Id="Support" Visible="0" IsDocked="0" Position="500,250,1100,650"/>
+  <DockWindow Id="Support" Visible="0" IsDocked="0" Position="660,340,1260,740"/>
  </DockWindows>
  <Workbooks Version="100" Name="My Workbooks" Active="Workbook">
   <Workbook Name="Workbook" XRef="Workbooks\Workbook.mtcwkb"/>

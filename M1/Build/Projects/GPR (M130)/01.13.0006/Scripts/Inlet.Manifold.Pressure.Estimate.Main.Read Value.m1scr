@@ -1,0 +1,33 @@
+if (Inlet.Manifold.Pressure.Sensor.Diagnostic neq Inlet.Manifold.Pressure.Sensor.Diagnostic.OK)
+{
+	UI.PromptOK(
+		"Error",
+		"Inlet Manifold Pressure Sensor Fault."
+	);
+}
+else if (Inlet.Manifold.Pressure.Estimate.Mode eq Inlet.Manifold.Pressure.Estimate.Mode.100kPa Relative)
+{
+	This = Inlet.Manifold.Pressure.Sensor / 100000.0;
+}
+else if (Inlet.Manifold.Pressure.Estimate.Mode eq Inlet.Manifold.Pressure.Estimate.Mode.Boost Pressure Relative)
+{
+	if (Boost.Pressure.Sensor.Diagnostic neq Boost.Pressure.Sensor.Diagnostic.OK)
+	{
+		UI.PromptOK(
+			"Error",
+			"Boost Pressure Sensor Fault."
+		);
+	}
+	else
+	{
+		This = Inlet.Manifold.Pressure.Sensor / (Boost.Pressure + Ambient.Pressure);
+	}
+}
+else if (Airbox.Pressure.Sensor.Diagnostic.AsInteger() < Airbox.Pressure.Sensor.Diagnostic.OK.AsInteger())
+{
+	This = Inlet.Manifold.Pressure.Sensor / Ambient.Pressure;
+}
+else
+{
+	This = Inlet.Manifold.Pressure.Sensor / Airbox.Pressure;
+}

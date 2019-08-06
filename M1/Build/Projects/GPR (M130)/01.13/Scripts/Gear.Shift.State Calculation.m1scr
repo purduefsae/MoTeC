@@ -96,7 +96,7 @@ when (State)
 					}
 				}
 			}
-			is (Idle or Not in Use or Lockout)
+			is (Idle or Not in Use or Lockout or Hold)
 			{
 				// nothing to do
 			}
