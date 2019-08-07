@@ -657,7 +657,7 @@
    <LastModified DateTime="2018-11-17 12:09:16" UserName="MTAM"/>
   </Revision>
  </Version>
- <Version Name="Formula 2019 Build" Major="1" Minor="13" HeadBuildNo="7" From="01.12.0000">
+ <Version Name="Formula 2019 Build" Major="1" Minor="13" HeadBuildNo="8" From="01.12.0000">
   <Revision BuildNo="0" Locked="1">
    <ModifiedBy UserName="m_tam"/>
    <LastModified DateTime="2019-06-03 04:35:46" UserName="m_tam"/>
@@ -689,6 +689,10 @@
   <Revision BuildNo="7" Locked="1">
    <ModifiedBy UserName="66 North"/>
    <LastModified DateTime="2019-08-03 11:36:47" UserName="66 North"/>
+  </Revision>
+  <Revision BuildNo="8" Locked="1">
+   <ModifiedBy UserName="m_tam"/>
+   <LastModified DateTime="2019-08-06 15:20:14" UserName="m_tam"/>
   </Revision>
  </Version>
 </Project>

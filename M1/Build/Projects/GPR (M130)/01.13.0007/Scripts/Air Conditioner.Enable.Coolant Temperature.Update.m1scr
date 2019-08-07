@@ -1,0 +1,4 @@
+local hyst = Calculate.Hysteresis(Coolant.Temperature, Threshold - Hysteresis, Threshold, 0.0);
+Value = hyst
+	? Value.Disabled
+	: Value.Enabled;
