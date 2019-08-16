@@ -1,0 +1,49 @@
+3446.233 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.269 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.273 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.274 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.284 xcp_udp:../stream/execute.cpp(432): log_erase 1
+3446.292 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.336 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.338 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.338 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.349 xcp_udp:../stream/execute.cpp(432): log_erase 2
+3446.357 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.396 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.398 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.399 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.415 xcp_udp:../stream/execute.cpp(432): log_erase 3
+3446.424 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.457 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.459 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.463 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.474 xcp_udp:../stream/execute.cpp(432): log_erase 4
+3446.479 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.526 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.528 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.528 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.539 xcp_udp:../stream/execute.cpp(432): log_erase 5
+3446.548 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.587 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.592 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.592 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.609 xcp_udp:../stream/execute.cpp(432): log_erase 6
+3446.617 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.657 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.659 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.663 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3446.674 xcp_udp:../stream/execute.cpp(432): log_erase 7
+3446.679 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4516
+3446.726 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4516
+3446.728 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139248
+3446.728 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+3452.393 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+3462.738 eth0:mip_platform.c(27): link change
+3462.738 eth0:init.cpp(107): LC: 26764ms link Down
+3699.833 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+3809.844 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+3950.467 eth0:mip_platform.c(27): link change
+3950.467 eth0:init.cpp(107): LC: 33457ms link Up
+3974.314 xcp_udp:XCP connect [fe80:0000:0000:0000:396e:646f:5ae4:02b2]:61133
+3974.324 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3974.458 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
