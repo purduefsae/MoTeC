@@ -1,0 +1,9 @@
+Compensation =
+	  Coolant.Temperature.Ignition Timing Compensation
+	+ Inlet.Air.Temperature.Ignition Timing Compensation
+	+ ((Nitrous.Stage 1.Time > 0.0) ? Nitrous.Stage 1.Ignition Timing Compensation : 0.0)
+	+ ((Nitrous.Stage 2.Time > 0.0) ? Nitrous.Stage 2.Ignition Timing Compensation : 0.0);
+
+Normal = Main +
+	Compensation +
+	Trim;

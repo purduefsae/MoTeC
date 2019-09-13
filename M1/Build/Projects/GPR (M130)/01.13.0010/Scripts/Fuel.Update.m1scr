@@ -1,0 +1,51 @@
+local cps = Engine.Speed / Engine.Speed.Reference.Cycle Duration; /* Engine Speed in cycles per second */
+local volSec = 0.0;
+local volPrim = 0.0;
+local pwSec = 0.0;
+local pwPrim = 0.0;
+local delivered = 0.0;
+
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	if (Cylinder $(n).Primary.Output.Enable eq Cylinder $(n).Primary.Output.Enable.Enabled)
+	{
+		volPrim += Cylinder $(n).Primary.Output.Volume;
+		pwPrim = Calculate.Max(pwPrim, Cylinder $(n).Primary.Output.Pulse Width 1);
+	}
+	if (Cylinder $(n).Secondary.Output.Enable eq Cylinder $(n).Secondary.Output.Enable.Enabled)
+	{
+		volSec += Cylinder $(n).Secondary.Output.Volume;
+		pwSec = Calculate.Max(pwSec, Cylinder $(n).Secondary.Output.Pulse Width 1);
+	}
+
+	delivered += (Calculate.IsNAN(Cylinder $(n).Secondary.Output.Delivered)
+	    ? 0
+	    : Cylinder $(n).Secondary.Output.Delivered)
+	    + (Calculate.IsNAN(Cylinder $(n).Primary.Output.Delivered)
+	    ? 0
+	    : Cylinder $(n).Primary.Output.Delivered);
+}
+
+Volume.Per Cycle.Secondary = volSec * (1.0 - Output.Cut Average);
+Volume.Per Cycle.Primary = volPrim * (1.0 - Output.Cut Average);
+Volume.Per Cycle = Volume.Per Cycle.Secondary + Volume.Per Cycle.Primary;
+Flow.Estimate = Volume.Per Cycle * cps;
+
+Used = delivered;
+
+if (Injector.Primary.Location neq Injector.Primary.Location.Not in Use)
+{
+	Injector.Primary.Duty Cycle = pwPrim * cps; /* maximum duty cycle of all cylinders */
+}
+else
+{
+	Injector.Primary.Duty Cycle = Calculate.NAN();
+}
+if (Injector.Secondary.Location neq Injector.Secondary.Location.Not in Use)
+{
+	Injector.Secondary.Duty Cycle = pwSec * cps; /* maximum duty cycle of all cylinders */
+}
+else
+{
+	Injector.Secondary.Duty Cycle = Calculate.NAN();
+}
