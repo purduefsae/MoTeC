@@ -9,7 +9,7 @@ when (Current State) {
 	is (Idle) {
 		when (Gear.Lever) {
 			is (Up) {
-				if (Gear.Estimate neq Gear Enumeration.Sixth) {
+				if (Gear.Estimate neq Gear Enumeration.Sixth and Gear.Estimate neq Gear Enumeration.Neutral) {
 					Shifter Pos.Frequency = 10000;
 					
 					Shifter Pos.Duty Cycle = UpShift Duty Cycle;
@@ -20,7 +20,7 @@ when (Current State) {
 				}
 			}
 			is (Down) {
-				if (Gear.Estimate neq Gear Enumeration.First) {
+				if (Gear.Estimate.AsInteger() >= Gear Enumeration.Second.AsInteger()) {
 					Shifter Pos.Frequency = 0;
 					Shifter Pos.Duty Cycle = -100;
 					Shifter Neg.Frequency = 10000;

@@ -3,7 +3,7 @@
 local zeroHandle = CanComms.TxOpen(true);
 
 // check that there is a CAN bus in use
-if (ECU.Transmit.CAN Bus neq ECU.Transmit.CAN Bus.=Not in Use) {
+if (ECU.Transmit.CAN Bus neq ECU.Transmit.CAN Bus.Not in Use) {
 	local ok = true;
 	local bus = ECU.Transmit.CAN Bus.AsInteger() - 1; // specifies the CAN bus to transmit on
 	
