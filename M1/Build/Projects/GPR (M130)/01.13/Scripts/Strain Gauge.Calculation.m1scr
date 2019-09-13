@@ -2,7 +2,7 @@
 local strainHandle = CanComms.RxOpenStandard(0, 0x4E2, 0x0, true);
 
 if (CanComms.RxMessage(strainHandle)) {
-	Value = CanComms.GetInteger(strainHandle,0,16) * ValScale;
+	Value = CanComms.GetInteger(strainHandle,0,16) / ValScale;
 	CalibOutput = CanComms.GetInteger(strainHandle, 16,16) * CalibScale;  //Ready to go
 	//internalTemp = CanComms.GetInteger(strainHandle, 32, 16)  //Channels need to be created
 	//externalTemp = CanComms.GetInteger(strainHandle, 48, 16)	//Channels need to be created 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Tune Locale="English_United States.1252" DefaultLocale="C" ZoomDuration="30" Version="102" ShowOverlays="1" ExcludeUntrusted="1" IncludeOverlays="0" GraphTimeFormat="4" RemoveOnChanDblClick="1" SplitterPos="725">
+<Tune Locale="English_United States.1252" DefaultLocale="C" ZoomDuration="30" Version="102" ShowOverlays="1" ExcludeUntrusted="1" IncludeOverlays="0" GraphTimeFormat="4" RemoveOnChanDblClick="1" SplitterPos="2277">
  <Resources/>
  <ValuesWindow GroupMode="0"/>
  <ChannelItemsWindow/>
@@ -31,7 +31,7 @@
   <Graph Lighting="1" ShowChannelLegend="1" ShowAxis="1"/>
  </TableSettings>
  <Packages>
-  <Package Path="C:\Users\66 North\Documents\MoTeC\M1\Packages\FF245BA2-6435-4700-B37B-2049A2D163D2.m1pkg"/>
+  <Package Path="C:\Users\66 North\Documents\MoTeC\M1\Packages\4A28A8A6-DF16-4D15-A40F-27BB26C409B7.m1pkg"/>
  </Packages>
  <LogRetrieveSettings>
   <LogSystem Index="0" Retrieve="1" Erase="0"/>

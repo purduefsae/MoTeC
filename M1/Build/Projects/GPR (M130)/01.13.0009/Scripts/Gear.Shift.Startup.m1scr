@@ -1,0 +1,17 @@
+/*
+ * Event starts at default rate. Idle until first shift request.
+ */
+Event.Idle();
+
+Current = Current.Default;
+Next = Next.Default;
+Throttle Aim = Calculate.NAN();
+Ignition Cut = Calculate.NAN();
+Ignition Timing.Limit Advance = Calculate.NAN();
+Fuel Cut = Calculate.NAN();
+Engine Speed.Limit = Calculate.NAN();
+Shifter.Current State = Shifter.Current State.Idle;
+if (Gear.Lever neq Gear.Lever.Not in Use and Mode neq Mode.Not in Use)
+{
+	Value = Value.Idle;
+}
