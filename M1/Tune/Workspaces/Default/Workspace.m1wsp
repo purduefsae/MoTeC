@@ -33,7 +33,10 @@
  <Map Id="VehicleIdxSerialNumber">
   <MapEntry Key="3182" Value="Connor"/>
  </Map>
- <Packages/>
+ <Packages>
+  <Package Path="C:\Users\OilCan\Documents\MoTeC\M1\Packages\2028B30A-1116-47A6-A35D-2208962F76E3.m1pkg"/>
+  <Package Path="C:\Users\OilCan\Documents\MoTeC\M1\Packages\2C4D2AE7-B449-414D-980E-8E7214CB7E40.m1pkg"/>
+ </Packages>
  <MyDevices>
   <MyDevice SerialNum="3182"/>
  </MyDevices>
