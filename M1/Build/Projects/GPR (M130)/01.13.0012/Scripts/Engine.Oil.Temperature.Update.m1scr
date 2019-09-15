@@ -1,0 +1,11 @@
+// pull up resistor value is 1K Ohm
+
+Value = Calculate.IsNAN(Temp Sensor) ? Estimate : Temp Sensor;
+
+local override = false;
+
+This.Warning.Update(
+	Temp Sensor,
+	override,
+	Temp Sensor.Diagnostic eq Temp Sensor.Diagnostic.OK
+);

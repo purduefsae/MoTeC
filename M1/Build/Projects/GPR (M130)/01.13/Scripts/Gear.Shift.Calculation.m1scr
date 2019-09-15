@@ -38,13 +38,14 @@ when (gss)
 			is (Up)
 			{
 				if ((Gear neq Gear.Maximum or not sequential) and (Engine.Speed > Engine Speed.Minimum) 
-					and (Lock.Remaining() <= 0.0) and (Gear neq Gear.Neutral))
+					and (Lock.Remaining() <= 0.0))
 				{
 					Next = Gear.Up;
 					Value = Value.Up;
 					SetType(Gear Shift Request Enumeration.Up);
 					
 					SetEngineSpeedState(1, true);
+					
 					
 					Event.Default();
 				}
