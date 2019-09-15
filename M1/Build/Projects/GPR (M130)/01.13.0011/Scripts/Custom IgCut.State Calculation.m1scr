@@ -1,0 +1,45 @@
+when (Gear.Shift.Shifter.Current State) {
+	is (Preload Up) {
+		when (Gear.Lever) {
+			is (Up) {
+				Cut Time = Preload Cut;
+			}
+			is (Down) {
+				Cut Time = Neg Preload Cut;
+			}
+			is (Idle or Lockout or Not in Use or Hold) {
+				Cut Time = Regular Cut;
+			}
+		}
+	}
+	is (Preload Dn) {
+		when (Gear.Lever) {
+			is (Down) {
+				Cut Time = Preload Cut;
+			}
+			is (Up) {
+				Cut Time = Neg Preload Cut;
+			}
+			is (Idle or Lockout or Not in Use or Hold) {
+				Cut Time = Regular Cut;
+			}
+		}
+	}
+	is(Idle) {
+		Cut Time = Regular Cut;
+	}
+	is(Shift Dn or Shift Up or Return Dn or Return Up) {
+		Cut Time = 0.0;
+	}
+}
+
+if (Cut Timer.Remaining() <= 0.0) {
+	if (Gear.Lever eq Gear.Lever.Up and Throttle.Position >= Activation Throttle) {
+		IgCut State = 1;
+		Cut Timer.Start(Cut Time);
+	} else {
+		IgCut State = 0;
+	}
+} else {
+	IgCut State = 1;
+}
