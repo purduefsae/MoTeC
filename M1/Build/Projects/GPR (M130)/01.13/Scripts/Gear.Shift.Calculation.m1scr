@@ -38,7 +38,7 @@ when (gss)
 			is (Up)
 			{
 				if ((Gear neq Gear.Maximum or not sequential) and (Engine.Speed > Engine Speed.Minimum) 
-					and (Lock.Remaining() <= 0.0))
+					and (Lock.Remaining() <= 0.0) and (Gear neq Gear.Neutral))
 				{
 					Next = Gear.Up;
 					Value = Value.Up;
@@ -62,7 +62,7 @@ when (gss)
 				}
 
 				if (Current neq Gear.Minimum and Engine.Speed < Down Engine Speed and shiftEngineSpeed < Engine.Speed.Limit.Nominal
-					and Engine.Speed > Engine Speed.Minimum and (Lock.Remaining() <= 0.0))
+					and Engine.Speed > Engine Speed.Minimum and (Lock.Remaining() <= 0.0)  and (Gear neq Gear.Neutral))
 				{
 					Next = Gear.Down;
 					Value = Value.Down;

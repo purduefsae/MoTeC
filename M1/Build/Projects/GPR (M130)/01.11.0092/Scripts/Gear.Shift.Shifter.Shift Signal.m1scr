@@ -1,0 +1,90 @@
+// Frequncy: 	DC output if 0
+//				AC output @Frequency if >0
+// Duty Cycle:  if frequency is 0, 		outputs BAT_POS if >50%
+//										outputs BAT_NEG if <-50%
+//										OFF otherwise
+//				if frequency >0, 		acts as regular duty cycle
+
+// assuming that we are using the Spark Mini motor controller by Rev Robotics. duty cycle of the
+// motor output is determined by the length of a HIGH pulse width, eliminating the need for a second
+// line from the M130. (see the datasheet for the motor controller for more details
+
+when (Current State) {
+	is (Idle) {
+		when (Gear.Lever) {
+			is (Up) {
+				if (Gear.Estimate neq Gear Enumeration.Sixth) {
+					Shifter Pos.Frequency = 10000;
+					Shifter Pos.Duty Cycle = UpShift Duty Cycle;
+					Shifter Neg.Frequency = 0;
+					Shifter Neg.Duty Cycle = -100;
+					State Cycles = Num Upshift Cycles;
+					Current State = Current State.Shift Up;
+				}
+			}
+			is (Down) {
+				if (Gear.Estimate neq Gear Enumeration.First) {
+					Shifter Pos.Frequency = 0;
+					Shifter Pos.Duty Cycle = -100;
+					Shifter Neg.Frequency = 10000;
+					Shifter Neg.Duty Cycle = DnShift Duty Cycle;
+					State Cycles = Num Dnshift Cycles;
+					Current State = Current State.Shift Dn;
+				}
+			}
+			is (Idle or Lockout or Not in Use) {
+			
+			}
+		}
+	}
+	is (Preload Dn or Preload Up) {
+		Current State = Current State.Idle;
+	}
+	is (Shift Up) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Shifter Pos.Frequency = 0;
+			Shifter Pos.Duty Cycle = -100;
+			Shifter Neg.Frequency = 10000;
+			Shifter Neg.Duty Cycle = Return Duty Cycle;
+			State Cycles = Num Return Cycles;
+			Current State = Current State.Return Dn;
+		}
+	}
+	is (Shift Dn) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Shifter Pos.Frequency = 10000;
+			Shifter Pos.Duty Cycle = Return Duty Cycle;
+			Shifter Neg.Frequency = 0;
+			Shifter Neg.Duty Cycle = -100;
+			State Cycles = Num Return Cycles;
+			Current State = Current State.Return up;		
+		}
+	
+	}
+	is (Return Dn) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Shifter Pos.Frequency = 0;
+			Shifter Pos.Duty Cycle = 0;
+			Shifter Neg.Frequency = 0;
+			Shifter Neg.Duty Cycle = 0;
+			Current State = Current State.Idle;
+		}
+	}
+	is (Return Up) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Shifter Pos.Frequency = 0;
+			Shifter Pos.Duty Cycle = 0;
+			Shifter Neg.Frequency = 0;
+			Shifter Neg.Duty Cycle = 0;
+			Current State = Current State.Idle;
+		}
+	}
+}
