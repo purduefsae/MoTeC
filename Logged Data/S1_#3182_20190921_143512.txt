@@ -1,0 +1,4 @@
+280.233 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4540
+280.269 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4540
+280.274 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=137668
+280.275 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata

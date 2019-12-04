@@ -2,11 +2,11 @@ when (Vehicle.Drive Type)
 {
 	is (Rear)
 	{
-		Shaft Speed = 1000 * Wheel Speed.Rear.Drive / (60 * Wheel Speed.Rear.Circumference);	
+		Shaft Speed = Wheel Speed.Rear.Drive.Input;	
 	}
 	is (Front)
 	{ 
-		Shaft Speed = 1000 * Wheel Speed.Front.Drive / (60 * Wheel Speed.Front.Circumference);
+		Shaft Speed = Wheel Speed.Front.Drive.Input;
 	}
 	is (All)
 	{

@@ -20,7 +20,7 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger        (Boost.Pressure * 1.0e-2));
 	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Boost.Aim * 1.0e-2));
 	CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Boost.Actuator.Normal.Output.Duty Cycle * 1.0e2));
-	CanComms.SetInteger        (h, 56,  8, Convert.ToInteger        (Gear.Lever.Force.Sensor * 2.0e-1));
+	//CanComms.SetInteger        (h, 56,  8, Convert.ToInteger        (Gear.Lever.Force.Sensor * 2.0e-1));
 	ok = CanComms.TxStandard(h, bus, 0x645);
 
 	CanComms.TxInitialise(h, 8);

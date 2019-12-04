@@ -1,4 +1,6 @@
-if (Paddle Shifts Location neq Data input location.Not used)
+if (Force.Sensor.Voltage.IsActive() 
+	or Up Switch.Index.AsInteger() > 0 
+	or Down Switch.Index.AsInteger() > 0)
 {
 	Value = Value.Idle;
 }

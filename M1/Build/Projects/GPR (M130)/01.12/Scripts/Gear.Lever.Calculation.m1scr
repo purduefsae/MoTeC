@@ -3,11 +3,11 @@ static local sensOK = true;
 /* Diagnostic */
 
 local stuckSens = Debounce.Stable((Force.Sensor < Force.Threshold.Down or Force.Sensor > Force.Threshold.Up) and not Calculate.IsNAN(Force.Sensor), Diagnostic.Delay);
-local stuckUp = Debounce.Stable(Upshift eq Upshift.On, Diagnostic.Delay);
-local stuckDown = Debounce.Stable(Downshift eq Downshift.On, Diagnostic.Delay);
+local stuckUp = Debounce.Stable(Up Switch eq Up Switch.On, Diagnostic.Delay);
+local stuckDown = Debounce.Stable(Down Switch eq Down Switch.On, Diagnostic.Delay);
 local stuckSwitch = stuckUp or stuckDown;
 local sensInUse = Force.Sensor.Voltage.IsActive();
-local switchInUse = Paddle Shifts Location neq Paddle Shifts Location.Not used;
+local switchInUse = Up Switch.Index.AsInteger() > 0 and Down Switch.Index.AsInteger() > 0;
 	
 local diag = Gear Request Diagnostic Enumeration.OK;
 
@@ -98,11 +98,11 @@ if (Value neq Value.Not in Use)
 		sensOK = false;
 		
 		/* Only use the switches if the sensor is faulty or not used */
-		if (Upshift eq Upshift.On and not stuckSwitch)
+		if (Up Switch eq Up Switch.On and not stuckSwitch)
 		{
 			Value = Value.Up;
 		}
-		else if (Downshift eq Downshift.On and not stuckSwitch)
+		else if (Down Switch eq Down Switch.On and not stuckSwitch)
 		{
 			Value = Value.Down;
 		}
