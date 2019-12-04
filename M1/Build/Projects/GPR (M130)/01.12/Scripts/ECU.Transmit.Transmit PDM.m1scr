@@ -19,13 +19,14 @@ if (Root.PDM.CAN Bus neq Root.PDM.CAN Bus.Not in Use)
 	CanComms.SetUnsignedInteger(h, 56, 8, Convert.ToUnsignedInteger(Differential.Temperature));
 	ok = CanComms.TxStandard(h, bus, 0x118);
 
+/*
 	CanComms.TxInitialise(h, 8);
 	CanComms.SetUnsignedInteger(h,  0, 8, Convert.ToUnsignedInteger(Fuel.Pressure * 1.0e-4));
-	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger(Steering.Angle * 1.0e1) /* 0.1deg */);
+	CanComms.SetInteger(h, 16, 16, Convert.ToInteger(Steering.Angle * 1.0e1));
 	CanComms.SetBit(h, 32, Engine.State eq Engine.State.Run);
 	CanComms.SetBit(h, 33, Warning.Source neq Warning.Source.None);
 	CanComms.SetBit(h, 34, Brake.State eq Brake.State.On);
-	CanComms.SetBit(h, 35, Gear.Neutral Switch eq Gear.Neutral Switch.On);
+	CanComms.SetBit(h, 35, Switches.PDM.Neutral Switch eq Switches.PDM.Neutral Switch.B);
 	CanComms.SetBit(h, 36, Clutch.Switch eq Clutch.Switch.On);
 	CanComms.SetBit(h, 37, Clutch.State eq Clutch.State.Disengaged);
 	CanComms.SetBit(h, 38, Driver.Pit Switch eq Driver.Pit Switch.On);
@@ -35,7 +36,9 @@ if (Root.PDM.CAN Bus neq Root.PDM.CAN Bus.Not in Use)
 	CanComms.SetInteger(h, 48, 8, Driver.Rotary Switch 1.AsInteger());
 	CanComms.SetInteger(h, 56, 8, Driver.Rotary Switch 2.AsInteger());
 	ok = CanComms.TxStandard(h, bus, 0x119);
+	
 
+*/
 	/*
 	 * Shut up build
 	 */

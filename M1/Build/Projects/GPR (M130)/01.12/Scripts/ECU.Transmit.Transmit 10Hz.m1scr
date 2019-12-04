@@ -61,7 +61,7 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	CanComms.SetUnsignedInteger(h, 40,  4, Convert.ToUnsignedInteger(Throttle.Aim.State.AsInteger()));
 	CanComms.SetUnsignedInteger(h, 44,  4, Convert.ToUnsignedInteger(Fuel.Closed Loop.State.AsInteger()));
 	CanComms.SetUnsignedInteger(h, 48,  4, Convert.ToUnsignedInteger(Engine.Speed.Reference.State.AsInteger()));
-	CanComms.SetInteger        (h, 52,  4, Gear.AsInteger());
+	CanComms.SetInteger        (h, 52,  4, Gear.Estimate.Gear As Integer);
 	CanComms.SetUnsignedInteger(h, 56,  8, Convert.ToUnsignedInteger(Engine.Speed.Limit.State.AsInteger()));
 	ok = CanComms.TxStandard(h, bus, 0x64D);
 
@@ -78,7 +78,7 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	CanComms.SetBit            (h, 28,     Brake.State eq Brake.State.On);
 	CanComms.SetBit            (h, 29,     Driver.Anti Lag Switch eq Driver.Anti Lag Switch.On);
 	CanComms.SetBit            (h, 30,     Engine.Run Switch eq Engine.Run Switch.On);
-	CanComms.SetBit            (h, 31,     Gear.Neutral Switch eq Gear.Neutral Switch.On);
+	CanComms.SetBit            (h, 31,     Switches.PDM.Neutral Switch eq Switches.PDM.Neutral Switch.B);
 	ok = CanComms.TxStandard(h, bus, 0x64E);
 
 	CanComms.TxInitialise(h, 8);
