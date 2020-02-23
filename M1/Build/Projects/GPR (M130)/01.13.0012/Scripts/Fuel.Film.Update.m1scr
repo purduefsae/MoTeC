@@ -1,0 +1,9 @@
+if (Engine.Run Time > Engine Run Time and
+	Mode eq Mode.Enabled)
+{
+	State = State.Enabled;
+}
+else
+{
+	State = State.Disabled;
+}

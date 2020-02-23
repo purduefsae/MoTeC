@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <Workbook Locale="English_United States.1252" DefaultLocale="C" Version="200" Name="Workbook" Profile="Tune" Active="Worksheets">
- <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Worksheet">
-  <Worksheet Version="200" Name="Worksheet" LinkTo="Default" LockByGPSTime="0"/>
+ <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Parameters">
+  <Worksheet Version="200" Name="Parameters" LinkTo="Default" LockByGPSTime="0">
+   <Controls Active="Parameter List">
+    <MoTeC.ParamList Version="100" Name="Parameter List" PosPC="0,0,1000,1000" ShowCaption="1" AutoCaption="0" ShowSearch="1" ShowTags="1" UseDefaultTags="0" DefaultTags="" GroupMode="2" GroupExpand="0" AllowAdjustAll="0" NameShow="1">
+     <Data Method="0" Match="" Locked="1" Sorted="0"/>
+     <Headers/>
+    </MoTeC.ParamList>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Channels" LinkTo="Default" LockByGPSTime="0">
+   <Controls Active="Channels">
+    <MoTeC.ChannelList Version="100" Name="Channels" PosPC="0,0,1000,1000" ShowCaption="1" AutoCaption="0" ShowSearch="0" ShowTags="0" UseDefaultTags="0" DefaultTags="" GroupMode="0" GroupExpand="0">
+     <Data Method="0" Match="" Locked="1" Sorted="0"/>
+     <Headers/>
+    </MoTeC.ChannelList>
+   </Controls>
+  </Worksheet>
  </Worksheets>
 </Workbook>

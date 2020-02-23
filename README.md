@@ -1,6 +1,8 @@
 # Purdue-Formula-SAE-
 Software for Purdue Formula SAE's Modules
 
+IF YOU ARE JUST LOOKING AT DATA, DISCARD CHANGES IN GITHUB DESKTOP.  DO NOT COMMIT AND PUSH.
+
 software you'll need to access everything:
 
 -m1 tune
