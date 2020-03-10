@@ -9,4 +9,6 @@ Changed AFR to near 14.7 at 0 kPa for all RPM decreasing from 14.7 to 13.8
 This was done to pursue a lower idle RPM
 
 V002:
-New base map estimate. Purposefully rich across range for saftey. Spark unchanged from V001
+Increased AFR 10 a minimum of 12.3 and interpolated across entire range
+This was done to return AFR targets to a more reasonable range 
+12.3 was selected as purposeful overkill to retain saftey.
