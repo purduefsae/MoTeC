@@ -1,6 +1,0 @@
-36.429 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=7308
-36.466 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4160
-36.468 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=275792
-36.757 xcp_udp:../logging/metadata.cpp(313): logging_metadata_consolidate end size=138816
-117.206 10Hz_Trigge:ecu_can_rx.c(29): CAN_IOC_MSG_RX Operation timed out
-129.399 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ab Size=728

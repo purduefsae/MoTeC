@@ -1,0 +1,17 @@
+1884.293 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4472
+1884.328 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4472
+1884.332 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=140148
+1884.332 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+1896.012 100Hz_Trigg:ecu_can_rx.c(29): CAN_IOC_MSG_RX Operation timed out
+2038.297 eth0:init.cpp(107): LC: 11072ms link Down
+2041.108 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+2409.784 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2519.793 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2629.824 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2739.833 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2849.844 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+2959.864 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=11760 deltas=100
+3131.298 eth0:init.cpp(107): LC: 4561ms link Up
+3132.828 xcp_udp:XCP connect [fe80:0000:0000:0000:40be:4205:91e4:707a]:63402
+3132.837 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3133.024 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

@@ -1,7 +1,0 @@
-318.634 xcp_udp:../genio/genio/file.cpp(35): open /fl/Lr0_10787 No such file or directory
-318.634 xcp_udp:../xcp/e7.cpp(148): ERR errno=2 
-318.692 xcp_udp:../stream/execute.cpp(432): log_erase 0
-318.733 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4540
-318.773 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4540
-318.776 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=137668
-318.776 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
