@@ -1,5 +1,3 @@
 State Cycles = 0;
-Shifter Pos.Frequency = 0;
-Shifter Pos.Duty Cycle = 0;
-Shifter Neg.Frequency = 0;
-Shifter Neg.Duty Cycle = 0;
+Servo PWM.Frequency = PWM Freq;
+Servo PWM.Duty Cycle = Neutral Duty Cycle;

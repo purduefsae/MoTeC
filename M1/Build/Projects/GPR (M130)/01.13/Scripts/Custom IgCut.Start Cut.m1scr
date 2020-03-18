@@ -1,2 +1,0 @@
-if (Throttle.Position >= Activation Throttle) {	Cut Timer.Start(In.Cut Time);
-}
