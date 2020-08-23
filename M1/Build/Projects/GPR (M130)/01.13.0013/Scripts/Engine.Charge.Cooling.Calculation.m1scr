@@ -1,0 +1,7 @@
+local l2 = Fuel.Mixture Aim * Fuel.Mixture Aim;
+local sec = Fuel.Injector.Secondary.Contribution.GetUnscheduled();
+
+local ccprimary = Gain.Primary / l2;
+local ccsecondary = Gain.Secondary / l2;
+
+Value = (ccprimary * (1.0 - sec)) + (ccsecondary * sec);
