@@ -1,0 +1,8 @@
+7126.613 xcp_udp:../stream/execute.cpp(432): log_erase 0
+7126.748 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4448
+7126.789 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4448
+7126.793 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=140520
+7126.794 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+7169.889 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xF800
+7169.989 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+7170.098 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304

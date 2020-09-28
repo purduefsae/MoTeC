@@ -1,0 +1,13 @@
+676.399 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+676.577 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+842.153 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12044 deltas=100
+932.708 eth0:init.cpp(108): LC: 4995ms link Down
+936.709 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+1509.864 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1619.873 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1729.884 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1845.393 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1965.797 eth0:init.cpp(108): LC: 7292ms link Up
+2011.492 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:54003
+2011.506 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2011.644 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

@@ -1,0 +1,82 @@
+2223.786 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=18168
+2223.833 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4448
+2223.835 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=420332
+2224.117 xcp_udp:../logging/metadata.cpp(313): logging_metadata_consolidate end size=140520
+2404.966 eth0:init.cpp(108): LC: 34144ms link Down
+2408.965 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+3055.966 eth0:init.cpp(108): LC: 32309ms link Up
+3097.076 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:57938
+3097.086 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3097.233 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+3108.463 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+3108.546 xcp_udp:../genio/stream_info.cpp(524): ctx 00000040 Size=3960
+3108.784 xcp_udp:../genio/stream_info.cpp(524): ctx 000107ef Size=5028
+3108.928 xcp_udp:../genio/stream_info.cpp(524): ctx 00000004 Size=172
+3109.023 xcp_udp:../genio/stream_users.cpp(196): Size=844
+3109.517 xcp_udp:../genio/stream_users.cpp(196): Size=3400
+3109.842 xcp_udp:../xcp/appl.cpp(191): appl_program_mode
+3109.843 main:core_thread.cpp(345): kill
+3110.173 main:fw_sections.cpp(297): unmap
+3110.174 main:ecu_thread.c(126): got signal 15, exiting...
+3110.184 tpu.c(2381): free tpu memory
+3110.188 ../mpc555x/flexcan.c(659): flexcana kbaud: 0
+3110.194 main:core_thread.cpp(143): exited
+3110.386 mdns:mdns.c(139): Updating service '11:13341'
+3110.386 mdns:mdns.c(139): Updating service '24:2283'
+3110.387 mdns:mdns.c(139): Updating service '15:3182:1:4'
+3113.337 xcp_udp:../stream/execute.cpp(258): write_memory
+3114.068 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+3114.068 main:core_thread.cpp(345): kill
+3114.069 main:core_thread.cpp(318): start
+3114.118 kern/elf.c(73): premalloc 2013a0 262144
+3114.119 main:ecu_thread.c(140): waiting for signal
+3114.119 main:fw_sections.cpp(256): map
+3114.119 main:fw_sections.cpp(260): pid 2
+3114.124 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+3114.154 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+3114.155 main:ecu_thread.c(118): got signal 30, continuing...
+3114.162 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+3114.162 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+3114.163 etpu/ppm.c(80): update period 39062
+3114.163 etpu/etpu_ign.c(705): tdc pitch 720.0
+3114.163 etpu/etpu_ign.c(705): tdc pitch 720.0
+3114.163 etpu/etpu_ign.c(705): tdc pitch 720.0
+3114.163 etpu/etpu_ign.c(705): tdc pitch 720.0
+3114.163 etpu/etpu_ign.c(427): min_delta 0
+3114.163 etpu/ppm.c(80): update period 39062
+3114.163 etpu/ppm.c(80): update period 39062
+3114.164 etpu/ppm.c(80): update period 39062
+3114.164 etpu/ppm.c(80): update period 39062
+3114.165 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+3114.165 main:core_thread.cpp(170): running
+3114.170 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+3114.170 main:0x132f74:SDK:ioctl Input/output error
+3114.170 main:0x1337a4:SDK:CanComms.TxInitialise: bad handle
+3114.170 main:0x125f20:SDK:CanComms.SetInteger: bad handle
+3114.170 main:0x125f34:SDK:CanComms.SetInteger: bad handle
+3114.170 main:0x125f48:SDK:CanComms.SetInteger: bad handle
+3114.171 main:0x125f5c:SDK:CanComms.SetInteger: bad handle
+3114.171 main:0x125f70:SDK:CanComms.SetInteger: bad handle
+3114.171 main:0x125f80:SDK:CanComms.TxStandard: bad handle
+3114.171 main:0x1337a4:SDK:CanComms.TxStandard: bad handle
+3114.171 main:0x1337b0:SDK:CanComms.TxInitialise: bad handle
+3114.181 etpu/etpu_ign.c(575): pattern0
+3114.193 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+3114.248 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+3114.366 mdns:mdns.c(139): Updating service '24:2283'
+3114.366 mdns:mdns.c(139): Updating service '15:3182:1:4'
+3114.684 mdns:mdns.c(139): Updating service '11:13341'
+3114.888 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:51234
+3114.898 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3115.046 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3115.278 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+3148.256 eth0:init.cpp(108): LC: 21520ms link Down
+3152.253 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+4058.793 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12044 deltas=100
+4168.824 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4278.833 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4388.853 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4430.259 eth0:init.cpp(108): LC: 32212ms link Up
+4440.807 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:55836
+4440.816 xcp_udp:../xcp/eth.cpp(197): XCP connected
+4440.958 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
