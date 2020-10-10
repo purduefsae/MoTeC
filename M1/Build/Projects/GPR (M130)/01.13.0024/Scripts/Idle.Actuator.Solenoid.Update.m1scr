@@ -1,0 +1,14 @@
+when (Test)
+{
+	is (Disabled)
+	{
+		Value = Minimum + ((Maximum - Minimum) * Idle.Mass Flow);
+	}
+	is (Enabled)
+	{
+		Value = Test.Duty Cycle;
+	}
+}
+
+Normal.Output.Duty Cycle = Value;
+Inverting.Output.Duty Cycle = 1.0 - Value;

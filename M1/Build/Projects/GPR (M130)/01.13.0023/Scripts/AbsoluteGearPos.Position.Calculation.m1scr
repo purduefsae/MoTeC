@@ -1,0 +1,33 @@
+local p = -3;
+
+
+if (Calculate.Absolute(GearPosSensor.Voltage - Neutral) < Tolerance)
+{
+	p = Value.Neutral.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - First) < Tolerance)
+{
+	p = Value.First.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - Second) < Tolerance)
+{
+	p = Value.Second.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - Third) < Tolerance)
+{
+	p = Value.Third.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - Fourth) < Tolerance)
+{
+	p = Value.Fourth.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - Fifth) < Tolerance)
+{
+	p = Value.Fifth.AsInteger();
+}
+else if (Calculate.Absolute(GearPosSensor.Voltage - Sixth) < Tolerance)
+{
+	p = Value.Sixth.AsInteger();
+}
+
+Value.Set(p);

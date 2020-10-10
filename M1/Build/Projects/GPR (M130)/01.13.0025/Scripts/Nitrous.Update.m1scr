@@ -1,0 +1,24 @@
+local et = System.ElapsedTime();
+local res = Reset eq Reset.Enabled;
+local on = Driver.Nitrous Switch eq Driver.Nitrous Switch.On and Mode eq Mode.Enabled;
+
+when (State)
+{
+	is (Disabled)
+	{
+		Time = 0.0;
+		if (Activate eq Activate.Enabled and on and not res)
+		{
+			State = State.Enabled;
+		}
+	}
+	is (Enabled)
+	{
+		Time += et;
+
+		if (res or not on)
+		{
+			State = State.Disabled;
+		}
+	}
+}

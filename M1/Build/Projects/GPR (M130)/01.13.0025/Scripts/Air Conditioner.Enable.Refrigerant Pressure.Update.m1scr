@@ -1,0 +1,6 @@
+local hyst = Calculate.Hysteresis(Air Conditioner.Refrigerant Pressure.Sensor, Threshold - Hysteresis, Threshold, 0.0);
+local low = Air Conditioner.Refrigerant Pressure.Sensor < Minimum;
+local inUse = not Calculate.IsNAN(Air Conditioner.Refrigerant Pressure);
+Value = ((hyst or low) and inUse)
+	? Value.Disabled
+	: Value.Enabled;

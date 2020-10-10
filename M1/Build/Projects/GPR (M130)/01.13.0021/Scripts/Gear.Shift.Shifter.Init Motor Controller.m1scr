@@ -1,0 +1,3 @@
+State Cycles = 0;
+Servo PWM.Frequency = PWM Freq;
+Servo PWM.Duty Cycle = Neutral Duty Cycle;
