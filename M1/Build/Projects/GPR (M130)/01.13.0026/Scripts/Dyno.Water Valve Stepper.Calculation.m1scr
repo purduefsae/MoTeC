@@ -1,0 +1,87 @@
+Aim = Convert.ToInteger(Maximum Step * Percent Closed);
+//Maximum Step = # of steps for stepper motor to reach 100% closed on valve
+//200 steps/revolution
+
+
+local duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+
+when (State)
+{
+	is (Hold)
+	{
+		duty = 0.0;
+	}
+	/*is (Home)
+	{
+		aim = Maximum Step;
+		if (Position eq aim)
+		{
+			State = State.Hold;
+		}
+	}*/
+	is (Moving)
+	{
+		duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+	}
+}
+if (Position eq Aim)
+{
+	State = State.Hold;
+}
+else
+{
+	State = State.Moving;
+}
+static local <Unsigned Integer> div = 0;
+div += 1;
+if (div >= Divider)
+{
+	div = 0;
+}
+//Divider = used to change the freq of the stepping
+
+if (Position eq Aim)
+{
+	duty = Calculate.Min(Hold Voltage / ECU.Battery.Voltage, 1.0);
+}
+else if (div eq 0)
+{
+	if (Position > Aim)
+	{
+		Position -= 1;
+	}
+	else if (Position < Aim)
+	{
+		Position += 1;
+	}
+	
+	/* Do our best to remember position */
+	System.Preserve();
+}
+
+local phase = Calculate.Modulo(Position, 4);
+if (phase < 0)
+{
+	phase = 4 + phase;
+}
+
+if (phase eq 0)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = -duty;
+}
+else if (phase eq 1)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 2)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 3)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = -duty;
+}

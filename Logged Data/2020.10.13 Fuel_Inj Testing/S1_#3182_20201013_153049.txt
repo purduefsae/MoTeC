@@ -1,0 +1,17 @@
+239.109 xcp_udp:../stream/execute.cpp(432): log_erase 0
+239.176 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4616
+239.218 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4616
+239.223 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+239.224 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+410.226 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xDB00
+410.327 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+410.436 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+455.798 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xDB00
+455.899 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+456.018 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+464.726 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0xDB00
+464.827 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+464.937 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+595.277 mdns:mdns.c(139): Updating service '10:21082'
+596.128 mdns:mdns.c(139): Updating service '10:21082'
+607.733 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100

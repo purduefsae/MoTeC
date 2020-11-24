@@ -1,0 +1,23 @@
+2904.279 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4900
+2904.333 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4900
+2904.336 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+2904.336 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+2904.704 10Hz_Trigge:System.Debug: Engine Oil Pressure Sensor Diagnostic: Low Fault
+3007.303 10Hz_Trigge:System.Debug: Engine Oil Pressure Sensor Diagnostic: Low Fault
+3206.273 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3540.068 eth0:init.cpp(108): LC: 1015ms link Down
+3544.069 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+3627.956 fpga.c(1271): PWRGOOD 0
+3628.467 fpga.c(1271): PWRGOOD 1
+3637.003 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3644.084 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3754.093 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3864.113 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3974.133 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4084.144 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4194.153 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4304.164 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5005.079 eth0:init.cpp(108): LC: 22917ms link Up
+5015.714 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:62021
+5015.725 xcp_udp:../xcp/eth.cpp(197): XCP connected
+5015.867 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

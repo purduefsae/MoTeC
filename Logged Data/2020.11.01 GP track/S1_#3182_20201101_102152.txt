@@ -1,0 +1,1307 @@
+64.953 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4640
+64.993 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4640
+64.996 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+64.996 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+65.032 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+70.032 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+72.232 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+73.432 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+74.722 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Sep  4 2020)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2140): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/e7_edma.c(73): init
+0.047 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.047 arch/ppc/e7/machdep.c(2396): ready: 47.755ms
+0.085 kern/elf.c(73): premalloc 2002c0 262144
+0.085 init: Mounting file systems
+0.097 fs/sffs/sffs_mount.c(316): SFFS Mount Report
+0.097 fs/sffs/sffs_mount.c(343): blks empty file chain erase init bad lost
+0.097 fs/sffs/sffs_mount.c(346):  512   493   10     6     2    1   0    0
+0.097 fs/sffs/sffs_mount.c(363): blks total free used file
+0.097 fs/sffs/sffs_mount.c(367):        512  496   16   10
+0.097 fs/sffs/sffs_mount.c(368): erase total  cnt   max   min   avg
+0.097 fs/sffs/sffs_mount.c(371):       28775  511    57    52    56
+0.103 main:init 01.04.00.0083_e7
+0.103 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.141 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.141 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.143 main:calibration.cpp(88): Calibration loaded
+0.143 main:../logging/startup.cpp(29): logging_startup
+0.145 fpga.c(845): buf 802a0000 len 169216 loops 0
+0.157 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.164 main:fw_sections.cpp(105): init
+0.207 main:fw_sections.cpp(155): region0 p_memsz 416852 aligned 416852
+0.208 main:fw_sections.cpp(155): region1 p_memsz 0 aligned 4096
+0.208 main:fw_sections.cpp(155): region2 p_memsz 204864 aligned 262144
+0.208 main:core_thread.cpp(393): setup to run
+0.208 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 802c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 070b, type 2 loaded in 98 ms
+0.256 kern/elf.c(73): premalloc 2013a0 262144
+0.257 main:ecu_thread.c(140): waiting for signal
+0.257 main:fw_sections.cpp(256): map
+0.257 main:fw_sections.cpp(260): pid 2
+0.261 main:serial.cpp(49): Serial no. 3182
+0.262 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.275 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.278 main:ecu_thread.c(118): got signal 30, continuing...
+0.279 main:core_thread.cpp(170): running
+0.283 dac.c(212): init
+0.285 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+0.285 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+0.286 etpu/ppm.c(80): update period 39062
+0.286 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.287 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.287 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.287 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.287 etpu/etpu_ign.c(427): min_delta 0
+0.287 etpu/ppm.c(80): update period 39062
+0.287 etpu/ppm.c(80): update period 39062
+0.287 etpu/ppm.c(80): update period 39062
+0.287 etpu/ppm.c(80): update period 39062
+0.289 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+0.293 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.293 main:0x132810:SDK:ioctl Input/output error
+0.294 main:0x133040:SDK:CanComms.TxInitialise: bad handle
+0.294 main:0x1261c4:SDK:CanComms.SetInteger: bad handle
+0.294 main:0x1261d8:SDK:CanComms.SetInteger: bad handle
+0.294 main:0x1261ec:SDK:CanComms.SetInteger: bad handle
+0.294 main:0x126200:SDK:CanComms.SetInteger: bad handle
+0.294 main:0x126214:SDK:CanComms.SetInteger: bad handle
+0.294 main:0x126224:SDK:CanComms.TxStandard: bad handle
+0.294 main:0x133040:SDK:CanComms.TxStandard: bad handle
+0.294 main:0x13304c:SDK:CanComms.TxInitialise: bad handle
+0.303 etpu/etpu_ign.c(575): pattern0
+0.754 fpga.c(1271): PWRGOOD 1
+0.788 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.849 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.852 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.853 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.853 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.858 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.859 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.013 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.264 mdns:mdns.c(150): Adding service '10:21082'
+1.517 mdns:mdns.c(150): Adding service '22:2283'
+4.033 mdns:mdns.c(150): Adding service '24:2283'
+14.053 fpga.c(1271): PWRGOOD 0
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Sep  4 2020)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2140): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/e7_edma.c(73): init
+0.047 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.047 arch/ppc/e7/machdep.c(2396): ready: 47.755ms
+0.085 kern/elf.c(73): premalloc 2002c0 262144
+0.085 init: Mounting file systems
+0.097 fs/sffs/sffs_mount.c(316): SFFS Mount Report
+0.097 fs/sffs/sffs_mount.c(343): blks empty file chain erase init bad lost
+0.097 fs/sffs/sffs_mount.c(346):  512   496   10     6     0    0   0    0
+0.097 fs/sffs/sffs_mount.c(363): blks total free used file
+0.097 fs/sffs/sffs_mount.c(367):        512  496   16   10
+0.097 fs/sffs/sffs_mount.c(368): erase total  cnt   max   min   avg
+0.097 fs/sffs/sffs_mount.c(371):       28835  512    57    52    56
+0.103 main:init 01.04.00.0083_e7
+0.103 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.142 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.142 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.144 main:calibration.cpp(88): Calibration loaded
+0.144 main:../logging/startup.cpp(29): logging_startup
+0.146 fpga.c(845): buf 802a0000 len 169216 loops 0
+0.157 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.165 main:fw_sections.cpp(105): init
+0.208 main:fw_sections.cpp(155): region0 p_memsz 416852 aligned 416852
+0.208 main:fw_sections.cpp(155): region1 p_memsz 0 aligned 4096
+0.208 main:fw_sections.cpp(155): region2 p_memsz 204864 aligned 262144
+0.209 main:core_thread.cpp(393): setup to run
+0.209 main:core_thread.cpp(318): start
+0.245 fpga.c(871): buf 802c9eb0 len -2480 loops 42, sent 85848
+0.245 fpga.c(897): FPGA version 070b, type 2 loaded in 99 ms
+0.257 kern/elf.c(73): premalloc 2013a0 262144
+0.257 main:ecu_thread.c(140): waiting for signal
+0.257 main:fw_sections.cpp(256): map
+0.257 main:fw_sections.cpp(260): pid 2
+0.262 main:serial.cpp(49): Serial no. 3182
+0.262 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.275 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.279 main:ecu_thread.c(118): got signal 30, continuing...
+0.280 main:core_thread.cpp(170): running
+0.284 dac.c(212): init
+0.286 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+0.287 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+0.287 etpu/ppm.c(80): update period 39062
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(427): min_delta 0
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.290 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+0.294 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.294 main:0x132810:SDK:ioctl Input/output error
+0.295 main:0x133040:SDK:CanComms.TxInitialise: bad handle
+0.295 main:0x1261c4:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x1261d8:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x1261ec:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126200:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126214:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126224:SDK:CanComms.TxStandard: bad handle
+0.295 main:0x133040:SDK:CanComms.TxStandard: bad handle
+0.295 main:0x13304c:SDK:CanComms.TxInitialise: bad handle
+0.304 etpu/etpu_ign.c(575): pattern0
+0.756 fpga.c(1271): PWRGOOD 1
+0.789 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.852 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.853 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.853 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.854 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.858 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.863 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.013 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.264 mdns:mdns.c(150): Adding service '10:21082'
+1.517 mdns:mdns.c(150): Adding service '22:2283'
+4.032 mdns:mdns.c(150): Adding service '24:2283'
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Sep  4 2020)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2140): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/e7_edma.c(73): init
+0.047 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.047 arch/ppc/e7/machdep.c(2396): ready: 47.754ms
+0.085 kern/elf.c(73): premalloc 2002c0 262144
+0.085 init: Mounting file systems
+0.097 fs/sffs/sffs_mount.c(316): SFFS Mount Report
+0.097 fs/sffs/sffs_mount.c(343): blks empty file chain erase init bad lost
+0.097 fs/sffs/sffs_mount.c(346):  512   496   10     6     0    0   0    0
+0.097 fs/sffs/sffs_mount.c(363): blks total free used file
+0.097 fs/sffs/sffs_mount.c(367):        512  496   16   10
+0.097 fs/sffs/sffs_mount.c(368): erase total  cnt   max   min   avg
+0.097 fs/sffs/sffs_mount.c(371):       28836  512    57    52    56
+0.103 main:init 01.04.00.0083_e7
+0.103 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.143 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.143 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.145 main:calibration.cpp(88): Calibration loaded
+0.145 main:../logging/startup.cpp(29): logging_startup
+0.146 fpga.c(845): buf 802a0000 len 169216 loops 0
+0.158 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.166 main:fw_sections.cpp(105): init
+0.209 main:fw_sections.cpp(155): region0 p_memsz 416852 aligned 416852
+0.209 main:fw_sections.cpp(155): region1 p_memsz 0 aligned 4096
+0.209 main:fw_sections.cpp(155): region2 p_memsz 204864 aligned 262144
+0.210 main:core_thread.cpp(393): setup to run
+0.210 main:core_thread.cpp(318): start
+0.244 fpga.c(871): buf 802c9eb0 len -2480 loops 42, sent 85848
+0.244 fpga.c(897): FPGA version 070b, type 2 loaded in 97 ms
+0.258 kern/elf.c(73): premalloc 2013a0 262144
+0.258 main:ecu_thread.c(140): waiting for signal
+0.258 main:fw_sections.cpp(256): map
+0.258 main:fw_sections.cpp(260): pid 2
+0.263 main:serial.cpp(49): Serial no. 3182
+0.263 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.276 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.280 main:ecu_thread.c(118): got signal 30, continuing...
+0.281 main:core_thread.cpp(170): running
+0.285 dac.c(212): init
+0.287 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+0.288 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.289 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.289 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.289 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.289 etpu/etpu_ign.c(427): min_delta 0
+0.289 etpu/ppm.c(80): update period 39062
+0.289 etpu/ppm.c(80): update period 39062
+0.289 etpu/ppm.c(80): update period 39062
+0.289 etpu/ppm.c(80): update period 39062
+0.291 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+0.295 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.295 main:0x132810:SDK:ioctl Input/output error
+0.295 main:0x133040:SDK:CanComms.TxInitialise: bad handle
+0.295 main:0x1261c4:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x1261d8:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x1261ec:SDK:CanComms.SetInteger: bad handle
+0.296 main:0x126200:SDK:CanComms.SetInteger: bad handle
+0.296 main:0x126214:SDK:CanComms.SetInteger: bad handle
+0.296 main:0x126224:SDK:CanComms.TxStandard: bad handle
+0.296 main:0x133040:SDK:CanComms.TxStandard: bad handle
+0.296 main:0x13304c:SDK:CanComms.TxInitialise: bad handle
+0.305 etpu/etpu_ign.c(575): pattern0
+0.755 fpga.c(1271): PWRGOOD 1
+0.789 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.852 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.853 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.854 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.854 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.859 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.863 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.009 mdns:mdns.c(150): Adding service '11:13341'
+1.013 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.264 mdns:mdns.c(150): Adding service '10:21082'
+1.517 mdns:mdns.c(150): Adding service '22:2283'
+3.783 mdns:mdns.c(150): Adding service '24:2283'
+4.042 100Hz_Trigg:suppressed 21 messages
+4.042 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+4.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+6.404 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+9.604 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+28.873 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12044 deltas=100
+122.532 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+138.884 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+248.893 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+358.913 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+468.924 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+488.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+546.562 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+547.572 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+547.702 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+548.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+548.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+548.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+549.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+550.272 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+552.652 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+552.892 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+553.242 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+554.152 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+555.642 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+558.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+558.222 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+562.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+562.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+562.852 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+564.162 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+564.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+566.692 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+567.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+567.652 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+568.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+571.972 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+574.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+579.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+580.982 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+581.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+581.482 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+584.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+587.722 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+587.922 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+589.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+590.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+590.652 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+590.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+596.182 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+596.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+600.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+600.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+603.782 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+604.382 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+606.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+607.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+607.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+612.232 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+613.512 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+613.522 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+613.582 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+614.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+614.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+618.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+619.092 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+620.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+622.782 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+623.072 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+624.032 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+624.882 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+626.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+630.522 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+631.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+631.832 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+635.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+636.512 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+637.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+646.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+647.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+647.582 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+648.152 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+649.612 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+650.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+651.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+652.012 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+652.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+653.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+657.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+662.062 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+662.722 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+662.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+665.472 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+665.722 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+668.772 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+668.842 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+669.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+669.652 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+670.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+671.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+674.482 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+676.392 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+677.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+678.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+679.862 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+681.532 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+681.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+681.812 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+682.282 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+682.342 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+682.902 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+685.462 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+685.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+687.442 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+688.712 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+690.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+694.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+695.312 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+695.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+699.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+699.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+704.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+704.672 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+705.452 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+706.492 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+707.822 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+708.012 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+708.152 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+708.702 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+709.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+709.322 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+712.212 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+714.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+715.382 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+716.722 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+718.382 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+718.622 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+719.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+724.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+724.872 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+725.672 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+726.652 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+728.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+728.782 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+729.932 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+730.862 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+733.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+734.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+735.782 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+737.112 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+737.962 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+739.492 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+741.592 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+743.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+744.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+744.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+748.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+748.872 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+751.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+756.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+759.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+762.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+768.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+770.752 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+773.192 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+774.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+776.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+776.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+776.892 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+777.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+778.082 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+784.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+785.332 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+789.852 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+790.192 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+790.992 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+791.682 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+792.042 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+792.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+796.892 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+800.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+807.252 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+808.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+808.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+811.272 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+811.762 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+811.902 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+820.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+821.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+822.682 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+825.502 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+826.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+828.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+830.282 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+830.702 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+831.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+832.402 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+834.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+835.162 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+836.282 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+836.602 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+836.922 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+838.192 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+839.092 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+840.862 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+841.532 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+842.602 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+843.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+843.452 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+844.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+844.802 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+846.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+847.342 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+847.682 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+848.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+852.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+852.812 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+854.972 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+855.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+855.952 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+859.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+859.802 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+860.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+862.492 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+863.482 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+866.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+868.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+868.882 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+869.062 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+870.152 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+872.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+877.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+877.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+877.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+882.392 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+884.852 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+887.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+888.402 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+890.372 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+890.872 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+891.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+899.082 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+899.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+899.702 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+904.442 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+905.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+907.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+908.442 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+909.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+912.852 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+913.052 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+914.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+915.202 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+917.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+918.992 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+919.682 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+920.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+921.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+923.842 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+932.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+932.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+932.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+938.042 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+938.452 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+939.342 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+943.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+945.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+945.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+946.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+950.102 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+951.392 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+951.412 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+952.252 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+952.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+956.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+958.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+959.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+959.372 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+960.692 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+962.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+962.932 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+963.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+963.852 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+967.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+968.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+969.692 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+970.152 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+971.582 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+971.782 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+972.142 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+977.412 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+978.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+979.012 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+979.142 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+979.302 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+980.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+983.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+984.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+987.812 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+987.862 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+989.892 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+991.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+998.212 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+998.512 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+999.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+999.842 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1000.082 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1003.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1006.302 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1006.912 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1009.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1011.662 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1013.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1014.552 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1016.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1017.152 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1021.322 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1021.662 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1022.152 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1023.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1026.452 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1027.162 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1028.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1029.102 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1029.112 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1032.862 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1035.812 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1037.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1042.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1046.612 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1048.942 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1049.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1050.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1052.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1059.652 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1061.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1062.722 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1069.012 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1069.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1071.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1071.852 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1074.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1075.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1076.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1097.302 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1098.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1099.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1104.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1105.942 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1106.582 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1107.722 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1107.902 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1109.942 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1111.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1114.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1114.062 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1116.862 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1117.242 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1121.502 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1122.642 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1131.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1131.902 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1132.282 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1133.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1135.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1137.582 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1138.262 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1139.852 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1140.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1141.082 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1142.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1143.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1146.142 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1147.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1149.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1149.772 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1152.872 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1153.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1155.092 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1159.072 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1160.922 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1160.942 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1161.482 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1163.952 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1169.972 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1171.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1172.812 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1173.992 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1174.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1177.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1178.472 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1178.612 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1178.872 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1179.112 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1180.212 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1180.712 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1182.912 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1183.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1186.922 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1188.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1191.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1191.962 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1192.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1194.622 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1196.172 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1197.452 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1198.472 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1198.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1199.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1199.882 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1200.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1201.922 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1204.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1207.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1213.822 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1220.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1249.104 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1251.033 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1277.404 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1294.404 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1320.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1336.404 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1357.804 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1361.053 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1373.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1390.804 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1409.204 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1426.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1438.504 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1442.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1459.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1470.804 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1471.064 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1475.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1490.504 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1521.192 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1530.442 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1531.932 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1539.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1542.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1542.492 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1546.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1546.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1546.942 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1550.182 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1551.002 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1553.082 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1556.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1557.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1557.482 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1558.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1561.552 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1561.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1562.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1562.542 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1563.332 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1564.202 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1564.502 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1565.542 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1566.002 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1566.332 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1566.412 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1566.692 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+1567.002 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1568.102 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1570.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1570.492 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1571.432 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1573.202 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1573.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1574.742 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1575.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1575.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1577.652 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1580.912 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1587.992 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1589.442 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1590.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1596.752 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1596.852 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1596.992 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1599.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1603.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1607.252 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1611.742 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1612.342 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1612.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1613.502 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1614.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1614.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1615.602 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1620.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1622.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1622.852 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1638.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1638.552 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1641.392 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1643.192 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1643.412 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1644.522 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1650.952 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1652.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1653.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1655.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1655.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1657.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1659.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1664.032 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1665.882 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1672.492 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1673.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1675.122 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1675.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1676.732 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1677.182 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1678.002 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1681.852 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1683.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+1683.692 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1684.012 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+1685.602 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+1688.904 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1724.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1741.604 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1753.773 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1755.904 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1760.604 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1775.404 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1787.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1792.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1807.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1817.804 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1822.704 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1837.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1848.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1853.304 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1863.784 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+1866.704 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1878.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+1973.793 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2083.814 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2193.824 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2303.833 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2413.853 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2523.864 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2644.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2645.552 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2648.192 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2651.752 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2653.752 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2658.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2659.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2665.032 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2668.792 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2669.632 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+2670.092 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2672.702 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2674.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2677.482 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2679.052 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2681.772 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2682.492 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2682.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2685.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2687.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2687.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2688.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2691.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2691.872 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2693.492 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2693.532 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2694.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2695.782 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2698.332 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2698.392 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2698.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2699.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2703.612 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2704.772 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2709.402 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2709.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2716.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2733.712 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2738.822 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2740.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2743.432 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+2746.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2747.432 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2748.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2749.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2749.692 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2752.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2753.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2762.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2764.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2766.392 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2770.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2772.532 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2776.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2780.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2782.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2786.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2791.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2794.512 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2799.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2803.742 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2805.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2806.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2807.942 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2809.802 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2810.172 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2810.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2812.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2813.402 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2815.262 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2818.182 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2818.312 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2818.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2820.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2824.042 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2824.142 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2828.012 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2829.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2830.432 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2831.812 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2832.232 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2832.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2832.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2840.282 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2843.412 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2844.212 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2848.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2852.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2854.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2859.792 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2859.852 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2860.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2861.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2862.042 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2863.052 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2863.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2863.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2864.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2864.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2867.412 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2867.692 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2870.442 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2870.832 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2871.492 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2879.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2881.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2881.682 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2882.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2883.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2885.072 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2886.932 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2887.232 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2889.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2890.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2895.532 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2902.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2905.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2908.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2908.872 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2910.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2915.212 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2918.452 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2918.612 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2920.032 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2932.092 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2932.232 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2935.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2936.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2942.692 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2946.252 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2948.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2949.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2952.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2952.802 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2956.392 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2958.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2960.232 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2960.592 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2962.052 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2962.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2962.812 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2964.812 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2966.832 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2969.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2971.162 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2971.792 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2972.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2973.332 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2975.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2976.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2978.792 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2979.022 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2979.942 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2980.542 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2980.742 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2980.842 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2982.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2982.812 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2984.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2985.052 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2988.432 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2988.652 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+2989.542 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2989.712 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2989.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2992.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2992.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2992.612 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+2998.502 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3001.072 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3001.642 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3005.412 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3008.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3009.352 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3010.072 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3010.432 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3010.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3014.402 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3014.442 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3018.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3018.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3019.652 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3021.052 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3021.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3024.702 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3024.742 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3029.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3029.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3029.692 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3029.892 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3031.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3033.102 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3033.542 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3033.942 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3042.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3045.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3051.992 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3052.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3056.192 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3065.092 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3068.232 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3071.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3071.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3073.652 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3074.192 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3074.592 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3075.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3077.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3080.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3080.282 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3081.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3083.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3084.782 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3086.132 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3086.872 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3091.112 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3093.452 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3094.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3095.532 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3095.712 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3095.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3097.102 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3097.472 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3098.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3098.662 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3101.762 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3101.872 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3101.962 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3102.032 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3102.182 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3102.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3103.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3104.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3107.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3109.842 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3110.752 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3116.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3116.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3120.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3120.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3123.732 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3125.392 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3127.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3127.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3136.302 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3147.552 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3149.612 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3151.662 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3155.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3155.752 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3156.152 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3157.702 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3160.632 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3161.102 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3161.512 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3162.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3162.342 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3162.462 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3163.052 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3163.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3164.342 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3164.442 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3169.612 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3183.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3185.852 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3186.242 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3186.502 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3187.812 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3189.952 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3191.752 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3193.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3200.162 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3200.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3204.992 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3213.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3219.242 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3221.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3226.832 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3227.742 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3228.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3237.332 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3238.902 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3239.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3241.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3245.042 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3246.962 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3247.522 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3253.352 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3254.952 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3258.132 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3258.172 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3266.012 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3267.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3273.912 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3275.312 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3276.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3278.192 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3281.492 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3283.662 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3285.612 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3289.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3291.982 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3294.012 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3294.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3297.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3299.112 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3302.852 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3303.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3305.052 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3305.572 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3306.412 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3306.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3307.832 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3313.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3314.832 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3317.272 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3318.552 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3318.622 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3322.612 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3342.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3349.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3353.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3355.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3357.452 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3358.552 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3366.312 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3367.262 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3367.832 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3369.632 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3370.152 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3375.492 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3375.962 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3376.342 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3377.832 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3382.232 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3383.232 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3384.952 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3385.952 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3389.292 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3389.542 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3393.142 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3394.732 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3395.752 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3398.732 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3401.892 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3402.082 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3402.462 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3403.222 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3403.672 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3404.652 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3406.192 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3406.432 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3408.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3413.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3414.752 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3415.022 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3415.142 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3415.309 eth0:init.cpp(108): LC: 13695ms link Up
+3424.362 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3426.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3430.032 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3432.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3432.572 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3435.669 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:52669
+3435.678 xcp_udp:../xcp/eth.cpp(197): XCP connected
+3435.918 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+3437.886 xcp_udp:../genio/stream_info.cpp(524): ctx 000007a9 Size=504
+3439.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3439.938 xcp_udp:../genio/stream_userpermissionkeys.cpp(36): WriteUserPermissionKeys MoTeC.M1.User.Clone
+3440.336 xcp_udp:../genio/stream_userpermissionkeys.cpp(161): Size=952
+3440.356 xcp_udp:../genio/stream_users.cpp(196): Size=844
+3440.769 xcp_udp:../genio/stream_users.cpp(196): Size=3396
+3441.094 xcp_udp:../genio/stream_caldelta.cpp(187): total_size=171692
+3442.487 xcp_udp:../genio/genio/file.cpp(35): open /fl/data_store2.bin No such file or directory
+3442.487 xcp_udp:../xcp/e7.cpp(233): ERR errno=2 
+3442.487 xcp_udp:../xcp/xcp/stack.cpp(563): <- pid=0xFE, error_code=0x31, data=-15269890
+3442.526 xcp_udp:../genio/genio/file.cpp(35): open /fl/data_store3.bin No such file or directory
+3442.526 xcp_udp:../xcp/e7.cpp(233): ERR errno=2 
+3442.526 xcp_udp:../xcp/xcp/stack.cpp(563): <- pid=0xFE, error_code=0x31, data=-15269890
+3448.422 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3448.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3456.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3458.522 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3462.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3465.022 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3466.252 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3467.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3468.432 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3468.522 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3472.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3473.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3474.732 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3476.032 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3477.932 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3482.332 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3492.712 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3496.072 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3499.132 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3502.332 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3513.372 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3515.472 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3519.012 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3522.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3522.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3523.792 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3524.612 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3525.362 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3527.152 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3528.132 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3528.262 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3528.352 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3529.992 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3530.192 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3533.632 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3534.292 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3535.392 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3539.642 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3539.812 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3540.382 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3541.562 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3542.432 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3543.052 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3544.952 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3545.282 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3546.512 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3546.932 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3547.152 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3548.592 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3549.182 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3549.972 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3551.392 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3554.532 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3560.112 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3564.922 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3566.392 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3568.312 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3570.212 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3572.932 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3574.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3575.642 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3576.272 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3583.892 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3586.732 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out
+3588.122 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3594.422 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3595.582 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3595.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3600.672 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3604.832 100Hz_Trigg:0x153828:SDK:17:CAN_IOC_MSG_RX Operation timed out
+3605.392 100Hz_Trigg:0x153828:SDK:18:CAN_IOC_MSG_RX Operation timed out
+3608.792 100Hz_Trigg:0x153828:SDK:15:CAN_IOC_MSG_RX Operation timed out
+3613.032 100Hz_Trigg:0x153828:SDK:16:CAN_IOC_MSG_RX Operation timed out

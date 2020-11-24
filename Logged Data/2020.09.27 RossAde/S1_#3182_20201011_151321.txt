@@ -1,0 +1,32 @@
+1531.774 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4640
+1531.818 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4640
+1531.823 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+1531.824 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+1557.086 eth0:init.cpp(108): LC: 10898ms link Down
+1561.087 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+3037.964 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3773.873 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3883.884 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3993.893 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4103.924 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4213.933 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4323.944 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4433.953 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4543.964 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+4686.089 eth0:init.cpp(108): LC: 13164ms link Up
+4697.689 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:62883
+4697.698 xcp_udp:../xcp/eth.cpp(197): XCP connected
+4697.848 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+4698.297 xcp_udp:../genio/stream_info.cpp(524): ctx 000007a9 Size=504
+4699.259 xcp_udp:../genio/stream_userpermissionkeys.cpp(36): WriteUserPermissionKeys MoTeC.M1.User.Clone
+4699.654 xcp_udp:../genio/stream_userpermissionkeys.cpp(161): Size=952
+4699.676 xcp_udp:../genio/stream_users.cpp(196): Size=844
+4700.088 xcp_udp:../genio/stream_users.cpp(196): Size=3392
+4700.413 xcp_udp:../genio/stream_caldelta.cpp(187): total_size=171692
+4701.879 xcp_udp:../genio/genio/file.cpp(35): open /fl/data_store2.bin No such file or directory
+4701.879 xcp_udp:../xcp/e7.cpp(233): ERR errno=2 
+4701.879 xcp_udp:../xcp/xcp/stack.cpp(563): <- pid=0xFE, error_code=0x31, data=-15269890
+4701.944 xcp_udp:../genio/genio/file.cpp(35): open /fl/data_store3.bin No such file or directory
+4701.944 xcp_udp:../xcp/e7.cpp(233): ERR errno=2 
+4701.944 xcp_udp:../xcp/xcp/stack.cpp(563): <- pid=0xFE, error_code=0x31, data=-15269890
+4803.788 xcp_udp:../genio/stream_info.cpp(524): ctx 00010062 Size=4420

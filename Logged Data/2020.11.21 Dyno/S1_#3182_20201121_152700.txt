@@ -1,0 +1,15 @@
+559.692 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4900
+559.733 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4900
+559.735 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+559.736 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+2830.673 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+2836.403 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+2863.604 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3110.503 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3113.029 fpga.c(1271): PWRGOOD 0
+3114.004 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3114.054 fpga.c(1271): PWRGOOD 1
+3150.786 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+3162.303 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3171.104 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+3260.793 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100

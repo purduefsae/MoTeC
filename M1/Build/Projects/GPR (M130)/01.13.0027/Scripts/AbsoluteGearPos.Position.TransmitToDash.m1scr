@@ -1,0 +1,8 @@
+local h = CanComms.TxOpen(true);
+
+local ok = true;
+
+CanComms.TxInitialise(h, 1);
+CanComms.SetInteger(h,  0, 8, Int);
+ok = CanComms.TxStandard(h, 0, 0x0D0);
+ok = ok;

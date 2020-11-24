@@ -1,0 +1,49 @@
+303.625 xcp_udp:../stream/execute.cpp(388): write_logsetuplist
+303.638 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=8220
+303.665 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=8220
+303.666 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+303.666 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+303.928 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+303.928 main:core_thread.cpp(345): kill
+303.929 main:core_thread.cpp(318): start
+303.978 kern/elf.c(73): premalloc 2013a0 262144
+303.978 main:ecu_thread.c(140): waiting for signal
+303.979 main:fw_sections.cpp(256): map
+303.979 main:fw_sections.cpp(260): pid 2
+303.983 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+304.009 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+304.010 main:ecu_thread.c(118): got signal 30, continuing...
+304.016 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+304.016 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+304.017 etpu/ppm.c(80): update period 39062
+304.017 etpu/etpu_ign.c(705): tdc pitch 720.0
+304.017 etpu/etpu_ign.c(705): tdc pitch 720.0
+304.018 etpu/etpu_ign.c(705): tdc pitch 720.0
+304.018 etpu/etpu_ign.c(705): tdc pitch 720.0
+304.018 etpu/etpu_ign.c(427): min_delta 0
+304.018 etpu/ppm.c(80): update period 39062
+304.018 etpu/ppm.c(80): update period 39062
+304.018 etpu/ppm.c(80): update period 39062
+304.018 etpu/ppm.c(80): update period 39062
+304.020 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+304.020 main:core_thread.cpp(170): running
+304.025 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+304.025 main:0x132810:SDK:ioctl Input/output error
+304.025 main:0x133040:SDK:CanComms.TxInitialise: bad handle
+304.025 main:0x1261c4:SDK:CanComms.SetInteger: bad handle
+304.025 main:0x1261d8:SDK:CanComms.SetInteger: bad handle
+304.025 main:0x1261ec:SDK:CanComms.SetInteger: bad handle
+304.025 main:0x126200:SDK:CanComms.SetInteger: bad handle
+304.025 main:0x126214:SDK:CanComms.SetInteger: bad handle
+304.025 main:0x126224:SDK:CanComms.TxStandard: bad handle
+304.026 main:0x133040:SDK:CanComms.TxStandard: bad handle
+304.026 main:0x13304c:SDK:CanComms.TxInitialise: bad handle
+304.035 etpu/etpu_ign.c(575): pattern0
+304.046 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+304.097 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+304.097 mdns:mdns.c(139): Updating service '15:3182:1:4'
+304.874 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:64667
+304.886 xcp_udp:../xcp/eth.cpp(197): XCP connected
+305.045 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+305.048 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+305.198 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304

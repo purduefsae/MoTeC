@@ -1,0 +1,17 @@
+4810.778 xcp_udp:../logging/logging_stream.cpp(330): logging_stream_consolidate begin size=4640
+4810.827 xcp_udp:../logging/logging_stream.cpp(415): logging_stream_consolidate end size=4640
+4810.829 xcp_udp:../logging/metadata.cpp(260): logging_metadata_consolidate begin size=139896
+4810.829 xcp_udp:../logging/metadata.cpp(266): skip consolidate: only 1 metadata
+4831.126 eth0:init.cpp(108): LC: 20762ms link Down
+4834.025 xcp_udp:../xcp/eth.cpp(144): XCP connection timeout
+5355.364 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5465.373 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5575.384 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5685.393 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5795.413 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+5905.424 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+6015.433 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12164 deltas=100
+6138.129 eth0:init.cpp(108): LC: 22095ms link Up
+6162.438 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:60951
+6162.448 xcp_udp:../xcp/eth.cpp(197): XCP connected
+6162.592 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
