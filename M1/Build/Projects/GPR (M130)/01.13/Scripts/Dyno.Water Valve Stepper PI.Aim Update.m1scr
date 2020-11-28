@@ -2,7 +2,7 @@ local error = Engine.Speed - RPM Target;
 
 when (Automated Control)
 {
-	is (Enabled)
+	is (Enable)
 	{
 		when (Engine.State)
 		{
@@ -37,7 +37,7 @@ when (Automated Control)
 			}
 		}
 	}
-	is (Not in Use)
+	is (Not In Use)
 	{
 		Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
 	}

@@ -1,6 +1,6 @@
 when (Automated Control)
 {
-	is (Enabled) //Automated Control
+	is (Enable) //Automated Control
 	{
 		when (Engine.State)
 		{
@@ -35,7 +35,7 @@ when (Automated Control)
 			}
 		}
 	}
-	is (Not in Use) //Manual Control
+	is (Not In Use) //Manual Control
 	{
 		Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
 	}
