@@ -1,0 +1,4 @@
+if (Paddle Shifts Location neq Data input location.Not used)
+{
+	Value = Value.Idle;
+}

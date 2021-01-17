@@ -1,0 +1,8 @@
+local paramUpdated = (ParamChange neq LastParam);
+
+if (paramUpdated) {
+	Set Module Lean Angle();
+}
+
+LastParam = ParamChange;
+ParamChange = ChangeToZero;

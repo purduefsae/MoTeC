@@ -1,0 +1,44 @@
+Error = Engine.Speed - RPM Target;
+
+when (Automated Control)
+{
+	is (Enable)
+	{
+		when (Engine.State)
+		{
+			is (Run)
+			{
+				Integral Value += error*Error Time;
+				PI Aim = Proportional*error + Integral Value*Integral Coeff; //max error would be ~12000 RPM so set bound of Prop. to be wherever the ratio of 12000 to aim is
+				if (Convert.ToInteger(Position + PI Aim) > Convert.ToInteger(Maximum Step))
+				{
+					Aim = Convert.ToInteger(Maximum Step);
+				}
+				else if (Convert.ToInteger(Position + PI Aim) < 0)
+				{
+					Aim = 0;
+				}
+				else
+				{
+					Aim = Convert.ToInteger(Position + PI Aim);
+				}
+			}
+			is (Startup)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
+			}
+			is (Crank)
+			{
+				Aim = Position;
+			}
+			is (Stop)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Closed);
+			}
+		}
+	}
+	is (Not In Use)
+	{
+		Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
+	}
+}

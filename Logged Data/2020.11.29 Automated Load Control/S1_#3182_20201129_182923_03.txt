@@ -1,0 +1,206 @@
+1860.792 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+1860.988 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1950.118 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+1950.217 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1950.327 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1957.409 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+1957.508 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1957.616 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2381.332 fpga.c(1271): PWRGOOD 0
+2382.203 10Hz_Trigge:suppressed 21 messages
+2382.203 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+2382.354 fpga.c(1271): PWRGOOD 1
+2395.656 fpga.c(1271): PWRGOOD 0
+2396.167 fpga.c(1271): PWRGOOD 1
+2402.307 fpga.c(1271): PWRGOOD 0
+2402.818 fpga.c(1271): PWRGOOD 1
+2413.565 fpga.c(1271): PWRGOOD 0
+2414.076 fpga.c(1271): PWRGOOD 1
+2420.728 fpga.c(1271): PWRGOOD 0
+2421.239 fpga.c(1271): PWRGOOD 1
+2422.733 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=4880 deltas=100
+2527.656 fpga.c(1271): PWRGOOD 0
+2528.167 fpga.c(1271): PWRGOOD 1
+2532.746 main:../delta/delta_file.cpp(33): delta_file_consolidate ext=2 size=12568 deltas=100
+2538.909 fpga.c(1271): PWRGOOD 0
+2539.423 fpga.c(1271): PWRGOOD 1
+2540.445 fpga.c(1271): PWRGOOD 0
+2540.956 fpga.c(1271): PWRGOOD 1
+2552.728 fpga.c(1271): PWRGOOD 0
+2553.239 fpga.c(1271): PWRGOOD 1
+2574.217 fpga.c(1271): PWRGOOD 0
+2574.728 fpga.c(1271): PWRGOOD 1
+2584.956 fpga.c(1271): PWRGOOD 0
+2585.467 fpga.c(1271): PWRGOOD 1
+2587.518 fpga.c(1271): PWRGOOD 0
+2588.029 fpga.c(1271): PWRGOOD 1
+2596.217 fpga.c(1271): PWRGOOD 0
+2596.728 fpga.c(1271): PWRGOOD 1
+2599.168 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+2599.268 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+2599.377 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2601.012 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+2601.012 main:core_thread.cpp(345): kill
+2601.773 main:fw_sections.cpp(297): unmap
+2601.773 main:ecu_thread.c(126): got signal 15, exiting...
+2601.785 tpu.c(2381): free tpu memory
+2601.789 ../mpc555x/flexcan.c(659): flexcana kbaud: 0
+2601.795 main:core_thread.cpp(143): exited
+2601.797 main:core_thread.cpp(318): start
+2601.846 kern/elf.c(73): premalloc 2013a0 262144
+2601.847 main:ecu_thread.c(140): waiting for signal
+2601.847 main:fw_sections.cpp(256): map
+2601.847 main:fw_sections.cpp(260): pid 2
+2601.852 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+2601.865 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+2601.868 main:ecu_thread.c(118): got signal 30, continuing...
+2601.875 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+2601.875 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+2601.876 etpu/ppm.c(80): update period 39062
+2601.876 etpu/etpu_ign.c(705): tdc pitch 720.0
+2601.876 etpu/etpu_ign.c(705): tdc pitch 720.0
+2601.876 etpu/etpu_ign.c(705): tdc pitch 720.0
+2601.876 etpu/etpu_ign.c(705): tdc pitch 720.0
+2601.876 etpu/etpu_ign.c(427): min_delta 0
+2601.877 etpu/ppm.c(80): update period 39062
+2601.877 etpu/ppm.c(80): update period 39062
+2601.877 etpu/ppm.c(80): update period 39062
+2601.877 etpu/ppm.c(80): update period 39062
+2601.879 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+2601.879 main:core_thread.cpp(170): running
+2601.884 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+2601.884 main:0x132b5c:SDK:ioctl Input/output error
+2601.885 main:0x133284:SDK:CanComms.TxInitialise: bad handle
+2601.885 main:0x126408:SDK:CanComms.SetInteger: bad handle
+2601.885 main:0x12641c:SDK:CanComms.SetInteger: bad handle
+2601.885 main:0x126430:SDK:CanComms.SetInteger: bad handle
+2601.885 main:0x126444:SDK:CanComms.SetInteger: bad handle
+2601.885 main:0x126458:SDK:CanComms.SetInteger: bad handle
+2601.885 main:0x126468:SDK:CanComms.TxStandard: bad handle
+2601.885 main:0x133284:SDK:CanComms.TxStandard: bad handle
+2601.885 main:0x133290:SDK:CanComms.TxInitialise: bad handle
+2601.895 etpu/etpu_ign.c(575): pattern0
+2601.906 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+2601.957 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+2602.595 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:64517
+2602.609 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2603.217 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+2671.417 fpga.c(1271): PWRGOOD 0
+2671.928 fpga.c(1271): PWRGOOD 1
+2707.434 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+2707.533 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+2707.638 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2709.136 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+2709.136 main:core_thread.cpp(345): kill
+2709.773 main:fw_sections.cpp(297): unmap
+2709.774 main:ecu_thread.c(126): got signal 15, exiting...
+2709.785 tpu.c(2381): free tpu memory
+2709.789 ../mpc555x/flexcan.c(659): flexcana kbaud: 0
+2709.795 main:core_thread.cpp(143): exited
+2709.797 main:core_thread.cpp(318): start
+2709.846 kern/elf.c(73): premalloc 2013a0 262144
+2709.847 main:ecu_thread.c(140): waiting for signal
+2709.847 main:fw_sections.cpp(256): map
+2709.847 main:fw_sections.cpp(260): pid 2
+2709.852 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+2709.865 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+2709.868 main:ecu_thread.c(118): got signal 30, continuing...
+2709.875 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+2709.875 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+2709.877 etpu/ppm.c(80): update period 39062
+2709.877 etpu/etpu_ign.c(705): tdc pitch 720.0
+2709.877 etpu/etpu_ign.c(705): tdc pitch 720.0
+2709.877 etpu/etpu_ign.c(705): tdc pitch 720.0
+2709.877 etpu/etpu_ign.c(705): tdc pitch 720.0
+2709.877 etpu/etpu_ign.c(427): min_delta 0
+2709.877 etpu/ppm.c(80): update period 39062
+2709.877 etpu/ppm.c(80): update period 39062
+2709.878 etpu/ppm.c(80): update period 39062
+2709.878 etpu/ppm.c(80): update period 39062
+2709.879 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+2709.879 main:core_thread.cpp(170): running
+2709.884 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+2709.884 main:0x132b5c:SDK:ioctl Input/output error
+2709.885 main:0x133284:SDK:CanComms.TxInitialise: bad handle
+2709.885 main:0x126408:SDK:CanComms.SetInteger: bad handle
+2709.885 main:0x12641c:SDK:CanComms.SetInteger: bad handle
+2709.885 main:0x126430:SDK:CanComms.SetInteger: bad handle
+2709.885 main:0x126444:SDK:CanComms.SetInteger: bad handle
+2709.885 main:0x126458:SDK:CanComms.SetInteger: bad handle
+2709.885 main:0x126468:SDK:CanComms.TxStandard: bad handle
+2709.885 main:0x133284:SDK:CanComms.TxStandard: bad handle
+2709.885 main:0x133290:SDK:CanComms.TxInitialise: bad handle
+2709.896 etpu/etpu_ign.c(575): pattern0
+2709.908 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+2709.958 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+2710.573 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:62142
+2710.584 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2711.152 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+2722.522 100Hz_Trigg:suppressed 22 messages
+2722.522 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2728.862 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2733.272 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2735.162 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2735.502 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2738.622 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2739.272 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2740.142 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2740.452 100Hz_Trigg:0x153ba4:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2741.932 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2742.502 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2744.782 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2746.952 100Hz_Trigg:0x153ba4:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2748.192 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2754.882 100Hz_Trigg:0x153ba4:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2755.662 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+2759.222 100Hz_Trigg:0x153ba4:SDK:17:CAN_IOC_MSG_RX Operation timed out
+2762.375 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+2762.474 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+2762.584 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+2763.914 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+2763.914 main:core_thread.cpp(345): kill
+2764.373 main:fw_sections.cpp(297): unmap
+2764.374 main:ecu_thread.c(126): got signal 15, exiting...
+2764.385 tpu.c(2381): free tpu memory
+2764.389 ../mpc555x/flexcan.c(659): flexcana kbaud: 0
+2764.396 main:core_thread.cpp(143): exited
+2764.397 main:core_thread.cpp(318): start
+2764.446 kern/elf.c(73): premalloc 2013a0 262144
+2764.447 main:ecu_thread.c(140): waiting for signal
+2764.447 main:fw_sections.cpp(256): map
+2764.447 main:fw_sections.cpp(260): pid 2
+2764.453 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+2764.465 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+2764.468 main:ecu_thread.c(118): got signal 30, continuing...
+2764.476 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+2764.476 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+2764.477 etpu/ppm.c(80): update period 39062
+2764.477 etpu/etpu_ign.c(705): tdc pitch 720.0
+2764.477 etpu/etpu_ign.c(705): tdc pitch 720.0
+2764.477 etpu/etpu_ign.c(705): tdc pitch 720.0
+2764.477 etpu/etpu_ign.c(705): tdc pitch 720.0
+2764.477 etpu/etpu_ign.c(427): min_delta 0
+2764.478 etpu/ppm.c(80): update period 39062
+2764.478 etpu/ppm.c(80): update period 39062
+2764.478 etpu/ppm.c(80): update period 39062
+2764.478 etpu/ppm.c(80): update period 39062
+2764.480 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+2764.480 main:core_thread.cpp(170): running
+2764.485 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+2764.486 main:0x132b5c:SDK:ioctl Input/output error
+2764.486 main:0x133284:SDK:CanComms.TxInitialise: bad handle
+2764.486 main:0x126408:SDK:CanComms.SetInteger: bad handle
+2764.486 main:0x12641c:SDK:CanComms.SetInteger: bad handle
+2764.486 main:0x126430:SDK:CanComms.SetInteger: bad handle
+2764.486 main:0x126444:SDK:CanComms.SetInteger: bad handle
+2764.486 main:0x126458:SDK:CanComms.SetInteger: bad handle
+2764.486 main:0x126468:SDK:CanComms.TxStandard: bad handle
+2764.486 main:0x133284:SDK:CanComms.TxStandard: bad handle
+2764.486 main:0x133290:SDK:CanComms.TxInitialise: bad handle
+2764.486 main:0x126570:SDK:CanComms.SetInteger: bad handle
+2764.497 etpu/etpu_ign.c(575): pattern0
+2764.509 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+2764.564 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+2765.216 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:50630
+2765.226 xcp_udp:../xcp/eth.cpp(197): XCP connected
+2765.817 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

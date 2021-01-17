@@ -1,0 +1,327 @@
+314.389 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+315.767 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+333.158 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+333.256 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+333.365 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+334.436 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+334.436 main:core_thread.cpp(345): kill
+334.773 main:fw_sections.cpp(297): unmap
+334.773 main:ecu_thread.c(126): got signal 15, exiting...
+334.785 tpu.c(2381): free tpu memory
+334.788 ../mpc555x/flexcan.c(659): flexcana kbaud: 0
+334.794 main:core_thread.cpp(143): exited
+334.796 main:core_thread.cpp(318): start
+334.844 kern/elf.c(73): premalloc 2013a0 262144
+334.845 main:ecu_thread.c(140): waiting for signal
+334.845 main:fw_sections.cpp(256): map
+334.845 main:fw_sections.cpp(260): pid 2
+334.850 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+334.863 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+334.864 main:ecu_thread.c(118): got signal 30, continuing...
+334.871 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+334.871 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+334.872 etpu/ppm.c(80): update period 39062
+334.872 etpu/etpu_ign.c(705): tdc pitch 720.0
+334.872 etpu/etpu_ign.c(705): tdc pitch 720.0
+334.872 etpu/etpu_ign.c(705): tdc pitch 720.0
+334.872 etpu/etpu_ign.c(705): tdc pitch 720.0
+334.872 etpu/etpu_ign.c(427): min_delta 0
+334.872 etpu/ppm.c(80): update period 39062
+334.872 etpu/ppm.c(80): update period 39062
+334.873 etpu/ppm.c(80): update period 39062
+334.873 etpu/ppm.c(80): update period 39062
+334.874 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+334.874 main:core_thread.cpp(170): running
+334.879 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+334.879 main:0x132954:SDK:ioctl Input/output error
+334.879 main:0x13307c:SDK:CanComms.TxInitialise: bad handle
+334.879 main:0x126200:SDK:CanComms.SetInteger: bad handle
+334.879 main:0x126214:SDK:CanComms.SetInteger: bad handle
+334.879 main:0x126228:SDK:CanComms.SetInteger: bad handle
+334.879 main:0x12623c:SDK:CanComms.SetInteger: bad handle
+334.880 main:0x126250:SDK:CanComms.SetInteger: bad handle
+334.880 main:0x126260:SDK:CanComms.TxStandard: bad handle
+334.880 main:0x13307c:SDK:CanComms.TxStandard: bad handle
+334.880 main:0x133088:SDK:CanComms.TxInitialise: bad handle
+334.890 etpu/etpu_ign.c(575): pattern0
+334.899 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+334.955 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+335.669 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:50987
+335.679 xcp_udp:../xcp/eth.cpp(197): XCP connected
+336.357 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+468.368 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Sep  4 2020)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 30000000
+0.000 arch/ppc/e7/machdep.c(2140): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/e7_edma.c(73): init
+0.047 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.047 arch/ppc/e7/machdep.c(2396): ready: 47.755ms
+0.085 kern/elf.c(73): premalloc 2002c0 262144
+0.085 init: Mounting file systems
+0.097 fs/sffs/sffs_mount.c(316): SFFS Mount Report
+0.097 fs/sffs/sffs_mount.c(343): blks empty file chain erase init bad lost
+0.097 fs/sffs/sffs_mount.c(346):  512   490   16     6     0    0   0    0
+0.097 fs/sffs/sffs_mount.c(363): blks total free used file
+0.097 fs/sffs/sffs_mount.c(367):        512  490   22   16
+0.097 fs/sffs/sffs_mount.c(368): erase total  cnt   max   min   avg
+0.097 fs/sffs/sffs_mount.c(371):       31480  512    62    55    61
+0.103 main:init 01.04.00.0083_e7
+0.103 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.141 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.141 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.143 main:calibration.cpp(88): Calibration loaded
+0.143 main:../logging/startup.cpp(29): logging_startup
+0.144 fpga.c(845): buf 802a0000 len 169216 loops 0
+0.157 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.164 main:fw_sections.cpp(105): init
+0.207 main:fw_sections.cpp(155): region0 p_memsz 417748 aligned 417748
+0.207 main:fw_sections.cpp(155): region1 p_memsz 0 aligned 4096
+0.207 main:fw_sections.cpp(155): region2 p_memsz 205008 aligned 262144
+0.208 main:core_thread.cpp(393): setup to run
+0.208 main:core_thread.cpp(318): start
+0.243 fpga.c(871): buf 802c9eb0 len -2480 loops 42, sent 85848
+0.243 fpga.c(897): FPGA version 070b, type 2 loaded in 98 ms
+0.256 kern/elf.c(73): premalloc 2013a0 262144
+0.256 main:ecu_thread.c(140): waiting for signal
+0.256 main:fw_sections.cpp(256): map
+0.256 main:fw_sections.cpp(260): pid 2
+0.261 main:serial.cpp(49): Serial no. 3182
+0.262 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.275 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.276 main:ecu_thread.c(118): got signal 30, continuing...
+0.277 main:core_thread.cpp(170): running
+0.281 dac.c(212): init
+0.283 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+0.283 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+0.284 etpu/ppm.c(80): update period 39062
+0.284 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.284 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.284 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.284 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.285 etpu/etpu_ign.c(427): min_delta 0
+0.285 etpu/ppm.c(80): update period 39062
+0.285 etpu/ppm.c(80): update period 39062
+0.285 etpu/ppm.c(80): update period 39062
+0.285 etpu/ppm.c(80): update period 39062
+0.287 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+0.291 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.291 main:0x132954:SDK:ioctl Input/output error
+0.292 main:0x13307c:SDK:CanComms.TxInitialise: bad handle
+0.292 main:0x126200:SDK:CanComms.SetInteger: bad handle
+0.292 main:0x126214:SDK:CanComms.SetInteger: bad handle
+0.292 main:0x126228:SDK:CanComms.SetInteger: bad handle
+0.292 main:0x12623c:SDK:CanComms.SetInteger: bad handle
+0.292 main:0x126250:SDK:CanComms.SetInteger: bad handle
+0.292 main:0x126260:SDK:CanComms.TxStandard: bad handle
+0.292 main:0x13307c:SDK:CanComms.TxStandard: bad handle
+0.292 main:0x133088:SDK:CanComms.TxInitialise: bad handle
+0.301 etpu/etpu_ign.c(575): pattern0
+0.754 fpga.c(1271): PWRGOOD 1
+0.786 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.847 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.848 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.848 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.849 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.857 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.858 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.008 mdns:mdns.c(150): Adding service '11:13341'
+1.009 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.263 mdns:mdns.c(150): Adding service '10:21082'
+2.287 eth0:init.cpp(108): LC: 2287ms link Up
+12.582 100Hz_Trigg:suppressed 21 messages
+12.582 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+13.029 fpga.c(1271): PWRGOOD 0
+13.542 fpga.c(1271): PWRGOOD 1
+21.742 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+24.682 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+32.582 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+33.532 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+36.092 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+39.142 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+48.732 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+49.692 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+53.882 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+57.682 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+69.092 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+71.632 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+74.742 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+96.582 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+109.678 fpga.c(1271): PWRGOOD 0
+110.189 fpga.c(1271): PWRGOOD 1
+131.707 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:50385
+131.716 xcp_udp:../xcp/eth.cpp(197): XCP connected
+131.924 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636
+168.132 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+168.442 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+168.832 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+169.192 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+183.692 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+190.292 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+194.742 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+199.542 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+206.492 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+206.852 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+209.652 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+213.752 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+214.492 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+229.452 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+235.652 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+246.785 fpga.c(1271): PWRGOOD 0
+247.296 fpga.c(1271): PWRGOOD 1
+261.109 fpga.c(1271): PWRGOOD 0
+261.623 fpga.c(1271): PWRGOOD 1
+263.338 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+263.437 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+263.546 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+278.527 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+278.627 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+278.733 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+295.582 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+301.882 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+307.852 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+307.932 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+312.732 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+314.202 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+314.302 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+314.612 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+315.192 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+317.832 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+328.103 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+340.642 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+341.939 fpga.c(1271): PWRGOOD 0
+342.452 fpga.c(1271): PWRGOOD 1
+343.002 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+352.092 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+357.332 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+358.422 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+360.762 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+365.203 10Hz_Trigge:System.Debug: Engine Oil Pressure Warning: Engine Oil Pressure Warning
+367.522 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+367.612 100Hz_Trigg:0x153ba4:SDK:11:CAN_IOC_MSG_RX Operation timed out
+373.912 100Hz_Trigg:0x153ba4:SDK:16:CAN_IOC_MSG_RX Operation timed out
+397.638 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+397.736 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+397.847 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+
+
+
+
+Prex version 0.8.1 for ppc-e7 (Sep  4 2020)
+0.000 Fast memory: 40003000 118784
+0.000 Free pages (0):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  20008000 - 20100000     992K
+0.000  used=32K free=992K total=1024K
+0.000 Free pages (1):
+0.000  start      end      size
+0.000  --------   -------- --------
+0.000  40003000 - 40020000     116K
+0.000  used=0K free=116K total=116K
+0.000 arch/ppc/mpc555x/cpu.c(32): mpr0_h7f 00003210
+0.000 arch/ppc/mpc555x/cpu.c(34): sgpcr0_h7f 00000010
+0.000 MPC5566 mask 0
+0.000 Reset source:POR:EXT:0
+0.000 RSR c0000000 DBSR 10000000 TSR 20000000
+0.000 arch/ppc/e7/machdep.c(2140): ecu60
+0.000 Time slice is 50 msec
+0.000 Load static drivers
+0.000 ../mpc555x/e7_edma.c(73): init
+0.047 ../mpc555x/cfi.c(242): 2 bank each: size 4000000 blocks 512 block_size 20000 program_size 64
+0.047 arch/ppc/e7/machdep.c(2396): ready: 47.756ms
+0.085 kern/elf.c(73): premalloc 2002c0 262144
+0.085 init: Mounting file systems
+0.097 fs/sffs/sffs_mount.c(316): SFFS Mount Report
+0.097 fs/sffs/sffs_mount.c(343): blks empty file chain erase init bad lost
+0.097 fs/sffs/sffs_mount.c(346):  512   464   42     6     0    0   0    0
+0.097 fs/sffs/sffs_mount.c(363): blks total free used file
+0.097 fs/sffs/sffs_mount.c(367):        512  464   48   42
+0.097 fs/sffs/sffs_mount.c(368): erase total  cnt   max   min   avg
+0.097 fs/sffs/sffs_mount.c(371):       31484  512    62    55    61
+0.103 main:init 01.04.00.0083_e7
+0.103 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.142 ../mpc555x/ax88796b.c(345): MAC: 70:b3:d5:71:ee:fe
+0.142 main:link-local address: fe80:0000:0000:0000:72b3:d5ff:fe71:eefe
+0.144 fpga.c(845): buf 802a0000 len 169216 loops 0
+0.144 main:calibration.cpp(88): Calibration loaded
+0.144 main:../logging/startup.cpp(29): logging_startup
+0.158 xcp_worker:../xcp/e7.cpp(577): xcp_worker started
+0.165 main:fw_sections.cpp(105): init
+0.208 main:fw_sections.cpp(155): region0 p_memsz 417748 aligned 417748
+0.208 main:fw_sections.cpp(155): region1 p_memsz 0 aligned 4096
+0.208 main:fw_sections.cpp(155): region2 p_memsz 205008 aligned 262144
+0.209 main:core_thread.cpp(393): setup to run
+0.209 main:core_thread.cpp(318): start
+0.244 fpga.c(871): buf 802c9eb0 len -2480 loops 42, sent 85848
+0.244 fpga.c(897): FPGA version 070b, type 2 loaded in 100 ms
+0.257 kern/elf.c(73): premalloc 2013a0 262144
+0.257 main:ecu_thread.c(140): waiting for signal
+0.257 main:fw_sections.cpp(256): map
+0.257 main:fw_sections.cpp(260): pid 2
+0.262 main:serial.cpp(49): Serial no. 3182
+0.263 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+0.276 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+0.279 main:ecu_thread.c(118): got signal 30, continuing...
+0.280 main:core_thread.cpp(170): running
+0.284 dac.c(212): init
+0.286 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+0.287 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+0.287 etpu/ppm.c(80): update period 39062
+0.287 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.287 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(705): tdc pitch 720.0
+0.288 etpu/etpu_ign.c(427): min_delta 0
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.288 etpu/ppm.c(80): update period 39062
+0.290 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+0.294 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+0.294 main:0x132954:SDK:ioctl Input/output error
+0.295 main:0x13307c:SDK:CanComms.TxInitialise: bad handle
+0.295 main:0x126200:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126214:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126228:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x12623c:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126250:SDK:CanComms.SetInteger: bad handle
+0.295 main:0x126260:SDK:CanComms.TxStandard: bad handle
+0.295 main:0x13307c:SDK:CanComms.TxStandard: bad handle
+0.295 main:0x133088:SDK:CanComms.TxInitialise: bad handle
+0.304 etpu/etpu_ign.c(575): pattern0
+0.755 fpga.c(1271): PWRGOOD 1
+0.789 xcp_worker:enable_entities.cpp(151): found enable file /int/enable0/e1
+0.852 xcp_worker:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+0.853 xcp_worker:../xcp/e7.cpp(531): xcp_event_scheduler started.
+0.854 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5555
+0.854 gw_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=6500
+0.863 mdns:mdns.c(150): Adding service '15:3182:1:4'
+0.864 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1.007 mdns:mdns.c(150): Adding service '11:13341'
+1.009 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1.263 mdns:mdns.c(150): Adding service '10:21082'
+2.279 eth0:init.cpp(108): LC: 2279ms link Up
+3.497 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:64892
+3.518 xcp_udp:../xcp/eth.cpp(197): XCP connected
+4.364 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ed Size=4636

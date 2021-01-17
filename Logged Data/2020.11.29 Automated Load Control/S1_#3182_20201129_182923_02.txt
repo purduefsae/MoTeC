@@ -1,0 +1,56 @@
+1568.507 xcp_udp:../xcp/appl.cpp(212): appl_reboot
+1568.507 main:core_thread.cpp(345): kill
+1568.508 main:core_thread.cpp(318): start
+1568.557 kern/elf.c(73): premalloc 2013a0 262144
+1568.558 main:ecu_thread.c(140): waiting for signal
+1568.558 main:fw_sections.cpp(256): map
+1568.558 main:fw_sections.cpp(260): pid 2
+1568.584 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=0
+1568.597 main:../delta/delta_stream.cpp(252): delta_stream_replay ext=2
+1568.597 main:fw_fid.cpp(40): ERR ec_fw_FidCheckFailed=516 
+1568.597 main:fw_glue.cpp(34): Zeroing fdata
+1568.606 main:ecu_thread.c(118): got signal 30, continuing...
+1568.613 etpu/ref.c(3308): cycle_ticks 7200 tcr2_per_deg 10.000
+1568.613 etpu/ref.c(3317): tooth_ratio min 0.40 max 1.99
+1568.614 etpu/ppm.c(80): update period 39062
+1568.614 etpu/etpu_ign.c(705): tdc pitch 720.0
+1568.614 etpu/etpu_ign.c(705): tdc pitch 720.0
+1568.614 etpu/etpu_ign.c(705): tdc pitch 720.0
+1568.614 etpu/etpu_ign.c(705): tdc pitch 720.0
+1568.614 etpu/etpu_ign.c(427): min_delta 0
+1568.615 etpu/ppm.c(80): update period 39062
+1568.615 etpu/ppm.c(80): update period 39062
+1568.615 etpu/ppm.c(80): update period 39062
+1568.615 etpu/ppm.c(80): update period 39062
+1568.617 ../mpc555x/flexcan.c(659): flexcana kbaud: 1000
+1568.617 main:core_thread.cpp(170): running
+1568.622 ../mpc555x/console.c(328): (EIO)neither TX or RX are enabled
+1568.622 main:0x132b5c:SDK:ioctl Input/output error
+1568.623 main:0x133284:SDK:CanComms.TxInitialise: bad handle
+1568.623 main:0x126408:SDK:CanComms.SetInteger: bad handle
+1568.623 main:0x12641c:SDK:CanComms.SetInteger: bad handle
+1568.623 main:0x126430:SDK:CanComms.SetInteger: bad handle
+1568.623 main:0x126444:SDK:CanComms.SetInteger: bad handle
+1568.623 main:0x126458:SDK:CanComms.SetInteger: bad handle
+1568.623 main:0x126468:SDK:CanComms.TxStandard: bad handle
+1568.623 main:0x133284:SDK:CanComms.TxStandard: bad handle
+1568.623 main:0x133290:SDK:CanComms.TxInitialise: bad handle
+1568.633 etpu/etpu_ign.c(575): pattern0
+1568.647 xcp_udp:enable_entities.cpp(151): found enable file /int/enable0/e1
+1568.698 xcp_udp:../xcp/eth.cpp(145): XCP connection closed
+1568.856 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1569.328 xcp_udp:XCP connect [fe80:0000:0000:0000:add7:c97f:ee27:d81a]:50263
+1569.338 xcp_udp:../xcp/eth.cpp(197): XCP connected
+1569.496 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1569.506 xcp_udp:../genio/stream_info.cpp(524): ctx 00000002 Size=224
+1569.996 xcp_udp:../stream/execute.cpp(440): write_ecuname
+1570.084 xcp_udp:mip/udpconn.c(26): mip_udpconn_bind local_port=5353
+1570.092 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1570.093 mdns:mdns.c(150): Adding service '15:3182:1:4'
+1570.097 xcp_udp:../xcp/xcp/stack.cpp(715): -> SET_REQUEST, mode=0x01, session_id=0x3F00
+1570.186 xcp_udp:../genio/stream_info.cpp(524): ctx 00040000 Size=76
+1570.323 xcp_udp:../genio/stream_info.cpp(524): ctx 00000780 Size=304
+1570.347 mdns:mdns.c(139): Updating service '15:3182:1:4'
+1570.599 mdns:mdns.c(150): Adding service '11:13341'
+1570.607 mdns:mdns.c(150): Adding service '10:21082'
+1860.199 xcp_udp:../genio/stream_info.cpp(524): ctx 000007ab Size=728
