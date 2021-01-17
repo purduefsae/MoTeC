@@ -1,0 +1,118 @@
+local map = Fuel.Pressure.GetMAP();
+
+when (Secondary.Location)
+{
+	is (Not in Use)
+	{
+		Secondary.Differential Pressure = Calculate.NAN();
+	}
+	is (After Throttle)
+	{
+		local mp = map - Ambient.Pressure;
+		Secondary.Differential Pressure = Fuel.Pressure - mp;
+	}
+	is (Before Throttle Airbox Referenced)
+	{
+		Secondary.Differential Pressure = Fuel.Pressure + Ambient.Pressure - Airbox.Pressure;
+	}
+	is (Before Throttle Boost Referenced)
+	{
+		local bp = Calculate.IsNAN(Boost.Pressure) ? (Airbox.Pressure - Ambient.Pressure) : Boost.Pressure;
+		Secondary.Differential Pressure = Fuel.Pressure - bp;
+	}
+}
+
+when (Primary.Location)
+{
+	is (Not in Use)
+	{
+		Primary.Differential Pressure = Calculate.NAN();
+	}
+	is (After Throttle)
+	{
+		local mp = map - Ambient.Pressure;
+		Primary.Differential Pressure = Fuel.Pressure - mp;
+	}
+	is (Before Throttle Airbox Referenced)
+	{
+		Primary.Differential Pressure = Fuel.Pressure + Ambient.Pressure - Airbox.Pressure;
+	}
+	is (Before Throttle Boost Referenced)
+	{
+		local bp = Calculate.IsNAN(Boost.Pressure) ? (Airbox.Pressure - Ambient.Pressure) : Boost.Pressure;
+		Primary.Differential Pressure = Fuel.Pressure - bp;
+	}
+}
+
+/*
+ * Primary and secondary split
+ */
+
+local pricontr = 1.0 - Secondary.Contribution Main;
+local seccontr = Secondary.Contribution Main;
+local injAllPriMin = Calculate.Infinity();
+local injAllSecMin = Calculate.Infinity();
+local priInuse = false;
+local secInuse = false;
+									
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	local cylVol = Engine.Cylinder $(n).Bank eq 1
+		? Fuel.Volume.Bank 1
+		: Fuel.Volume.Bank 2;
+
+	if (Fuel.Cylinder $(n).Primary.Output.Enable eq Fuel.Cylinder $(n).Primary.Output.Enable.Enabled)
+	{
+		injAllPriMin = Calculate.Min(cylVol * Fuel.Cylinder $(n).Trim, injAllPriMin);
+		priInuse = true;
+	}
+	if (Fuel.Cylinder $(n).Secondary.Output.Enable eq Fuel.Cylinder $(n).Secondary.Output.Enable.Enabled)
+	{
+		injAllSecMin = Calculate.Min(cylVol * Fuel.Cylinder $(n).Trim, injAllSecMin);
+		secInuse = true;
+	}
+}
+local injMinPri = injAllPriMin * pricontr;
+local injMinSec = injAllSecMin * seccontr;
+
+local priThd = Calculate.Hysteresis(injMinPri,
+									Fuel.Injector.Primary.Minimum Volume,
+									Fuel.Injector.Primary.Minimum Volume + Fuel.Injector.Primary.Minimum Volume Hysteresis,
+									0.0);
+local priOK = priThd and priInuse;
+
+local secThd = Calculate.Hysteresis(injMinSec,
+									Fuel.Injector.Secondary.Minimum Volume,
+									Fuel.Injector.Secondary.Minimum Volume + Fuel.Injector.Secondary.Minimum Volume Hysteresis,
+									0.0);
+local secOK = secThd and secInuse;
+
+local priAllThd = Calculate.Hysteresis(injAllPriMin,
+									Fuel.Injector.Primary.Minimum Volume,
+									Fuel.Injector.Primary.Minimum Volume + Fuel.Injector.Primary.Minimum Volume Hysteresis,
+									0.0);
+local priAllOK = priAllThd and priInuse;
+
+local secAllThd = Calculate.Hysteresis(injAllSecMin,
+									Fuel.Injector.Secondary.Minimum Volume,
+									Fuel.Injector.Secondary.Minimum Volume + Fuel.Injector.Secondary.Minimum Volume Hysteresis,
+									0.0);
+local secAllOK = secAllThd and secInuse;
+
+if (not priOK and secAllOK)
+{
+	pricontr = 0.0;
+	seccontr = 1.0;
+}
+else if (not secOK and priAllOK)
+{
+	pricontr = 1.0;
+	seccontr = 0.0;
+}
+
+Fuel.Injector.Primary.Contribution = pricontr;
+Fuel.Injector.Secondary.Contribution = seccontr;
+
+/* fuel volumes for information and CAN transmit only */
+Fuel.Volume.Primary = pricontr * Fuel.Volume;
+Fuel.Volume.Secondary = seccontr * Fuel.Volume;

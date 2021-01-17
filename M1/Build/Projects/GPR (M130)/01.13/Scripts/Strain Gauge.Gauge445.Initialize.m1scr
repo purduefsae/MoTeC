@@ -1,6 +1,6 @@
 Value = 0;
 CalibOutput = 0;
 
-//Diagnostic = Diagnostic.CAN Timeout;
+Diagnostic = Diagnostic.CAN Timeout;
 
 SensorCalibrate();
