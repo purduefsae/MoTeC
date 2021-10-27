@@ -1,0 +1,51 @@
+local v = Main;
+local s = State.Main;
+
+if (Coolant.Temperature.Fuel Mixture Aim < v)
+{
+	v = Coolant.Temperature.Fuel Mixture Aim;
+	s = State.Coolant Temperature;
+}
+if (Inlet.Air.Temperature.Fuel Mixture Aim < v)
+{
+	v = Inlet.Air.Temperature.Fuel Mixture Aim;
+	s = State.Inlet Air Temperature;
+}
+if (Engine.Load.Average.Fuel Mixture Aim < v)
+{
+	v = Engine.Load.Average.Fuel Mixture Aim;
+	s = State.Engine Load Average;
+}
+if (Exhaust.Temperature.Fuel Mixture Aim < v)
+{
+	v = Exhaust.Temperature.Fuel Mixture Aim;
+	s = State.Exhaust Temperature;
+}
+if (Race Time.Mode neq Race Time.Mode.Not in Use and Race Time.Fuel Mixture Aim < v)
+{
+	v = Race Time.Fuel Mixture Aim;
+	s = State.Race Time;
+}
+if (Auxiliary.Output 1.Output.IsActive() and Auxiliary.Output 1.Fuel Mixture Aim < v)
+{
+	v = Auxiliary.Output 1.Fuel Mixture Aim;
+	s = State.Auxiliary Output 1;
+}
+if (Auxiliary.Time.Fuel Mixture Aim < v)
+{
+	v = Auxiliary.Time.Fuel Mixture Aim;
+	s = State.Auxiliary Time;
+}
+if (Throttle.Position.Fuel Mixture Aim < v)
+{
+	v = Throttle.Position.Fuel Mixture Aim;
+	s = State.Throttle Position;
+}
+
+/*
+ * Trim
+ */
+v /= Trim;
+
+Value = v;
+State = s;

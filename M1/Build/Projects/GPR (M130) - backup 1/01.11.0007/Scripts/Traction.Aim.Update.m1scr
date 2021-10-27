@@ -1,0 +1,8 @@
+if (Traction.Mode eq Traction.Mode.Enabled)
+{
+	Value = Main * Compensation;
+}
+else
+{
+	Value = Calculate.NAN();
+}

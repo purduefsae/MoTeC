@@ -1,0 +1,26 @@
+/*
+ * Closed Loop Fuel
+ */
+local orun = Delay.Falling(Engine.Overrun.State eq Engine.Overrun.State.Enabled, Engine.Overrun.Closed Loop Recovery);
+local icut = Change.By(Ignition.Output.Cut Count, 1);
+local fcut = Change.By(Output.Cut Count, 1);
+local EngineCalibrationChanged = Change.By(Engine.Calibration Change, 1);
+
+if (Volume.Compensation.Post Start > 1.001
+	or Engine.Run Time <= 0.0
+)
+{
+	Closed Loop.SetEnable(Fuel Closed Loop Enable Enumeration.Disabled);
+}
+else if(orun
+	or icut
+	or fcut
+	or EngineCalibrationChanged
+)
+{
+	Closed Loop.SetEnable(Fuel Closed Loop Enable Enumeration.Transient);
+}
+else
+{
+	Closed Loop.SetEnable(Fuel Closed Loop Enable Enumeration.Enabled);
+}

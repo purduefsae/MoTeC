@@ -1,0 +1,60 @@
+/*
+ * LTC Shutdown
+ */
+if (Engine.Stall Time > Power Save Delay)
+{
+	LTC.Mode(-1, false);
+}
+else if (Engine.Run Time > 0.0 or Power Save Delay > 0.0)
+{
+	LTC.Mode(-1, true);
+}
+
+local enabled = (Collector.Diagnostic neq Collector.Diagnostic.Not in Use);
+expand (n = 1 to Engine.Cylinders)
+{
+	enabled = enabled or (Cylinder $(n).Diagnostic neq Cylinder $(n).Diagnostic.Not in Use);
+}
+
+if (not enabled)
+{
+	Value = 0.0;
+	Diagnostic = Diagnostic.Not in Use;
+}
+else
+{
+	if (Collector.Diagnostic eq Collector.Diagnostic.OK)
+	{
+		Value = Collector;
+		Diagnostic = Diagnostic.Collector;
+	}
+	else
+	{
+		local <Integer> count = 0;
+		local <Floating Point> v = 0.0;
+		
+		expand (n = 1 to Engine.Cylinders)
+		{
+			if (Cylinder $(n).Diagnostic eq Cylinder $(n).Diagnostic.OK)
+			{
+				v += Cylinder $(n);
+				count += 1;
+			}
+		}
+		
+		if (count eq 0)
+		{
+			Value = 0.0;
+			Diagnostic = Diagnostic.Unavailable;
+		}
+		else if (count > 0)
+		{
+			Value = v / count;
+			Diagnostic = Diagnostic.Cylinder Average;
+		}
+	}
+}
+
+local reset = Change.Either(Diagnostic eq Diagnostic.Unavailable);
+Filtered = Library.Filter.FirstOrder(Value, This.Filter, reset);
+Normalised = Filtered * Fuel.Closed Loop.Control.Trim.GetUnscheduled();

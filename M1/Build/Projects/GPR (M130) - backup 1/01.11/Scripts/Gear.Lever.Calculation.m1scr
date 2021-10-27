@@ -1,0 +1,131 @@
+static local sensOK = true;
+local paddleup = Switches.Dash.Upshift Request >= 0;
+local paddledown = Switches.Dash.Downshift Request >= 0;
+
+/* Diagnostic */
+
+//local stuckSens = Debounce.Stable((Upshift eq Universal Switch State.On or Universal Switch State.On) and not Calculate.IsNAN(Force.Sensor), Diagnostic.Delay);
+local stuckSens = false; // get shift value through CAN
+local stuckUp = Debounce.Stable(paddleup, Diagnostic.Delay);
+local stuckDown = Debounce.Stable(paddledown, Diagnostic.Delay);
+local stuckSwitch = stuckUp or stuckDown; 
+local sensInUse = (Paddle Shifts Location eq Paddle Shifts Location.CAN)
+	? true
+	: Force.Sensor.Voltage.IsActive();
+local switchInUse = Paddle Shifts Location neq Paddle Shifts Location.Not used;
+	
+local diag = Gear Request Diagnostic Enumeration.OK;
+
+
+if (sensInUse and switchInUse)
+{	
+	if (Paddle Shifts Location eq Paddle Shifts Location.CAN) {
+		// don't diagnose as something else 
+	} else if (Force.Sensor.Diagnostic neq Force.Sensor.Diagnostic.OK or stuckSens)
+	{
+		if (stuckSwitch)
+		{
+			diag = diag.No Valid Input;
+		}
+		else if (Force.Sensor.Diagnostic neq Force.Sensor.Diagnostic.OK)
+		{
+			diag = diag.Sensor Fault;
+		}
+		else
+		{
+			diag = diag.Stuck Sensor;
+		}
+	}
+	else if (stuckSwitch)
+	{
+		diag = diag.Stuck Switch;
+	}
+}
+else if ((sensInUse and (Force.Sensor.Diagnostic neq Force.Sensor.Diagnostic.OK or stuckSens))
+		or (switchInUse and stuckSwitch))
+{
+	diag = diag.No Valid Input;
+}
+
+/* Value set to Idle on startup if the lever resources are assigned */
+if (Value neq Value.Not in Use)
+{
+	if (diag eq diag.OK and not stuckSens)	// treat warnings as errors, otherwise short voltage spikes can result in shift requests 
+	{
+		if (sensOK)
+		{
+			when (Value)
+			{
+				is (Idle)
+				{
+					if (paddleup)
+					{
+						Value = Value.Up;
+					}
+					else if (paddledown)
+					{
+						Value = Value.Down;
+					}
+				}
+				is (Up)
+				{
+					if (paddleup)
+					{
+						Value = Value.Idle;
+					}
+				}
+				is (Down)
+				{
+					if (not(paddledown))
+					{
+						Value = Value.Idle;
+					}
+				}
+				is (Lockout)	// 
+				{
+					if (not(paddleup or paddledown))
+					{
+						Value = Value.Idle;
+					}
+				}
+				is (Not in Use)
+				{
+					/* can't get here */
+				}
+			}
+		}
+		else	// go back to sensor value via Lockout after error healing
+		{
+			Value = Value.Lockout;
+			sensOK = true;
+		}
+	}
+	else
+	{
+		sensOK = false;
+		
+		/* Only use the switches if the sensor is faulty or not used */
+		if (paddleup and not stuckSwitch)
+		{
+			Value = Value.Up;
+		}
+		else if (paddledown and not stuckSwitch)
+		{
+			Value = Value.Down;
+		}
+		else if (stuckSwitch)
+		{
+			Value = Value.Lockout;
+		}
+		else
+		{
+			Value = Value.Idle;
+		}
+	}
+}
+else
+{
+	diag = Gear Request Diagnostic Enumeration.Not In Use;
+}
+
+Gear.Lever.Diagnostic = diag;

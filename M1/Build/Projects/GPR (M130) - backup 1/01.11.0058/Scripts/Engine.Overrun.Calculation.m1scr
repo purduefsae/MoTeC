@@ -1,0 +1,88 @@
+local ensp = Calculate.Hysteresis(Engine.Speed, Engine Speed.Threshold, Engine Speed.Threshold + Engine Speed.Hysteresis, 0.0);
+local thrp = in.tpinANDrequest;
+local vehsp = Calculate.Hysteresis(Vehicle.Speed, Vehicle Speed.Threshold, Vehicle Speed.Threshold + Vehicle Speed.Hysteresis, 0.0);
+local enable = Library.Delay.Rising(ensp and 
+									thrp and 
+									(vehsp and not Calculate.IsNAN(Vehicle.Speed)) and 
+									(not in.gshst) and 
+									(Mode eq Mode.Enabled)
+									, This.Delay);
+local et = System.ElapsedTime();
+
+when (State)
+{
+	is (Disabled)
+	{
+		if (enable)
+		{
+			Ignition Timing.Limit Advance = Ignition.Timing.GetUnscheduled();
+			State = State.Retard Ignition;
+		}
+		else
+		{
+			Ignition Timing.Limit Advance = Calculate.NAN();
+		}		
+	}
+	is (Retard Ignition)
+	{
+		if (in.gshst)
+		{
+			State = State.Disabled;
+			Ignition Timing.Limit Advance = Calculate.NAN();
+		}
+		else if (not enable)
+		{
+			State = State.Advance Ignition;
+		}
+		else
+		{
+			local newtiming = Ignition Timing.Limit Advance + (Ignition Timing.Retard Rate * et);
+			/*
+			 * If there is a more retarded limit already in place (i.e. idle), follow it.
+			 */
+			if (Ignition.Timing.GetUnscheduled() > newtiming)
+			{
+				newtiming = Ignition.Timing.GetUnscheduled();
+			}
+			if (newtiming > Ignition Timing.Target)
+			{
+				newtiming = Ignition Timing.Target;
+				State = State.Enabled;
+			}
+			Ignition Timing.Limit Advance = newtiming;
+		}
+	}
+	is (Enabled)
+	{
+		if (in.gshst)
+		{
+			State = State.Disabled;
+			Ignition Timing.Limit Advance = Calculate.NAN();
+		}
+		else if (not enable)
+		{
+			State = State.Advance Ignition;
+		}
+	}
+	is (Advance Ignition)
+	{
+		/*
+		 * Ramp until we reach Ignition.Timing.Normal or there is another more retarded limit
+		 */
+		if (Ignition.Timing.GetUnscheduled() > Ignition Timing.Limit Advance or in.gshst)
+		{
+			State = State.Disabled;
+			Ignition Timing.Limit Advance = Calculate.NAN();
+		}
+		else
+		{
+			local newtiming = Ignition Timing.Limit Advance - (Ignition Timing.Advance Rate * et);
+			if (Ignition.Timing.Normal > newtiming)
+			{
+				newtiming = Calculate.NAN();
+				State = State.Disabled;
+			}
+			Ignition Timing.Limit Advance = newtiming;
+		}
+	}
+}

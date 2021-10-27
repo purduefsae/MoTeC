@@ -1,0 +1,5 @@
+Compensation =
+	Coolant.Temperature.Fuel Mixture Aim Compensation *
+	Inlet.Manifold.Temperature.Fuel Mixture Aim Compensation;
+
+Value = Main / Compensation;

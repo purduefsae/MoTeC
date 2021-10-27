@@ -1,0 +1,415 @@
+local m = "";
+local s = Source.None;
+
+/*
+ * Warnings
+ */
+if (Mode.Engine Oil Pressure Warning eq Mode Enumeration.Enabled and
+    Engine.Oil.Pressure.Warning.IsActive())
+{
+	s = Source.Engine Oil Pressure Warning;
+	m = "Engine Oil Pressure Warning";
+}
+else if (Mode.Knock Warning eq Mode Enumeration.Enabled and
+    Knock.Warning.IsActive())
+{
+	s = Source.Knock Warning;
+	m = "Knock Warning";
+}
+else if (Mode.Engine Crankcase Pressure Warning eq Mode Enumeration.Enabled and
+    Engine.Crankcase.Pressure.Warning.IsActive())
+{
+	s = Source.Engine Crankcase Pressure Warning;
+	m = "Engine Crankcase Pressure Warning";
+}
+else if (Mode.Fuel Pressure Warning eq Mode Enumeration.Enabled and
+    Fuel.Pressure.Warning.IsActive())
+{
+	s = Source.Fuel Pressure Warning;
+	m = "Fuel Pressure Warning";
+}
+else if (Mode.Coolant Temperature Warning eq Mode Enumeration.Enabled and
+    Coolant.Temperature.Warning.IsActive())
+{
+	s = Source.Coolant Temperature Warning;
+	m = "Coolant Temperature Warning";
+}
+else if (Mode.Inlet Air Temperature Warning eq Mode Enumeration.Enabled and
+	Inlet.Air.Temperature.Warning.IsActive())
+{
+	s = Source.Inlet Air Temperature Warning;
+	m = "Inlet Air Temperature Warning";
+}
+else if (Mode.Engine Oil Temperature Warning eq Mode Enumeration.Enabled and
+    Engine.Oil.Temperature.Warning.IsActive())
+{
+	s = Source.Engine Oil Temperature Warning;
+	m = "Engine Oil Temperature Warning";
+}
+else if (Mode.Exhaust Lambda Warning eq Mode Enumeration.Enabled and
+    Exhaust.Lambda.Warning.IsActive())
+{
+	s = Source.Exhaust Lambda Warning;
+	m = "Exhaust Lambda Warning";
+}
+else if (Mode.Exhaust Temperature Warning eq Mode Enumeration.Enabled and
+    Exhaust.Temperature.Warning.IsActive())
+{
+	s = Source.Exhaust Temperature Warning;
+	m = "Exhaust Temperature Warning";
+}
+else if (Mode.Coolant Pressure Warning eq Mode Enumeration.Enabled and
+    Coolant.Pressure.Warning.IsActive())
+{
+	s = Source.Coolant Pressure Warning;
+	m = "Coolant Pressure Warning";
+}
+else if (Mode.Engine Speed Warning eq Mode Enumeration.Enabled and
+    Engine.Speed.Warning.IsActive())
+{
+	s = Source.Engine Speed Warning;
+	m = "Engine Speed Warning";
+}
+
+/*
+ * Sensor Diagnostics
+ */
+else if (Mode.Inlet Manifold Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Inlet.Manifold.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Inlet Manifold Pressure Sensor Diagnostic;
+	m = Inlet.Manifold.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Engine Oil Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Engine.Oil.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Engine Oil Pressure Sensor Diagnostic;
+	m = Engine.Oil.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Coolant Temperature Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Coolant.Temperature.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Coolant Temperature Sensor Diagnostic;
+	m = Coolant.Temperature.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Fuel Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Fuel Pressure Sensor Diagnostic;
+	m = Fuel.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Brake Vacuum Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Brake.Vacuum.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Brake Vacuum Pressure Sensor Diagnostic;
+	m = Brake.Vacuum.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Inlet Air Temperature Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Inlet.Air.Temperature.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Inlet Air Temperature Sensor Diagnostic;
+	m = Inlet.Air.Temperature.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Engine Crankcase Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Engine.Crankcase.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Engine Crankcase Pressure Sensor Diagnostic;
+	m = Engine.Crankcase.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Engine Oil Temperature Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Engine.Oil.Temperature.Temp Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Engine Oil Temperature Sensor Diagnostic;
+	m = Engine.Oil.Temperature.Temp Sensor.Diagnostic.AsString();
+}
+else if (Mode.Exhaust Lambda Bank 1 Collector Diagnostic eq Mode Enumeration.Enabled and
+    Exhaust.Lambda.Bank 1.Collector.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Exhaust Lambda Bank 1 Collector Diagnostic;
+	m = Exhaust.Lambda.Bank 1.Collector.Diagnostic.AsString();
+}
+else if (Mode.Exhaust Lambda Bank 2 Collector Diagnostic eq Mode Enumeration.Enabled and
+    Exhaust.Lambda.Bank 2.Collector.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Exhaust Lambda Bank 2 Collector Diagnostic;
+	m = Exhaust.Lambda.Bank 2.Collector.Diagnostic.AsString();
+}
+else if (Mode.Exhaust Temperature Diagnostic eq Mode Enumeration.Enabled and
+    Exhaust.Temperature.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Exhaust Temperature Diagnostic;
+	m = Exhaust.Temperature.Diagnostic.AsString();
+}
+else if (Mode.Throttle Pedal Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Pedal.Sensor.Diagnostic neq Throttle.Pedal.Sensor.Diagnostic.OK and
+    Throttle.Pedal.Sensor.Diagnostic neq Throttle.Pedal.Sensor.Diagnostic.Not in Use)
+{
+	s = Source.Throttle Pedal Sensor Diagnostic;
+	m = Throttle.Pedal.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Throttle Position Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Position.Sensor.Diagnostic neq Throttle.Position.Sensor.Diagnostic.OK and
+    Throttle.Position.Sensor.Diagnostic neq Throttle.Position.Sensor.Diagnostic.Not in Use)
+{
+	s = Source.Throttle Position Sensor Diagnostic;
+	m = Throttle.Position.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Throttle Servo Bank 1 Position Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Servo.Bank 1.Position.Sensor.Diagnostic neq Throttle.Servo.Bank 1.Position.Sensor.Diagnostic.OK and
+    Throttle.Servo.Bank 1.Position.Sensor.Diagnostic neq Throttle.Servo.Bank 1.Position.Sensor.Diagnostic.Not in Use)
+{
+	s = Source.Throttle Servo Bank 1 Position Sensor Diagnostic;
+	m = Throttle.Servo.Bank 1.Position.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Throttle Servo Bank 2 Position Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Servo.Bank 2.Position.Sensor.Diagnostic neq Throttle.Servo.Bank 2.Position.Sensor.Diagnostic.OK and
+    Throttle.Servo.Bank 2.Position.Sensor.Diagnostic neq Throttle.Servo.Bank 2.Position.Sensor.Diagnostic.Not in Use)
+{
+	s = Source.Throttle Servo Bank 2 Position Sensor Diagnostic;
+	m = Throttle.Servo.Bank 2.Position.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Boost Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Boost.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Boost Pressure Sensor Diagnostic;
+	m = Boost.Pressure.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Fuel Temperature Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Temperature.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Fuel Temperature Sensor Diagnostic;
+	m = Fuel.Temperature.Sensor.Diagnostic.AsString();
+}
+else if (Mode.Ambient Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Ambient.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Ambient Pressure Sensor Diagnostic;
+	m = Ambient.Pressure.Sensor.Diagnostic.AsString();
+}
+
+/*
+ * Control System Diagnostic
+ */
+else if (Mode.Fuel Closed Loop Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Closed Loop.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Fuel Closed Loop Diagnostic;
+	m = Fuel.Closed Loop.Diagnostic.AsString();
+}
+else if (Mode.Throttle Servo Bank 1 Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Servo.Bank 1.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Throttle Servo Bank 1 Diagnostic;
+	m = Throttle.Servo.Bank 1.Diagnostic.AsString();
+}
+else if (Mode.Throttle Servo Bank 2 Diagnostic eq Mode Enumeration.Enabled and
+    Throttle.Servo.Bank 2.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Throttle Servo Bank 2 Diagnostic;
+	m = Throttle.Servo.Bank 2.Diagnostic.AsString();
+}
+else if (Mode.Boost Control Diagnostic eq Mode Enumeration.Enabled and
+    Boost.Control.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Boost Control Diagnostic;
+	m = Boost.Control.Diagnostic.AsString();
+}
+
+/* one more sensor that was regarded less important than the control system diagnostics */
+else if (Mode.Coolant Pressure Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Coolant.Pressure.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Coolant Pressure Sensor Diagnostic;
+	m = Coolant.Pressure.Sensor.Diagnostic.AsString();
+}
+
+/*
+ * Camshafts
+ */
+else if (Mode.Inlet Camshaft Bank 1 Position Diagnostic eq Mode Enumeration.Enabled and
+    Inlet.Camshaft.Bank 1.Position.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Inlet Camshaft Bank 1 Position Diagnostic;
+	m = Inlet.Camshaft.Bank 1.Position.Diagnostic.AsString();
+}
+else if (Mode.Inlet Camshaft Bank 2 Position Diagnostic eq Mode Enumeration.Enabled and
+    Inlet.Camshaft.Bank 2.Position.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Inlet Camshaft Bank 2 Position Diagnostic;
+	m = Inlet.Camshaft.Bank 2.Position.Diagnostic.AsString();
+}
+else if (Mode.Exhaust Camshaft Bank 1 Position Diagnostic eq Mode Enumeration.Enabled and
+    Exhaust.Camshaft.Bank 1.Position.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Exhaust Camshaft Bank 1 Position Diagnostic;
+	m = Exhaust.Camshaft.Bank 1.Position.Diagnostic.AsString();
+}
+else if (Mode.Exhaust Camshaft Bank 2 Position Diagnostic eq Mode Enumeration.Enabled and
+    Exhaust.Camshaft.Bank 2.Position.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Exhaust Camshaft Bank 2 Position Diagnostic;
+	m = Exhaust.Camshaft.Bank 2.Position.Diagnostic.AsString();
+}
+
+/*
+ * Injector Diagnostics
+ */
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 1.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 1 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 1.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 2.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 2 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 2.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 3.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 3 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 3.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 4.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 4 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 4.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 5.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 5 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 5.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 6.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 6 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 6.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 7.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 7 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 7.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Primary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 8.Primary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 8 Primary Pin Diagnostic;
+	m = Fuel.Cylinder 8.Primary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 1.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 1 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 1.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 2.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 2 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 2.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 3.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 3 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 3.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 4.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 4 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 4.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 5.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 5 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 5.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 6.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 6 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 6.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 7.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 7 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 7.Secondary.Pin.Diagnostic.AsString();
+}
+else if (Mode.Fuel Cylinder N Secondary Pin Diagnostic eq Mode Enumeration.Enabled and
+    Fuel.Cylinder 8.Secondary.Pin.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Fuel Cylinder 8 Secondary Pin Diagnostic;
+	m = Fuel.Cylinder 8.Secondary.Pin.Diagnostic.AsString();
+}
+
+/*
+ * Communications Diagnostic
+ */
+else if (Mode.CAN Bus 1 Diagnostic eq Mode Enumeration.Enabled and
+    CAN.Bus 1.Diagnostic.AsInteger() < 0)
+{
+	s = Source.CAN Bus 1 Diagnostic;
+	m = CAN.Bus 1.Diagnostic.AsString();
+}
+else if (Mode.RS232 Diagnostic eq Mode Enumeration.Enabled and
+    RS232.Diagnostic.AsInteger() < 0)
+{
+	s = Source.RS232 Diagnostic;
+	m = RS232.Diagnostic.AsString();
+}
+
+/*
+ * Remains: Ref/Sync Diagnostics, GPS
+ */
+ else if (Mode.Engine Speed Reference Diagnostic eq Mode Enumeration.Enabled and
+    Engine.Speed.Reference.Diagnostic.AsInteger() > 1)
+{
+	s = Source.Engine Speed Reference Diagnostic;
+	m = Engine.Speed.Reference.Diagnostic.AsString();
+}
+else if (Mode.GPS Diagnostic eq Mode Enumeration.Enabled and
+    Root.GPS.Diagnostic.AsInteger() < -1)
+{
+	s = Source.GPS Diagnostic;
+	m = Root.GPS.Diagnostic.AsString();
+}
+else if (Mode.Engine Speed Reference State eq Mode Enumeration.Enabled and
+    Engine.Speed.Reference.State neq Engine.Speed.Reference.State.Stall and
+    Engine.Speed.Reference.State neq Engine.Speed.Reference.State.Cycle Lock)
+{
+	s = Source.Engine Speed Reference State;
+	m = Engine.Speed.Reference.State.AsString();
+}
+else if (Mode.Vehicle Acceleration Lateral Sensor Diagnostic eq Mode Enumeration.Enabled and
+    Vehicle.Acceleration.Lateral.Sensor.Diagnostic.AsInteger() < 0)
+{
+	s = Source.Vehicle Acceleration Lateral Sensor Diagnostic;
+	m = Vehicle.Acceleration.Lateral.Sensor.Diagnostic.AsString();
+}
+
+local active = s neq Source.None;
+local latched = Delay.Falling(active, Hold);
+
+/* Hold last warning for 'Hold' time */
+if (active or not latched)
+{
+     Source = s;
+}
+
+local edge = Change.By(Source.AsInteger(), 1);
+
+Light.SetState(latched);
+
+if (active and edge)
+{
+	System.Debug(Source.AsString(), m);
+}

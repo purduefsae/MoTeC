@@ -1,0 +1,4 @@
+local hyst = Calculate.Hysteresis(Intercooler.Temperature.Delta, Threshold - Hysteresis, Threshold, 0.0);
+Value = hyst or Calculate.IsNAN(Intercooler.Temperature.Delta)
+	? Value.Enabled
+	: Value.Disabled;

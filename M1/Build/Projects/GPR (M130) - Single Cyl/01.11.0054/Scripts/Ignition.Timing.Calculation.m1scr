@@ -1,0 +1,78 @@
+local v = Normal;
+local s = State.Normal;
+
+when (Mode)
+{
+	is (Normal)
+	{
+		if (Engine.State neq Engine.State.Run)
+		{
+			v = Cranking;
+			s = State.Cranking;
+		}
+		else
+		{
+			v = Normal;
+			s = State.Normal;
+		}
+
+		if (not Calculate.IsNAN(Engine.Overrun.Ignition Timing.Limit Advance) and
+			v < Engine.Overrun.Ignition Timing.Limit Advance)
+		{
+			v = Engine.Overrun.Ignition Timing.Limit Advance;
+			s = State.Engine Overrun;
+		}
+
+		if (not Calculate.IsNAN(Launch.Ignition Timing Limit Advance) and
+			v < Launch.Ignition Timing Limit Advance)
+		{
+			v = Launch.Ignition Timing Limit Advance;
+			s = State.Launch;
+		}
+
+		if (Anti Lag.State eq Anti Lag.State.Enabled and
+			v < Anti Lag.Ignition Timing Limit Advance)
+		{
+			v = Anti Lag.Ignition Timing Limit Advance;
+			s = State.Anti Lag;
+		}
+
+		if (not Calculate.IsNAN(Idle.Ignition Timing Limit Advance) and
+			v < Idle.Ignition Timing Limit Advance)
+		{
+			v = Idle.Ignition Timing Limit Advance;
+			s = State.Idle;
+		}
+
+		if (not Calculate.IsNAN(Gear.Shift.Ignition Timing.Limit Advance) and
+			v < Gear.Shift.Ignition Timing.Limit Advance)
+		{
+			v = Gear.Shift.Ignition Timing.Limit Advance;
+			s = State.Gear Shift;
+		}		
+	}
+	is (Check Timing)
+	{
+		v = Ignition.Test.Timing;
+		s = State.Check Timing;
+	}
+}
+
+if (v < This.Limit.Advance)
+{
+	v = This.Limit.Advance;
+	s = State.Limit Advance;
+}
+
+ /*
+  * retard is a hard limit, mostly for distributors, so
+  * it needs to win if the advance limit is crazy
+  */
+if (v > This.Limit.Retard)
+{
+	v = This.Limit.Retard;
+	s = State.Limit Retard;
+}
+
+Value = v;
+State = s;

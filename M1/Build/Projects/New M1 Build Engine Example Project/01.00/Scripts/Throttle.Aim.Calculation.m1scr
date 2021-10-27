@@ -1,0 +1,61 @@
+local v = Value;
+local s = State;
+
+if (Parent.Test.Mode eq Parent.Test.Mode.Enabled
+	and Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Stall)
+{
+	if (Parent.Test.Timer.Remaining() <= 0.0)
+	{
+		if ((v - Parent.Test.Closed) <= 0.0)
+		{
+			v = Parent.Test.Open;
+		}
+		else
+		{
+			v = Parent.Test.Closed;
+		}
+		
+		Parent.Test.Timer.Start(Parent.Test.Period / 2.0);
+	}
+
+	s = State.Test;
+}
+else
+{
+	static local throttleFault = false;
+	if ((Throttle.Pedal.Sensor.Diagnostic.AsInteger() >= Throttle.Pedal.Sensor.Diagnostic.OK.AsInteger())
+		and (
+			(not throttleFault)
+			or (Throttle.Pedal <= 0.0)
+		)
+	)
+	{
+		/*
+		 * only resume normal operation after a lever fault when the lever value is below the current request.
+		 * This prevents a potentially large throttle step when the lever recovers, but requires the rider
+		 * releases the lever after a fault. This seems to be normal behaviour when things stop working and means
+		 * that any increase in throttle is according to rider demand.
+		 */
+		v = Calculate.Max(Throttle.Pedal, Idle.Throttle + (Throttle.Pedal * 0.5)); 
+									/* smooth set in after leaving idle condition  */
+		if (v <= Idle.Throttle)
+		{
+			s = State.Idle;
+		}
+		else
+		{
+			s = State.Pedal;
+		}
+		throttleFault = false;
+	}
+	else
+	{
+		v = Idle.Throttle;
+		s = State.Pedal Fault;
+		throttleFault = true;
+	}
+}
+
+Value = v;
+State = s;
+Throttle.Servo.Aim = Throttle.Area.ReverseLookupX(v);

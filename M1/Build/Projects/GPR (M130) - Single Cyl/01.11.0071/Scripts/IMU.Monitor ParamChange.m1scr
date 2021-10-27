@@ -1,0 +1,8 @@
+local paramUpdated = (ParamChange neq LastParam);
+
+if (paramUpdated) {
+	Zero IMU();
+}
+
+LastParam = ParamChange;
+ParamChange = ChangeToZero;

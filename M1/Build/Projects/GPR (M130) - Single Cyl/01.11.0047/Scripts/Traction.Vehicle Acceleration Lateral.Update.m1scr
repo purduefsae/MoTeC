@@ -1,0 +1,3 @@
+local val = Calculate.IsNAN(Vehicle.Acceleration.Lateral) ? 0.0 : Calculate.Absolute(Vehicle.Acceleration.Lateral);
+
+Value = Library.Filter.FirstOrder(val, This.Filter);

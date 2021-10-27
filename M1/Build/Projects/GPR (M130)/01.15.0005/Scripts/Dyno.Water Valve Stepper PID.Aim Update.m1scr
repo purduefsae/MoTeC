@@ -1,0 +1,108 @@
+//Error = Engine.Speed - (Switches.Dash.RPM Target Pot / Pot Reference Voltage)*10500;
+Pot Reference Value = (Switches.Dash.RPM Target Pot / Pot Reference Voltage)*10500;
+//when (Automated Control)
+when(Automated Control Switch){
+	is(Not in Use){
+	Error = 0;
+	}
+	is(CAN Rotary Switch 1){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 1){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 2){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 3){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 4){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 5){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 6){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 7){
+	Error = 0;
+	}
+	is(Driver Rotary Switch 8){
+	Error = 0;
+	}
+	is(Driver Switch 1){
+	Error = 0;
+	}
+	is(Driver Switch 2){
+	when(Driver.Switch 2)
+	{
+	//if(Switches.Dash.Automated Control >0)
+	is (On)
+	{
+		Error = Engine.Speed - RPM Target;
+		local Der = (Error - Prior)/0.02; //0.02 is the iteration time IF EVENT FREQUENCY CHANGES THIS VALUE MUST BE CHANGED
+
+		when (Engine.State)
+		{
+			is (Run)
+			{
+				Integral Value += error*0.02; //0.02 is the iteration time IF EVENT FREQUENCY CHANGES THIS VALUE MUST BE CHANGED
+				PID Aim = Kp*error + Integral Value*Ki + Der*Kd; //max error would be ~12000 RPM so set bound of Prop. to be wherever the ratio of 12000 to aim is
+				if (Convert.ToInteger(PID Aim) > Convert.ToInteger(Maximum Step))
+				{
+					Aim = Convert.ToInteger(Maximum Step);
+				}
+				else if (Convert.ToInteger(PID Aim) < 0)
+				{
+					Aim = 0;
+				}
+				else
+				{
+					Aim = Convert.ToInteger(PID Aim);
+				}
+				Prior = Error;
+			}
+			is (Startup)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Load); 
+			}
+			is (Crank)
+			{
+				Aim = Position;
+			}
+			is (Stop)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Load);
+			}
+		}
+		}
+	is (Off)
+	{
+		//Aim = Convert.ToInteger(Maximum Step * Percent Load); 
+		Error = 0;
+		Aim = 0;
+	}
+	}
+
+	}
+	is(Driver Switch 3){
+	Error = 0;
+	}
+	is(Driver Switch 4){
+	Error = 0;
+	}
+	is(Driver Switch 5){
+	Error = 0;
+	}
+	is(Driver Switch 6){
+	Error = 0;
+	}
+	is(Driver Switch 7){
+	Error = 0;
+	}
+	is(Driver Switch 8){
+	Error = 0;
+	}
+}

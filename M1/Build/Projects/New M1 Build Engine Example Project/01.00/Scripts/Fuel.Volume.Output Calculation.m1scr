@@ -1,0 +1,38 @@
+local injectorFlow = Calculate.FastSquareRoot(Fuel.Injector.Differential Pressure / Fuel.Injector.Reference Pressure) * Fuel.Injector.Reference Flow;
+
+expand (n = 1 to Engine.Cylinders)
+{
+	/*
+	 *	Injector outputs
+	 */
+
+	if (Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Test)
+	{
+		Fuel.Cylinder $(n).Output.Volume = 0.0;
+		local maxSpeed = Calculate.Max(Engine.Speed.Reference.Test Speed, 300.0 /* minimum speed 50rpm for PW calculation */);
+		Fuel.Cylinder $(n).Output.Pulse Width 1 = 0.5 * Engine.Speed.Reference.Cycle Duration / maxSpeed;
+	}
+	else if (Fuel.Volume.Cylinder $(n).Volume <= Fuel.Injector.Minimum Volume
+		or Fuel.Cylinder $(n).Output.Enable eq Fuel.Cylinder $(n).Output.Enable.Disabled)
+	{
+		Fuel.Cylinder $(n).Output.Volume = 0.0;
+		Fuel.Cylinder $(n).Output.Pulse Width 1 = 0.0;
+	}
+	else
+	{
+		Fuel.Cylinder $(n).Output.Volume = Fuel.Volume.Cylinder $(n).Volume;
+		
+		local xAxismaxFuelVolume = Fuel.Injector.Linearisation.XAxisMaximum();
+		local cylPW = Fuel.Injector.Linearisation.Lookup(Fuel.Volume.Cylinder $(n).Volume, Fuel.Injector.Differential Pressure, ECU.Battery.Voltage);
+
+		/* Setup main pulse */
+		if (Fuel.Cylinder $(n).Output.Volume <= xAxismaxFuelVolume)
+		{
+			Fuel.Cylinder $(n).Output.Pulse Width 1 = cylPW; // Whole pulse defined by the linearisation table
+		}
+		else
+		{
+			Fuel.Cylinder $(n).Output.Pulse Width 1 = cylPW + (Fuel.Cylinder $(n).Output.Volume - xAxismaxFuelVolume) / injectorFlow;
+		}
+	}
+}

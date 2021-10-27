@@ -1,0 +1,8 @@
+local a = Throttle Position eq Throttle Position.Enabled;
+local b = Engine Speed eq Engine Speed.Enabled;
+local c = Inlet Manifold Pressure eq Inlet Manifold Pressure.Enabled;
+local sw = This.Switch eq This.Switch.On;
+
+Value = a and b and c and sw
+	? Value.Enabled
+	: Value.Disabled;

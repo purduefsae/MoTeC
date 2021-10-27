@@ -1,0 +1,4 @@
+if (not (GearPosSensor.Voltage.IsActive()))
+{
+	Value = Value.Default;
+}

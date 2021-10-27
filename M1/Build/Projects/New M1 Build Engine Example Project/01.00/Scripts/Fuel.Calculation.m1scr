@@ -1,0 +1,19 @@
+local cps = Engine.Speed / Engine.Speed.Reference.Cycle Duration;
+local vol = 0.0;
+local pw = 0.0;
+local delivered = 0.0;
+
+expand (n = 1 to Engine.Cylinders)
+{
+	if (State eq State.Enabled)
+	{
+		vol += Cylinder $(n).Output.Volume;
+	}
+	pw = Calculate.Max(pw, Cylinder $(n).Output.Pulse Width 1);
+	delivered += Cylinder $(n).Output.Delivered;
+}
+
+Volume.Per Cycle = vol * (1.0 - Output.Cut Average);
+Flow = Volume.Per Cycle * cps;
+Injector.Duty Cycle = pw * cps; /* maximum duty cycle of all cylinders */
+Used = delivered;

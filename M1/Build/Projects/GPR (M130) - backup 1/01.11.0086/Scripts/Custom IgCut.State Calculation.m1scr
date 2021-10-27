@@ -1,0 +1,12 @@
+if (Cut Timer.Remaining() <= 0.0) {
+	if (Gear.Lever.Upshift neq Gear.Lever.Upshift.On or Throttle.Position < Activation Throttle) {
+		IgCut State = 0;
+	} else {
+		Cut Timer.Start(Cut Time);
+		IgCut State = 1;
+	}
+} else {
+	IgCut State = 1;
+}
+
+Cut Time Remaining = Cut Timer.Remaining();

@@ -1,0 +1,2 @@
+Compensation = Compensation.Engine Load Normalised;
+Value = Main * Compensation;

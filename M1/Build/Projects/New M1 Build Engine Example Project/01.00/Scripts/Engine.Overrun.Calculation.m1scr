@@ -1,0 +1,11 @@
+local ensp = Calculate.Hysteresis(Engine.Speed, Engine Speed.Threshold, Engine Speed.Threshold + Engine Speed.Hysteresis, 0.0);
+local thrp = Calculate.Hysteresis(Root.Throttle.Position, This.Throttle.Threshold, This.Throttle.Threshold + This.Throttle.Hysteresis, 0.0);
+
+if (ensp and (not thrp) and (Mode eq Mode.Enabled))
+{
+	State = State.Enabled;
+}
+else
+{
+	State =  State.Disabled;
+}

@@ -1,0 +1,161 @@
+local max = Maximum;
+local ir = Default.Ignition Range;
+local fm = Default.Fuel Margin;
+local fr = Default.Fuel Range;
+local s = State.Maximum;
+
+if (Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Test)
+{
+	max = Engine.Speed.Reference.Maximum;
+	s = State.Engine Output Test;
+	Nominal = max;
+}
+else
+{
+	if (max > Engine.Load.Average.Engine Speed Limit)
+	{
+		max = Engine.Load.Average.Engine Speed Limit;
+		s = State.Engine Load Average;
+	}
+
+	if ((Throttle.Servo.Bank 1.Diagnostic.AsInteger() < Throttle.Servo.Bank 1.Diagnostic.Not in Use.AsInteger() or
+		 Throttle.Servo.Bank 2.Diagnostic.AsInteger() < Throttle.Servo.Bank 2.Diagnostic.Not in Use.AsInteger())
+		and max > Throttle.Servo.Fault.Engine Speed Limit
+	)
+	{
+		max = Throttle.Servo.Fault.Engine Speed Limit;
+		s = State.Throttle Servo Fault;
+	}
+
+	if (max > Coolant.Temperature.Engine Speed Limit)
+	{
+		max = Coolant.Temperature.Engine Speed Limit;
+		s = State.Coolant Temperature;
+	}
+
+	if (max > Coolant.Temperature.Warning.GetEngineSpeedLimit())
+	{
+		max = Coolant.Temperature.Warning.GetEngineSpeedLimit();
+		s = State.Coolant Temperature Warning;
+	}
+
+	if (max > Coolant.Pressure.Warning.GetEngineSpeedLimit())
+	{
+		max = Coolant.Pressure.Warning.GetEngineSpeedLimit();
+		s = State.Coolant Pressure Warning;
+	}
+
+	if (max > Engine.Speed.Warning.GetEngineSpeedLimit())
+	{
+		max = Engine.Speed.Warning.GetEngineSpeedLimit();
+		s = State.Engine Speed Warning;
+	}
+
+	if (max > Engine.Oil.Temperature.Warning.GetEngineSpeedLimit())
+	{
+		max = Engine.Oil.Temperature.Warning.GetEngineSpeedLimit();
+		s = State.Engine Oil Temperature Warning;
+	}
+
+	if (max > Engine.Oil.Pressure.Warning.GetEngineSpeedLimit())
+	{
+		max = Engine.Oil.Pressure.Warning.GetEngineSpeedLimit();
+		s = State.Engine Oil Pressure Warning;
+	}
+
+	if (max > Engine.Crankcase.Pressure.Warning.GetEngineSpeedLimit())
+	{
+		max = Engine.Crankcase.Pressure.Warning.GetEngineSpeedLimit();
+		s = State.Engine Crankcase Pressure Warning;
+	}
+
+	if (max > Exhaust.Lambda.Warning.GetEngineSpeedLimit())
+	{
+		max = Exhaust.Lambda.Warning.GetEngineSpeedLimit();
+		s = State.Exhaust Lambda Warning;
+	}
+
+	if (max > Exhaust.Temperature.Warning.GetEngineSpeedLimit())
+	{
+		max = Exhaust.Temperature.Warning.GetEngineSpeedLimit();
+		s = State.Exhaust Temperature Warning;
+	}
+
+	if (max > Root.Fuel.Pressure.Warning.GetEngineSpeedLimit())
+	{
+		max = Root.Fuel.Pressure.Warning.GetEngineSpeedLimit();
+		s = State.Fuel Pressure Warning;
+	}
+
+	if (max > Inlet.Air.Temperature.Warning.GetEngineSpeedLimit())
+	{
+		max = Inlet.Air.Temperature.Warning.GetEngineSpeedLimit();
+		s = State.Inlet Air Temperature Warning;
+	}
+
+	if (max > Launch.Engine Speed.Limit)
+	{
+		max = Launch.Engine Speed.Limit;
+		s = State.Launch;
+	}
+
+	if (Anti Lag.Mode eq Anti Lag.Mode.Enabled		// only consider Anti Lag Engine Speed Limit if system is enabled
+		and Anti Lag.State neq Anti Lag.State.Enabled
+		and max > Anti Lag.Engine Speed Limit
+	)
+	{
+		max = Anti Lag.Engine Speed Limit;
+		fm = Anti Lag.Engine Speed Limit Fuel Margin;
+		s = State.Anti Lag;
+	}
+	
+	Nominal = max;
+	/* The following engine speed limits are variable, dependent on gear ratio and/or vehicle speed */	
+	
+	if (max > Gear.Shift.Engine Speed.Limit.GetUnscheduled())
+	{
+		max = Gear.Shift.Engine Speed.Limit.GetUnscheduled();
+		ir = Gear.Shift.Engine Speed.Limit.Ignition Range;
+		fm = Gear.Shift.Engine Speed.Limit.Fuel Margin;
+		fr = Gear.Shift.Engine Speed.Limit.Fuel Range;
+		s = State.Gear Shift;
+	}
+	else	// gear shift engine speed limit overrides pit speed limit and traction speed limit
+	{
+		if (max > Vehicle.Speed.Limit.Pit.Engine Speed Limit)
+		{
+			max = Vehicle.Speed.Limit.Pit.Engine Speed Limit;
+			ir = Vehicle.Speed.Limit.Pit.Engine Speed Limit.Ignition Range;
+			fm = Vehicle.Speed.Limit.Pit.Engine Speed Limit.Fuel Margin;
+			fr = Vehicle.Speed.Limit.Pit.Engine Speed Limit.Fuel Range;
+			s = State.Vehicle Speed Limit;
+		}
+
+		if (max > Traction.Engine Speed Limit)
+		{
+			max = Traction.Engine Speed Limit;
+			ir = Traction.Engine Speed Limit.Ignition Range;
+			fm = Traction.Engine Speed Limit.Fuel Margin;
+			fr = Traction.Engine Speed Limit.Fuel Range;
+			s = State.Traction Control;
+		}
+	}
+}
+
+if (Engine.Speed.Reference.Diagnostic eq Engine.Speed.Reference.Diagnostic.Experimental Mode
+     and max > 18000 /* 3000rpm in deg/sec */) 
+{
+	max = 18000;
+	ir = 0;
+	fm = 0;
+	fr = 0;
+	s = State.Experimental Reference Mode;
+}
+
+This.Value = max;
+This.Ignition = max - Calculate.Min(fm, 0.0);	// if fm is negative Ignition is above max
+This.Fuel = max + Calculate.Max(fm, 0.0);
+This.Ignition.Range = ir;
+This.Fuel.Margin = fm;
+This.Fuel.Range = fr;
+This.State = s;

@@ -1,0 +1,10 @@
+Linear X = 0;
+Linear Y = 0;
+Linear Z = 0;
+Rotational X = 0;
+Rotational Y = 0;
+Rotational Z = 0;
+Linear Diagnostic = Linear Diagnostic.CAN Timeout;
+Rotational Diagnostic = Rotational Diagnostic.CAN Timeout;
+ParamChange = ParamChange.Off;
+LastParam = LastParam.Off;

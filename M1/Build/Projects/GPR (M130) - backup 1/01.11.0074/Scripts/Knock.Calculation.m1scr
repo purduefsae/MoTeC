@@ -1,0 +1,98 @@
+local icut = Change.By(Ignition.Output.Cut Count, 1);
+local fcut = Change.By(Fuel.Output.Cut Count, 1);
+local enabled = Engine.State eq Engine.State.Run and
+	Mode neq Mode.Not in Use;
+
+when (State)
+{
+	is (Disabled)
+	{
+		if (enabled)
+		{
+			Activate.Timer.Start(Activate.Delay);
+			State = State.Transient;
+		}
+	}
+	is (Enabled)
+	{
+		if (not enabled)
+		{
+			State = State.Disabled;
+		}
+		else if (icut or fcut)
+		{
+			State = State.Transient;
+			Activate.Timer.Start(Activate.Delay);
+		}
+	}
+	is (Transient)
+	{
+		if (not enabled)
+		{
+			State = State.Disabled;
+		}
+		else if (Activate.Timer.Remaining() <= 0.0)
+		{
+			State = State.Enabled;
+		}
+	}
+}
+
+/*
+ * calculate maximum level for each of 4 frequencies in each cylinder
+ */
+when (State)
+{
+	is (Enabled or Transient)
+	{
+		local maxlevel1 = 0.0;
+		local maxlevel2 = 0.0;
+		local maxlevel3 = 0.0;
+		local maxlevel4 = 0.0;
+		local maxlevel5 = 0.0;
+		local maxlevel6 = 0.0;
+		local maxlevel7 = 0.0;
+		local maxlevel8 = 0.0;
+
+		if (Frequency A > 0.0 and Mode.AsInteger() > 0)
+		{
+			expand (n = 1 to Engine.Maximum Cylinders)
+			{
+				maxlevel$(n) = Cylinder $(n).Level A;
+			}
+		}
+		if (Frequency B > 0.0 and Mode.AsInteger() > 1)
+		{
+			expand (n = 1 to Engine.Maximum Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level B);
+			}
+		}
+		if (Frequency C > 0.0 and Mode.AsInteger() > 2)
+		{
+			expand (n = 1 to Engine.Maximum Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level C);
+			}
+		}
+		if (Frequency D > 0.0 and Mode.AsInteger() > 3)
+		{
+			expand (n = 1 to Engine.Maximum Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level D);
+			}
+		}
+
+		expand (n = 1 to Engine.Maximum Cylinders)
+		{
+			Ignition.Cylinder $(n).Knock.Level = maxlevel$(n);
+		}
+	}
+	is (Disabled)
+	{
+		expand (n = 1 to Engine.Maximum Cylinders)
+		{
+			Ignition.Cylinder $(n).Knock.Level = Calculate.NAN();
+		}
+	}
+}

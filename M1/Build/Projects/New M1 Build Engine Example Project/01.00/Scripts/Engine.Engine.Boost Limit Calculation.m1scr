@@ -1,0 +1,51 @@
+local l = 1.0;
+local s = 0;
+
+if (Coolant.Temperature.Boost Limit < l)
+{
+	l = Coolant.Temperature.Boost Limit;
+	s = Boost.Limit.State.Coolant Temperature.AsInteger();
+}
+if (Load.Average.Boost Limit < l)
+{
+	l = Load.Average.Boost Limit;
+	s = Boost.Limit.State.Engine Load Average.AsInteger();
+}
+if (Exhaust.Temperature.Boost Limit < l)
+{
+	l = Exhaust.Temperature.Boost Limit;
+	s = Boost.Limit.State.Exhaust Temperature.AsInteger();
+}
+if (Inlet.Air.Temperature.Boost Limit < l)
+{
+	l = Inlet.Air.Temperature.Boost Limit;
+	s = Boost.Limit.State.Inlet Air Temperature.AsInteger();
+}
+if (Vehicle.Speed.Boost Limit < l)
+{
+	l = Vehicle.Speed.Boost Limit;
+	s = Boost.Limit.State.Vehicle Speed.AsInteger();
+}
+if (Gear.Boost Limit < l)
+{
+	l = Gear.Boost Limit;
+	s = Boost.Limit.State.Gear.AsInteger();
+}
+if (Race Time.Mode neq Race Time.Mode.Not in Use and Race Time.Boost Limit < l)
+{
+	l = Race Time.Boost Limit;
+	s = Boost.Limit.State.Race Time.AsInteger();
+}
+if (Boost Limit < l)
+{
+	l = Boost Limit;
+	s = Boost.Limit.State.Engine.AsInteger();
+}
+
+if (Driver.Boost Limit Disable Switch eq Driver.Boost Limit Disable Switch.On)
+{
+	l = 1.0;
+	s = Boost.Limit.State.Boost Limits Disabled.AsInteger();
+}
+
+Boost.SetLimit(l, s);

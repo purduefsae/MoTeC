@@ -1,0 +1,12 @@
+if (Sensor.Diagnostic.AsInteger() >= Sensor.Diagnostic.OK.AsInteger())
+{
+	Value = Sensor;
+}
+else if (This.Switch.Diagnostic.AsInteger() >= This.Switch.Diagnostic.OK.AsInteger())
+{
+	Value = This.Switch eq This.Switch.On ? 1.0e6 /* 1MPa */ : 0.0;
+}
+else
+{
+	Value = Calculate.NAN();
+}

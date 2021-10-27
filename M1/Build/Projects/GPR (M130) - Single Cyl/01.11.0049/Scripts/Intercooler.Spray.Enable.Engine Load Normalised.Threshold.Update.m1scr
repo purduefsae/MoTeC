@@ -1,0 +1,10 @@
+local et = System.ElapsedTime();
+
+if (Engine.Load.Normalised > Value)
+{
+	Value = Calculate.Max(Value - (Decrease * et), Minimum);
+}
+else if (Engine.Load.Normalised < Value)
+{
+	Value = Calculate.Min(Value + (Increase * et), Maximum);
+}

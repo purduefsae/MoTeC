@@ -1,0 +1,129 @@
+local primaryInjectorFlow = Calculate.FastSquareRoot(Fuel.Injector.Primary.Differential Pressure / Fuel.Injector.Primary.Reference Pressure) * Fuel.Injector.Primary.Reference Flow;
+local secondaryInjectorFlow = Calculate.FastSquareRoot(Fuel.Injector.Secondary.Differential Pressure / Fuel.Injector.Secondary.Reference Pressure) * Fuel.Injector.Secondary.Reference Flow;
+
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	/*
+	 *	Primary Injectors
+	 */
+
+	if (Engine.Output Test eq Engine.Output Test.Fuel Primary)
+	{
+		Fuel.Cylinder $(n).Primary.Output.Volume = 0.0;
+		local maxSpeed = Calculate.Max(Engine.Output Test.Engine Speed, 300.0 /* minimum speed 50rpm for PW calculation */);
+		Fuel.Cylinder $(n).Primary.Output.Pulse Width 1 = 0.5 * Engine.Speed.Reference.Cycle Duration / maxSpeed;
+		Fuel.Cylinder $(n).Primary.Output.Pulse Width 2 = 0.0;
+	}
+	else if (Fuel.Volume.Cylinder $(n).Primary <= Fuel.Injector.Primary.Minimum Volume
+		or Fuel.Cylinder $(n).Primary.Output.Enable eq Fuel.Cylinder $(n).Primary.Output.Enable.Disabled)
+	{
+		Fuel.Cylinder $(n).Primary.Output.Volume = 0.0;
+		Fuel.Cylinder $(n).Primary.Output.Pulse Width 1 = 0.0;
+		Fuel.Cylinder $(n).Primary.Output.Pulse Width 2 = 0.0;
+	}
+	else
+	{
+		Fuel.Cylinder $(n).Primary.Output.Volume = Fuel.Volume.Cylinder $(n).Primary;
+		
+		local xAxismaxFuelVolume = Fuel.Injector.Primary.Linearisation.XAxisMaximum();
+		local cylPW = Fuel.Injector.Primary.Linearisation.Lookup(Fuel.Volume.Cylinder $(n).Primary, Fuel.Injector.Primary.Differential Pressure, ECU.Battery.Voltage);
+
+		/* Setup main pulse */
+		if (Fuel.Cylinder $(n).Primary.Output.Volume <= xAxismaxFuelVolume)
+		{
+			Fuel.Cylinder $(n).Primary.Output.Pulse Width 1 = cylPW; // Whole pulse defined by the linearisation table
+		}
+		else
+		{
+			Fuel.Cylinder $(n).Primary.Output.Pulse Width 1 = cylPW + (Fuel.Cylinder $(n).Primary.Output.Volume - xAxismaxFuelVolume) / primaryInjectorFlow;
+		}
+		if (Fuel.Cylinder $(n).Primary.Output.Pulse Index eq 1 and Fuel.Timing.Primary.Makeup <= Fuel.Timing.Primary.Limit)
+		{
+			/*
+			 * A previously calculated Pulse 1 has delivered Cycle Volume, but we are still in the current cycle
+			 * so setup a makeup pulse if required
+			 */
+			local makeup = Fuel.Cylinder $(n).Primary.Output.Volume - Fuel.Cylinder $(n).Primary.Output.Cycle Volume;
+			if (makeup <= Fuel.Injector.Primary.Minimum Volume) /* Minimum may be 0 */
+			{
+				Fuel.Cylinder $(n).Primary.Output.Pulse Width 2 = 0.0;
+			}
+			else
+			{
+				local pw = Fuel.Injector.Primary.Linearisation.Lookup(makeup, Fuel.Injector.Primary.Differential Pressure, ECU.Battery.Voltage);	
+				local deltaVolume = makeup - xAxismaxFuelVolume;
+				if (deltaVolume > 0.0) /* beyond linearisation table? */
+				{
+					pw += deltaVolume / primaryInjectorFlow; /* Extrapolate */
+				}
+				Fuel.Cylinder $(n).Primary.Output.Pulse Width 2 = pw;
+			}
+		}
+		else
+		{
+			Fuel.Cylinder $(n).Primary.Output.Pulse Width 2 = 0.0; /* cancel any previous makeup pulse */
+		}
+	}
+
+	/*
+	 *	Secondary Injectors
+	 */
+
+	if (Engine.Output Test eq Engine.Output Test.Fuel Secondary)
+	{
+		Fuel.Cylinder $(n).Secondary.Output.Volume = 0.0;
+		local maxSpeed = Calculate.Max(Engine.Output Test.Engine Speed, 300.0 /* minimum speed 50rpm for PW calculation */);
+		Fuel.Cylinder $(n).Secondary.Output.Pulse Width 1 = 0.5 * Engine.Speed.Reference.Cycle Duration / maxSpeed;
+		Fuel.Cylinder $(n).Secondary.Output.Pulse Width 2 = 0.0;
+	}
+	else if (Fuel.Volume.Cylinder $(n).Secondary <= Fuel.Injector.Secondary.Minimum Volume
+		or Fuel.Cylinder $(n).Secondary.Output.Enable eq Fuel.Cylinder $(n).Secondary.Output.Enable.Disabled)
+	{
+		Fuel.Cylinder $(n).Secondary.Output.Volume = 0.0;
+		Fuel.Cylinder $(n).Secondary.Output.Pulse Width 1 = 0.0;
+		Fuel.Cylinder $(n).Secondary.Output.Pulse Width 2 = 0.0;
+	}
+	else
+	{
+		Fuel.Cylinder $(n).Secondary.Output.Volume = Fuel.Volume.Cylinder $(n).Secondary;
+		
+		local xAxismaxFuelVolume = Fuel.Injector.Secondary.Linearisation.XAxisMaximum();
+		local cylPW = Fuel.Injector.Secondary.Linearisation.Lookup(Fuel.Volume.Cylinder $(n).Secondary, Fuel.Injector.Secondary.Differential Pressure, ECU.Battery.Voltage);
+
+		/* Setup main pulse */
+		if (Fuel.Cylinder $(n).Secondary.Output.Volume <= xAxismaxFuelVolume)
+		{
+			Fuel.Cylinder $(n).Secondary.Output.Pulse Width 1 = cylPW; // Whole pulse defined by the linearisation table
+		}
+		else
+		{
+			Fuel.Cylinder $(n).Secondary.Output.Pulse Width 1 = cylPW + (Fuel.Cylinder $(n).Secondary.Output.Volume - xAxismaxFuelVolume) / secondaryInjectorFlow;
+		}
+		if (Fuel.Cylinder $(n).Secondary.Output.Pulse Index eq 1 and Fuel.Timing.Secondary.Makeup <= Fuel.Timing.Secondary.Limit)
+		{
+			/*
+			 * A previously calculated Pulse 1 has delivered Cycle Volume, but we are still in the current cycle
+			 * so setup a makeup pulse if required
+			 */
+			local makeup = Fuel.Cylinder $(n).Secondary.Output.Volume - Fuel.Cylinder $(n).Secondary.Output.Cycle Volume;
+			if (makeup <= Fuel.Injector.Secondary.Minimum Volume) /* Minimum may be 0 */
+			{
+				Fuel.Cylinder $(n).Secondary.Output.Pulse Width 2 = 0.0;
+			}
+			else
+			{
+				local pw = Fuel.Injector.Secondary.Linearisation.Lookup(makeup, Fuel.Injector.Secondary.Differential Pressure, ECU.Battery.Voltage);	
+				local deltaVolume = makeup - xAxismaxFuelVolume;
+				if (deltaVolume > 0.0) /* beyond linearisation table? */
+				{
+					pw += deltaVolume / secondaryInjectorFlow; /* Extrapolate */
+				}
+				Fuel.Cylinder $(n).Secondary.Output.Pulse Width 2 = pw;
+			}
+		}
+		else
+		{
+			Fuel.Cylinder $(n).Secondary.Output.Pulse Width 2 = 0.0; /* cancel any previous makeup pulse */
+		}
+	}
+}

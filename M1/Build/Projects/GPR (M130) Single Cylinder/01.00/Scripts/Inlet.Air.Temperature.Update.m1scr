@@ -1,0 +1,20 @@
+local val = SensorValue();
+
+if (Inlet.Manifold.Temperature.Mode eq Inlet.Manifold.Temperature.Mode.Enabled)
+{
+	Correction.Delta = Inlet.Manifold.Temperature.GetUnscheduled() - val;
+	Correction = Correction.Factor * Correction.Delta;
+}
+else
+{
+	Correction.Delta = Calculate.NAN();
+	Correction = 0.0;
+}
+Value = val - Correction;
+
+local override = false;
+This.Warning.Update(
+	Sensor,
+	override,
+	Sensor.Diagnostic eq Sensor.Diagnostic.OK and Engine.State eq Engine.State.Run
+);

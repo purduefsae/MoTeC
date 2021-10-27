@@ -1,0 +1,13 @@
+local pres = Calculate.NAN();
+
+if (Airbox.Pressure.Sensor.Diagnostic eq Airbox.Pressure.Sensor.Diagnostic.OK)
+{
+	pres = Airbox.Pressure;
+}
+else if (Inlet.Manifold.Pressure.Sensor.Diagnostic eq Inlet.Manifold.Pressure.Sensor.Diagnostic.OK)
+{
+	pres = Inlet.Manifold.Pressure.Sensor;
+}
+
+Pressure.Update(pres);
+

@@ -1,0 +1,33 @@
+/*
+ * ADR
+ */
+local h = CanComms.TxOpen(true);
+
+if (ADR.CAN Bus neq ADR.CAN Bus.Not in Use)
+{
+	local ok = true;
+	local bus = ADR.CAN Bus.AsInteger() - 1;
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0, 16, Convert.ToUnsignedInteger(Engine.Speed / 36.0));
+	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Throttle.Position * 1000.0));
+	CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Brake.Pressure.Front.Sensor / 1.0e3));
+	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Brake.Pressure.Rear.Sensor / 1.0e3));
+	ok = CanComms.TxStandard(h, bus, 0x440);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0, 16, Convert.ToUnsignedInteger(Wheel Speed.Front.Left * 36.0));
+	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Wheel Speed.Front.Right * 36.0));
+	CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Wheel Speed.Rear.Left * 36.0));
+	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Wheel Speed.Rear.Right * 36.0));
+	ok = CanComms.TxStandard(h, bus, 0x441);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger(Steering.Angle * 10.0));
+	ok = CanComms.TxStandard(h, bus, 0x442);
+
+	/*
+	 * Shut up build
+	 */
+	ok = ok;
+}

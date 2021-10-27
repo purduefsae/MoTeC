@@ -1,0 +1,13 @@
+when (Mode)
+{
+	is (Disabled)
+	{
+		Value = Value.Enabled;
+	}
+	is (Enabled)
+	{
+		Value = (Engine.Speed.Limit - Engine.Speed) > Margin
+			? Value.Enabled
+			: Value.Disabled;
+	}
+}

@@ -1,0 +1,13 @@
+// open up a channel for steering position
+local steerpot = CanComms.RxOpenStandard(0, 0x750, 0x0, true);
+
+// checks the location of the sensor
+if (Sensor Location eq Sensor Location.CAN) {
+	if (CanComms.RxMessage(steerpot)) {
+		Pot Voltage = CanComms.GetUnsignedInteger(steerpot, 0, 32); 
+	} else {
+		Pot Voltage = 0.0;
+	}
+} else {
+	Pot Voltage = Sensor.Voltage;
+}

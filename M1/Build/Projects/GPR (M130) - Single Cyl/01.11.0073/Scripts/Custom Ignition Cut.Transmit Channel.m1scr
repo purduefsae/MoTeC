@@ -1,0 +1,13 @@
+local cut = CanComms.TxOpen(true);
+
+if (ECU.Transmit.CAN Bus neq ECU.Transmit.CAN Bus.Not in Use)
+{
+	local ok = true;
+	local bus = ECU.Transmit.CAN Bus.AsInteger() - 1;
+
+	CanComms.TxInitialise(cut, 1);
+	CanComms.SetInteger(cut,  0, 8, Cut State.AsInteger());
+	ok = CanComms.TxStandard(cut, bus, 0x119);
+
+	ok = ok;
+}

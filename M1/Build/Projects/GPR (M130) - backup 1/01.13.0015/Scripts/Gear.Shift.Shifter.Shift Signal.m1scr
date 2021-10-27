@@ -1,0 +1,83 @@
+// Frequncy: 	DC output if 0
+//				AC output @Frequency if >0
+// Duty Cycle:  if frequency is 0, 		outputs BAT_POS if >50%
+//										outputs BAT_NEG if <-50%
+//										OFF otherwise
+//				if frequency >0, 		acts as regular duty cycle
+
+if (Switches.Dash.Upshift Request > 0) {
+		Servo PWM.Duty Cycle = UpShift Duty Cycle;
+		State Cycles = Num Upshift Cycles;
+		Current State = Current State.Shift Up;
+} else if (Switches.Dash.Downshift Request > 0) {
+	Servo PWM.Duty Cycle = DnShift Duty Cycle;
+	State Cycles = Num Dnshift Cycles;
+	Current State = Current State.Shift Dn;
+}
+when (Current State) {
+	is (Idle) {
+		if (Switches.Dash.Upshift Request > 0) {
+					Servo PWM.Duty Cycle = UpShift Duty Cycle;
+					State Cycles = Num Upshift Cycles;
+					Current State = Current State.Shift Up;
+		} else if (Switches.Dash.Downshift Request > 0) {
+					Servo PWM.Duty Cycle = DnShift Duty Cycle;
+					State Cycles = Num Dnshift Cycles;
+					Current State = Current State.Shift Dn;
+		}
+	}
+	is (Preload Up) {
+		if (Gear.Lever eq Gear.Lever.Up) {
+			Servo PWM.Duty Cycle = UpShift Duty Cycle;
+			State Cycles = Num Upshift Cycles;
+			Current State = Current State.Shift Up;
+		} else if (Gear.Lever eq Gear.Lever.Down) {
+			Servo PWM.Duty Cycle = DnShift Duty Cycle;
+			State Cycles = Num Dnshift Cycles;
+			Current State = Current State.Shift Dn;
+		}
+	}
+	is (Preload Dn) {
+		if (Gear.Lever eq Gear.Lever.Down) {
+			Servo PWM.Duty Cycle = DnShift Duty Cycle;
+			State Cycles = Num Dnshift Cycles;
+			Current State = Current State.Shift Dn;
+		} else  if (Gear.Lever eq Gear.Lever.Up) {
+			Servo PWM.Duty Cycle = UpShift Duty Cycle;
+			State Cycles = Num Upshift Cycles;
+			Current State = Current State.Shift Up;
+		}
+	}
+	is (Shift Up) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Servo PWM.Duty Cycle = Neutral Duty Cycle;
+			Current State = Current State.Idle;
+		}
+	}
+	is (Shift Dn) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Servo PWM.Duty Cycle = Neutral Duty Cycle;
+			Current State = Current State.Idle;
+		}
+	}
+	is (Return Dn) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Servo PWM.Duty Cycle = Neutral Duty Cycle;
+			Current State = Current State.Idle;
+		}
+	}
+	is (Return Up) {
+		if (State Cycles neq 0) {
+			State Cycles = State Cycles - 1;
+		} else {
+			Servo PWM.Duty Cycle = Neutral Duty Cycle;
+			Current State = Current State.Idle;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+Value = Sensor;
+This.Warning.Update(
+	Sensor,
+	Low Switch eq Low Switch.On,
+	Engine.State eq Engine.State.Run and (Low Switch eq Low Switch.On or not Calculate.IsNAN(Sensor))	// don't apply warning if no sensor value is available
+);

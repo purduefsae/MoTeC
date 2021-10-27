@@ -1,0 +1,53 @@
+local h = CanComms.TxOpen(true);
+
+if (CAN Bus neq CAN Bus.Not in Use)
+{
+	local ok = true;
+	local bus = CAN Bus.AsInteger() - 1;
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0,  8, Convert.ToUnsignedInteger(Ignition.Output.Cut Count));
+	CanComms.SetUnsignedInteger(h,  8,  8, Convert.ToUnsignedInteger(Fuel.Output.Cut Count));
+	CanComms.SetUnsignedInteger(h, 16,  8, Convert.ToUnsignedInteger(Ignition.Output.Cut Average * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 24,  8, Convert.ToUnsignedInteger(Fuel.Output.Cut Average * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 32,  8, Convert.ToUnsignedInteger(Fuel.Cylinder 1.Primary.Output.Pulse Width 1 * 1.0e4));
+	CanComms.SetInteger        (h, 40,  4, Ignition.Timing.State.AsInteger());
+	CanComms.SetInteger        (h, 44,  4, Ignition.Cut.State.AsInteger());
+	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Engine.Oil.Pressure * 1.0e-2));
+	ok = CanComms.TxStandard(h, bus, 0x644);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger        (Boost.Pressure * 1.0e-2));
+	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Boost.Aim * 1.0e-2));
+	CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Boost.Actuator.Normal.Output.Duty Cycle * 1.0e2));
+	//CanComms.SetInteger        (h, 56,  8, Convert.ToInteger        (Gear.Lever.Force.Sensor * 2.0e-1));
+	ok = CanComms.TxStandard(h, bus, 0x645);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger        (Inlet.Camshaft.Aim * 1.0e1));
+	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger        (Inlet.Camshaft.Bank 1.Position * 1.0e1));
+	CanComms.SetInteger        (h, 32, 16, Convert.ToInteger        (Inlet.Camshaft.Bank 2.Position * 1.0e1));
+	CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Inlet.Camshaft.Bank 1.Actuator.Output.Duty Cycle * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 56,  8, Convert.ToUnsignedInteger(Inlet.Camshaft.Bank 2.Actuator.Output.Duty Cycle * 1.0e2));
+	ok = CanComms.TxStandard(h, bus, 0x646);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger        (Exhaust.Camshaft.Aim * 1.0e1));
+	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger        (Exhaust.Camshaft.Bank 1.Position * 1.0e1));
+	CanComms.SetInteger        (h, 32, 16, Convert.ToInteger        (Exhaust.Camshaft.Bank 2.Position * 1.0e1));
+	CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Exhaust.Camshaft.Bank 1.Actuator.Output.Duty Cycle * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 56,  8, Convert.ToUnsignedInteger(Exhaust.Camshaft.Bank 2.Actuator.Output.Duty Cycle * 1.0e2));
+	ok = CanComms.TxStandard(h, bus, 0x647);
+
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0, 16, Convert.ToUnsignedInteger(Wheel Speed.Front.Left * 36.0));
+	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Wheel Speed.Front.Right * 36.0));
+	CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Wheel Speed.Rear.Left * 36.0));
+	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Wheel Speed.Rear.Right * 36.0));
+	ok = CanComms.TxStandard(h, bus, 0x648);
+
+	/*
+	 * Shut up build
+	 */
+	ok = ok;
+}

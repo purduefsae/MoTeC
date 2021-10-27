@@ -1,0 +1,12 @@
+local log = Library.Delay.Falling(
+	Engine.Speed.Reference.State neq Engine.Speed.Reference.State.Stall
+	or ((This.Throttle > 0.0) and (Root.Throttle.Pedal > This.Throttle)),
+	This.Delay
+);
+
+Request = (log) ? Request.Run : Request.Stop;
+
+System 1.State = Library.Logging.Running(1) ?
+	System 1.State.Running :
+	System 1.State.Stopped;
+System 1.Used = Library.Logging.Used(1);

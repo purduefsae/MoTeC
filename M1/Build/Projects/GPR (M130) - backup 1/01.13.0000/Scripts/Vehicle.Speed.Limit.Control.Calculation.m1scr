@@ -1,0 +1,41 @@
+local disabled = Calculate.IsNAN(Vehicle.Speed) or
+	Gear eq Gear.Neutral or
+	(Vehicle.Speed.Limit <= 0.0) or
+	(Vehicle.Speed < (Vehicle.Speed.Limit - Activate.Vehicle Speed Margin)) or
+	Calculate.IsNAN(Vehicle.Speed.Limit) or
+	Mode eq Mode.Not in Use;
+	
+local et = System.ElapsedTime();
+
+This.Acceleration.Actual = Derivative.Filtered(Vehicle.Speed);
+
+if (disabled)
+{
+	This.Acceleration = Calculate.NAN();
+	This.Error = Calculate.NAN();
+}
+else
+{
+	local speedError = Parent.Value - Vehicle.Speed;
+	local accgain = speedError > 0.0 ? Acceleration.Time Constant.Positive : Acceleration.Time Constant.Negative;
+
+	This.Acceleration = Limit.Range((speedError / accgain), (- Acceleration.Limit), Acceleration.Limit);	
+	This.Error = This.Acceleration.Actual - This.Acceleration;
+}
+
+/*
+ * Integral as throttle position scaled on Throttle Limit
+ */
+
+if (disabled)
+{
+	This.Throttle.Limit = Calculate.NAN();
+	This.Integral = Calculate.Min(Root.Throttle.Position.GetUnscheduled() / This.Throttle.Maximum, 1.0);
+	State = State.Disabled;
+}
+else
+{
+	This.Integral = Limit.Range(This.Integral - (This.Error * This.Integral.Gain * et), 0.0, 1.0);
+	This.Throttle.Limit = Limit.Range(This.Integral * This.Throttle.Maximum, 0.0, This.Throttle.Maximum);
+	State = State.Enabled;
+}

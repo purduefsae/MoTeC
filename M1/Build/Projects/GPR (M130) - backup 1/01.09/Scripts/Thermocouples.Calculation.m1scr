@@ -1,0 +1,15 @@
+local thermocouples = CanComms.RxOpenStandard(1, 0x80, 0x0, true);
+
+if(CAN Couples.Input eq CAN Couples.Input){
+CAN Couples.Value 2 = CAN Couples.Couple 2;
+CAN Couples.Value 3 = CAN Couples.Couple 3;
+CAN Couples.Value 4 = CAN Couples.Couple 4;
+CAN Couples.Value 5 = CAN Couples.Couple 5;
+CAN Couples.Value 6 = CAN Couples.Couple 6;
+} else {
+CAN Couples.Value 2 = CanComms.GetUnsignedInteger(thermocouples, 0, 16);
+CAN Couples.Value 3 = CanComms.GetUnsignedInteger(thermocouples, 16, 16);
+CAN Couples.Value 4 = CanComms.GetUnsignedInteger(thermocouples, 32, 16);
+CAN Couples.Value 5 = CanComms.GetUnsignedInteger(thermocouples, 48, 16);
+CAN Couples.Value 6 = CanComms.GetUnsignedInteger(thermocouples, 64, 16);
+}

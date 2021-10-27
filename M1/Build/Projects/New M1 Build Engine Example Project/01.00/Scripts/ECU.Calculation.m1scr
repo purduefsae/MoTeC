@@ -1,0 +1,2 @@
+Uptime = Library.System.Ticks() * Library.System.TickPeriod();
+CPU Usage = 1.0 - Library.System.CpuIdle();

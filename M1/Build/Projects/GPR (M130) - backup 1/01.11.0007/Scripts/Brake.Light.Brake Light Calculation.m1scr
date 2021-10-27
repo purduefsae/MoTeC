@@ -1,0 +1,23 @@
+// turns the brake light on if brake pressure rises above the specified value
+
+Brake light Pin.Frequency = Flash Rate;
+if (Brake Light Display type eq Brake Light Display Enumeration.Normal) {
+	Flash Rate = 100.0;
+	if(Brake.Front Value >= Activation Pressure){
+		Brake light Pin.Duty Cycle = -100.0;
+		Status = Brake light Status.on;
+	}else{
+		Brake light Pin.Duty Cycle = 0.0;
+		Status = Brake light Status.Off;
+	}
+} else {
+	// fun with the brake light
+	Flash Rate = Base Flash Rate + (Brake.Front Value - Activation Pressure) * Flash Rate Scale;
+	if (Brake.Front Value >= Activation Pressure) {
+		Brake light Pin.Duty Cycle = Base Brightness + (Brake.Front Value - Activation Pressure) * Brightness Scale / 1000000000000000;
+		Status = Brake light Status.On;
+	} else {
+		Brake light Pin.Duty Cycle = 0.0;
+		Status = Brake light Status.Off;
+	}
+}

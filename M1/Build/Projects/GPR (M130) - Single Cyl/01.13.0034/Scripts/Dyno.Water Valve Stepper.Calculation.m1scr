@@ -1,0 +1,121 @@
+when (Automated Control)
+{
+	is (Enable) //Automated Control
+	{
+		when (Engine.State)
+		{
+			is (Run)
+			{
+				if (Engine.Speed > (RPM Target + RPM Hysteresis)) //as the engine speed ramps down we don't want to add load too quickly
+				{
+					if (Aim < Convert.ToInteger(Maximum Step)) //Max step is fully open *better to set too high than too low
+					{
+						Aim += 1; //if speed is faster than target you need to open the valve to let more water in thus adding load and lowering the rpm
+					}
+				}
+				else if (Engine.Speed < (RPM Target - (Ramp Up * RPM Hysteresis))) //as the engine speed ramps up we want 
+				{
+					if(Aim > 0) //0 is fully closed
+					{
+						Aim -= 1; //if speed is slower than your target you need to close the valve to let less water in thus reducing load and raising the rpm
+					}
+				}
+			}
+			is (Startup)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
+			}
+			is (Crank)
+			{
+				Aim = Position;
+			}
+			is (Stop)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
+			}
+		}
+	}
+	is (Not In Use) //Manual Control
+	{
+		Aim = Convert.ToInteger(Maximum Step * Percent Closed); 
+	}
+}
+
+//Maximum Step = # of steps for stepper motor to reach 100% closed on valve
+//200 steps/revolution
+
+
+local duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+
+when (State)
+{
+	is (Hold)
+	{
+		duty = 0.0;
+	}
+	is (Moving)
+	{
+		duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+	}
+}
+if (Position eq Aim)
+{
+	State = State.Hold;
+}
+else
+{
+	State = State.Moving;
+}
+static local <Unsigned Integer> div = 0;
+div += 1;
+if (div >= Divider)
+{
+	div = 0;
+}
+//Divider = used to change the freq of the stepping
+
+if (Position eq Aim)
+{
+	duty = Calculate.Min(Hold Voltage / ECU.Battery.Voltage, 1.0);
+}
+else if (div eq 0)
+{
+	if (Position > Aim and Position > 0)
+	{
+		Position -= 1;
+	}
+	else if (Position < Aim and Position < Convert.ToInteger(Maximum Step))
+	{
+		Position += 1;
+	}
+	
+	/* Do our best to remember position */
+	System.Preserve();
+}
+
+local phase = Calculate.Modulo(Position, 4);
+if (phase < 0)
+{
+	phase = 4 + phase;
+}
+
+if (phase eq 0)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = -duty;
+}
+else if (phase eq 1)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 2)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 3)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = -duty;
+}

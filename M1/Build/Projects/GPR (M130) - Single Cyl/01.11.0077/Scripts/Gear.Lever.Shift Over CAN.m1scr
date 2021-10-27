@@ -1,0 +1,25 @@
+// open up a CAN receive handle 
+local paddle up = CanComms.RxOpenStandard(0, 0xA0, 0x0, true);
+
+// determine whether to pull data from CAN
+if (Paddle Shifts Location eq Data input location.CAN) {
+	if (CanComms.RxMessage(paddle up)) {
+		Shift Message = CanComms.GetInteger(paddle up, 0, 2);
+	}
+} else {
+	Shift Message = 0;
+}
+
+if (Shift Message eq 0) {
+	Upshift = Upshift.Off;
+	Downshift = Downshift.Off;
+} else if (Shift Message eq 1) {
+	Upshift = Upshift.On;
+	Downshift = Downshift.Off;
+} else if (Shift Message eq 8) {
+	Upshift = Upshift.Off;
+	Downshift = Downshift.Off;
+} else if (Shift Message eq 9) {
+	Upshift = Upshift.Off;
+	Downshift = Downshift.Off;
+}

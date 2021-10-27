@@ -1,0 +1,72 @@
+local p = -1000;
+local diagstable = Delay.Stable(Diagnostic.AsInteger(), 0.1);
+local sensActive = Sensor.Diagnostic neq Sensor.Diagnostic.Not in Use;
+local sensorFault = Sensor.Diagnostic eq Sensor.Diagnostic.Double Sensor Fault or Calculate.IsNAN(Sensor);
+local sensAvailable = sensActive and not sensorFault;
+
+if (sensAvailable)
+{
+	if (Calculate.Absolute(Sensor - Reverse) < Tolerance.Lookup(Gear Enumeration.Reverse))
+	{
+		p = Value.Reverse.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Neutral) < Tolerance.Lookup(Gear Enumeration.Neutral))
+	{
+		p = Value.Neutral.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - First) < Tolerance.Lookup(Gear Enumeration.First))
+	{
+		p = Value.First.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Second) < Tolerance.Lookup(Gear Enumeration.Second))
+	{
+		p = Value.Second.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Third) < Tolerance.Lookup(Gear Enumeration.Third))
+	{
+		p = Value.Third.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Fourth) < Tolerance.Lookup(Gear Enumeration.Fourth))
+	{
+		p = Value.Fourth.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Fifth) < Tolerance.Lookup(Gear Enumeration.Fifth))
+	{
+		p = Value.Fifth.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Sixth) < Tolerance.Lookup(Gear Enumeration.Sixth))
+	{
+		p = Value.Sixth.AsInteger();
+	}
+	else if (Calculate.Absolute(Sensor - Seventh) < Tolerance.Lookup(Gear Enumeration.Seventh))
+	{
+		p = Value.Seventh.AsInteger();
+	}
+}
+	
+local stable = Calculate.Stable(p, Diagnostic.Delay);
+
+if (Value.Validate(p))
+{
+	Value.Set(p);
+	
+	if (diagstable)
+	{
+		Diagnostic = Diagnostic.OK;
+	}
+}
+else if (sensActive)
+{
+	if (sensorFault)
+	{
+		if (stable)
+		{
+			Value = Value.Default;
+			Diagnostic = Diagnostic.Sensor Fault;
+		}
+	}
+	else if (stable)
+	{
+		Diagnostic = Diagnostic.Tolerance;
+	}
+}

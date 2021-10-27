@@ -1,0 +1,7 @@
+Value = Calculate.IsNAN(Sensor) ? Estimate : Sensor;
+local override = false;
+This.Warning.Update(
+	Sensor,
+	override,
+	Sensor.Diagnostic eq Sensor.Diagnostic.OK
+);

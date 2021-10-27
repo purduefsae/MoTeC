@@ -1,0 +1,1 @@
+Yaw Rate = 360 * (Wheel Speed.Front.Right - Wheel Speed.Front.Left) / (Track * Calculate.FastCos(Steering.Angle.FR Tire Angle * 3.1415926535 / 180));

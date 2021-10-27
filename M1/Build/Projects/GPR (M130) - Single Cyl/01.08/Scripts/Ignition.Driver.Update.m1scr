@@ -1,0 +1,6 @@
+local testmode = Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Test;
+local fire = (Engine.State eq Engine.State.Run) or (Engine.State eq Engine.State.Crank);
+
+Ignition.Output.Drive Current = testmode or fire
+	? Current
+	: 0.0;

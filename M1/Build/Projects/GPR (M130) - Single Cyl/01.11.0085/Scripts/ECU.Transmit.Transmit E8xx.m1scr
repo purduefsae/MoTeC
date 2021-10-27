@@ -1,0 +1,9 @@
+if (Root.E8XX.CAN Bus neq Root.E8XX.CAN Bus.Not in Use)
+{
+	local bus = Root.E8XX.CAN Bus.AsInteger() - 1;
+	
+	/*
+	 * Outputs
+	 */
+	Library.E8XX.Transmit(bus);
+}

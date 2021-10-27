@@ -1,0 +1,14 @@
+local linHandle = CanComms.RxOpenStandard(0, 0x470, 0x0, true);
+
+// if there is a message, get values from there. else set diagnostic channel
+if (CanComms.RxMessage(linHandle)) {
+	Linear Z = CanComms.getInteger(linHandle, 0, 16);
+	Linear Y = CanComms.GetInteger(linHandle, 16, 16);
+	Linear X = CanComms.GetInteger(linHandle, 32, 16);
+	Linear Diagnostic = Linear Diagnostic.OK;
+} else {
+	Linear Z = Linear Z;
+	Linear Y = Linear Y;
+	Linear X = Linear X;
+	Linear Diagnostic = Linear Diagnostic.CAN Timeout;
+}

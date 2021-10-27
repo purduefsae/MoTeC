@@ -1,0 +1,44 @@
+local v = Normal;
+local s = State.Normal;
+
+when (Mode)
+{
+	is (Normal)
+	{
+		if (Engine.State neq Engine.State.Run)
+		{
+			v = Cranking;
+			s = State.Cranking;
+		}
+		else
+		{
+			v = Normal;
+			s = State.Normal;
+		}
+
+	}
+	is (Check Timing)
+	{
+		v = Ignition.Test.Timing;
+		s = State.Check Timing;
+	}
+}
+
+if (v < This.Limit.Advance)
+{
+	v = This.Limit.Advance;
+	s = State.Limit Advance;
+}
+
+ /*
+  * retard is a hard limit, mostly for distributors, so
+  * it needs to win if the advance limit is crazy
+  */
+if (v > This.Limit.Retard)
+{
+	v = This.Limit.Retard;
+	s = State.Limit Retard;
+}
+
+Value = v;
+State = s;

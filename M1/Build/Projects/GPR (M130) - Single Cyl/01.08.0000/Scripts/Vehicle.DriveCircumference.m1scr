@@ -1,0 +1,18 @@
+when (Drive Type)
+{
+	is (Front)
+	{
+		out = Wheel Speed.Front.Circumference;
+	}
+	is (Rear)
+	{
+		out = Wheel Speed.Rear.Circumference;
+	}
+	is (All)
+	{
+		out = Calculate.Average(
+			Wheel Speed.Front.Circumference,
+			Wheel Speed.Rear.Circumference
+		);
+	}
+}

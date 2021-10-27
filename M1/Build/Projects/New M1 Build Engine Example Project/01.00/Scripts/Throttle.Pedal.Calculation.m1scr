@@ -1,0 +1,8 @@
+if (Sensor.Diagnostic.AsInteger() >= Sensor.Diagnostic.OK.AsInteger())
+{
+	Value = Translation;
+}
+else	// sensor fault
+{
+	Value = 0.0;
+}

@@ -1,0 +1,45 @@
+Error = Engine.Speed - RPM Target;
+local Der = (Error - Prior)/0.02; //0.02 is the iteration time IF EVENT FREQUENCY CHANGES THIS VALUE MUST BE CHANGED
+when (Automated Control)
+{
+	is (Enable)
+	{
+		when (Engine.State)
+		{
+			is (Run)
+			{
+				Integral Value += error*0.02; //0.02 is the iteration time IF EVENT FREQUENCY CHANGES THIS VALUE MUST BE CHANGED
+				PID Aim = Kp*error + Integral Value*Ki + Der*Kd; //max error would be ~12000 RPM so set bound of Prop. to be wherever the ratio of 12000 to aim is
+				if (Convert.ToInteger(PID Aim) > Convert.ToInteger(Maximum Step))
+				{
+					Aim = Convert.ToInteger(Maximum Step);
+				}
+				else if (Convert.ToInteger(PID Aim) < 0)
+				{
+					Aim = 0;
+				}
+				else
+				{
+					Aim = Convert.ToInteger(PID Aim);
+				}
+				Prior = Error;
+			}
+			is (Startup)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Load); 
+			}
+			is (Crank)
+			{
+				Aim = Position;
+			}
+			is (Stop)
+			{
+				Aim = Convert.ToInteger(Maximum Step * Percent Load);
+			}
+		}
+	}
+	is (Not In Use)
+	{
+		Aim = Convert.ToInteger(Maximum Step * Percent Load); 
+	}
+}

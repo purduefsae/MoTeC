@@ -1,0 +1,2 @@
+Throttle Servo.Frequency = PWM Freq;
+Throttle Servo.Duty Cycle = Percent Open;

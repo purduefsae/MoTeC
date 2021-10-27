@@ -1,0 +1,26 @@
+local pdmHandle= CanComms.RxOpenStandard(0, 0x520, 0x0, true);
+if (CanComms.RxMessage(pdmHandle)) {
+	if (CanComms.GetInteger(pdmHandle, 0, 8) > 0) {
+		Neutral Switch = Neutral Switch.B;
+	} else {
+		Neutral Switch = Neutral Switch.A;
+	}
+	
+	if (CanComms.GetInteger(pdmHandle, 8, 8) > 0) {
+		Brake OT = Brake OT.B;
+	} else {
+		Brake OT = Brake OT.A;
+	}
+	
+	if (CanComms.GetInteger(pdmHandle, 16, 8) > 0) {
+		ESTOP = Brake OT.B;
+	} else {
+		ESTOP = Brake OT.A;
+	}
+	PDM Switch Diagnostic = PDM Switch Diagnostic.OK;
+} else {
+	Neutral Switch = Neutral Switch;
+	Brake OT = Brake OT;
+	ESTOP = ESTOP;
+	PDM Switch Diagnostic = PDM Switch Diagnostic.CAN Timeout;
+}

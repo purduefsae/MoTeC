@@ -1,0 +1,84 @@
+/* After-run pump activation */
+
+static local afterrunDuty = 0.0;
+local running = Engine.State eq Engine.State.Run;
+
+local afterrunEnable = not running and (Engine.Trip Time > After Run.Engine Trip Time);
+local afterrunEnableER = Change.To(afterrunEnable);
+local afterrunDisable = Delay.Rising(ECU.Battery.Voltage < After Run.Disable.Battery Voltage and After Run.Disable.Battery Voltage > 0.0, After Run.Disable.Delay);
+
+if (afterrunEnableER)
+{
+	local ambComp = Calculate.IsNAN(Ambient.Temperature) ? 
+						After Run.Ambient Temperature Compensation.Lookup(After Run.Ambient Temperature Compensation.XAxisMaximum()) :
+						After Run.Ambient Temperature Compensation; 
+	After Run.Duration = After Run.Activation * ambComp;
+	afterrunDuty = After Run.Duty Cycle;
+}
+else if (not afterrunEnable or afterrunDisable)
+{
+	After Run.Duration = 0.0;
+	afterrunDuty = 0.0;
+}
+
+local afterrunOn = Delay.Falling(afterrunEnableER, After Run.Duration);
+local afterrunOutActive = After Run.Output.IsActive();
+
+/* Normal pump operation when engine is running, after-run uses second pump if available */
+
+local mainOn = Delay.Falling(running, Hold);
+local mainDuty = mainOn ? Duty Cycle : After Run.Duty Cycle;
+local afterrunRequest = afterrunOn and afterrunEnable;			// engine might restart while afterrunOn is still true
+
+/* Main duty cycle & state determination */
+
+if (not Output.IsActive())
+{
+	State = State.Disabled;
+	Output.Duty Cycle = Calculate.NAN();
+}
+else if (Test eq Test.Enabled)
+{
+	State = State.Test;
+	Output.Duty Cycle = 1.0;
+}
+else if (mainOn or (not afterrunOutActive and afterrunRequest))
+{
+	State = State.Enabled;
+	Output.Duty Cycle = mainDuty;
+}
+else
+{
+	State = State.Disabled;
+	Output.Duty Cycle = 0.0;
+}
+
+/* After run duty cycle & state determiniation */
+
+if (not afterrunOutActive)
+{
+	After Run.State = After Run.State.Disabled;
+	After Run.Output.Duty Cycle = Calculate.NAN();
+}
+else if (After Run.Test eq After Run.Test.Enabled)
+{
+	After Run.State = After Run.State.Test;
+	After Run.Output.Duty Cycle = 1.0;
+}
+else if (afterrunRequest)
+{
+	After Run.State = After Run.State.Enabled;
+	if (not afterrunOutActive)	// afterrun is processed from main pump
+	{
+		After Run.Output.Duty Cycle = Calculate.NAN();
+	}
+	else
+	{
+		After Run.Output.Duty Cycle = afterrunDuty;
+	}
+}
+else
+{
+	After Run.State = After Run.State.Disabled;
+	After Run.Output.Duty Cycle = 0.0;
+}

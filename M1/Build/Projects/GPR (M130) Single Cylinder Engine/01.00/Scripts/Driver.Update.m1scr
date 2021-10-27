@@ -1,0 +1,13 @@
+expand (n = 1 to 8)
+{
+	Library.Switch.Set(Driver Switch Index Enumeration.Driver Switch $(n).AsInteger() - 1, Switch $(n).AsInteger());
+}
+
+expand (n = 1 to 8)
+{
+	Library.Switch.Set(Driver Switch Index Enumeration.Driver Rotary Switch $(n).AsInteger() - 1, Rotary Switch $(n).AsInteger());
+}
+
+Anti Lag.SetEnable(Anti Lag Switch eq Anti Lag Switch.On ? true : false);
+Launch.SetEnable(Launch Switch eq Launch Switch.On ? true : false);
+CAN Rotary Switch 1.Value = CAN Rotary Switch 1.Value.Zero;

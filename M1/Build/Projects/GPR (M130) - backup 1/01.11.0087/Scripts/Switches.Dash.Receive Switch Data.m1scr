@@ -1,0 +1,34 @@
+local dashHandle = CanComms.RxOpenStandard(0, 0x0a0, 0x0, true);
+if (CanComms.RxMessage(dashHandle)) {
+	if (CanComms.GetUnsignedInteger(dashHandle, 0, 8) > 0) {
+		Upshift Request = Upshift Request.B;
+	} else {
+		Upshift Request = Upshift Request.A;
+	}
+	
+	if (CanComms.GetUnsignedInteger(dashHandle, 8, 8) > 0) {
+		Downshift Request = Downshift Request.B;
+	} else {
+		Downshift Request = Downshift Request.A;
+	}
+	
+	if (CanComms.GetUnsignedInteger(dashHandle, 16, 8) > 0) {
+		Display Change = Display Change.B;
+	} else {
+		Display Change = Display Change.A;
+	}
+	
+	if (CanComms.GetUnsignedInteger(dashHandle, 24, 8) > 0) {
+		Time Stamp = Time Stamp.B;
+	} else {
+		Time Stamp = Time Stamp.A;
+	}
+	
+	Dash Switch Diagnostic = Dash Switch Diagnostic.OK;
+} else {
+	Upshift Request = Upshift Request;
+	Downshift Request = Downshift Request;
+	Display Change = Display Change;
+	Time Stamp = Time Stamp;
+	Dash Switch Diagnostic = Dash Switch Diagnostic.CAN Timeout;
+}

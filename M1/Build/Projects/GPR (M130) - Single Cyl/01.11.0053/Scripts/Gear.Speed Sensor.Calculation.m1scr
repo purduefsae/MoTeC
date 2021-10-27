@@ -1,0 +1,2 @@
+// speed sensor measures the output speed of the engine. 
+Value = (Speed Sensor Input.Frequency) / (Input Object Teeth);

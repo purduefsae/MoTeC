@@ -1,0 +1,20 @@
+local SendHandle = CanComms.TxOpen(true);
+
+if (ECU.Transmit.CAN Bus neq ECU.Transmit.CAN Bus.Not in Use) {
+	local bus = ECU.Transmit.CAN Bus.AsInteger() - 1;
+	CanComms.TxInitialise(SendHandle, 8);
+	CanComms.SetInteger(SendHandle, 0, 16, 20000); //0x4e20
+	CanComms.SetInteger(SendHandle, 16, 16, Strain Gauge.GainCoeff);
+	CanComms.SetInteger(SendHandle, 32, 8, Strain Gauge.GainExp);
+	CanComms.SetInteger(SendHandle, 40, 16, Strain Gauge.OffsetCoeff);
+	CanComms.SetInteger(SendHandle, 56, 8, Strain Gauge.OffsetExp);
+	if (CanComms.TxStandard(SendHandle, bus, 0x4E4))
+		{
+			Diagnostic = Diagnostic.Ok;
+		}else 
+		{
+			Diagnostic = Diagnostic.CAN Timeout;
+		}
+} else {
+	Diagnostic = Diagnostic.Not in Use;
+}

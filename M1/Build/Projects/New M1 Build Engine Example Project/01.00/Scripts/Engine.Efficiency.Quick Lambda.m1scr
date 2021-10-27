@@ -1,0 +1,37 @@
+if (Exhaust.Lambda.Normalised < 0.6 or Exhaust.Lambda.Normalised > 2.0)
+{
+    // Lambda out of range
+    UI.PromptOK(
+        "Quick Lambda",
+        "Lambda Sensor Error"
+    );
+}
+else if (Fuel.Mixture Aim.Main < 0.6) /* Use Main as 'Lambda Was' can calculate this */
+{
+    // bad fuel aim
+    UI.PromptOK(
+        "Quick Lambda",
+        "Lambda Aim Error"
+    );
+}
+else
+{
+    local new = This * Exhaust.Lambda.Normalised / Fuel.Mixture Aim.Main;
+	Engine.Calibration Change = Engine.Calibration Change + 1;
+    if (This.Validate(new))
+    {
+        // new value is valid so set and mark site as adjusted
+        This = new;
+        this.Mark(true);
+    }
+    else
+    {
+        // new value is out of range so clamp and report a message
+        This = This.Constrain(new);
+        This.Mark(false);
+        UI.PromptOK(
+            "Quick Lambda",
+            "Result Clamped"
+        );       
+    }
+}

@@ -1,0 +1,450 @@
+static local igncutRecovery = 0.0;
+static local retardRecovery = 0.0;
+static local fuelcutRecovery = 0.0;
+static local matchOverallRatio = 0.0;
+local et = System.ElapsedTime();
+local setThrottle = false;
+
+// "disableCutBlip" is true if currently in Reverse or Neutral, or in First and Downshifting
+local disableCutBlip = (Current eq Current.First and Value eq Value.Down)
+						or Current eq Current.Neutral 
+						or Current eq Current.Reverse;
+// "disableBlip is true if "disableCutBlip" is true or the clutch is disengaged and clutch lockout is engaged
+local disableBlip = disableCutBlip or (ClutchDisengaged() and Throttle Aim.Clutch Lockout eq Throttle Aim.Clutch Lockout.Enabled);
+// "disableCut is true if "disableCutBlip" is true or the clutch is disengaged
+local disableCut  = disableCutBlip or ClutchDisengaged();
+
+local upshift = Type eq Type.Up Shift Power Off or Type eq Type.Up Shift Power On;
+local timingNextState = Timing.GetUnscheduled();
+
+when (State)
+{
+	is (Idle)
+	{
+		when (Value)
+		{
+			is (Up or Down)
+			{
+				if (Engine Speed.Mode eq Engine Speed.Mode.Down Shift Speed Matching Enabled or
+					Engine Speed.Mode eq Engine Speed.Mode.Up Shift Speed Matching Enabled)
+				{
+					local deltaRatio = ((Value eq Value.Up) ? Gear.Ratio.Up : Gear.Ratio.Down) - Gear.Ratio;
+					matchOverallRatio = (Gear.Ratio + deltaRatio * Engine Speed.Match) * Gear.Input.Ratio * Gear.Output.Ratio;
+				}
+				else
+				{
+					matchOverallRatio = 0.0;
+				}
+				
+				local preshiftTiming = Timing.Lookup(Current, Timing.Phase.Pre Shift, Type);
+				if (preshiftTiming <= 0.0 or Type eq Type.Up Shift Power On)
+				{
+					State = State.Shift;
+					Timer.Start(timingNextState);
+					if (upshift)
+					{
+						if (timingNextState > 0.0 and not disableCut)
+						{
+							if (Ignition Cut.Main > 0)
+							{
+								Ignition Cut = Ignition Cut.Main;
+							}
+							if (Ignition Timing.Retard > 0)
+							{
+								Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+							}
+							if (Fuel Cut.Main > 0)
+							{
+								Fuel Cut = Fuel Cut.Main;
+							}
+						}
+						Timing.Phase = Timing.Phase.Recover;	// no Post Shift for upshifts
+					}
+					else
+					{
+						Timing.Phase = Timing.Phase.Post Shift;
+						if ((timingNextState > 0.0) and (Throttle Aim.Main > 0.0) and not disableBlip)
+						{
+							setThrottle = true;
+						}
+					}
+				}
+				else
+				{
+					if (not disableCut and not upshift)
+					{
+						if (Ignition Cut.Main > 0)
+						{
+							Ignition Cut = Ignition Cut.Main;
+						}
+						if (Ignition Timing.Retard > 0)
+						{
+							Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+						}
+						if (Fuel Cut.Main > 0)
+						{
+							Fuel Cut = Fuel Cut.Main;
+						}
+					}
+					State = State.Pre Shift;
+					Timer.Start(preshiftTiming);
+					Timing.Phase = Timing.Phase.Shift;
+					if ((Throttle Aim.Main > 0.0) and not disableBlip)
+					{
+						setThrottle = true;
+					}
+				}
+			}
+			is (Idle or Not in Use or Lockout)
+			{
+				// nothing to do
+			}
+		}
+	}
+	is (Pre Shift)		// cannot enter Pre Shift in case of Upshift Power On
+	{
+		local inNextGear = Gear neq Gear.Default and Gear neq Current 
+							and (Gear neq Gear.Neutral or Next eq Next.Neutral);	// some gearboxes have Neutral position between 1st and 2nd gear 
+		if (Timer.Remaining() <= 0.0 or inNextGear)
+		{
+			State = State.Shift;
+			Timer.Start(timingNextState);
+			if (upshift)
+			{
+				Timing.Phase = Timing.Phase.Recover;
+				
+				if (timingNextState > 0.0 and not disableCut)
+				{
+					if (Ignition Cut.Main > 0)
+					{
+						Ignition Cut = Ignition Cut.Main;
+					}
+					if (Ignition Timing.Retard > 0)
+					{
+						Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+					}
+					if (Fuel Cut.Main > 0)
+					{
+						Fuel Cut = Fuel Cut.Main;
+					}
+				}
+			}
+			else
+			{
+				Timing.Phase = Timing.Phase.Post Shift;
+
+				/* 	In downshifts, ignition timing retard and the cuts will be not active at Shift but active again at Post Shift,
+					so we do not want them to become NAN if Shift state is only for one event 		*/
+				if (((timingNextState > 0.0) and (not inNextGear)) or (Throttle Aim.TimerMin.Remaining() > 0.0))
+				{
+					Ignition Cut = Calculate.NAN();
+					Ignition Timing.Limit Advance = Calculate.NAN();
+					Fuel Cut = Calculate.NAN();
+				}
+			}
+		}
+		else	// Timer > 0.0, constant update of cuts and retard
+		{
+			if (not upshift)
+			{
+				if (not disableCut)
+				{
+					if (Ignition Cut.Main > 0)
+					{
+						Ignition Cut = Ignition Cut.Main;
+					}
+					else
+					{
+						Ignition Cut = Calculate.NAN();
+					}
+					if (Ignition Timing.Retard > 0)
+					{
+						Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+					}
+					else
+					{
+						Ignition Timing.Limit Advance = Calculate.NAN();
+					}
+					if (Fuel Cut.Main > 0)
+					{
+						Fuel Cut = Fuel Cut.Main;
+					}
+					else
+					{
+						Fuel Cut = Calculate.NAN();
+					}
+				}
+				else
+				{
+					Ignition Cut = Calculate.NAN();
+					Ignition Timing.Limit Advance = Calculate.NAN();
+					Fuel Cut = Calculate.NAN();
+				}
+			}
+		}
+	}
+	is (Shift)
+	{
+		local inNextGear = Gear neq Gear.Default and Gear neq Current 
+							and (Gear neq Gear.Neutral or Next eq Next.Neutral);	// some gearboxes have Neutral position between 1st and 2nd gear 
+		if ((Timer.Remaining() <= 0.0) or inNextGear)
+		{
+			if (upshift)
+			{
+				Timer.Start(timingNextState);	// has been preset correctly to Recover
+				State = State.Recover;
+				Timing.Phase = Timing.Phase.Rearm;
+		
+				if ((timingNextState > 0.0) and not disableCut)
+				{
+					/* Recovery locals > 0 if in use */
+					igncutRecovery = Ignition Cut.Main / timingNextState; /* %/s */
+					retardRecovery = Ignition Timing.Retard / timingNextState; /* deg/s */
+					fuelcutRecovery = Fuel Cut.Main / timingNextState;
+				}
+				else
+				{
+					Ignition Cut = Calculate.NAN();
+					Ignition Timing.Limit Advance = Calculate.NAN();
+					Fuel Cut = Calculate.NAN();
+				}
+			}
+			else	// downshift
+			{
+				if (Throttle Aim.TimerMin.Remaining() <= 0.0)
+				{
+					Timer.Start(timingNextState);	// has been preset correctly to Post Shift
+					State = State.Post Shift;
+					Timing.Phase = Timing.Phase.Recover;
+					if (not disableCut)
+					{
+					/* Cuts and retard may have been kept from Pre Shift state if Shift state was only for one event */
+					/* if Post Shift timing is 0 no cut ramps apply, but Retard is processed if Post Shift or Recover timing is > 0 */
+						if (timingNextState > 0 and Ignition Cut.Main > 0)
+						{
+							Ignition Cut = Ignition Cut.Main;
+						}
+						else
+						{
+							Ignition Cut = Calculate.NAN();
+						}
+						if ((timingNextState > 0 or Timing.Lookup(Current, Gear Shift Timing Enumeration.Recover, Type) > 0) and Ignition Timing.Retard > 0) 
+						{
+							Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+						}
+						else
+						{
+							Ignition Timing.Limit Advance = Calculate.NAN();
+						}
+						if (timingNextState > 0 and Fuel Cut.Main > 0)
+						{
+							Fuel Cut = Fuel Cut.Main;
+						}
+						else
+						{
+							Fuel Cut = Calculate.NAN();
+						}
+					}
+					else
+					{
+						Ignition Cut = Calculate.NAN();
+						Ignition Timing.Limit Advance = Calculate.NAN();
+						Fuel Cut = Calculate.NAN();
+					}
+				}
+			}
+		}
+		else	// Timer > 0.0, constant update of cuts and retard
+		{
+			when (Type)
+			{
+				is (Up Shift Power On or Up Shift Power Off)
+				{
+					if (not disableCut)
+					{
+						if (Ignition Cut.Main > 0)
+						{
+							Ignition Cut = Ignition Cut.Main;
+						}
+						else
+						{
+							Ignition Cut = Calculate.NAN();
+						}
+						if (Ignition Timing.Retard > 0)
+						{
+							Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+						}
+						else
+						{
+							Ignition Timing.Limit Advance = Calculate.NAN();
+						}
+						if (Fuel Cut.Main > 0)
+						{
+							Fuel Cut = Fuel Cut.Main;
+						}
+						else
+						{
+							Fuel Cut = Calculate.NAN();
+						}
+					}
+					else
+					{
+						Ignition Cut = Calculate.NAN();
+						Ignition Timing.Limit Advance = Calculate.NAN();
+						Fuel Cut = Calculate.NAN();
+					}
+				}
+				is (Down Shift Power Off or Down Shift Power On)
+				{
+					/* no cuts, and for throttle aim keep initial value */
+				}
+			}
+		}
+	}
+	is (Post Shift)	// only used for downshifts
+	{
+		if (Timer.Remaining() <= 0.0)
+		{
+			Timer.Start(timingNextState);
+			State = State.Recover;
+			Timing.Phase = Timing.Phase.Rearm;
+			
+			if ((timingNextState > 0.0) and not disableCut)
+			{
+				/* Recovery locals > 0 if in use */
+				/* no ramp down if cuts have not been active in Post Shift state */
+				if (not Calculate.IsNAN(Ignition Cut))
+				{
+					igncutRecovery = Ignition Cut.Main / timingNextState; /* %/s */
+				}
+
+				retardRecovery = Ignition Timing.Retard / timingNextState; /* deg/s */
+
+				if (not Calculate.IsNAN(Fuel Cut))
+				{
+					fuelcutRecovery = Fuel Cut.Main / timingNextState; /* %/s */
+				}
+			}
+			else
+			{
+				Ignition Cut = Calculate.NAN();
+				Ignition Timing.Limit Advance = Calculate.NAN();
+				Fuel Cut = Calculate.NAN();
+			}
+		}
+		else if (not disableCut)
+		{
+			if (Ignition Cut.Main > 0)
+			{
+				Ignition Cut = Ignition Cut.Main;
+			}
+			else
+			{
+				Ignition Cut = Calculate.NAN();
+			}
+			if (Ignition Timing.Retard > 0)
+			{
+				Ignition Timing.Limit Advance = Ignition.Timing.Normal + Ignition Timing.Retard;
+			}
+			else
+			{
+				Ignition Timing.Limit Advance = Calculate.NAN();
+			}
+			if (Fuel Cut.Main > 0)
+			{
+				Fuel Cut = Fuel Cut.Main;
+			}
+			else
+			{
+				Fuel Cut = Calculate.NAN();
+			}
+		}
+		else
+		{
+			Ignition Cut = Calculate.NAN();
+			Ignition Timing.Limit Advance = Calculate.NAN();
+			Fuel Cut = Calculate.NAN();
+		}
+	}
+	is (Recover)
+	{
+		local t = Timer.Remaining();
+
+		if (t <= 0.0)
+		{
+			Timer.Start(timingNextState);
+			State = State.Rearm;
+			Timing.Phase = Timing.Phase.Shift;
+			Ignition Cut = Calculate.NAN();
+			Ignition Timing.Limit Advance = Calculate.NAN();
+			Fuel Cut = Calculate.NAN();
+			igncutRecovery = 0.0;
+			retardRecovery = 0.0;
+			fuelcutRecovery = 0.0;
+			matchOverallRatio = 0.0;
+		}
+		else
+		{
+			if (igncutRecovery > 0.0)
+			{
+				Ignition Cut = igncutRecovery * t;
+			}
+			if (retardRecovery > 0.0)
+			{
+				Ignition Timing.Limit Advance = Ignition.Timing.Normal + retardRecovery * t;
+			}
+			if (fuelcutRecovery > 0.0)
+			{
+				Fuel Cut = fuelcutRecovery * t;
+			}
+		}
+	}
+	is (Rearm)
+	{
+		/* interlock with Shift Calculation => Shift needs to return to Idle */
+		if ((Timer.Remaining() <= 0.0)
+			and (Value eq Value.Idle)
+		)
+		{
+			State = State.Idle;
+		}
+	}
+}
+
+/* Process Engine Speed Limit */
+
+if (matchOverallRatio > 0.0 and (not Calculate.IsNAN(Gear.Output.Shaft Speed))
+	and not (State eq State.Pre Shift and Type eq Type.Up Shift Power Off))		// allow for unrestricted throttle blip
+{
+	if (State neq State.Recover)
+	{
+		Engine Speed.Limit = Gear.Output.Shaft Speed * matchOverallRatio;
+	}
+	else
+	{
+		Engine Speed.Limit = Calculate.Min(Engine Speed.Limit + Engine Speed.Limit.Ramp * et, Engine.Speed.Limit.Maximum);
+	}
+}
+else
+{
+	Engine Speed.Limit = Calculate.NAN();
+}
+
+/* Process Throttle Blip */
+
+if (setThrottle)
+{
+	Throttle Aim = Throttle Aim.Main;
+	Throttle Aim.TimerMax.Start(Throttle Aim.Blip Duration);
+	Throttle Aim.TimerMin.Start(Throttle Aim.Minimum Duration);
+}
+else if ((State neq State.Pre Shift and State neq State.Shift)
+		 or disableBlip
+		 or (State neq State.Pre Shift and Type eq Type.Up Shift Power Off)
+		 or (Engine.Speed >= Engine.Speed.Limit)	// shift engine speed if gear shift engine speed limit is active, otherwise the normal engine speed limit
+		 or (Throttle Aim.TimerMax.Remaining() <= 0.0)
+		 )
+{
+	Throttle Aim = Calculate.NAN();
+	Throttle Aim.TimerMin.Start(0.0);
+}

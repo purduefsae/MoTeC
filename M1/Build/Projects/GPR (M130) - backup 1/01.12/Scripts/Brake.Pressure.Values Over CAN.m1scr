@@ -1,0 +1,16 @@
+// opens a CAN receive handle for receiving messages
+local brakes = CanComms.RxOpenStandard(0, 0x710, 0x0, true);
+
+// pulls values from over CAN or from an input pin depending on where you tell it to pull from
+ if (Brake Sensor Locations eq Data input location.CAN) {	
+	if (CanComms.RxMessage(brakes)) {
+		Brake.Rear Value = CanComms.GetInteger(brakes, 0, 32);
+		Brake.Front Value = CanComms.GetInteger(brakes, 32, 32);
+	} else {
+		Brake.Rear Value = 0.0;
+		Brake.Front Value = 0.0;
+	}
+} else {
+	Brake.Front Value = Front.Sensor;
+	Brake.Rear Value = Rear.Sensor;
+}

@@ -1,0 +1,7 @@
+Aim = 0;
+Position = 0;
+Prior = 0;
+State = State.Hold;
+Integral Value = 0.0;
+Error = 0;
+PID Aim = 0.0;

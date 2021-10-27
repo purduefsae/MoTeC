@@ -1,0 +1,8 @@
+if (Traction.Mode eq Traction.Mode.Enabled)
+{
+	Value = Vehicle Acceleration Lateral * This.Gear;
+}
+else
+{
+	Value = Calculate.NAN();
+}

@@ -1,0 +1,23 @@
+// open up a handle to transmit messages
+local zeroHandle = CanComms.TxOpen(true);
+
+// check that there is a CAN bus in use
+if (ECU.Transmit.CAN Bus neq ECU.Transmit.CAN Bus.Not in Use) {
+	local ok = true;
+	local bus = ECU.Transmit.CAN Bus.AsInteger() - 1; // specifies the CAN bus to transmit on
+	
+	//start the message, specify message, send the message
+	CanComms.TxInitialise(zeroHandle, 8);
+	//CanComms.SetUnsignedInteger(zeroHandle, 0, 64, 0x696d757a65726f7a);
+	CanComms.SetUnsignedInteger(zeroHandle, 0, 8, 0x69);
+	CanComms.setUnsignedInteger(zeroHandle, 8, 8, 0x6d);
+	CanComms.setUnsignedInteger(zeroHandle, 16, 8, 0x75);
+	CanComms.SetUnsignedInteger(zeroHandle, 24, 8, 0x7a);
+	CanComms.SetUnsignedInteger(zeroHandle, 32, 8, 0x65);
+	CanComms.SetUnsignedInteger(zeroHandle, 40, 8, 0x7a);
+	CanComms.SetUnsignedInteger(zeroHandle, 48, 8, 0x72);
+	CanComms.SetUnsignedInteger(zeroHandle, 56, 8, 0x7a);
+	ok = CanComms.TxStandard(zeroHandle, bus, 0x010);
+	
+	ok = ok;
+}

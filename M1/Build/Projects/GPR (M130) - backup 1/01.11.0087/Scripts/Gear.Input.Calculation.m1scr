@@ -1,0 +1,3 @@
+Shaft Speed = (Calculate.IsNAN(Gear.Ratio.Overall) or Calculate.IsNAN(Gear.Output.Shaft Speed))
+	? Calculate.NAN()
+	: Gear.Output.Shaft Speed * Gear.Ratio.Overall;

@@ -1,0 +1,22 @@
+local shockpots = CanComms.RxOpenStandard(0, 0x80, 0x0, true);
+
+if(Front Left.Input eq Data input location.ECU AV){
+Front Left.Value = Front Left.Sensor;
+} else {
+Front Left.Value = CanComms.GetUnsignedInteger(shockpots, 0, 16);
+}
+if(Front Right.Input eq Data input location.ECU AV){
+Front Right.Value = Front Right.Sensor;
+} else {
+Front Right.Value = CanComms.GetUnsignedInteger(shockpots, 16, 16);
+}
+if(Rear Left.Input eq Data input location.ECU AV){
+Rear Left.Value = Front Left.Sensor;
+} else {
+Rear Left.Value = CanComms.GetUnsignedInteger(shockpots, 32, 16);
+}
+if(Rear Right.Input eq Data input location.ECU AV){
+Rear Right.Value = Rear Right.Sensor;
+} else {
+Rear Right.Value = CanComms.GetUnsignedInteger(shockpots, 48, 16);
+}

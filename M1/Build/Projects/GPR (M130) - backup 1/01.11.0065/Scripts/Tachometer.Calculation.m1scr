@@ -1,0 +1,13 @@
+when (Test)
+{
+	is (Disabled)
+	{
+		State = State.Normal;
+		Output.Frequency = Scale * Engine.Speed / 360;
+	}
+	is (Enabled)
+	{
+		State = State.Test;
+		Output.Frequency = Test.Frequency;
+	}
+}

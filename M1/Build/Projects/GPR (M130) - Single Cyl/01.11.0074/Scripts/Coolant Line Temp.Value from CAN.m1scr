@@ -1,0 +1,6 @@
+
+local messageHandle = CanComms.RxOpenStandardBuffered(0, 0x720, 0x0, true);
+
+if (CanComms.RxMessage(messageHandle)) {
+	Value = cancomms.GetInteger(messageHandle, 0, 32);
+}

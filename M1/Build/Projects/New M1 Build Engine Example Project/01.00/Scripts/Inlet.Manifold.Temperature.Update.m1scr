@@ -1,0 +1,8 @@
+if (Calculate.IsNAN(Sensor))
+{
+	Value = Sensor Default;
+}
+else
+{
+	Value = Sensor;
+}

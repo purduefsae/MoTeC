@@ -1,0 +1,29 @@
+when (Gear) {
+	is (Default) {
+		Gear As Integer = -2;
+	}
+	is (Reverse) {
+		Gear As Integer = -1;
+	}
+	is (Neutral) {
+		Gear As Integer = 0;
+	}
+	is (First) {
+		Gear As Integer = 1;
+	}
+	is (Second) {
+		Gear As Integer = 2;
+	}
+	is (Third) {
+		Gear As Integer = 3;
+	}
+	is (Fourth) {
+		Gear As Integer = 4;
+	}
+	is (Fifth) {
+		Gear As Integer = 5;
+	}
+	is (Sixth) {
+		Gear As Integer = 6;
+	}
+}

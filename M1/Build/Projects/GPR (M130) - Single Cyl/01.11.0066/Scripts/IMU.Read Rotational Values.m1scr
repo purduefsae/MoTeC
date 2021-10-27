@@ -1,0 +1,14 @@
+local rotHandle = CanComms.RxOpenStandard(0, 0x471, 0x0, true);
+
+// if there is a message, get values from there. else set diagnostic channel
+if (CanComms.RxMessage(rotHandle)) {
+	Rotational Z = CanComms.getInteger(rotHandle, 0, 16) / Rotational Scale Factor;
+	Rotational Y = CanComms.GetInteger(rotHandle, 16, 16) / Rotational Scale Factor;
+	Rotational X = CanComms.GetInteger(rotHandle, 32, 16) / Rotational Scale Factor;
+	Rotational Diagnostic = Rotational Diagnostic.OK;
+} else {
+	Rotational Z = Linear Z;
+	Rotational Y = Linear Y;
+	Rotational X = Linear X;
+	Rotational Diagnostic = Rotational Diagnostic.CAN Timeout;
+}

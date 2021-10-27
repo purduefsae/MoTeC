@@ -1,0 +1,33 @@
+local im = Maximum;
+local ir = Default.Ignition Range;
+local fm = Default.Fuel Margin;
+local fr = Default.Fuel Range;
+local s = State.Maximum;
+
+if (Throttle.Servo.Diagnostic.AsInteger() < Throttle.Servo.Diagnostic.Not in Use.AsInteger()
+	and im > Throttle.Servo.Fault.Engine Speed Limit
+)
+{
+	im = Throttle.Servo.Fault.Engine Speed Limit;
+	s = State.Throttle Control Fault;
+}
+
+if (Engine.Oil.Pressure.Warning.IsActive() and (im > Engine.Oil.Pressure.Warning.GetEngineSpeedLimit()))
+{
+	im = Engine.Oil.Pressure.Warning.GetEngineSpeedLimit();
+	s = State.Engine Oil Pressure Fault;
+}
+
+if (Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Test)
+{
+	im = Hard;
+	s = State.Engine Output Test;
+}
+
+This.Ignition = im;
+This.Ignition.Range = ir;
+This.Fuel = im + fm;
+This.Fuel.Margin = fm;
+This.Fuel.Range = fr;
+This.State = s;
+

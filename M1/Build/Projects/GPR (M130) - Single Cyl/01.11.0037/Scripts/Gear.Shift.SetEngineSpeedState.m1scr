@@ -1,0 +1,16 @@
+if (Engine Speed.Limit.Mode eq Engine Speed.Limit.Mode.Enabled
+	and Gear.Type eq Gear.Type.Sequential
+	and Current.AsInteger() >= in.minGear
+	and Vehicle.Speed.State eq Vehicle.Speed.State.Wheel Speed 	/* no GPS as GPS speed update is too slow */
+	and Vehicle.Speed > 0.0	// if fault detection is stupidly calibrated, State can stay on Wheel Speed and the value constantly at 0
+	and (not ClutchDisengaged() or Throttle Aim.Clutch Lockout eq Throttle Aim.Clutch Lockout.Disabled)
+	)
+{
+	Engine Speed.Mode = in.upshift ? Engine Speed.Mode.Up Shift Speed Matching Enabled : 
+									 Engine Speed.Mode.Down Shift Speed Matching Enabled;
+}
+else
+{
+	Engine Speed.Mode = in.upshift ? Engine Speed.Mode.Up Shift Speed Matching Disabled : 
+									 Engine Speed.Mode.Down Shift Speed Matching Disabled;
+}

@@ -1,0 +1,63 @@
+local testmode = Engine.Speed.Reference.State eq Engine.Speed.Reference.State.Test;
+local off = (Engine.Run Switch.IsActive()) and (Engine.Run Switch eq Engine.Run Switch.Off) and not testmode;
+
+if (testmode)
+{
+	expand (n = 1 to Engine.Cylinders)
+	{
+		Cylinder $(n).Output.Test = Cylinder $(n).Output.Test.Enabled;
+	}
+}
+else
+{
+	expand (n = 1 to Engine.Cylinders)
+	{
+		Cylinder $(n).Output.Test = Cylinder $(n).Output.Test.Disabled;
+	}
+}
+
+local cs = off ? Ignition Enable.Disabled : Ignition Enable.Enabled;
+local c1 = cs;
+local c2 = cs;
+local c3 = cs;
+local timingmode = Timing.Mode.Normal;
+
+when (Test)
+{
+	is (Disabled)
+	{
+		if (off)
+		{
+			State = State.Disabled;
+		}
+		else
+		{
+			State = State.Enabled;
+		}
+	}
+	is (Check Timing)
+	{
+		timingmode = Timing.Mode.Check Timing;
+	}
+	is (Cut Cylinder 1)
+	{		c1 = c1.Disabled;
+		State = State.Cut Cylinder 1 Test;
+	}
+	is (Cut Cylinder 2)
+	{
+		c2 = c2.Disabled;
+		State = State.Cut Cylinder 2 Test;
+	}
+	is (Cut Cylinder 3)
+	{
+		c3 = c3.Disabled;
+		State = State.Cut Cylinder 3 Test;
+	}
+}
+
+expand (n = 1 to Engine.Cylinders)
+{
+	Cylinder $(n).Output.Enable = c$(n);
+}
+
+Timing.Mode = timingmode;

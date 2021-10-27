@@ -1,0 +1,30 @@
+Engine Speed = Library.Filter.FirstOrder(Engine.Speed, Engine Speed.Filter);
+local dt = System.ElapsedTime();
+
+Error = Library.Limit.Range(
+	Vehicle.Speed.Limit.Pit.Engine Speed Limit.Ideal() - Engine Speed,
+	-Error.Limit,
+	Error.Limit
+);
+local IgnitionOutputCutAverageUnscheduled = Ignition.Output.Cut Average.GetUnscheduled();
+
+if (Driver.Pit Switch eq Driver.Pit Switch.Off or Mode eq Mode.Not in Use)
+{
+	/*
+	 * Reset integrator if pit switch is off
+	 */
+	Value = 0.0;
+}
+else if ((IgnitionOutputCutAverageUnscheduled > 0.0) and
+	(IgnitionOutputCutAverageUnscheduled < 1.0)
+)
+{
+	/*
+	 * Don't integrate if cut level is already maxed out
+	 */
+	Value = Library.Limit.Range(
+		Value + (Gain * Error) * dt,
+		This.Limit.Minimum,
+		This.Limit.Maximum
+	);
+}

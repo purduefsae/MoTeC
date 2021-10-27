@@ -1,0 +1,27 @@
+Value =
+	Inlet.Manifold.Pressure *
+    Engine.Efficiency *
+    (Engine.Displacement / Engine.Cylinders) *						// Displacement of one cylinder
+    (1 / (Constants.r * (Inlet.Manifold.Temperature + 273.15)));	// Ideal gas law
+
+when (Normalised.Mode)
+{
+	is (Normal)
+	{
+		local ideal =
+			Ambient.Pressure.Standard *
+			1.0 *
+			1.0 *
+			(Engine.Displacement / Engine.Cylinders) *						// Displacement of one cylinder
+			(1 / (Constants.rAir * (Constants.standardTemperature + 273.15)));	// Ideal gas law
+		Normalised = Value / ideal;
+	}
+	is (Inlet Manifold Pressure)
+	{
+		Normalised = Inlet.Manifold.Pressure / Ambient.Pressure.Standard;
+	}
+	is (Throttle Position)
+	{
+		Normalised = Throttle.Position;
+	}
+}

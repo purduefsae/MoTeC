@@ -1,0 +1,7 @@
+Compensation =
+	  Coolant.Temperature.Ignition Timing Compensation
+	+ Inlet.Manifold.Temperature.Ignition Timing Compensation;
+
+Normal = Main +
+	Compensation +
+	Trim;

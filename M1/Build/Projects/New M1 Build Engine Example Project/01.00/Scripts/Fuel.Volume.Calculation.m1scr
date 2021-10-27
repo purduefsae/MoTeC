@@ -1,0 +1,6 @@
+local calculated = Engine.Load / (Fuel.Stoichiometric Ratio * Fuel.Mixture Aim * Fuel.Density);
+
+/*
+ * Apply closed loop trim
+ */
+Value = (calculated * Fuel.Closed Loop.Control.Trim * Trim) * Compensation;

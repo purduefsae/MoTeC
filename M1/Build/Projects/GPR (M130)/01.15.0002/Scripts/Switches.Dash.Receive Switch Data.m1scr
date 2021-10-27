@@ -1,0 +1,18 @@
+local dashHandle = CanComms.RxOpenStandard(0, 0x0A0, 0x0, true);
+if (CanComms.RxMessage(dashHandle)) {
+	Upshift Request = CanComms.GetUnsignedInteger(dashHandle, 0, 8);
+	Downshift Request = CanComms.GetUnsignedInteger(dashHandle, 8, 8);
+	Display Change = CanComms.GetUnsignedInteger(dashHandle, 16, 8);
+	Time Stamp = CanComms.GetUnsignedInteger(dashHandle, 24, 8);
+	Automated Control = CanComms.GetUnsignedInteger(dashHandle, 32, 8);
+	RPM Target Pot = CanComms.GetUnsignedInteger(dashHandle, 40, 8);
+	Dash Switch Diagnostic = Dash Switch Diagnostic.OK;
+} else {
+	Upshift Request = Upshift Request;
+	Downshift Request = Downshift Request;
+	Display Change = Display Change;
+	Time Stamp = Time Stamp;
+	Automated Control = Automated Control;
+	RPM Target Pot = RPM Target Pot;
+	Dash Switch Diagnostic = Dash Switch Diagnostic.CAN Timeout;
+}

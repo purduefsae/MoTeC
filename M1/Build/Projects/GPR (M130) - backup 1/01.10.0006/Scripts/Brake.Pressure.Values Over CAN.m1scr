@@ -1,0 +1,4 @@
+local brakes input = CanComms.RxOpenStandard(1, 0x80, 0x0, true);
+
+Brake.Front Value = CanComms.GetFloat(brakes input, 0);
+Brake.Rear Value = CanComms.GetFloat(brakes input, 16);

@@ -1,0 +1,5 @@
+
+//Motor Control Sig.Duty Cycle = (Motor Control Sig.Frequency * 1500 / 1000000) * 100.0;
+Direction = 0;
+Next Gear Estimate = Gear Enumeration.Neutral.AsInteger();
+Return Cycle = 0;

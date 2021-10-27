@@ -1,0 +1,29 @@
+static local calibrated = false;
+static local failed = false;
+local enable = failed
+	? Throttle Enable Enumeration.Disabled
+	: Throttle Enable Enumeration.Enabled;
+local shutdown = Engine.State.AsInteger() <= Engine.State.Stop.AsInteger();
+
+if (not calibrated)
+{
+	enable = Throttle Enable Enumeration.Calibrate;
+	calibrated = not Servo.Calibrating();
+}
+else if (Pedal <= 0.0)
+{
+	if (shutdown)
+	{
+		enable = Throttle Enable Enumeration.Disabled;
+	}
+	else if (Servo.Failure())
+	{
+		failed = true;
+	}
+}
+else if (failed)
+{
+	failed = false;
+}
+
+Servo.SetEnable(enable);

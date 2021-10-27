@@ -1,0 +1,24 @@
+/*
+ * Running at 10Hz so that we don't need a whole new thread
+ * just for this timer
+ */
+
+local clear = Change.To(Reset eq Reset.Enabled);
+
+static local x = 0;
+x += 1;
+
+if (clear)
+{
+	Total = 0.0;
+	System.Preserve();
+}
+else if (x >= 10)
+{
+	if (Value > 0.0)
+	{
+		Total += 1.0;
+		System.Preserve();
+	}
+	x = 0;
+}

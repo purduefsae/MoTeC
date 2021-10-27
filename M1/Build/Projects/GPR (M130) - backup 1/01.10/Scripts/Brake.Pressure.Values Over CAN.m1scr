@@ -1,0 +1,4 @@
+local brakes input = CanComms.RxOpenStandard(1, 0x80, 0x0, true);
+
+Brake.Front Value = CanComms.GetUnsignedInteger(brakes input, 0, 16);
+Brake.Rear Value = CanComms.GetUnsignedInteger(brakes input, 16, 16);

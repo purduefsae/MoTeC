@@ -1,0 +1,7 @@
+local wait = Library.Delay.Rising((Engine.State eq Engine.State.Crank) or (Engine.State eq Engine.State.Run), This.Delay);	
+local allow = wait or (This.Delay <= 0.0);
+local diag = Parent.Diagnostic.GetUnscheduled(); // prevent circular startup dependency - just need the value assigned by Startup()
+
+Value = (allow and diag neq diag.Not in Use)?
+	Value.Enabled :
+	Value.Disabled;

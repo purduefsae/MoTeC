@@ -1,0 +1,82 @@
+local et = System.ElapsedTime();
+
+/*
+ * Determine engine state
+ */
+local cyclelock = false;
+local stopped = false;
+local turning = false;
+when (This.Speed.Reference.State)
+{
+	is (Open or Initialise or Stall or Error or Exit)
+	{
+		stopped = true;
+	}
+	is (Test)
+	{
+		stopped = true;
+	}
+	is (First Edge or First Period or Search or Pattern Lock)
+	{
+		turning = true;
+	}
+	is (Cycle Lock)
+	{
+		turning = true;
+		cyclelock = true;
+	}
+}
+
+/*
+ * Crank Time, Run Time, Stall Time and engine state.
+ */
+if (stopped or (Run Switch.IsActive() and Run Switch eq Run Switch.Off))
+{
+	Stall Time = Stall Time + et;
+	This.Crank Time = 0.0;
+	Run Time = 0.0;
+	State = State.Stop;
+}
+else if (Run Time > 0.0)
+{
+	Run Time = Run Time + et;
+}
+else if ((This.Speed > This.Run Threshold) and cyclelock)
+{
+	Run Time = et;
+	Stall Time = 0.0;
+	This.Crank Time = 0.0;
+	State = State.Run;
+}
+else if (This.Crank Time > 0.0 or cyclelock)
+{
+	This.Crank Time = This.Crank Time + et;
+	Stall Time = 0.0;
+	State = State.Crank;
+}
+
+/*
+ * Cam control
+ */
+local running = (This.Speed > This.Run Threshold) and cyclelock;
+Inlet.Camshaft.SetEnable(running);
+
+/*
+ * Fuel pump
+ */
+Fuel.Pump.Update(
+    turning,
+    (not Run Switch.IsActive()) or (Run Switch eq Run Switch.On)
+);
+
+/*
+ * Engine Capture
+ */
+if (This.Crank Time > 0.0)
+{
+	Capture.Default();
+}
+else
+{
+	Capture.Idle();
+}

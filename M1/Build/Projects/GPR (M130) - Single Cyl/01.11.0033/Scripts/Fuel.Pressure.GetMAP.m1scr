@@ -1,0 +1,13 @@
+local map = Inlet.Manifold.Pressure;
+
+/*	Individual throttle bodies
+ *	don't use MAP sensor for engine load calculation, but may be used for fuel differential pressure if configured
+ */
+
+if (Inlet.Manifold.Pressure.Mode eq Inlet.Manifold.Pressure.Mode.Estimate
+	and Inlet.Manifold.Pressure.Sensor.Voltage.IsActive() 
+	and Inlet.Manifold.Pressure.Estimate.Mode eq Inlet.Manifold.Pressure.Estimate.Mode.100kPa Relative)
+{
+	map = Inlet.Manifold.Pressure.Sensor;
+}
+Out = map;

@@ -1,0 +1,87 @@
+local duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+
+/* Thought this was needed for Integral part of PID loop but not necessary
+if (RPM Target Tracker > RPM Target or RPM Target Tracker < RPM Target) //Checks if the target has changed
+{
+	Error Time = 0; //Resets the Error time for PI calculator
+	RPM Target Tracker = RPM Target; //Sets the tracker to the target
+}
+else
+{
+	Error Time += 0.005; //Updates the timer by 1/200 of a sec
+}*/
+
+if (Position eq Aim)
+{
+	State = State.Hold;
+}
+else
+{
+	State = State.Moving;
+}
+
+when (State)
+{
+	is (Hold)
+	{
+		duty = 0.0;
+	}
+	is (Moving)
+	{
+		duty = Calculate.Min(Reference Voltage / ECU.Battery.Voltage, 1.0);
+	}
+}
+
+static local <Unsigned Integer> div = 0;
+div += 1;
+if (div >= Divider)
+{
+	div = 0;
+}
+//Divider = used to change the freq of the stepping
+
+if (Position eq Aim)
+{
+	duty = Calculate.Min(Hold Voltage / ECU.Battery.Voltage, 1.0);
+}
+else if (div eq 0)
+{
+	if (Position > Aim and Position > 0)
+	{
+		Position -= 1;
+	}
+	else if (Position < Aim and Position < Convert.ToInteger(Maximum Step))
+	{
+		Position += 1;
+	}
+	
+	/* Do our best to remember position */
+	System.Preserve();
+}
+
+local phase = Calculate.Modulo(Position, 4);
+if (phase < 0)
+{
+	phase = 4 + phase;
+}
+
+if (phase eq 0)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = -duty;
+}
+else if (phase eq 1)
+{
+	Phase A.Duty Cycle = -duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 2)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = duty;
+}
+else if (phase eq 3)
+{
+	Phase A.Duty Cycle = duty;
+	Phase B.Duty Cycle = -duty;
+}

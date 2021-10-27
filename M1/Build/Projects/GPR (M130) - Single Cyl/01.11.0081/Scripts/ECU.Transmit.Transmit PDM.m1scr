@@ -1,0 +1,50 @@
+local h = CanComms.TxOpen(true);
+
+if (Root.PDM.CAN Bus neq Root.PDM.CAN Bus.Not in Use)
+{
+	local ok = true;
+	local bus = Root.PDM.CAN Bus.AsInteger() - 1;
+
+	/*
+	 * Some useful channels in the PDM
+	 */
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0, 8, Convert.ToUnsignedInteger(Engine.Speed / 600.0));
+	CanComms.SetUnsignedInteger(h,  8, 8, Convert.ToUnsignedInteger(Throttle.Position * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 16, 8, Convert.ToUnsignedInteger(Vehicle.Speed * 3.6));
+	CanComms.SetUnsignedInteger(h, 24, 8, Convert.ToUnsignedInteger(Coolant.Temperature));
+	CanComms.SetUnsignedInteger(h, 32, 8, Convert.ToUnsignedInteger(Engine.Oil.Temperature));
+	CanComms.SetUnsignedInteger(h, 40, 8, Convert.ToUnsignedInteger(Fuel.Temperature));
+	CanComms.SetUnsignedInteger(h, 48, 8, Convert.ToUnsignedInteger(Transmission.Temperature));
+	CanComms.SetUnsignedInteger(h, 56, 8, Convert.ToUnsignedInteger(Differential.Temperature));
+	ok = CanComms.TxStandard(h, bus, 0x118);
+
+	/*
+	CanComms.TxInitialise(h, 8);
+	CanComms.SetUnsignedInteger(h,  0, 8, Convert.ToUnsignedInteger(Fuel.Pressure * 1.0e-4));
+	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger(Steering.Angle * 1.0e1);
+	CanComms.SetBit(h, 32, Engine.State eq Engine.State.Run);
+	CanComms.SetBit(h, 33, Warning.Source neq Warning.Source.None);
+	CanComms.SetBit(h, 34, Brake.State eq Brake.State.On);
+	CanComms.SetBit(h, 35, PDM Switches.Neutral Switch eq PDM Switches.Neutral Switch.B);
+	CanComms.SetBit(h, 36, Clutch.Switch eq Clutch.Switch.On);
+	CanComms.SetBit(h, 37, Clutch.State eq Clutch.State.Disengaged);
+	CanComms.SetBit(h, 38, Driver.Pit Switch eq Driver.Pit Switch.On);
+	CanComms.SetBit(h, 39, Engine.Run Switch eq Engine.Run Switch.On);
+	CanComms.SetBit(h, 40, Driver.Switch 1 eq Driver.Switch 1.On);
+	CanComms.SetBit(h, 41, Driver.Switch 2 eq Driver.Switch 2.On);
+	CanComms.SetInteger(h, 48, 8, Driver.Rotary Switch 1.AsInteger());
+	CanComms.SetInteger(h, 56, 8, Driver.Rotary Switch 2.AsInteger());
+	ok = CanComms.TxStandard(h, bus, 0x119);
+	*/
+	
+	/*
+	 * Shut up build
+	 */
+	ok = ok;
+
+	/*
+	 * Outputs
+	 */
+	Library.PDM.Transmit(bus, 0x11A);
+}

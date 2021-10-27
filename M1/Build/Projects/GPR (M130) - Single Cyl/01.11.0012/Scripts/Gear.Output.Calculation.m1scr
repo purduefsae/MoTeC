@@ -1,0 +1,29 @@
+when (Vehicle.Drive Type)
+{
+	is (Rear)
+	{
+		Shaft Speed = Wheel Speed.Rear.Drive.Input;	
+	}
+	is (Front)
+	{ 
+		Shaft Speed = Wheel Speed.Front.Drive.Input;
+	}
+	is (All)
+	{
+		if (Calculate.IsNAN(Wheel Speed.Front.Drive.Input))
+		{
+			Shaft Speed = Wheel Speed.Rear.Drive.Input;
+		}
+		else if (Calculate.IsNAN(Wheel Speed.Rear.Drive.Input))
+		{
+			Shaft Speed = Wheel Speed.Front.Drive.Input;
+		}
+		else
+		{
+			Shaft Speed = Calculate.Average(
+				Wheel Speed.Front.Drive.Input,
+				Wheel Speed.Rear.Drive.Input
+			);
+		}
+	}
+}

@@ -1,0 +1,127 @@
+/*
+ * Calculate bank temps from cylinder temps
+ */
+local b1 = 0.0;
+local b2 = 0.0;
+local bc1 = 0;
+local bc2 = 0;
+local ben1 = false;
+local ben2 = false;
+local max = -273.0;
+
+expand (n = 1 to Engine.Maximum Cylinders)
+{
+	local enabled = Cylinder $(n).Sensor.Diagnostic neq Cylinder $(n).Sensor.Diagnostic.Not in Use;
+	local ok = Cylinder $(n).Sensor.Diagnostic.AsInteger() >= Cylinder $(n).Sensor.Diagnostic.OK.AsInteger();
+
+	expand (m = 1 to 2)
+	{
+		if (Engine.Cylinder $(n).Bank eq $(m))
+		{
+			ben$(m) = ben$(m) or enabled;
+			if (ok)
+			{
+				b$(m) += Cylinder $(n);
+				bc$(m) += 1;
+				max = Calculate.Max(max, Cylinder $(n)); 
+			}
+		}		
+	}
+}
+
+expand (m = 1 to 2)
+{
+	if (bc$(m) > 0)
+	{
+		b$(m) /= bc$(m);
+	}
+}
+
+/*
+ * Assign bank temps
+ */
+expand (n = 1 to 2)
+{
+	local enabled = Bank $(n).Collector.Sensor.Diagnostic neq Bank $(n).Collector.Sensor.Diagnostic.Not in Use;
+	local ok = Bank $(n).Collector.Sensor.Diagnostic.AsInteger() >= Bank $(n).Collector.Sensor.Diagnostic.OK.AsInteger();
+	
+	if (ok)
+	{
+		Bank $(n) = Bank $(n).Collector;
+		Bank $(n).Diagnostic = Bank $(n).Diagnostic.Collector;
+		max = Calculate.Max(max, Bank $(n).Collector); 
+	}
+	else if (bc$(n) > 0)
+	{
+		Bank $(n) = b$(n);
+		Bank $(n).Diagnostic = Bank $(n).Diagnostic.Cylinder Average;
+	}
+	else if (enabled or ben$(n))
+	{
+		Bank $(n).Diagnostic = Bank $(n).Diagnostic.Unavailable;
+		Bank $(n) = Calculate.NAN();
+	}
+	else
+	{
+		Bank $(n).Diagnostic = Bank $(n).Diagnostic.Not in Use;
+		Bank $(n) = Calculate.NAN();
+	}
+}
+
+/*
+ * Calculate overall temp
+ */
+local enabled = Collector.Sensor.Diagnostic neq Collector.Sensor.Diagnostic.Not in Use;
+local ok = Collector.Sensor.Diagnostic.AsInteger() >= Collector.Sensor.Diagnostic.OK.AsInteger();
+local b1ok = not Calculate.IsNAN(Bank 1);
+local b2ok = not Calculate.IsNAN(Bank 2);
+local b1en = Bank 1.Diagnostic neq Bank 1.Diagnostic.Not in Use;
+local b2en = Bank 2.Diagnostic neq Bank 2.Diagnostic.Not in Use;
+
+if (ok)
+{
+	Value = Collector;
+	Diagnostic = Diagnostic.Collector;
+	Maximum = Calculate.Max(max, Collector); 
+}
+else if (b1ok and b2ok)
+{
+	Value = (Bank 1 + Bank 2) / 2;
+	Diagnostic = Diagnostic.Bank Average;
+	Maximum = max; 
+}
+else if (b1ok)
+{
+	Value = Bank 1;
+	Diagnostic = Diagnostic.Bank 1;
+	Maximum = max; 
+}
+else if (b2ok)
+{
+	Value = Bank 2;
+	Diagnostic = Diagnostic.Bank 2;
+	Maximum = max; 
+}
+else if (enabled or b1en or b2en)
+{
+	Diagnostic = Diagnostic.Unavailable;
+	Value = Calculate.NAN();
+	Maximum = Calculate.NAN(); 
+}
+else
+{
+	Diagnostic = Diagnostic.Not in Use;
+	Value = Calculate.NAN();
+	Maximum = Calculate.NAN(); 
+}
+
+/*
+ * Process Warning
+ */
+local override = false;
+This.Warning.Update(
+	Maximum, 
+	override,
+	Diagnostic.AsInteger() > Diagnostic.Not in Use.AsInteger() and 
+	Engine.State eq Engine.State.Run
+);

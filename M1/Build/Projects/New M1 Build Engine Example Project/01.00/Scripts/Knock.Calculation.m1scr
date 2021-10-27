@@ -1,0 +1,63 @@
+if (Engine.Run Time > 0.0 and Mode eq Mode.Enabled)
+{
+	State = State.Enabled;
+}
+else
+{
+	State = State.Disabled;
+}
+
+/*
+ * calculate maximum level for each of 4 frequencies in each cylinder
+ */
+when (State)
+{
+	is (Enabled or Transient)
+	{
+		local maxlevel1 = 0.0;
+		local maxlevel2 = 0.0;
+		local maxlevel3 = 0.0;
+
+		if (Frequency A > 0.0)
+		{
+			expand (n = 1 to Engine.Cylinders)
+			{
+				maxlevel$(n) = Cylinder $(n).Level A;
+			}
+		}
+		if (Frequency B > 0.0)
+		{
+			expand (n = 1 to Engine.Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level B);
+			}
+		}
+		if (Frequency C > 0.0)
+		{
+			expand (n = 1 to Engine.Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level C);
+			}
+		}
+		if (Frequency D > 0.0)
+		{
+			expand (n = 1 to Engine.Cylinders)
+			{
+				maxlevel$(n) = Calculate.Max(maxlevel$(n), Cylinder $(n).Level D);
+			}
+		}
+
+		expand (n = 1 to Engine.Cylinders)
+		{
+			Ignition.Cylinder $(n).Knock.Level = maxlevel$(n);
+		}
+	}
+	is (Disabled)
+	{
+		expand (n = 1 to Engine.Cylinders)
+		{
+			Ignition.Cylinder $(n).Knock.Level = Calculate.NAN();
+		}
+	}
+}
+

@@ -1,0 +1,6 @@
+local cooltemps = CanComms.RxOpenStandard(0, 0x720, 0x0, true);
+
+if (CanComms.RxMessage(cooltemps)) {
+	Before Engine = CanComms.GetInteger(cooltemps, 0, 32) / 10;
+	After Engine = CanComms.getinteger(cooltemps, 32, 32) / 10;
+}

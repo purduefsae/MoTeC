@@ -1,0 +1,3 @@
+// speed sensor measures the output speed of the engine
+Value = (Periodic Input.Frequency) * 360.0 / (Input Object Teeth);
+// I'm guessing that it's interpreting pulse as a degree

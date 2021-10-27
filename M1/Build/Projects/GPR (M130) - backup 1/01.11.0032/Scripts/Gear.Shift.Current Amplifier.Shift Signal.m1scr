@@ -1,0 +1,59 @@
+// Frequncy: 	DC output if 0
+//				AC output @Frequency if >0
+// Duty Cycle:  if frequency is 0, 		outputs BAT_POS if >50%
+//										outputs BAT_NEG if <-50%
+//										OFF otherwise
+//				if frequency >0, 		acts as regular duty cycle
+
+if (Shift Period.Remaining() >= 0.005) {
+	// continue with last settings if a timer is running
+} else if ((Shift Period.Remaining() < 0.005) and (Shifting eq Gear Shift State Enumeration.Shift)) {
+	// do nothing for a lil bit to let the arm return
+	Current Action = Current Action.Pause;
+	Shift Period.Start(Define Pause Time); 
+	Shift Red.Duty Cycle = 0.0;
+	Shift Black.Duty Cycle = 0.0;
+	Shifting = Gear Shift State Enumeration.Idle;
+} else if (Gear.Lever eq Gear Shift Request Enumeration.Up and (Shifting neq Gear Shift State Enumeration.Shift)) {
+	// initializes settings to upshift if there is a request to do so and not already shifting
+	Current Action = Current Action.Shifting Up;
+	Shift Black.Duty Cycle = 100;
+	Shift Red.Frequency = 0;
+	Shift Red.Duty Cycle = -100;
+	Shifting = Gear Shift State Enumeration.Shift;	
+	Shift Period.Start(Define Shift Time);
+} else if (Gear.Lever eq Gear Shift Request Enumeration.Down and (Shifting neq Gear Shift State Enumeration.Shift)) {
+	// initializes settings to downshift if there is a request to do so not already shifting 
+	Current Action = Current Action.Shifting Dn;
+	Shift Red.Duty Cycle = 100;
+	Shift Black.Frequency = 0;
+	Shift Black.Duty Cycle = -100.0;
+	Shifting = Gear Shift State Enumeration.Shift;
+	Shift Period.Start(Define Shift Time);
+} else {
+	Current Action = Current Action.Pause;
+	Shift Red.Duty Cycle = -100.0;
+	Shift Black.Duty Cycle = -100.0;
+	Shift Red.Frequency = 0;
+	Shift Black.Frequency = 0;
+}
+
+/*		Preloading Code- fuck with it another day when comp is not in a month
+
+else if (Brake.Light.Status eq Brake light Status.On) {
+	// preload the shifter for downshifting if brakes are engaged
+	Current Action = Current Action.Preshifting Dn;
+	Shifting = Gear Shift State Enumeration.Idle;
+	Shift Red.Duty Cycle = 0.0;
+	Shift Black.Frequency = Pulse Frequency;
+	Shift Black.Duty Cycle = PreDn Duty Cycle;
+} else {
+	// preload the shifter for upshifting
+	Current Action = Current Action.Preshifting Up;
+	Shifting = Gear Shift State Enumeration.Idle;
+	Shift Black.Duty Cycle = 0.0;
+	Shift Red.Frequency = Pulse Frequency;
+	Shift Red.Duty Cycle = PreUp Duty Cycle;
+}
+
+*/

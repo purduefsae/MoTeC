@@ -1,0 +1,1 @@
+Value = Throttle.Area.Lookup(Throttle.Servo.Position);

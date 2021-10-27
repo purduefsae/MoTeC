@@ -1,0 +1,11 @@
+local on = 
+	Throttle Position eq Throttle Position.Enabled and
+	Engine Speed eq Engine Speed.Enabled and
+	Refrigerant Pressure eq Refrigerant Pressure.Enabled and
+	Coolant Temperature eq Coolant Temperature.Enabled and
+	Ambient Temperature eq Ambient Temperature.Enabled and
+	Engine.State eq Engine.State.Run;
+
+Value = on
+	? Value.Enabled
+	: Value.Disabled;

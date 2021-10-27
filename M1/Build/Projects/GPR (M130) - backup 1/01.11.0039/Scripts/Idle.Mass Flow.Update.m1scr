@@ -1,0 +1,48 @@
+local et = System.ElapsedTime();
+
+when (Idle.State)
+{
+	is (Enabled)
+	{
+		/*
+		 * Integral based on ignition timing
+		 */
+		if ((This.Integral.Gain > 0.0) and
+			not Calculate.IsNAN(This.Integral)
+		)
+		{
+			if (not Calculate.IsNAN(Idle.Ignition Timing Limit Advance))
+			{
+				local err = Idle.Ignition Timing Limit Advance - Idle.Ignition Timing Limit Advance.Target;
+				local adj = Limit.Range(
+					err * This.Integral.Gain * et,
+					-This.Integral.Rate,
+					This.Integral.Rate
+				);
+				This.Integral = Limit.Range(
+					This.Integral - adj,
+					This.Integral.Minimum,
+					This.Integral.Maximum
+				);
+			}
+		}
+		else
+		{
+			This.Integral = 0.0;
+		}
+		
+		/*
+		 * Proportional based on engine speed
+		 */
+		local err = Idle.Aim - Engine.Speed;
+		This.Proportional = This.Proportional.Gain * err;
+		
+		Value = Limit.Range(Feed Forward + This.Proportional + This.Integral, 0.0, 1.0);
+	}
+	is (Disabled or Actuator Test)
+	{
+		This.Proportional = Calculate.NAN();
+		This.Integral = Calculate.NAN();
+		Value = Feed Forward;
+	}
+}

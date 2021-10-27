@@ -1,0 +1,75 @@
+local map = Inlet.Manifold.Pressure;
+
+/*
+ * Sensor always reports gauge pressure.
+ * This is the difference between current ambient pressure and fuel pressure.
+ *
+ * Default is the fuel pressure above current ambient with a stopped engine, i.e. MAP is equal to ambient pressure.
+ */
+Sensor.Update(map);
+
+/*
+ * Calculate estimated fuel pressure based on Default and regulator type
+ */
+when (Regulator.Type)
+{
+	is (Ambient Pressure Referenced)
+	{
+		/*
+		 * Fuel pressure does not change with MAP. Default is therefore the right value.
+		 */
+		Estimate = Default;
+	}
+	is (Manifold Pressure Referenced)
+	{
+		/*
+		 * Fuel pressure changes with MAP.
+		 *
+		 * Need to compensate for MAP influence on fuel pressure.
+		 */
+		Estimate = Default + (map - Ambient.Pressure) * Regulator.Ratio;
+	}
+	is (Manifold Pressure Referenced Increase Only)
+	{
+		/*
+		 * Fuel pressure changes with MAP, but only if MAP > atmospheric.
+		 *
+		 * Need to compensate for MAP influence on fuel pressure.
+		 */
+		Estimate = Default + Calculate.Max(map - Ambient.Pressure, 0.0) * Regulator.Ratio;
+	}
+}
+
+if (not Calculate.IsNAN(Sensor))
+{
+	/*
+	 * Sensor value is exactly what we need to report -- fuel pressure above ambient.
+	 */
+	Value = Sensor;
+}
+else
+{
+	/*
+	 * No sensor, or sensor faulty. Use Estimate.
+	 */
+	Value = Estimate;
+}
+
+/* Determine differential pressure */
+
+when (Fuel.Injector.Location)
+{
+	is (Not in Use)
+	{
+		Fuel.Injector.Differential Pressure = Calculate.NAN();
+	}
+	is (After Throttle)
+	{
+		local mp = map - Ambient.Pressure;
+		Fuel.Injector.Differential Pressure = Value - mp;
+	}
+	is (Before Throttle)
+	{
+		Fuel.Injector.Differential Pressure = Value;
+	}
+}

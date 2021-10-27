@@ -1,0 +1,11 @@
+local amb = Ambient.Temperature.Sensor;
+if ((Ambient.Temperature.Sensor.Diagnostic.AsInteger() < Ambient.Temperature.Sensor.Diagnostic.OK.AsInteger()) and
+	(Airbox.Temperature.Sensor.Diagnostic.AsInteger() >= Airbox.Temperature.Sensor.Diagnostic.OK.AsInteger()))
+{
+	amb = Airbox.Temperature;
+}
+
+local hyst = Calculate.Hysteresis(amb, Threshold - Hysteresis, Threshold, 0.0);
+Value = hyst or Calculate.IsNAN(amb)	/* ignore condition when no temp sensor available */
+	? Value.Enabled
+	: Value.Disabled;

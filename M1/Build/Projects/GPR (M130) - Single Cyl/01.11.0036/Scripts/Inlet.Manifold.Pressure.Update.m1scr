@@ -1,0 +1,38 @@
+static local mapEstOld = 0.0;
+local et = System.ElapsedTime();
+
+when (Mode)
+{
+	is (Automatic)
+	{
+		local diff = Estimate.Unfiltered - mapEstOld;
+		Correction = Correction + diff - Correction.Decay * Correction * et;
+		mapEstOld = Estimate.Unfiltered;
+		
+		if (Sensor.Diagnostic.AsInteger() > 0)
+		{
+			Value = Sensor + Correction.Blend * Correction;
+		}
+		else
+		{
+			Value = Estimate;
+		}
+	}
+	is (Estimate)
+	{
+		Value = Estimate;
+		Correction = 0.0;
+	}
+	is (Sensor)
+	{
+		if (not Calculate.IsNAN(Sensor))
+		{
+			Value = Sensor;
+		}
+		else
+		{
+			Value = 0.0;
+		}
+		Correction = 0.0;
+	}
+}
