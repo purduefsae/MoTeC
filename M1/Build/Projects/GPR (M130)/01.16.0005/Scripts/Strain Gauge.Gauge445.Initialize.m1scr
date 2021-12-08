@@ -1,0 +1,4 @@
+Value = 0;
+CalibOutput = 0;
+
+SensorCalibrate();

@@ -11,13 +11,14 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	CanComms.SetInteger        (h, 32, 16, Convert.ToInteger        (Inlet.Air.Temperature * 1.0e1));
 	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Throttle.Position * 1.0e3));
 	ok = CanComms.TxStandard(h, bus, 0x640);
-
+	
 	CanComms.TxInitialise(h, 8);
 	CanComms.SetUnsignedInteger(h,  0, 16, Convert.ToUnsignedInteger(Fuel.Volume * 1.0e9));
 	CanComms.SetUnsignedInteger(h, 16, 16, Convert.ToUnsignedInteger(Fuel.Mixture Aim * 1.0e2));
 	CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Fuel.Pressure.Sensor * 1.0e-2));
-	CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Fuel.Injector.Primary.Duty Cycle * 1.0e2));
-	CanComms.SetUnsignedInteger(h, 56,  8, Convert.ToUnsignedInteger(Engine.Efficiency * 1.0e2));
+	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Strain Gauge.Gauge445.TorqueValue));
+	//CanComms.SetUnsignedInteger(h, 48,  8, Convert.ToUnsignedInteger(Fuel.Injector.Primary.Duty Cycle * 1.0e2));
+	//CanComms.SetUnsignedInteger(h, 56,  8, Convert.ToUnsignedInteger(Engine.Efficiency * 1.0e2));
 	ok = CanComms.TxStandard(h, bus, 0x641);
 
 	CanComms.TxInitialise(h, 8);
@@ -84,10 +85,8 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger		(Fuel.Injector.Secondary.Differential Pressure * 1.0e-2));
 	CanComms.SetUnsignedInteger(h, 32, 16, Convert.ToUnsignedInteger(Gear.Input.Shaft Speed / 6.0));
 	CanComms.SetUnsignedInteger(h, 48, 16, Convert.ToUnsignedInteger(Gear.Output.Shaft Speed / 6.0));
-	CanComms.SetUnsignedInteger(h, 64, 16, Convert.ToUnsignedInteger(Strain Gauge.Gauge445.TorqueValue));
 	ok = CanComms.TxStandard(h, bus, 0x657);
 
-/*
 	CanComms.TxInitialise(h, 8);
 	CanComms.SetInteger        (h,  0, 16, Convert.ToInteger(Vehicle.Acceleration.Lateral * 101.97162));		//0.001G
 	CanComms.SetInteger        (h, 16, 16, Convert.ToInteger(Vehicle.Acceleration.Longitudinal * 101.97162));	//0.001G
@@ -96,12 +95,15 @@ if (CAN Bus neq CAN Bus.Not in Use)
 	ok = CanComms.TxStandard(h, bus, 0x658);
 	
 	CanComms.TxInitialise(h, 8);
+	/*
 	CanComms.SetUnsignedInteger(h,  0,  8, Convert.ToUnsignedInteger(Ignition.Cylinder 9.Knock.Level * 1.0e2));
 	CanComms.SetUnsignedInteger(h,  8,  8, Convert.ToUnsignedInteger(Ignition.Cylinder 10.Knock.Level * 1.0e2));
 	CanComms.SetUnsignedInteger(h, 16,  8, Convert.ToUnsignedInteger(Ignition.Cylinder 11.Knock.Level * 1.0e2));
 	CanComms.SetUnsignedInteger(h, 24,  8, Convert.ToUnsignedInteger(Ignition.Cylinder 12.Knock.Level * 1.0e2));
+	*/
+	CanComms.SetUnsignedInteger(h, 0, 16, Convert.ToUnsignedInteger(Strain Gauge.Gauge445.TorqueValue));
 	ok = CanComms.TxStandard(h, bus, 0x659);
-*/
+
 	/*
 	 * Shut up build
 	 */
